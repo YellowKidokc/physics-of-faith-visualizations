@@ -1,0 +1,33 @@
+{
+  "name": "physics-of-faith-visualizations",
+  "version": "1.0.0",
+  "description": "Professional visualization gallery for Physics of Faith research",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx http-server -p 8000 -c-1",
+    "deploy": "echo 'Deploy via Cloudflare Pages integration'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YellowKidokc/physics-of-faith-visualizations.git"
+  },
+  "keywords": [
+    "physics",
+    "consciousness",
+    "quantum",
+    "research",
+    "visualization",
+    "grant-proposals",
+    "academic"
+  ],
+  "author": "David Lowe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YellowKidokc/physics-of-faith-visualizations/issues"
+  },
+  "homepage": "https://physics-of-faith-visualizations.pages.dev",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
