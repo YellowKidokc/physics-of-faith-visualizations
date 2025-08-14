@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Dark background -->
+  <rect width="800" height="600" fill="#1a1a2e" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">RESURRECTION AS NEGENTROPY</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" font-style="italic" fill="#a277ff" text-anchor="middle">Phase Transition in Reality's Entropic Trajectory</text>
+  
+  <!-- Cross Symbol -->
+  <g transform="translate(120, 90)">
+    <path d="M0,-15 L0,15 M-15,0 L15,0" stroke="white" stroke-width="3" />
+    <circle cx="0" cy="0" r="25" fill="none" stroke="white" stroke-width="1" />
+  </g>
+  
+  <!-- Main Visualization: Entropy Graph -->
+  <g transform="translate(100, 220)">
+    <!-- Axes -->
+    <line x1="0" y1="250" x2="600" y2="250" stroke="white" stroke-width="2" /> <!-- X-axis -->
+    <line x1="0" y1="0" x2="0" y2="250" stroke="white" stroke-width="2" /> <!-- Y-axis -->
+    
+    <!-- Axis Labels -->
+    <text x="300" y="280" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">TIME</text>
+    <text x="-40" y="125" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" transform="rotate(-90,-40,125)">ENTROPY</text>
+    
+    <!-- Old Reality Curve -->
+    <path d="M0,200 Q 150,150 300,50" stroke="red" stroke-width="3" fill="none" />
+    <text x="70" y="190" font-family="Arial, sans-serif" font-size="12" fill="red" text-anchor="middle">Pre-Resurrection</text>
+    <text x="70" y="205" font-family="Arial, sans-serif" font-size="10" fill="red" text-anchor="middle">dS/dt > 0</text>
+    
+    <!-- Phase Transition Point -->
+    <line x1="300" y1="0" x2="300" y2="250" stroke="#a277ff" stroke-width="2" stroke-dasharray="5,3" />
+    <circle cx="300" cy="50" r="10" fill="#a277ff" />
+    <text x="300" y="20" font-family="Arial, sans-serif" font-size="14" fill="#a277ff" text-anchor="middle">RESURRECTION</text>
+    <text x="300" y="35" font-family="Arial, sans-serif" font-size="10" fill="#a277ff" text-anchor="middle">t_resurrection</text>
+    
+    <!-- New Reality Curve -->
+    <path d="M300,50 Q 450,20 600,10" stroke="#4cc9f0" stroke-width="3" fill="none" />
+    <text x="480" y="40" font-family="Arial, sans-serif" font-size="12" fill="#4cc9f0" text-anchor="middle">Post-Resurrection</text>
+    <text x="480" y="55" font-family="Arial, sans-serif" font-size="10" fill="#4cc9f0" text-anchor="middle">dS/dt < 0</text>
+    
+    <!-- Heaviside Step Function Indicator -->
+    <text x="350" y="90" font-family="Arial, sans-serif" font-size="12" fill="#a277ff" text-anchor="middle">Θ(t-t_resurrection)</text>
+    <path d="M330,100 L370,100" stroke="#a277ff" stroke-width="1" />
+    <polygon points="370,100 360,95 360,105" fill="#a277ff" />
+  </g>
+  
+  <!-- Mathematical Representation -->
+  <rect x="150" y="490" width="500" height="60" rx="10" fill="#2a2a4a" />
+  <text x="400" y="525" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">S(t) = S₀e^(-R_J·t) · (1-Θ(t-t_resurrection))</text>
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="12" fill="#a277ff" text-anchor="middle">Resurrection Factor (R_J) creating exponential entropy decrease</text>
+  
+  <!-- Left Info Box -->
+  <g transform="translate(200, 180)">
+    <rect x="-90" y="-30" width="180" height="80" rx="10" fill="#16213e" stroke="#f72585" stroke-width="1" />
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">ENTROPY LAW</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" fill="#f72585" text-anchor="middle">Before: dS/dt > 0</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">All systems naturally decay</text>
+  </g>
+  
+  <!-- Right Info Box -->
+  <g transform="translate(600, 180)">
+    <rect x="-90" y="-30" width="180" height="80" rx="10" fill="#16213e" stroke="#4cc9f0" stroke-width="1" />
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">NEGENTROPY</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" fill="#4cc9f0" text-anchor="middle">After: dS/dt < 0</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Decay systematically reversed</text>
+  </g>
+  
+  <!-- Personal Application -->
+  <rect x="150" y="400" width="500" height="60" rx="10" fill="#16213e" stroke="#a277ff" stroke-width="1" />
+  <text x="400" y="425" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">PERSONAL RESURRECTION FACTOR</text>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="14" fill="#a277ff" text-anchor="middle">R_J(personal) = R_J(universal) · (1-e^(-F·t))</text>
+  
+  <!-- Biblical Reference -->
+  <text x="400" y="590" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="white" text-anchor="middle">"Death has been swallowed up in victory." - 1 Corinthians 15:54</text>
+</svg>

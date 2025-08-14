@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <!-- Background -->
+  <rect width="600" height="600" fill="#1e1e2e"/>
+  
+  <!-- Quadrant dividing lines -->
+  <line x1="300" y1="0" x2="300" y2="600" stroke="#aaa" stroke-width="2"/>
+  <line x1="0" y1="300" x2="600" y2="300" stroke="#aaa" stroke-width="2"/>
+  
+  <!-- Quadrant 1: Inertia (Top Left) -->
+  <rect x="50" y="50" width="200" height="200" fill="#1a237e" opacity="0.9" rx="10"/>
+  <text x="150" y="100" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-weight="bold">INERTIA</text>
+  <text x="150" y="140" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Spiritual Stagnation</text>
+  <text x="150" y="170" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Objects at rest</text>
+  <text x="150" y="195" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Resistant to change</text>
+  <!-- Dense particles representing stagnation -->
+  <circle cx="100" cy="230" r="8" fill="white" opacity="0.3"/>
+  <circle cx="120" cy="210" r="6" fill="white" opacity="0.3"/>
+  <circle cx="150" cy="240" r="7" fill="white" opacity="0.3"/>
+  <circle cx="180" cy="220" r="5" fill="white" opacity="0.3"/>
+  <circle cx="200" cy="235" r="9" fill="white" opacity="0.3"/>
+  
+  <!-- Quadrant 2: Initial Motion (Top Right) -->
+  <rect x="350" y="50" width="200" height="200" fill="#ff9800" opacity="0.9" rx="10"/>
+  <text x="450" y="100" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-weight="bold">INITIAL MOTION</text>
+  <text x="450" y="140" font-family="Arial" font-size="14" fill="white" text-anchor="middle">First Spiritual Awakening</text>
+  <text x="450" y="170" font-family="Arial" font-size="14" fill="white" text-anchor="middle">The first step of a journey</text>
+  <text x="450" y="195" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Hesitant but hopeful</text>
+  <!-- Small directional arrows indicating initial movement -->
+  <path d="M400,230 L420,230 L415,225 M420,230 L415,235" fill="none" stroke="white" stroke-width="2"/>
+  <path d="M430,210 L450,210 L445,205 M450,210 L445,215" fill="none" stroke="white" stroke-width="2"/>
+  <path d="M460,240 L480,240 L475,235 M480,240 L475,245" fill="none" stroke="white" stroke-width="2"/>
+  
+  <!-- Quadrant 3: Acceleration (Bottom Left) -->
+  <rect x="50" y="350" width="200" height="200" fill="#009688" opacity="0.9" rx="10"/>
+  <text x="150" y="400" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-weight="bold">ACCELERATION</text>
+  <text x="150" y="440" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Gaining Spiritual Momentum</text>
+  <text x="150" y="470" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Breaking through resistance</text>
+  <text x="150" y="495" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Gaining confidence</text>
+  <!-- Dynamic arrows of increasing size -->
+  <path d="M90,520 L130,520 L125,515 M130,520 L125,525" fill="none" stroke="white" stroke-width="3"/>
+  <path d="M140,520 L190,520 L185,512 M190,520 L185,528" fill="none" stroke="white" stroke-width="4"/>
+  <path d="M100,550 L170,550 L163,540 M170,550 L163,560" fill="none" stroke="white" stroke-width="5"/>
+  
+  <!-- Quadrant 4: Divine Attraction (Bottom Right) -->
+  <rect x="350" y="350" width="200" height="200" fill="#673ab7" opacity="0.9" rx="10"/>
+  <text x="450" y="400" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-weight="bold">DIVINE ATTRACTION</text>
+  <text x="450" y="440" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Alignment with Higher Purpose</text>
+  <text x="450" y="470" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Gravitational pull</text>
+  <text x="450" y="495" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Towards transcendence</text>
+  <!-- Radial patterns suggesting gravitational pull -->
+  <circle cx="450" cy="520" r="30" fill="none" stroke="white" stroke-width="1" opacity="0.6"/>
+  <circle cx="450" cy="520" r="20" fill="none" stroke="white" stroke-width="1" opacity="0.8"/>
+  <circle cx="450" cy="520" r="10" fill="white" opacity="0.9"/>
+  
+  <!-- Center connecting point -->
+  <circle cx="300" cy="300" r="20" fill="#2d2d3f" stroke="#aaa" stroke-width="2"/>
+  <text x="300" y="305" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">SELF</text>
+  
+  <!-- Connecting flows between quadrants -->
+  <path d="M250,150 C280,200 280,200 300,300" fill="none" stroke="#3949ab" stroke-width="3" opacity="0.5"/>
+  <path d="M450,150 C420,200 350,250 300,300" fill="none" stroke="#ffb74d" stroke-width="3" opacity="0.5"/>
+  <path d="M150,450 C200,420 250,350 300,300" fill="none" stroke="#4db6ac" stroke-width="3" opacity="0.5"/>
+  <path d="M450,450 C400,420 350,350 300,300" fill="none" stroke="#9575cd" stroke-width="3" opacity="0.5"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">SPIRITUAL TRAJECTORY QUADRANTS</text>
+  <text x="300" y="570" font-family="Arial" font-size="14" fill="#aaa" text-anchor="middle" font-style="italic">Physical laws of motion mapped to spiritual transformation</text>
+</svg>

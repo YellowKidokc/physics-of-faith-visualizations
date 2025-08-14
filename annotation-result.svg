@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2A2B32" rx="10" ry="10"/>
+  
+  <!-- Document area -->
+  <rect x="20" y="20" width="760" height="560" fill="#1E1F23" rx="5" ry="5"/>
+  
+  <!-- Header and title -->
+  <text x="40" y="50" fill="#E0E0E0" font-family="Arial" font-size="22">Spiritual Physics Framework</text>
+  
+  <!-- Document content -->
+  <text x="40" y="90" fill="#E0E0E0" font-family="Arial" font-size="14">
+    <tspan x="40" dy="0">The following visualizations represent key concepts in our quantum-spiritual framework.</tspan>
+    <tspan x="40" dy="30">## Spiritual Trajectory Quadrants</tspan>
+  </text>
+  
+  <!-- Image placeholder -->
+  <rect x="40" y="135" width="360" height="240" fill="#3C3D44" rx="5" ry="5"/>
+  <text x="220" y="255" fill="#E0E0E0" font-family="Arial" font-size="16" text-anchor="middle">[Image: Spiritual Trajectory Quadrants]</text>
+  
+  <!-- Annotated text -->
+  <text x="40" y="400" fill="#E0E0E0" font-family="Arial" font-size="14">
+    <tspan x="40" dy="0">This diagram maps the stages of spiritual motion by applying physical laws to</tspan>
+    <tspan x="40" dy="25">the soul's journey.<tspan fill="#4A5BEF"> The four quadrants represent progressive states...</tspan><tspan fill="#FFD700">①</tspan></tspan>
+  </text>
+  
+  <!-- More document content -->
+  <text x="40" y="460" fill="#E0E0E0" font-family="Arial" font-size="14">
+    <tspan x="40" dy="0">## Interconnected Spiritual Networks</tspan>
+  </text>
+  
+  <!-- Image placeholder -->
+  <rect x="40" y="475" width="360" height="80" fill="#3C3D44" rx="5" ry="5"/>
+  <text x="220" y="525" fill="#E0E0E0" font-family="Arial" font-size="16" text-anchor="middle">[Image: Interconnected Spiritual Networks]</text>
+  
+  <!-- Annotation popup -->
+  <rect x="220" y="120" width="500" height="350" fill="#34353B" rx="10" ry="10" stroke="#4A5BEF" stroke-width="2"/>
+  <text x="240" y="150" fill="#FFFFFF" font-family="Arial" font-size="18">Annotation: Spiritual Trajectory Quadrants</text>
+  
+  <!-- Annotation content -->
+  <text x="240" y="185" fill="#E0E0E0" font-family="Arial" font-size="14">
+    <tspan x="240" dy="0">## Core Concept</tspan>
+    <tspan x="240" dy="25">This diagram maps the stages of spiritual motion by applying physical laws to the soul's</tspan>
+    <tspan x="240" dy="25">journey, showing how spiritual momentum follows patterns similar to physical motion.</tspan>
+    <tspan x="240" dy="25"></tspan>
+    <tspan x="240" dy="25">## Key Elements</tspan>
+    <tspan x="240" dy="25">- <tspan fill="#FFFFFF">**Inertia:**</tspan> Spiritual stagnation, resistant to change</tspan>
+    <tspan x="240" dy="25">- <tspan fill="#FFFFFF">**Initial Motion:**</tspan> First spiritual awakening, hesitant but hopeful beginnings</tspan>
+    <tspan x="240" dy="25">- <tspan fill="#FFFFFF">**Acceleration:**</tspan> Gaining spiritual momentum, breaking through resistance</tspan>
+    <tspan x="240" dy="25">- <tspan fill="#FFFFFF">**Divine Attraction:**</tspan> Alignment with higher purpose, experiencing the</tspan>
+    <tspan x="240" dy="25">  gravitational pull toward transcendence</tspan>
+    <tspan x="240" dy="25"></tspan>
+    <tspan x="240" dy="25">## Spiritual-Physical Connection</tspan>
+    <tspan x="240" dy="25">Just as objects require an external force to overcome physical inertia, spiritual growth</tspan>
+    <tspan x="240" dy="25">demands both intentional movement and the external force of divine grace.</tspan>
+  </text>
+  
+  <!-- Close button -->
+  <circle cx="700" cy="140" r="15" fill="#3C3D44" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="700" y="145" fill="#E0E0E0" font-family="Arial" font-size="18" text-anchor="middle">✕</text>
+</svg>

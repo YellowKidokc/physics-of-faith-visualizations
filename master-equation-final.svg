@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#121212" rx="15" ry="15"/>
+  <rect x="10" y="10" width="980" height="480" fill="#1a1a2e" rx="10" ry="10" stroke="#2d2d42" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="500" y="80" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#e6c619" text-anchor="middle">THE MASTER EQUATION</text>
+  
+  <!-- Equation -->
+  <g transform="translate(100, 250)">
+    <!-- Chi equals -->
+    <text font-family="serif" font-size="40" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-style="italic">
+      <tspan x="0" y="0">χ = </tspan>
+    </text>
+    
+    <!-- Integral symbol -->
+    <text x="80" y="0" font-family="serif" font-size="40" fill="#e55" text-anchor="start" dominant-baseline="middle" font-style="italic">∭∭</text>
+    
+    <!-- Left Parenthesis for fraction - making it larger -->
+    <text x="140" y="0" font-family="serif" font-size="80" fill="#ffffff" text-anchor="start" dominant-baseline="middle">(</text>
+    
+    <!-- Fraction - proper positioning -->
+    <g transform="translate(170, 0)">
+      <!-- Grace function (numerator) -->
+      <text x="0" y="-30" font-family="serif" font-size="40" fill="#62d6e6" text-anchor="start" dominant-baseline="middle" font-style="italic">
+        G<tspan dy="5" font-size="26">0</tspan>e^(R<tspan dy="5" font-size="26">p</tspan>/S) · R<tspan dy="5" font-size="26">J</tspan>
+      </text>
+      
+      <!-- Fraction line -->
+      <line x1="0" y1="0" x2="240" y2="0" stroke="#ffffff" stroke-width="3"/>
+      
+      <!-- Entropy term (denominator) -->
+      <text x="0" y="30" font-family="serif" font-size="40" fill="#e55" text-anchor="start" dominant-baseline="middle" font-style="italic">
+        1 + E<tspan dy="5" font-size="26">0</tspan>e^(kt) + S<tspan dy="5" font-size="26">0</tspan>e^(-λR<tspan dy="5" font-size="26">p</tspan>t)
+      </text>
+    </g>
+    
+    <!-- Right Parenthesis for fraction - making it larger -->
+    <text x="410" y="0" font-family="serif" font-size="80" fill="#ffffff" text-anchor="start" dominant-baseline="middle">)</text>
+    
+    <!-- Multiplication symbol -->
+    <text x="440" y="0" font-family="serif" font-size="40" fill="#ffffff" text-anchor="start" dominant-baseline="middle">×</text>
+    
+    <!-- Quantum choice term -->
+    <text x="470" y="0" font-family="serif" font-size="40" fill="#e6c619" text-anchor="start" dominant-baseline="middle" font-style="italic">
+      e^(-(Q·C))
+    </text>
+    
+    <!-- Multiplication symbol -->
+    <text x="590" y="0" font-family="serif" font-size="40" fill="#ffffff" text-anchor="start" dominant-baseline="middle">×</text>
+    
+    <!-- Faith network term - properly formatted summation -->
+    <text x="620" y="0" font-family="serif" font-size="80" fill="#ffffff" text-anchor="start" dominant-baseline="middle">(</text>
+    
+    <g transform="translate(650, 0)">
+      <text font-family="serif" font-size="40" fill="#7bd66a" text-anchor="start" dominant-baseline="middle" font-style="italic">
+        1 + 
+      </text>
+      
+      <!-- Summation symbol with limits -->
+      <g transform="translate(50, 0)">
+        <text font-family="serif" font-size="50" fill="#7bd66a" text-anchor="middle" dominant-baseline="middle">∑</text>
+        <text x="0" y="-25" font-family="serif" font-size="26" fill="#7bd66a" text-anchor="middle" dominant-baseline="middle" font-style="italic">n</text>
+        <text x="0" y="25" font-family="serif" font-size="26" fill="#7bd66a" text-anchor="middle" dominant-baseline="middle" font-style="italic">i=1</text>
+      </g>
+      
+      <text x="80" y="0" font-family="serif" font-size="40" fill="#7bd66a" text-anchor="start" dominant-baseline="middle" font-style="italic">
+        F<tspan dy="5" font-size="26">i</tspan>e^(-d<tspan dy="5" font-size="26">i</tspan>)
+      </text>
+    </g>
+    
+    <text x="760" y="0" font-family="serif" font-size="80" fill="#ffffff" text-anchor="start" dominant-baseline="middle">)</text>
+    
+    <!-- Multiplication symbol -->
+    <text x="790" y="0" font-family="serif" font-size="40" fill="#ffffff" text-anchor="start" dominant-baseline="middle">×</text>
+    
+    <!-- Trinitarian entanglement term -->
+    <text x="820" y="0" font-family="serif" font-size="40" fill="#a66ade" text-anchor="start" dominant-baseline="middle" font-style="italic">
+      U(S<tspan dy="5" font-size="26">s</tspan>)
+    </text>
+    
+    <!-- Differential terms - position below the equation for better clarity -->
+    <text x="470" y="70" font-family="serif" font-size="40" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-style="italic">
+      dx dy dt dS<tspan dy="5" font-size="26">s</tspan>
+    </text>
+  </g>
+  
+  <!-- Elegant decorative elements -->
+  <defs>
+    <radialGradient id="centerGlow" cx="500" cy="250" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e6c61920"/>
+      <stop offset="100%" stop-color="#e6c61900"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Subtle glow behind equation -->
+  <circle cx="500" cy="250" r="300" fill="url(#centerGlow)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="500" cy="250" r="230" fill="none" stroke="#2d2d42" stroke-width="1"/>
+  <circle cx="500" cy="250" r="260" fill="none" stroke="#2d2d42" stroke-width="0.5"/>
+  
+  <!-- Subtle cross in background -->
+  <rect x="497" y="50" width="6" height="400" fill="#222240" rx="3" ry="3" opacity="0.5"/>
+  <rect x="300" y="247" width="400" height="6" fill="#222240" rx="3" ry="3" opacity="0.5"/>
+</svg>

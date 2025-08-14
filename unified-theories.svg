@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#151832" />
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">THE UNIFIED THEORIES</text>
+  <text x="450" y="70" font-family="Arial, sans-serif" font-size="18" fill="#aaaacc" text-anchor="middle" font-style="italic">Scientific-Theological Convergence in the Master Equation</text>
+  
+  <!-- Central unified field -->
+  <circle cx="450" cy="300" r="140" fill="#202046" stroke="#333355" stroke-width="2" />
+  <text x="450" y="300" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">MASTER</text>
+  <text x="450" y="325" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">EQUATION</text>
+  
+  <!-- The five main theories as orbiting elements -->
+  <!-- 1. Quantum Mechanics -->
+  <circle cx="280" cy="180" r="80" fill="#242450" stroke="#5588dd" stroke-width="2" />
+  <text x="280" y="170" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">QUANTUM</text>
+  <text x="280" y="190" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">MECHANICS</text>
+  
+  <!-- 2. Information Theory -->
+  <circle cx="620" cy="180" r="80" fill="#242450" stroke="#dd5588" stroke-width="2" />
+  <text x="620" y="170" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">INFORMATION</text>
+  <text x="620" y="190" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">THEORY</text>
+  
+  <!-- 3. General Relativity -->
+  <circle cx="200" cy="380" r="80" fill="#242450" stroke="#55dd88" stroke-width="2" />
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">GENERAL</text>
+  <text x="200" y="390" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">RELATIVITY</text>
+  
+  <!-- 4. Chaos Theory -->
+  <circle cx="450" cy="460" r="80" fill="#242450" stroke="#88dd55" stroke-width="2" />
+  <text x="450" y="450" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">CHAOS</text>
+  <text x="450" y="470" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">THEORY</text>
+  
+  <!-- 5. Theological Models -->
+  <circle cx="700" cy="380" r="80" fill="#242450" stroke="#aa55ff" stroke-width="2" />
+  <text x="700" y="370" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">THEOLOGICAL</text>
+  <text x="700" y="390" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">MODELS</text>
+  
+  <!-- Connection paths -->
+  <path d="M325 225 L405 255" fill="none" stroke="#5588dd" stroke-width="2" />
+  <path d="M570 225 L495 255" fill="none" stroke="#dd5588" stroke-width="2" />
+  <path d="M255 330 L350 290" fill="none" stroke="#55dd88" stroke-width="2" />
+  <path d="M450 380 L450 340" fill="none" stroke="#88dd55" stroke-width="2" />
+  <path d="M645 330 L550 290" fill="none" stroke="#aa55ff" stroke-width="2" />
+  
+  <!-- Core contributions from each theory -->
+  <!-- Quantum Mechanics contributions -->
+  <circle cx="365" cy="230" r="15" fill="#5588dd" />
+  <text x="365" y="234" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Q·C</text>
+  
+  <!-- Information Theory contributions -->
+  <circle cx="535" cy="230" r="15" fill="#dd5588" />
+  <text x="535" y="234" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">E+S</text>
+  
+  <!-- General Relativity contributions -->
+  <circle cx="315" cy="320" r="15" fill="#55dd88" />
+  <text x="315" y="324" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">G(R)</text>
+  
+  <!-- Chaos Theory contributions -->
+  <circle cx="450" cy="372" r="15" fill="#88dd55" />
+  <text x="450" y="376" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">K(t)</text>
+  
+  <!-- Theological Models contributions -->
+  <circle cx="585" cy="320" r="15" fill="#aa55ff" />
+  <text x="585" y="324" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Ω·T</text>
+  
+  <!-- Key contributions from each field -->
+  <rect x="100" y="110" width="200" height="50" rx="5" fill="none" stroke="#5588dd" stroke-width="1" />
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="12" fill="#5588dd" text-anchor="middle">Observer Effect</text>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="12" fill="#5588dd" text-anchor="middle">Wavefunction Collapse</text>
+  
+  <rect x="600" y="110" width="200" height="50" rx="5" fill="none" stroke="#dd5588" stroke-width="1" />
+  <text x="700" y="130" font-family="Arial, sans-serif" font-size="12" fill="#dd5588" text-anchor="middle">Entropy Increase</text>
+  <text x="700" y="150" font-family="Arial, sans-serif" font-size="12" fill="#dd5588" text-anchor="middle">Information Degradation</text>
+  
+  <rect x="80" y="430" width="200" height="50" rx="5" fill="none" stroke="#55dd88" stroke-width="1" />
+  <text x="180" y="450" font-family="Arial, sans-serif" font-size="12" fill="#55dd88" text-anchor="middle">Spacetime Curvature</text>
+  <text x="180" y="470" font-family="Arial, sans-serif" font-size="12" fill="#55dd88" text-anchor="middle">Mass-Energy Equivalence</text>
+  
+  <rect x="350" y="510" width="200" height="50" rx="5" fill="none" stroke="#88dd55" stroke-width="1" />
+  <text x="450" y="530" font-family="Arial, sans-serif" font-size="12" fill="#88dd55" text-anchor="middle">Butterfly Effect</text>
+  <text x="450" y="550" font-family="Arial, sans-serif" font-size="12" fill="#88dd55" text-anchor="middle">Strange Attractors</text>
+  
+  <rect x="620" y="430" width="200" height="50" rx="5" fill="none" stroke="#aa55ff" stroke-width="1" />
+  <text x="720" y="450" font-family="Arial, sans-serif" font-size="12" fill="#aa55ff" text-anchor="middle">Sin & Grace Models</text>
+  <text x="720" y="470" font-family="Arial, sans-serif" font-size="12" fill="#aa55ff" text-anchor="middle">Divine Intervention</text>
+  
+  <!-- Limitations of each theory (addressed by unification) -->
+  <text x="180" y="220" font-family="Arial, sans-serif" font-size="10" fill="#aaaacc" text-anchor="start">Limitation: No moral direction</text>
+  <text x="520" y="220" font-family="Arial, sans-serif" font-size="10" fill="#aaaacc" text-anchor="start">Limitation: No grace concept</text>
+  <text x="100" y="390" font-family="Arial, sans-serif" font-size="10" fill="#aaaacc" text-anchor="start">Limitation: Only physical reality</text>
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="10" fill="#aaaacc" text-anchor="start">Limitation: No purpose to patterns</text>
+  <text x="620" y="390" font-family="Arial, sans-serif" font-size="10" fill="#aaaacc" text-anchor="start">Limitation: No mathematical structure</text>
+  
+  <!-- The master equation at the bottom -->
+  <rect x="100" y="570" width="700" height="20" rx="5" fill="#1a1a40" />
+  <text x="450" y="585" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">dχ/dt = G(Rₚ)(1+E+S)e^{-(Q·C)} R(F) U(Sₛ) - δχ + K(t)·D(Sₛ) + Ω·T(F,S,t)</text>
+  
+  <!-- Key unifying connections -->
+  <path d="M280 260 C 280 300, 380 350, 620 260" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="450" y="280" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Quantum-Information Bridge</text>
+  
+  <path d="M200 300 C 220 350, 320 400, 700 300" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="450" y="360" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Relativity-Theology Bridge</text>
+  
+  <circle cx="450" cy="300" r="50" fill="none" stroke="#ffffff" stroke-width="1" />
+  <text x="450" y="180" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">UNIFIED FIELD</text>
+</svg>

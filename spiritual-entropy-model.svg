@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Dark background -->
+  <rect width="800" height="600" fill="#141b33" />
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="bold">SPIRITUAL ENTROPY MODEL</text>
+  <text x="400" y="95" font-family="Arial, sans-serif" font-size="20" fill="#8a9cdb" text-anchor="middle" font-style="italic">The Mathematics of Sin and Decay</text>
+
+  <!-- Entropy curve -->
+  <path d="M 100 400 Q 200 250 300 350 Q 400 450 500 350 Q 600 250 700 150" stroke="#ff6b6b" stroke-width="4" fill="none" />
+  
+  <!-- Grace curve -->
+  <path d="M 100 400 Q 200 380 300 350 Q 400 310 500 240 Q 600 120 700 100" stroke="#6bddff" stroke-width="4" fill="none" />
+  
+  <!-- Redemption curve -->
+  <path d="M 100 400 Q 200 410 300 380 Q 400 150 500 150 Q 600 150 700 150" stroke="#9d6bff" stroke-width="4" fill="none" />
+
+  <!-- Legend -->
+  <rect x="550" y="450" width="20" height="20" fill="#ff6b6b" />
+  <text x="580" y="465" font-family="Arial, sans-serif" font-size="14" fill="white">Sin (S): Increasing Entropy</text>
+  
+  <rect x="550" y="480" width="20" height="20" fill="#6bddff" />
+  <text x="580" y="495" font-family="Arial, sans-serif" font-size="14" fill="white">Grace (G): Divine Intervention</text>
+  
+  <rect x="550" y="510" width="20" height="20" fill="#9d6bff" />
+  <text x="580" y="525" font-family="Arial, sans-serif" font-size="14" fill="white">Redemption (R): Entropy Reversal</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="100" x2="100" y2="500" stroke="white" stroke-width="2" />
+  <line x1="100" y1="500" x2="700" y2="500" stroke="white" stroke-width="2" />
+  
+  <!-- Axis labels -->
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Time (t)</text>
+  <text x="60" y="300" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" transform="rotate(-90, 60, 300)">Spiritual State (χ)</text>
+
+  <!-- Inflection points -->
+  <circle cx="400" cy="310" r="8" fill="#ffde59" />
+  <text x="410" y="290" font-family="Arial, sans-serif" font-size="14" fill="#ffde59">Grace Threshold</text>
+  
+  <circle cx="400" cy="150" r="8" fill="#9d6bff" />
+  <text x="410" y="130" font-family="Arial, sans-serif" font-size="14" fill="#9d6bff">Resurrection Factor (RJ)</text>
+
+  <!-- Equation -->
+  <rect x="150" y="40" width="500" height="40" rx="10" fill="rgba(0,0,0,0.5)" />
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">χ' = χ · e^{-(S-RJ) · (1-Rp)}</text>
+
+  <!-- Information boxes -->
+  <rect x="130" y="150" width="200" height="120" rx="10" fill="rgba(255,107,107,0.2)" stroke="#ff6b6b" stroke-width="2" />
+  <text x="230" y="175" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">SIN ENTROPY</text>
+  <text x="230" y="200" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Natural increase in disorder</text>
+  <text x="230" y="220" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Follows 2nd Law of Thermodynamics</text>
+  <text x="230" y="240" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">S = ∑i pi·ln(pi)</text>
+
+  <rect x="470" y="150" width="200" height="120" rx="10" fill="rgba(107,221,255,0.2)" stroke="#6bddff" stroke-width="2" />
+  <text x="570" y="175" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">GRACE FUNCTION</text>
+  <text x="570" y="200" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Divine intervention</text>
+  <text x="570" y="220" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Counteracts entropy increase</text>
+  <text x="570" y="240" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">G(Rp) = e^{-γS·(1-Rp)}</text>
+
+  <!-- Scripture reference -->
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="14" fill="#9d6bff" text-anchor="middle" font-style="italic">"Where sin increased, grace increased all the more." - Romans 5:20</text>
+</svg>

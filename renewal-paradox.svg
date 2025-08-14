@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#151a30" />
+  
+  <!-- Grid Lines -->
+  <g stroke="#253150" stroke-width="1">
+    <g id="vertical-lines">
+      <line x1="100" y1="100" x2="100" y2="500" />
+      <line x1="200" y1="100" x2="200" y2="500" />
+      <line x1="300" y1="100" x2="300" y2="500" />
+      <line x1="400" y1="100" x2="400" y2="500" />
+      <line x1="500" y1="100" x2="500" y2="500" />
+      <line x1="600" y1="100" x2="600" y2="500" />
+      <line x1="700" y1="100" x2="700" y2="500" />
+    </g>
+    <g id="horizontal-lines">
+      <line x1="100" y1="100" x2="700" y2="100" />
+      <line x1="100" y1="200" x2="700" y2="200" />
+      <line x1="100" y1="300" x2="700" y2="300" />
+      <line x1="100" y1="400" x2="700" y2="400" />
+      <line x1="100" y1="500" x2="700" y2="500" />
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">THE RENEWAL PARADOX</text>
+  <text x="400" y="80" fill="#909ee0" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">How Divine Energy Reverses Spiritual Entropy</text>
+  
+  <!-- Dividing Line -->
+  <line x1="400" y1="120" x2="400" y2="480" stroke="#3b4bc8" stroke-width="3" stroke-dasharray="10,5" />
+  
+  <!-- Left System: Closed System -->
+  <g id="closed-system">
+    <text x="200" y="130" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">CLOSED SYSTEM</text>
+    <text x="200" y="150" fill="#909ee0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Inevitable Decay</text>
+    
+    <!-- Closed System Circle -->
+    <circle cx="200" cy="280" r="120" fill="none" stroke="#be1f4c" stroke-width="2" />
+    
+    <!-- Internal Elements -->
+    <g transform="translate(200, 280)">
+      <!-- Initial State (Less Entropy) -->
+      <g transform="translate(-50, -50)">
+        <circle cx="0" cy="0" r="25" fill="#253150" />
+        <circle cx="-10" cy="-5" r="5" fill="#be1f4c" />
+        <circle cx="10" cy="-5" r="5" fill="#be1f4c" />
+        <circle cx="0" cy="10" r="5" fill="#be1f4c" />
+      </g>
+      
+      <!-- Arrow -->
+      <line x1="-30" y1="-30" x2="30" y2="30" stroke="#be1f4c" stroke-width="2" />
+      <polygon points="25,25 30,30 35,25" fill="#be1f4c" />
+      
+      <!-- Final State (More Entropy) -->
+      <g transform="translate(50, 50)">
+        <circle cx="0" cy="0" r="25" fill="#253150" />
+        <circle cx="-15" cy="-15" r="5" fill="#be1f4c" />
+        <circle cx="15" cy="-15" r="5" fill="#be1f4c" />
+        <circle cx="-15" cy="15" r="5" fill="#be1f4c" />
+        <circle cx="15" cy="15" r="5" fill="#be1f4c" />
+      </g>
+    </g>
+    
+    <!-- Entropy Increase Label -->
+    <text x="200" y="430" fill="white" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">ENTROPY INCREASES</text>
+    <text x="200" y="450" fill="#be1f4c" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">ΔS > 0</text>
+  </g>
+  
+  <!-- Right System: Open System -->
+  <g id="open-system">
+    <text x="600" y="130" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">OPEN SYSTEM</text>
+    <text x="600" y="150" fill="#909ee0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Divine Renewal</text>
+    
+    <!-- Open System Circle -->
+    <circle cx="600" cy="280" r="120" fill="none" stroke="#9333ea" stroke-width="2" />
+    
+    <!-- External Input -->
+    <path d="M 730,280 C 710,250 680,230 600,280 C 520,330 490,310 470,280" 
+          fill="none" stroke="#9333ea" stroke-width="3" />
+    <polygon points="730,285 730,275 740,280" fill="#9333ea" />
+    <text x="730" y="260" fill="#9333ea" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">DIVINE</text>
+    <text x="730" y="280" fill="#9333ea" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">ENERGY</text>
+    
+    <!-- Internal Elements -->
+    <g transform="translate(600, 280)">
+      <!-- Initial State (More Entropy) -->
+      <g transform="translate(-50, 50)">
+        <circle cx="0" cy="0" r="25" fill="#253150" />
+        <circle cx="-15" cy="-15" r="5" fill="#9333ea" />
+        <circle cx="15" cy="-15" r="5" fill="#9333ea" />
+        <circle cx="-15" cy="15" r="5" fill="#9333ea" />
+        <circle cx="15" cy="15" r="5" fill="#9333ea" />
+      </g>
+      
+      <!-- Arrow -->
+      <line x1="-30" y1="30" x2="30" y2="-30" stroke="#9333ea" stroke-width="2" />
+      <polygon points="25,-25 30,-30 35,-25" fill="#9333ea" />
+      
+      <!-- Final State (Less Entropy) -->
+      <g transform="translate(50, -50)">
+        <circle cx="0" cy="0" r="25" fill="#253150" />
+        <circle cx="-10" cy="-5" r="5" fill="#9333ea" />
+        <circle cx="10" cy="-5" r="5" fill="#9333ea" />
+        <circle cx="0" cy="10" r="5" fill="#9333ea" />
+      </g>
+    </g>
+    
+    <!-- Entropy Decrease Label -->
+    <text x="600" y="430" fill="white" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">ENTROPY DECREASES</text>
+    <text x="600" y="450" fill="#9333ea" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">ΔS < 0</text>
+  </g>
+  
+  <!-- Principles -->
+  <g id="principles">
+    <rect x="100" y="500" width="600" height="80" rx="5" fill="#253150" opacity="0.7" />
+    
+    <text x="120" y="520" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Principle 1:</text>
+    <text x="400" y="520" fill="#909ee0" font-family="Arial, sans-serif" font-size="12">Without intervention, spiritual decay is inevitable</text>
+    
+    <text x="120" y="545" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Principle 2:</text>
+    <text x="400" y="545" fill="#909ee0" font-family="Arial, sans-serif" font-size="12">Divine energy is the only source of spiritual renewal</text>
+    
+    <text x="120" y="570" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Principle 3:</text>
+    <text x="400" y="570" fill="#909ee0" font-family="Arial, sans-serif" font-size="12">The Spirit acts as an external negentropy force</text>
+  </g>
+  
+  <!-- Scripture Reference -->
+  <g id="scripture">
+    <rect x="50" y="130" width="300" height="50" rx="5" fill="#253150" opacity="0.7" />
+    <text x="200" y="155" fill="white" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle">"Though outwardly we are wasting away,</text>
+    <text x="200" y="172" fill="white" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle">yet inwardly we are being renewed day by day."</text>
+    <text x="330" y="172" fill="#909ee0" font-family="Arial, sans-serif" font-size="12" text-anchor="end">2 Corinthians 4:16</text>
+  </g>
+</svg>

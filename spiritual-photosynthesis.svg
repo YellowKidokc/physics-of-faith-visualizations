@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Dark background -->
+  <rect width="800" height="600" fill="#0a0f1a" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" fill="#ffffff" text-anchor="middle">Spiritual Photosynthesis</text>
+  <text x="400" y="70" font-family="Arial" font-size="16" fill="#aaaaaa" text-anchor="middle">How Truth Transforms Like Light</text>
+  
+  <!-- Light source (Divine Truth) -->
+  <circle cx="400" cy="150" r="50" fill="url(#divineSun)" />
+  <g opacity="0.7">
+    <line x1="320" y1="70" x2="340" y2="90" stroke="#ffdd88" stroke-width="2" />
+    <line x1="480" y1="70" x2="460" y2="90" stroke="#ffdd88" stroke-width="2" />
+    <line x1="320" y1="230" x2="340" y2="210" stroke="#ffdd88" stroke-width="2" />
+    <line x1="480" y1="230" x2="460" y2="210" stroke="#ffdd88" stroke-width="2" />
+    <line x1="300" y1="150" x2="330" y2="150" stroke="#ffdd88" stroke-width="2" />
+    <line x1="500" y1="150" x2="470" y2="150" stroke="#ffdd88" stroke-width="2" />
+  </g>
+  
+  <!-- Left side: Physical photosynthesis -->
+  <text x="200" y="120" font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle">Physical Photosynthesis</text>
+  
+  <!-- Plant -->
+  <path d="M180,300 C180,280 175,270 170,260 C165,250 160,245 150,245 C140,245 135,250 130,260 C125,270 120,280 120,300 L180,300 Z" fill="#1a5c2e" />
+  <rect x="145" y="300" width="10" height="50" fill="#6d4c2a" />
+  <path d="M120,280 C110,275 100,265 100,250 C100,235 110,225 120,220" stroke="#1a5c2e" stroke-width="8" fill="none" />
+  <path d="M180,280 C190,275 200,265 200,250 C200,235 190,225 180,220" stroke="#1a5c2e" stroke-width="8" fill="none" />
+  
+  <!-- Light rays to plant -->
+  <line x1="370" y1="180" x2="200" y2="240" stroke="#ffdd88" stroke-width="2" opacity="0.5" />
+  <line x1="380" y1="190" x2="180" y2="260" stroke="#ffdd88" stroke-width="2" opacity="0.5" />
+  <line x1="390" y1="195" x2="160" y2="245" stroke="#ffdd88" stroke-width="2" opacity="0.5" />
+  
+  <!-- Photosynthesis formula -->
+  <text x="150" y="380" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">6CO₂ + 6H₂O + Light</text>
+  <text x="150" y="400" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">↓</text>
+  <text x="150" y="420" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">C₆H₁₂O₆ + 6O₂</text>
+  <text x="150" y="450" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">(Light transforms chemicals</text>
+  <text x="150" y="470" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">into life-giving energy)</text>
+  
+  <!-- Right side: Spiritual photosynthesis -->
+  <text x="600" y="120" font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle">Spiritual Photosynthesis</text>
+  
+  <!-- Human silhouette -->
+  <path d="M600,320 A20,20 0 0,1 600,280 A20,20 0 0,1 600,320" fill="#5a85b3" />
+  <path d="M580,320 L620,320 L625,370 L575,370 Z" fill="#5a85b3" />
+  <path d="M585,370 L595,410 L605,410 L615,370" fill="#5a85b3" />
+  <path d="M575,325 L565,360" stroke="#5a85b3" stroke-width="6" />
+  <path d="M625,325 L635,360" stroke="#5a85b3" stroke-width="6" />
+  
+  <!-- Spiritual light rays to person -->
+  <line x1="430" y1="180" x2="580" y2="260" stroke="#ffdd88" stroke-width="2" opacity="0.5" />
+  <line x1="420" y1="190" x2="600" y2="270" stroke="#ffdd88" stroke-width="2" opacity="0.5" />
+  <line x1="410" y1="195" x2="620" y2="260" stroke="#ffdd88" stroke-width="2" opacity="0.5" />
+  
+  <!-- Aura of transformation -->
+  <ellipse cx="600" cy="330" rx="50" ry="70" fill="none" stroke="#5a85b3" stroke-width="1" opacity="0.3" />
+  <ellipse cx="600" cy="330" rx="60" ry="80" fill="none" stroke="#5a85b3" stroke-width="1" opacity="0.2" />
+  <ellipse cx="600" cy="330" rx="70" ry="90" fill="none" stroke="#5a85b3" stroke-width="1" opacity="0.1" />
+  
+  <!-- Spiritual transformation formula -->
+  <text x="650" y="380" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">Sin + Fear + Divine Truth</text>
+  <text x="650" y="400" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">↓</text>
+  <text x="650" y="420" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">Faith + Love + Good Works</text>
+  <text x="650" y="450" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">(Truth transforms humanity</text>
+  <text x="650" y="470" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">into spiritual life)</text>
+  
+  <!-- Connecting arrows between physical and spiritual -->
+  <path d="M250,330 L350,330 L350,370 L250,370 Z" fill="#294766" opacity="0.7" />
+  <text x="300" y="355" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Parallel Process</text>
+  <line x1="240" y1="350" x2="200" y2="350" stroke="#566b85" stroke-width="2" />
+  <line x1="360" y1="350" x2="550" y2="350" stroke="#566b85" stroke-width="2" />
+  
+  <!-- Bottom Scripture -->
+  <text x="400" y="530" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle" font-style="italic">"For you were once darkness, but now you are light in the Lord.</text>
+  <text x="400" y="555" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle" font-style="italic">Live as children of light." - Ephesians 5:8</text>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="divineSun" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#ffeeaa" />
+      <stop offset="100%" stop-color="#ffaa44" />
+    </radialGradient>
+  </defs>
+</svg>

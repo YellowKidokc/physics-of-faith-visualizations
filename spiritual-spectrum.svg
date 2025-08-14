@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <!-- Dark background -->
+  <rect width="1000" height="600" fill="#0a0a12" />
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial" font-size="24" fill="#ffffff" text-anchor="middle">The Spiritual Electromagnetic Spectrum</text>
+  <text x="500" y="70" font-family="Arial" font-size="16" fill="#a0a0a0" text-anchor="middle">Physical Wavelengths ↔ Spiritual Revelation</text>
+  
+  <!-- Spectrum bar -->
+  <defs>
+    <linearGradient id="spectrumGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#990000" />
+      <stop offset="16.6%" stop-color="#ff0000" />
+      <stop offset="33.2%" stop-color="#ffaa00" />
+      <stop offset="49.8%" stop-color="#ffff00" />
+      <stop offset="66.4%" stop-color="#00ff00" />
+      <stop offset="83%" stop-color="#0000ff" />
+      <stop offset="100%" stop-color="#4b0082" />
+    </linearGradient>
+  </defs>
+  
+  <rect x="100" y="120" width="800" height="60" fill="url(#spectrumGradient)" rx="5" ry="5" />
+  
+  <!-- Wavelength labels -->
+  <text x="100" y="210" font-family="Arial" font-size="14" fill="#dddddd" text-anchor="middle">Radio Waves</text>
+  <text x="225" y="210" font-family="Arial" font-size="14" fill="#dddddd" text-anchor="middle">Microwaves</text>
+  <text x="350" y="210" font-family="Arial" font-size="14" fill="#dddddd" text-anchor="middle">Infrared</text>
+  <text x="500" y="210" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Visible Light</text>
+  <text x="650" y="210" font-family="Arial" font-size="14" fill="#dddddd" text-anchor="middle">Ultraviolet</text>
+  <text x="775" y="210" font-family="Arial" font-size="14" fill="#dddddd" text-anchor="middle">X-Rays</text>
+  <text x="900" y="210" font-family="Arial" font-size="14" fill="#dddddd" text-anchor="middle">Gamma Rays</text>
+  
+  <!-- Connecting lines -->
+  <line x1="100" y1="190" x2="100" y2="240" stroke="#888888" stroke-width="1" />
+  <line x1="225" y1="190" x2="225" y2="240" stroke="#888888" stroke-width="1" />
+  <line x1="350" y1="190" x2="350" y2="240" stroke="#888888" stroke-width="1" />
+  <line x1="500" y1="190" x2="500" y2="240" stroke="#ffffff" stroke-width="2" />
+  <line x1="650" y1="190" x2="650" y2="240" stroke="#888888" stroke-width="1" />
+  <line x1="775" y1="190" x2="775" y2="240" stroke="#888888" stroke-width="1" />
+  <line x1="900" y1="190" x2="900" y2="240" stroke="#888888" stroke-width="1" />
+  
+  <!-- Visible light highlight -->
+  <rect x="470" y="110" width="60" height="80" stroke="#ffffff" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+  <text x="560" y="105" font-family="Arial" font-size="12" fill="#ffffff">Only 0.0035% of</text>
+  <text x="560" y="120" font-family="Arial" font-size="12" fill="#ffffff">the full spectrum</text>
+  
+  <!-- Spiritual equivalents -->
+  <rect x="100" y="300" width="800" height="60" fill="none" stroke="#555555" stroke-width="1" rx="5" ry="5" />
+  
+  <!-- Spiritual meaning labels -->
+  <text x="100" y="290" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">General</text>
+  <text x="100" y="310" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Revelation</text>
+  
+  <text x="225" y="290" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Spiritual</text>
+  <text x="225" y="310" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Sensing</text>
+  
+  <text x="350" y="290" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Felt Presence</text>
+  <text x="350" y="310" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">of God</text>
+  
+  <text x="500" y="290" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Christ</text>
+  <text x="500" y="310" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Incarnation</text>
+  
+  <text x="650" y="290" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Spiritual</text>
+  <text x="650" y="310" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Discernment</text>
+  
+  <text x="775" y="290" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Divine</text>
+  <text x="775" y="310" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Insight</text>
+  
+  <text x="900" y="290" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Eschatological</text>
+  <text x="900" y="310" font-family="Arial" font-size="14" fill="#aa7777" text-anchor="middle">Revelation</text>
+  
+  <!-- Connecting lines -->
+  <line x1="100" y1="230" x2="100" y2="270" stroke="#888888" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="225" y1="230" x2="225" y2="270" stroke="#888888" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="350" y1="230" x2="350" y2="270" stroke="#888888" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="500" y1="230" x2="500" y2="270" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="650" y1="230" x2="650" y2="270" stroke="#888888" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="775" y1="230" x2="775" y2="270" stroke="#888888" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="900" y1="230" x2="900" y2="270" stroke="#888888" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Scripture references -->
+  <text x="100" y="360" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">Romans 1:20</text>
+  <text x="225" y="360" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">1 Kings 19:12</text>
+  <text x="350" y="360" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">Psalm 16:11</text>
+  <text x="500" y="360" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">John 1:14</text>
+  <text x="650" y="360" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">1 Cor 2:14</text>
+  <text x="775" y="360" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">Eph 1:17-18</text>
+  <text x="900" y="360" font-family="Arial" font-size="12" fill="#888888" text-anchor="middle">Rev 1:1</text>
+  
+  <!-- Bottom quote -->
+  <text x="500" y="450" font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle" font-style="italic">"The light shines in the darkness, and the darkness has not overcome it."</text>
+  <text x="500" y="480" font-family="Arial" font-size="16" fill="#aaaaaa" text-anchor="middle">John 1:5</text>
+  
+  <!-- Isaiah quote -->
+  <text x="500" y="550" font-family="Arial" font-size="16" fill="#aaaaaa" text-anchor="middle" font-style="italic">"As the heavens are higher than the earth, so are My ways higher than your ways"</text>
+  <text x="500" y="570" font-family="Arial" font-size="16" fill="#aaaaaa" text-anchor="middle">Isaiah 55:9</text>
+</svg>

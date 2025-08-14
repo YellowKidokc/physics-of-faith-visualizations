@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    Quantum Uncertainty → Free Will: Scientific Foundation
+  </text>
+  
+  <!-- Four Quadrants -->
+  <g id="uncertainty-principle" transform="translate(200, 180)">
+    <circle cx="0" cy="0" r="80" fill="#e6f7ff" stroke="#1890ff" stroke-width="2"/>
+    <text x="0" y="-50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+      Heisenberg's 
+    </text>
+    <text x="0" y="-30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+      Uncertainty Principle
+    </text>
+    <!-- Uncertainty visualization -->
+    <ellipse cx="-30" cy="10" rx="35" ry="20" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <ellipse cx="30" cy="10" rx="20" ry="35" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+      Δx · Δp ≥ ħ/2
+    </text>
+  </g>
+  
+  <g id="wave-function" transform="translate(600, 180)">
+    <circle cx="0" cy="0" r="80" fill="#f6ffed" stroke="#52c41a" stroke-width="2"/>
+    <text x="0" y="-40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+      Wave Function
+    </text>
+    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+      Collapse
+    </text>
+    <!-- Wave function visualization -->
+    <path d="M-50,20 C-30,-20 -10,60 10,0 C30,-60 50,20 70,20" fill="none" stroke="#52c41a" stroke-width="2"/>
+    <line x1="-50" y1="20" x2="70" y2="20" stroke="#333" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <line x1="10" y1="-60" x2="10" y2="60" stroke="#f5222d" stroke-width="1.5"/>
+    <circle cx="10" cy="0" r="5" fill="#f5222d"/>
+  </g>
+  
+  <g id="superposition" transform="translate(200, 420)">
+    <circle cx="0" cy="0" r="80" fill="#fff2e8" stroke="#fa8c16" stroke-width="2"/>
+    <text x="0" y="-30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+      Quantum
+    </text>
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+      Superposition
+    </text>
+    <!-- Superposition visualization -->
+    <circle cx="-20" cy="20" r="25" fill="none" stroke="#fa8c16" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="20" cy="20" r="25" fill="none" stroke="#fa8c16" stroke-width="1.5" opacity="0.6"/>
+    <path d="M-20,20 Q0,-10 20,20" fill="none" stroke="#fa8c16" stroke-width="2"/>
+  </g>
+  
+  <g id="entanglement" transform="translate(600, 420)">
+    <circle cx="0" cy="0" r="80" fill="#f9f0ff" stroke="#722ed1" stroke-width="2"/>
+    <text x="0" y="-30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+      Non-locality and
+    </text>
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+      Entanglement
+    </text>
+    <!-- Entanglement visualization -->
+    <circle cx="-30" cy="20" r="15" fill="#722ed1" opacity="0.5"/>
+    <circle cx="30" cy="20" r="15" fill="#722ed1" opacity="0.5"/>
+    <path d="M-30,20 C-20,0 20,0 30,20" stroke="#722ed1" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M-30,20 C-20,40 20,40 30,20" stroke="#722ed1" stroke-width="2" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- Central Free Will Concept -->
+  <circle cx="400" cy="300" r="50" fill="#fff" stroke="#333" stroke-width="3"/>
+  <text x="400" y="295" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">
+    Free
+  </text>
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">
+    Will
+  </text>
+  
+  <!-- Connecting Lines -->
+  <line x1="265" y1="215" x2="355" y2="275" stroke="#1890ff" stroke-width="2"/>
+  <line x1="535" y1="215" x2="445" y2="275" stroke="#52c41a" stroke-width="2"/>
+  <line x1="265" y1="385" x2="355" y2="325" stroke="#fa8c16" stroke-width="2"/>
+  <line x1="535" y1="385" x2="445" y2="325" stroke="#722ed1" stroke-width="2"/>
+  
+  <!-- Bottom Key Insight -->
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    "The universe contains inherent uncertainty at its foundation,
+  </text>
+  <text x="400" y="565" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    providing a potential physical basis for metaphysical free will."
+  </text>
+</svg>

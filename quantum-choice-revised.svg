@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0c0c1d"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">FREE WILL: THE QUANTUM SUPERPOSITION OF CHOICE</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#4cc8e8" text-anchor="middle" font-style="italic">How moral decisions exist as probability fields until collapsed by choice</text>
+  
+  <!-- Wave Function Visualization -->
+  <g transform="translate(400, 200)">
+    <!-- Superposition State -->
+    <text x="0" y="-70" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">MORAL SUPERPOSITION STATE</text>
+    
+    <!-- Wave Function -->
+    <path d="M-350,0 C-300,50 -250,-50 -200,0 C-150,50 -100,-50 -50,0 C0,50 50,-50 100,0 C150,50 200,-50 250,0 C300,50 350,-50 350,0" 
+          fill="none" stroke="#4cc8e8" stroke-width="3" stroke-opacity="0.7"/>
+    
+    <!-- Probability Amplitude -->
+    <line x1="-350" y1="0" x2="350" y2="0" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5"/>
+    
+    <!-- Decision Point -->
+    <line x1="0" y1="-100" x2="0" y2="100" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5"/>
+    <text x="0" y="140" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">DECISION POINT</text>
+    
+    <!-- Good State -->
+    <text x="-175" y="20" font-family="Arial, sans-serif" font-size="16" fill="#64e291" text-anchor="middle">|G⟩ GOOD CHOICE</text>
+    
+    <!-- Bad State -->
+    <text x="175" y="20" font-family="Arial, sans-serif" font-size="16" fill="#e86b4c" text-anchor="middle">|B⟩ BAD CHOICE</text>
+    
+    <!-- Equation -->
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="20" fill="#4cc8e8" text-anchor="middle">Q = α|G⟩ + β|B⟩</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">where α² + β² = 1</text>
+  </g>
+  
+  <!-- Wave Collapse Visualization -->
+  <g transform="translate(400, 330)">
+    <!-- Wave Collapse Title -->
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">PROBABILITY COLLAPSE</text>
+    
+    <!-- Faith Factor -->
+    <rect x="-350" y="0" width="300" height="50" rx="5" fill="none" stroke="#64e291" stroke-width="2"/>
+    <text x="-200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#64e291" text-anchor="middle">FAITH BIASES OUTCOME</text>
+    
+    <!-- Clarity Factor -->
+    <rect x="50" y="0" width="300" height="50" rx="5" fill="none" stroke="#b88ef8" stroke-width="2"/>
+    <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#b88ef8" text-anchor="middle">CLARITY SPEEDS COLLAPSE</text>
+  </g>
+  
+  <!-- Comparison with Quantum Physics -->
+  <g transform="translate(400, 460)">
+    <rect x="-350" y="0" width="700" height="100" rx="10" fill="rgba(30,30,60,0.7)" stroke="#564e8e" stroke-width="2"/>
+    
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">QUANTUM MECHANICS VS. MORAL DECISION</text>
+    
+    <line x1="-350" y1="40" x2="350" y2="40" stroke="#564e8e" stroke-width="1"/>
+    <line x1="0" y1="40" x2="0" y2="100" stroke="#564e8e" stroke-width="1"/>
+    
+    <text x="-175" y="60" font-family="Arial, sans-serif" font-size="16" fill="#4cc8e8" text-anchor="middle" font-weight="bold">QUANTUM MEASUREMENT</text>
+    <text x="175" y="60" font-family="Arial, sans-serif" font-size="16" fill="#b88ef8" text-anchor="middle" font-weight="bold">MORAL DECISION</text>
+    
+    <text x="-175" y="85" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Observation collapses wavefunction</text>
+    <text x="175" y="85" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Choice collapses moral superposition</text>
+  </g>
+  
+  <!-- Key Message -->
+  <g transform="translate(400, 580)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">"Before you choose, all possibilities exist simultaneously—faith increases the probability of good outcomes."</text>
+  </g>
+</svg>

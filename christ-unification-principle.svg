@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#151832" />
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">JESUS CHRIST: THE UNIFYING PRINCIPLE</text>
+  <text x="450" y="70" font-family="Arial, sans-serif" font-size="18" fill="#aaaacc" text-anchor="middle" font-style="italic">The Mathematical Singularity of Grace in Quantum-Spiritual Dynamics</text>
+  
+  <!-- Cross at the center creating a coordinate system -->
+  <line x1="450" y1="120" x2="450" y2="520" stroke="#ffffff" stroke-width="3" />
+  <line x1="150" y1="320" x2="750" y2="320" stroke="#ffffff" stroke-width="3" />
+  
+  <!-- Central luminous point -->
+  <defs>
+    <radialGradient id="christLight" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="100%" stop-color="#151832" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <circle cx="450" cy="320" r="40" fill="url(#christLight)">
+    <animate attributeName="r" values="40;45;50;45;40" dur="5s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Quadrants labeled -->
+  <text x="300" y="250" font-family="Arial, sans-serif" font-size="16" fill="#5588dd" text-anchor="middle">PHYSICAL LAWS</text>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="16" fill="#aa55ff" text-anchor="middle">SPIRITUAL LAWS</text>
+  <text x="300" y="400" font-family="Arial, sans-serif" font-size="16" fill="#dd5588" text-anchor="middle">QUANTUM UNCERTAINTY</text>
+  <text x="600" y="400" font-family="Arial, sans-serif" font-size="16" fill="#55dd88" text-anchor="middle">DIVINE PURPOSE</text>
+  
+  <!-- Connecting functions to Christ -->
+  <!-- Grace Function -->
+  <path d="M450 320 C 350 270, 250 300, 200 200" fill="none" stroke="#5588dd" stroke-width="2" />
+  <circle cx="200" cy="200" r="25" fill="#5588dd" />
+  <text x="200" y="205" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">G(Rₚ)</text>
+  <text x="200" y="220" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Grace</text>
+  
+  <!-- Quantum Choice Field -->
+  <path d="M450 320 C 350 370, 250 340, 200 440" fill="none" stroke="#dd5588" stroke-width="2" />
+  <circle cx="200" cy="440" r="25" fill="#dd5588" />
+  <text x="200" y="445" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">e^{-(Q·C)}</text>
+  <text x="200" y="460" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Choice</text>
+  
+  <!-- Faith Response -->
+  <path d="M450 320 C 550 270, 650 300, 700 200" fill="none" stroke="#aa55ff" stroke-width="2" />
+  <circle cx="700" cy="200" r="25" fill="#aa55ff" />
+  <text x="700" y="205" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">R(F)</text>
+  <text x="700" y="220" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Faith</text>
+  
+  <!-- Divine Mystery -->
+  <path d="M450 320 C 550 370, 650 340, 700 440" fill="none" stroke="#55dd88" stroke-width="2" />
+  <circle cx="700" cy="440" r="25" fill="#55dd88" />
+  <text x="700" y="445" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Ω·T</text>
+  <text x="700" y="460" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Divine</text>
+  
+  <!-- Core principles around the cross -->
+  <circle cx="450" cy="180" r="20" fill="#ffffff" opacity="0.7" />
+  <text x="450" y="185" font-family="Arial, sans-serif" font-size="12" fill="#151832" text-anchor="middle" font-weight="bold">INCARNATION</text>
+  
+  <circle cx="450" cy="460" r="20" fill="#ffffff" opacity="0.7" />
+  <text x="450" y="465" font-family="Arial, sans-serif" font-size="12" fill="#151832" text-anchor="middle" font-weight="bold">RESURRECTION</text>
+  
+  <circle cx="310" cy="320" r="20" fill="#ffffff" opacity="0.7" />
+  <text x="310" y="325" font-family="Arial, sans-serif" font-size="12" fill="#151832" text-anchor="middle" font-weight="bold">CRUCIFIXION</text>
+  
+  <circle cx="590" cy="320" r="20" fill="#ffffff" opacity="0.7" />
+  <text x="590" y="325" font-family="Arial, sans-serif" font-size="12" fill="#151832" text-anchor="middle" font-weight="bold">REDEMPTION</text>
+  
+  <!-- Entropy reduction flows -->
+  <defs>
+    <marker id="entropyArrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff" />
+    </marker>
+  </defs>
+  
+  <!-- Circular flow showing entropy reduction -->
+  <path d="M 450 280 A 40 40 0 1 1 450 360 A 40 40 0 1 1 450 280" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#entropyArrow)" />
+  
+  <!-- Mathematical formulations -->
+  <rect x="100" y="520" width="700" height="60" rx="10" fill="#1a1a40" />
+  <text x="450" y="555" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">χ_redeemed = χ_natural · e^{-(sin)+κ(grace)} = χₙ · e^{-(S-G)} = χₙ · e^{-S} · e^{G}</text>
+  
+  <!-- Key concepts -->
+  <rect x="150" y="100" width="200" height="60" rx="5" fill="#1a1a40" />
+  <text x="250" y="130" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Maximum Entropy Reduction:</text>
+  <text x="250" y="150" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">The "Christ Factor" (κ)</text>
+  
+  <rect x="550" y="100" width="200" height="60" rx="5" fill="#1a1a40" />
+  <text x="650" y="130" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Perfect Coherence Field:</text>
+  <text x="650" y="150" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">The "Word" (λόγος)</text>
+  
+  <!-- Explanatory notes -->
+  <text x="150" y="490" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">Incarnation: Entry of divine order into entropic system</text>
+  <text x="450" y="490" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">Crucifixion: Entropy concentration and absorption</text>
+  <text x="150" y="510" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">Resurrection: Negentropy demonstration (reversing decay)</text>
+  <text x="450" y="510" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">Redemption: Transfer of negentropy to believers</text>
+</svg>

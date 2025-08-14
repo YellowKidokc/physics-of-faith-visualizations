@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#e0e4e8" />
+  
+  <!-- Divider line -->
+  <line x1="400" y1="80" x2="400" y2="560" stroke="#cccccc" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Wave Function Collapse Visualization</text>
+  
+  <!-- Left Panel Title -->
+  <text x="200" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Physical Reality</text>
+  
+  <!-- Right Panel Title -->
+  <text x="600" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Spiritual Reality</text>
+  
+  <!-- Left Panel - Quantum Physics -->
+  <!-- Wave function equation -->
+  <text x="200" y="140" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333">Ψ(x,t)²</text>
+  
+  <!-- Wave function before collapse -->
+  <g transform="translate(120, 200)">
+    <!-- Background particle wave -->
+    <path d="M0,60 C20,20 40,100 60,60 C80,20 100,100 120,60 C140,20 160,100 180,60" fill="none" stroke="#0047b3" stroke-width="4" opacity="0.9" filter="url(#glow)" />
+    
+    <!-- Multiple possible states -->
+    <circle cx="40" cy="40" r="8" fill="#3385ff" stroke="#001f4d" stroke-width="1.5" opacity="0.8" filter="url(#glow)" />
+    <circle cx="80" cy="80" r="8" fill="#3385ff" stroke="#001f4d" stroke-width="1.5" opacity="0.8" filter="url(#glow)" />
+    <circle cx="120" cy="40" r="8" fill="#3385ff" stroke="#001f4d" stroke-width="1.5" opacity="0.8" filter="url(#glow)" />
+    <circle cx="160" cy="80" r="8" fill="#3385ff" stroke="#001f4d" stroke-width="1.5" opacity="0.8" filter="url(#glow)" />
+    
+    <!-- Observer eye -->
+    <g transform="translate(70, 150)">
+      <ellipse cx="0" cy="0" rx="25" ry="15" fill="white" stroke="#333" stroke-width="2" />
+      <circle cx="0" cy="0" r="10" fill="#333" />
+      <circle cx="0" cy="0" r="4" fill="white" />
+    </g>
+  </g>
+  
+  <!-- Wave function after collapse -->
+  <g transform="translate(120, 380)">
+    <!-- Collapsed wave function -->
+    <path d="M0,60 C20,55 40,65 60,60 C80,55 100,65 120,60 C140,55 160,65 180,60" fill="none" stroke="#3366cc" stroke-width="1" opacity="0.3" />
+    
+    <!-- Single definite state -->
+    <circle cx="90" cy="60" r="14" fill="#ff7700" stroke="#663300" stroke-width="2.5" filter="url(#glow)" />
+    
+    <!-- Arrow indicating collapse -->
+    <line x1="70" y1="-20" x2="90" y2="50" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="50" y="-30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Observation</text>
+  </g>
+  
+  <!-- Right Panel - Spiritual Reality -->
+  <!-- Biblical verse -->
+  <text x="600" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="bold" font-style="italic" text-anchor="middle" fill="#333">Deuteronomy 30:19</text>
+  
+  <!-- Multiple possible futures -->
+  <g transform="translate(500, 180)">
+    <!-- Human figure -->
+    <circle cx="0" cy="30" r="15" fill="#f9cb9c" stroke="#333" stroke-width="1" />
+    <line x1="0" y1="45" x2="0" y2="85" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="55" x2="-20" y2="75" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="55" x2="20" y2="75" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="85" x2="-10" y2="115" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="85" x2="10" y2="115" stroke="#333" stroke-width="2" />
+    
+    <!-- Future paths (ghostly figures) -->
+    <g opacity="0.6">
+      <!-- Path 1 -->
+      <circle cx="-80" cy="30" r="12" fill="#f9cb9c" stroke="#333" stroke-width="1" opacity="0.5" />
+      <line x1="-80" y1="42" x2="-80" y2="70" stroke="#333" stroke-width="2" opacity="0.5" />
+      <line x1="-80" y1="48" x2="-90" y2="60" stroke="#333" stroke-width="1" opacity="0.5" />
+      <line x1="-80" y1="48" x2="-70" y2="60" stroke="#333" stroke-width="1" opacity="0.5" />
+      
+      <!-- Path 2 -->
+      <circle cx="-40" cy="30" r="12" fill="#f9cb9c" stroke="#333" stroke-width="1" opacity="0.5" />
+      <line x1="-40" y1="42" x2="-40" y2="70" stroke="#333" stroke-width="2" opacity="0.5" />
+      <line x1="-40" y1="48" x2="-50" y2="60" stroke="#333" stroke-width="1" opacity="0.5" />
+      <line x1="-40" y1="48" x2="-30" y2="60" stroke="#333" stroke-width="1" opacity="0.5" />
+      
+      <!-- Path 3 -->
+      <circle cx="40" cy="30" r="12" fill="#f9cb9c" stroke="#333" stroke-width="1" opacity="0.5" />
+      <line x1="40" y1="42" x2="40" y2="70" stroke="#333" stroke-width="2" opacity="0.5" />
+      <line x1="40" y1="48" x2="30" y2="60" stroke="#333" stroke-width="1" opacity="0.5" />
+      <line x1="40" y1="48" x2="50" y2="60" stroke="#333" stroke-width="1" opacity="0.5" />
+      
+      <!-- Path 4 -->
+      <circle cx="80" cy="30" r="12" fill="#f9cb9c" stroke="#333" stroke-width="1" opacity="0.5" />
+      <line x1="80" y1="42" x2="80" y2="70" stroke="#333" stroke-width="2" opacity="0.5" />
+      <line x1="80" y1="48" x2="70" y2="60" stroke="#333" stroke-width="1" opacity="0.5" />
+      <line x1="80" y1="48" x2="90" y2="60" stroke="#333" stroke-width="1" opacity="0.5" />
+    </g>
+    
+    <!-- Choice indicated by hand -->
+    <line x1="20" y1="75" x2="40" y2="55" stroke="#ff7700" stroke-width="3" filter="url(#glow)" />
+    <circle cx="40" cy="55" r="6" fill="#ff7700" filter="url(#glow)" />
+  </g>
+  
+  <!-- Chosen reality -->
+  <g transform="translate(500, 380)">
+    <!-- Human figure -->
+    <circle cx="0" cy="30" r="15" fill="#f9cb9c" stroke="#333" stroke-width="1" />
+    <line x1="0" y1="45" x2="0" y2="85" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="55" x2="-20" y2="75" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="55" x2="20" y2="75" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="85" x2="-10" y2="115" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="85" x2="10" y2="115" stroke="#333" stroke-width="2" />
+    
+    <!-- Single chosen path -->
+    <circle cx="40" cy="30" r="15" fill="#f9cb9c" stroke="#ff7700" stroke-width="4" filter="url(#glow)" />
+    <line x1="40" y1="45" x2="40" y2="85" stroke="#ff7700" stroke-width="4" filter="url(#glow)" />
+    <line x1="40" y1="55" x2="20" y2="75" stroke="#ff7700" stroke-width="3" filter="url(#glow)" />
+    <line x1="40" y1="55" x2="60" y2="75" stroke="#ff7700" stroke-width="3" filter="url(#glow)" />
+    <line x1="40" y1="85" x2="30" y2="115" stroke="#ff7700" stroke-width="3" filter="url(#glow)" />
+    <line x1="40" y1="85" x2="50" y2="115" stroke="#ff7700" stroke-width="3" filter="url(#glow)" />
+    
+    <!-- Arrow indicating choice -->
+    <line x1="10" y1="75" x2="35" y2="55" stroke="#ff7700" stroke-width="3" marker-end="url(#arrowhead)" filter="url(#glow)" />
+    <text x="0" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Choice Made</text>
+  </g>
+  
+  <!-- Center explanation -->
+  <rect x="250" y="530" width="300" height="40" rx="10" fill="#333" stroke="#666" stroke-width="2" opacity="0.9" />
+  <text x="400" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" font-weight="bold">In both quantum physics and spiritual life, possibility</text>
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" font-weight="bold">collapses into reality through the act of choice.</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Laboratory background -->
+  <rect width="800" height="500" fill="#f0f0f0" />
+  
+  <!-- Laboratory walls -->
+  <rect x="50" y="50" width="700" height="400" fill="#e6e6e6" stroke="#999" stroke-width="2" />
+  
+  <!-- Laboratory floor grid -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="#e6e6e6"/>
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#ccc" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect x="50" y="350" width="700" height="100" fill="url(#grid)" />
+  
+  <!-- Equipment panels and control unit -->
+  <rect x="100" y="100" width="250" height="200" rx="10" ry="10" fill="#333" stroke="#555" stroke-width="2" />
+  <rect x="110" y="110" width="230" height="180" rx="5" ry="5" fill="#222" />
+  
+  <!-- Control panel screens and lights -->
+  <rect x="130" y="130" width="190" height="80" rx="3" ry="3" fill="#001933" stroke="#0066cc" stroke-width="1" />
+  
+  <!-- Quantum data visualization on screen -->
+  <circle cx="225" cy="170" r="30" fill="none" stroke="#00ccff" stroke-width="1" />
+  <path d="M225,170 m-20,-20 c10,10 30,10 40,0 c10,-10 10,-30 0,-40 c-10,-10 -30,-10 -40,0 c-10,10 -10,30 0,40" fill="none" stroke="#00ccff" stroke-width="1" />
+  <circle cx="225" cy="170" r="3" fill="#00ccff" />
+  <circle cx="205" cy="170" r="3" fill="#00ccff" />
+  <circle cx="245" cy="170" r="3" fill="#00ccff" />
+  <circle cx="225" cy="150" r="3" fill="#00ccff" />
+  <circle cx="225" cy="190" r="3" fill="#00ccff" />
+  <path d="M225,170 L205,170 M225,170 L245,170 M225,170 L225,150 M225,170 L225,190" stroke="#00ccff" stroke-width="1" stroke-dasharray="2,2" />
+  
+  <!-- Control knobs and buttons -->
+  <circle cx="150" cy="240" r="10" fill="#333" stroke="#666" stroke-width="1" />
+  <circle cx="180" cy="240" r="10" fill="#333" stroke="#666" stroke-width="1" />
+  <circle cx="210" cy="240" r="10" fill="#333" stroke="#666" stroke-width="1" />
+  <circle cx="240" cy="240" r="10" fill="#333" stroke="#666" stroke-width="1" />
+  <circle cx="270" cy="240" r="10" fill="#333" stroke="#666" stroke-width="1" />
+  
+  <rect x="130" cy="260" width="15" height="8" rx="2" ry="2" fill="#cc0000" />
+  <rect x="155" cy="260" width="15" height="8" rx="2" ry="2" fill="#00cc00" />
+  <rect x="180" cy="260" width="15" height="8" rx="2" ry="2" fill="#ffcc00" />
+  
+  <!-- Large quantum chamber/apparatus -->
+  <rect x="450" y="100" width="250" height="200" rx="5" ry="5" fill="#666" stroke="#555" stroke-width="2" />
+  <circle cx="575" cy="200" r="80" fill="#333" stroke="#555" stroke-width="3" />
+  <circle cx="575" cy="200" r="70" fill="#001933" stroke="#0066cc" stroke-width="1" />
+  
+  <!-- Quantum particles visualization -->
+  <circle cx="575" cy="200" r="50" fill="none" stroke="#9966ff" stroke-width="0.5" stroke-dasharray="5,5" />
+  <circle cx="575" cy="200" r="30" fill="none" stroke="#9966ff" stroke-width="0.5" stroke-dasharray="5,5" />
+  
+  <!-- Entangled particles -->
+  <circle cx="555" cy="180" r="3" fill="#ff6600" />
+  <circle cx="595" cy="220" r="3" fill="#ff6600" />
+  <path d="M555,180 Q575,200 595,220" stroke="#ff6600" stroke-width="1" stroke-dasharray="2,2" />
+  
+  <circle cx="595" cy="180" r="3" fill="#00ffcc" />
+  <circle cx="555" cy="220" r="3" fill="#00ffcc" />
+  <path d="M595,180 Q575,200 555,220" stroke="#00ffcc" stroke-width="1" stroke-dasharray="2,2" />
+  
+  <!-- More quantum particles -->
+  <circle cx="575" cy="170" r="2" fill="#ffff00" />
+  <circle cx="575" cy="230" r="2" fill="#ffff00" />
+  <circle cx="545" cy="200" r="2" fill="#ffff00" />
+  <circle cx="605" cy="200" r="2" fill="#ffff00" />
+  
+  <!-- Elijah and Maya standing by the equipment -->
+  <!-- Elijah -->
+  <circle cx="350" cy="350" r="25" fill="#d6d6d6" /> <!-- head -->
+  <rect x="335" y="375" width="30" height="75" fill="#003366" /> <!-- body -->
+  <rect x="335" y="375" width="30" height="20" fill="#ffffff" /> <!-- lab coat top -->
+  <line x1="335" y1="385" x2="315" y2="405" stroke="#ffffff" stroke-width="8" /> <!-- left arm -->
+  <line x1="365" y1="385" x2="385" y2="405" stroke="#ffffff"

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#121212" rx="15" ry="15"/>
+  <rect x="10" y="10" width="980" height="480" fill="#1a1a2e" rx="10" ry="10" stroke="#2d2d42" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="500" y="80" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#e6c619" text-anchor="middle">THE MASTER EQUATION</text>
+  
+  <!-- Equation -->
+  <g transform="translate(180, 250)">
+    <!-- Chi equals -->
+    <text font-family="serif" font-size="38" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-style="italic">
+      <tspan x="0" y="0">χ = </tspan>
+    </text>
+    
+    <!-- Integral symbol -->
+    <text x="80" y="0" font-family="serif" font-size="38" fill="#e55" text-anchor="start" dominant-baseline="middle" font-style="italic">∭∭</text>
+    
+    <!-- Left Parenthesis for fraction -->
+    <text x="140" y="0" font-family="serif" font-size="70" fill="#ffffff" text-anchor="start" dominant-baseline="middle">(</text>
+    
+    <!-- Grace function (numerator) -->
+    <text x="165" y="-20" font-family="serif" font-size="38" fill="#62d6e6" text-anchor="start" dominant-baseline="middle" font-style="italic">
+      G<tspan dy="5" font-size="26">0</tspan>e^(R<tspan dy="5" font-size="26">p</tspan>/S) · R<tspan dy="5" font-size="26">J</tspan>
+    </text>
+    
+    <!-- Fraction line -->
+    <line x1="165" y1="2" x2="400" y2="2" stroke="#ffffff" stroke-width="3"/>
+    
+    <!-- Entropy term (denominator) -->
+    <text x="165" y="30" font-family="serif" font-size="38" fill="#e55" text-anchor="start" dominant-baseline="middle" font-style="italic">
+      1 + E<tspan dy="5" font-size="26">0</tspan>e^(kt) + S<tspan dy="5" font-size="26">0</tspan>e^(-λR<tspan dy="5" font-size="26">p</tspan>t)
+    </text>
+    
+    <!-- Right Parenthesis for fraction -->
+    <text x="405" y="0" font-family="serif" font-size="70" fill="#ffffff" text-anchor="start" dominant-baseline="middle">)</text>
+    
+    <!-- Multiplication symbol -->
+    <text x="430" y="0" font-family="serif" font-size="38" fill="#ffffff" text-anchor="start" dominant-baseline="middle">×</text>
+    
+    <!-- Quantum choice term -->
+    <text x="460" y="0" font-family="serif" font-size="38" fill="#e6c619" text-anchor="start" dominant-baseline="middle" font-style="italic">
+      e^(-(Q·C))
+    </text>
+    
+    <!-- Multiplication symbol -->
+    <text x="580" y="0" font-family="serif" font-size="38" fill="#ffffff" text-anchor="start" dominant-baseline="middle">×</text>
+    
+    <!-- Faith network term -->
+    <text x="605" y="0" font-family="serif" font-size="38" fill="#ffffff" text-anchor="start" dominant-baseline="middle">(</text>
+    <text x="620" y="0" font-family="serif" font-size="38" fill="#7bd66a" text-anchor="start" dominant-baseline="middle" font-style="italic">
+      1 + <tspan font-size="38">∑</tspan><tspan font-size="24" dy="6">i=1</tspan><tspan font-size="24" dy="-12">n</tspan> F<tspan dy="5" font-size="26">i</tspan>e^(-d<tspan dy="5" font-size="26">i</tspan>)
+    </text>
+    <text x="720" y="0" font-family="serif" font-size="38" fill="#ffffff" text-anchor="start" dominant-baseline="middle">)</text>
+    
+    <!-- Multiplication symbol -->
+    <text x="735" y="0" font-family="serif" font-size="38" fill="#ffffff" text-anchor="start" dominant-baseline="middle">×</text>
+    
+    <!-- Trinitarian entanglement term -->
+    <text x="765" y="0" font-family="serif" font-size="38" fill="#a66ade" text-anchor="start" dominant-baseline="middle" font-style="italic">
+      U(S<tspan dy="5" font-size="26">s</tspan>)
+    </text>
+    
+    <!-- Differential terms -->
+    <text x="60" y="60" font-family="serif" font-size="38" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-style="italic">
+      dx dy dt dS<tspan dy="5" font-size="26">s</tspan>
+    </text>
+  </g>
+  
+  <!-- Elegant decorative elements -->
+  <defs>
+    <radialGradient id="centerGlow" cx="500" cy="250" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e6c61915"/>
+      <stop offset="100%" stop-color="#e6c61900"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Subtle glow behind equation -->
+  <circle cx="500" cy="250" r="300" fill="url(#centerGlow)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="500" cy="250" r="230" fill="none" stroke="#2d2d42" stroke-width="1"/>
+  <circle cx="500" cy="250" r="260" fill="none" stroke="#2d2d42" stroke-width="0.5"/>
+  
+  <!-- Subtle cross in background -->
+  <rect x="497" y="50" width="6" height="400" fill="#222240" rx="3" ry="3" opacity="0.5"/>
+  <rect x="300" y="247" width="400" height="6" fill="#222240" rx="3" ry="3" opacity="0.5"/>
+</svg>

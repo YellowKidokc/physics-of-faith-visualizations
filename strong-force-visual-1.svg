@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f8ff" />
+  
+  <!-- Title -->
+  <rect x="20" y="20" width="480" height="40" rx="10" fill="#e0e0e0" />
+  <text x="40" y="48" font-family="Arial" font-size="24" font-weight="bold" fill="#333">The Power of Proximity: When Closeness Creates Strength</text>
+  
+  <!-- Physical model - Left Side -->
+  <rect x="40" y="100" width="320" height="350" rx="10" fill="#e6f7ff" stroke="#81d4fa" stroke-width="2" />
+  <text x="60" y="130" font-family="Arial" font-size="20" font-weight="bold" fill="#0277bd">Physical: Atomic Nucleus</text>
+  
+  <!-- Particles close together -->
+  <circle cx="200" cy="250" r="40" fill="#20B2AA" opacity="0.8" /> <!-- Central binding force -->
+  <text x="200" y="255" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Strong Force</text>
+  
+  <circle cx="140" cy="170" r="30" fill="#4169E1" /> <!-- Proton 1 -->
+  <text x="140" y="175" font-family="Arial" font-size="14" text-anchor="middle" fill="white">p+</text>
+  
+  <circle cx="260" cy="170" r="30" fill="#4169E1" /> <!-- Proton 2 -->
+  <text x="260" y="175" font-family="Arial" font-size="14" text-anchor="middle" fill="white">p+</text>
+  
+  <circle cx="140" cy="330" r="30" fill="#9370DB" /> <!-- Neutron 1 -->
+  <text x="140" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="white">n</text>
+  
+  <circle cx="260" cy="330" r="30" fill="#9370DB" /> <!-- Neutron 2 -->
+  <text x="260" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="white">n</text>
+  
+  <!-- Connection lines between particles -->
+  <line x1="140" y1="170" x2="200" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="5,3" />
+  <line x1="260" y1="170" x2="200" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="5,3" />
+  <line x1="140" y1="330" x2="200" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="5,3" />
+  <line x1="260" y1="330" x2="200" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="5,3" />
+  
+  <!-- Connection lines between particles -->
+  <line x1="140" y1="170" x2="260" y2="170" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="140" y1="170" x2="140" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="140" y1="170" x2="260" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="260" y1="170" x2="140" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="260" y1="170" x2="260" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="140" y1="330" x2="260" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- Caption -->
+  <text x="60" y="400" font-family="Arial" font-size="14" fill="#333">The Strong Nuclear Force binds protons</text>
+  <text x="60" y="420" font-family="Arial" font-size="14" fill="#333">and neutrons together in the nucleus,</text>
+  <text x="60" y="440" font-family="Arial" font-size="14" fill="#333">overcoming the electromagnetic repulsion</text>
+  
+  <!-- Spiritual model - Right Side -->
+  <rect x="440" y="100" width="320" height="350" rx="10" fill="#fff8e1" stroke="#ffe082" stroke-width="2" />
+  <text x="460" y="130" font-family="Arial" font-size="20" font-weight="bold" fill="#ff8f00">Spiritual: Family Unity</text>
+  
+  <!-- Family members around a table -->
+  <circle cx="600" cy="250" r="40" fill="#20B2AA" opacity="0.8" /> <!-- Divine love -->
+  <text x="600" y="255" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Divine Love</text>
+  
+  <!-- Parent 1 -->
+  <circle cx="540" cy="170" r="25" fill="#4169E1" />
+  <circle cx="540" cy="155" r="15" fill="#E0AC69" />
+  <rect x="530" y="170" width="20" height="25" fill="#4169E1" rx="2" />
+  
+  <!-- Parent 2 -->
+  <circle cx="660" cy="170" r="25" fill="#FF69B4" />
+  <circle cx="660" cy="155" r="15" fill="#E0AC69" />
+  <rect x="650" y="170" width="20" height="25" fill="#FF69B4" rx="2" />
+  
+  <!-- Child 1 -->
+  <circle cx="540" cy="330" r="20" fill="#9ACD32" />
+  <circle cx="540" cy="318" r="12" fill="#FFDBAC" />
+  <rect x="532" y="330" width="16" height="20" fill="#9ACD32" rx="2" />
+  
+  <!-- Child 2 -->
+  <circle cx="660" cy="330" r="20" fill="#FFD700" />
+  <circle cx="660" cy="318" r="12" fill="#FFDBAC" />
+  <rect x="652" y="330" width="16" height="20" fill="#FFD700" rx="2" />
+  
+  <!-- Connection lines between family members -->
+  <line x1="540" y1="170" x2="600" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="5,3" />
+  <line x1="660" y1="170" x2="600" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="5,3" />
+  <line x1="540" y1="330" x2="600" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="5,3" />
+  <line x1="660" y1="330" x2="600" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="5,3" />
+  
+  <!-- Connection lines between family members -->
+  <line x1="540" y1="170" x2="660" y2="170" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="540" y1="170" x2="540" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="540" y1="170" x2="660" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="660" y1="170" x2="540" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="660" y1="170" x2="660" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="540" y1="330" x2="660" y2="330" stroke="#FF6347" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- Caption -->
+  <text x="460" y="400" font-family="Arial" font-size="14" fill="#333">Divine love holds families together</text>
+  <text x="460" y="420" font-family="Arial" font-size="14" fill="#333">despite differences, creating stronger</text>
+  <text x="460" y="440" font-family="Arial" font-size="14" fill="#333">bonds through intentional closeness</text>
+  
+  <!-- Bottom explanation -->
+  <rect x="40" y="470" width="720" height="100" rx="10" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1" />
+  <text x="60" y="500" font-family="Arial" font-size="16" fill="#333">Just as the strong nuclear force operates most powerfully at close range, bringing</text>
+  <text x="60" y="525" font-family="Arial" font-size="16" fill="#333">distinct particles into a cohesive whole, divine love creates its strongest bonds</text>
+  <text x="60" y="550" font-family="Arial" font-size="16" fill="#333">when we draw near to each other and to God. Distance weakens both forces.</text>
+</svg>

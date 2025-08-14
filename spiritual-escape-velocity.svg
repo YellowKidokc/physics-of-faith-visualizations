@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Dark background -->
+  <rect width="800" height="600" fill="#1A1A2E" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" fill="#E0E0E0" text-anchor="middle" font-weight="bold">Spiritual Escape Velocity</text>
+  <text x="400" y="80" font-family="Arial" font-size="16" fill="#9FA0FF" text-anchor="middle" font-style="italic">Breaking Free from Consciousness Gravity</text>
+  
+  <!-- Gravitational Wells -->
+  <!-- Main well - spiritual entropy/sin -->
+  <path d="M150,160 C250,220 500,220 650,160 L650,460 C500,400 250,400 150,460 Z" fill="url(#wellGradient)"/>
+  
+  <!-- Gravitational well lines -->
+  <path d="M200,180 C300,230 450,230 600,180" fill="none" stroke="#304D6D" stroke-width="1"/>
+  <path d="M200,210 C300,260 450,260 600,210" fill="none" stroke="#304D6D" stroke-width="1"/>
+  <path d="M200,240 C300,290 450,290 600,240" fill="none" stroke="#304D6D" stroke-width="1"/>
+  <path d="M200,270 C300,320 450,320 600,270" fill="none" stroke="#304D6D" stroke-width="1"/>
+  <path d="M200,300 C300,350 450,350 600,300" fill="none" stroke="#304D6D" stroke-width="1"/>
+  <path d="M200,330 C300,380 450,380 600,330" fill="none" stroke="#304D6D" stroke-width="1"/>
+  <path d="M200,360 C300,410 450,410 600,360" fill="none" stroke="#304D6D" stroke-width="1"/>
+  <path d="M200,390 C300,440 450,440 600,390" fill="none" stroke="#304D6D" stroke-width="1"/>
+  <path d="M200,420 C300,470 450,470 600,420" fill="none" stroke="#304D6D" stroke-width="1"/>
+  
+  <!-- Trapped object - no escape velocity -->
+  <circle cx="400" cy="320" r="10" fill="#F1B4BB"/>
+  <path d="M400,320 C440,300 460,330 430,350 C400,370 380,330 400,320" fill="none" stroke="#F1B4BB" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="430" y="295" font-family="Arial" font-size="12" fill="#F1B4BB" text-anchor="middle">Trapped Consciousness</text>
+  <text x="430" y="310" font-family="Arial" font-size="12" fill="#F1B4BB" text-anchor="middle">(Insufficient Escape Velocity)</text>
+  
+  <!-- Escaping object - achieved escape velocity -->
+  <circle cx="270" cy="200" r="14" fill="#6DA9E4"/>
+  <path d="M270,320 C290,280 275,240 270,200 C260,170 230,130 200,110 C160,80 100,70 60,90" fill="none" stroke="#6DA9E4" stroke-width="3"/>
+  <polygon points="60,90 70,80 75,95" fill="#6DA9E4"/>
+  
+  <!-- Escape velocity label -->
+  <text x="150" y="100" font-family="Arial" font-size="16" fill="#6DA9E4" text-anchor="middle" font-weight="bold">Escape Velocity Achieved</text>
+  <text x="150" y="120" font-family="Arial" font-size="14" fill="#6DA9E4" text-anchor="middle">Transformational Freedom</text>
+  
+  <!-- Depth labels -->
+  <text x="100" y="200" font-family="Arial" font-size="14" fill="#9FA0FF">Shallow Patterns</text>
+  <text x="100" y="300" font-family="Arial" font-size="14" fill="#D67BFF">Ingrained Behaviors</text>
+  <text x="100" y="400" font-family="Arial" font-size="14" fill="#F1B4BB">Deep Identity Structures</text>
+  
+  <!-- Escape Velocity Components Box -->
+  <rect x="480" y="160" width="280" height="140" rx="10" ry="10" fill="#16213E" stroke="#304D6D" stroke-width="2"/>
+  <text x="620" y="185" font-family="Arial" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">Escape Velocity Components</text>
+  
+  <text x="500" y="215" font-family="Arial" font-size="14" fill="#6DA9E4">• <tspan font-weight="bold">Faith:</tspan> Initial thrust/ignition</text>
+  <text x="500" y="245" font-family="Arial" font-size="14" fill="#9FA0FF">• <tspan font-weight="bold">Grace:</tspan> External force/divine intervention</text>
+  <text x="500" y="275" font-family="Arial" font-size="14" fill="#D67BFF">• <tspan font-weight="bold">Transformation:</tspan> Continuous acceleration</text>
+  
+  <!-- Gravitational Well Components Box -->
+  <rect x="480" y="320" width="280" height="140" rx="10" ry="10" fill="#16213E" stroke="#4A246D" stroke-width="2"/>
+  <text x="620" y="345" font-family="Arial" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">Gravitational Well Sources</text>
+  
+  <text x="500" y="375" font-family="Arial" font-size="14" fill="#F1B4BB">• <tspan font-weight="bold">Sin/Entropy:</tspan> Growing spiritual mass</text>
+  <text x="500" y="405" font-family="Arial" font-size="14" fill="#D67BFF">• <tspan font-weight="bold">Psychological Inertia:</tspan> Resistance to change</text>
+  <text x="500" y="435" font-family="Arial" font-size="14" fill="#9FA0FF">• <tspan font-weight="bold">Behavioral Patterns:</tspan> Self-reinforcing cycles</text>
+  
+  <!-- Quote at bottom -->
+  <rect x="100" y="500" width="600" height="60" rx="10" ry="10" fill="#16213E" stroke="#9FA0FF" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="400" y="530" font-family="Arial" font-size="14" fill="#E0E0E0" text-anchor="middle" font-style="italic">"The map is not the territory, but our cartography reveals something profound</text>
+  <text x="400" y="550" font-family="Arial" font-size="14" fill="#E0E0E0" text-anchor="middle" font-style="italic">about how we navigate meaning itself."</text>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="wellGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16213E" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#304D6D" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4A246D" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+</svg>

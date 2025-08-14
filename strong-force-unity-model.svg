@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold" fill="#333">
+    Strong Nuclear Force and Spiritual Unity: Empirical Model
+  </text>
+  
+  <!-- Graph section -->
+  <rect x="50" y="80" width="700" height="250" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- X and Y axis -->
+  <line x1="100" y1="280" x2="700" y2="280" stroke="#333" stroke-width="2"/>
+  <line x1="100" y1="280" x2="100" y2="100" stroke="#333" stroke-width="2"/>
+  
+  <!-- X-axis ticks and labels (Distance) -->
+  <line x1="100" y1="280" x2="100" y2="285" stroke="#333" stroke-width="1"/>
+  <text x="100" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0</text>
+  
+  <line x1="200" y1="280" x2="200" y2="285" stroke="#333" stroke-width="1"/>
+  <text x="200" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">1</text>
+  
+  <line x1="300" y1="280" x2="300" y2="285" stroke="#333" stroke-width="1"/>
+  <text x="300" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">2</text>
+  
+  <line x1="400" y1="280" x2="400" y2="285" stroke="#333" stroke-width="1"/>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">3</text>
+  
+  <line x1="500" y1="280" x2="500" y2="285" stroke="#333" stroke-width="1"/>
+  <text x="500" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">4</text>
+  
+  <line x1="600" y1="280" x2="600" y2="285" stroke="#333" stroke-width="1"/>
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">5</text>
+  
+  <line x1="700" y1="280" x2="700" y2="285" stroke="#333" stroke-width="1"/>
+  <text x="700" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">6</text>
+  
+  <!-- Y-axis ticks and labels (Strength) -->
+  <line x1="95" y1="280" x2="100" y2="280" stroke="#333" stroke-width="1"/>
+  <text x="85" y="285" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#333">0</text>
+  
+  <line x1="95" y1="240"

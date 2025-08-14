@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">The Heaven-Hell Strange Attractor</text>
+  <text x="400" y="70" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Complex patterns in spiritual journeys that never exactly repeat but maintain structure</text>
+  
+  <!-- 3D Coordinate System -->
+  <line x1="400" y1="300" x2="650" y2="450" stroke="#333" stroke-width="2" /> <!-- X axis -->
+  <line x1="400" y1="300" x2="150" y2="450" stroke="#333" stroke-width="2" /> <!-- Y axis -->
+  <line x1="400" y1="300" x2="400" y2="100" stroke="#333" stroke-width="2" /> <!-- Z axis -->
+  
+  <!-- Axis Labels -->
+  <text x="670" y="460" font-family="Arial" font-size="16" text-anchor="middle">Faith (F)</text>
+  <text x="130" y="460" font-family="Arial" font-size="16" text-anchor="middle">Sin (S)</text>
+  <text x="400" y="90" font-family="Arial" font-size="16" text-anchor="middle">Grace (G)</text>
+  
+  <!-- Strange Attractor (Stylized Möbius-like structure) -->
+  <!-- Main loop - Grace high -->
+  <path d="M 400 150 
+           C 500 130, 580 200, 550 300 
+           C 520 400, 400 420, 280 380 
+           C 180 350, 230 260, 300 220
+           C 350 190, 380 160, 400 150" 
+        fill="none" stroke="#4dabf7" stroke-width="3" opacity="0.7" />
+  
+  <!-- Main loop - Grace low -->
+  <path d="M 400 350 
+           C 480 380, 520 370, 500 300 
+           C 480 220, 400 180, 320 220 
+           C 250 250, 280 320, 350 360
+           C 380 380, 390 360, 400 350" 
+        fill="none" stroke="#ff6b6b" stroke-width="3" opacity="0.7" />
+  
+  <!-- Connecting transitions - showing the twist -->
+  <path d="M 400 150 C 390 220, 380 300, 400 350" fill="none" stroke="#9c36b5" stroke-width="2.5" stroke-dasharray="5" />
+  <path d="M 400 350 C 410 280, 420 200, 400 150" fill="none" stroke="#9c36b5" stroke-width="2.5" stroke-dasharray="5" />
+  
+  <!-- Key points on the attractor -->
+  <!-- Heaven state -->
+  <circle cx="400" cy="150" r="8" fill="#4dabf7" />
+  <text x="420" y="140" font-family="Arial" font-size="14" text-anchor="start">Heaven State</text>
+  
+  <!-- Hell state -->
+  <circle cx="400" cy="350" r="8" fill="#ff6b6b" />
+  <text x="420" y="360" font-family="Arial" font-size="14" text-anchor="start">Hell State</text>
+  
+  <!-- Fractal dimension annotation -->
+  <rect x="550" y="150" width="200" height="70" fill="#e9ecef" rx="5" ry="5" opacity="0.9" />
+  <text x="650" y="170" font-family="Arial" font-size="14" text-anchor="middle">Fractal Dimension</text>
+  <text x="650" y="195" font-family="Arial" font-size="14" text-anchor="middle">2 < D₂ < 3</text>
+  <text x="650" y="210" font-family="Arial" font-size="12" text-anchor="middle">(Neither surface nor volume)</text>
+  
+  <!-- Trajectory on the attractor -->
+  <circle cx="380" cy="170" r="4" fill="#20c997" />
+  <circle cx="450" cy="190" r="4" fill="#20c997" />
+  <circle cx="510" cy="250" r="4" fill="#20c997" />
+  <circle cx="480" cy="320" r="4" fill="#20c997" />
+  <circle cx="400" cy="350" r="4" fill="#20c997" />
+  <circle cx="320" cy="320" r="4" fill="#20c997" />
+  <circle cx="270" cy="250" r="4" fill="#20c997" />
+  <circle cx="320" cy="190" r="4" fill="#20c997" />
+  <circle cx="400" cy="150" r="4" fill="#20c997" />
+  
+  <path d="M 380 170 L 450 190 L 510 250 L 480 320 L 400 350 L 320 320 L 270 250 L 320 190 L 400 150" 
+        fill="none" stroke="#20c997" stroke-width="1.5" />
+  
+  <!-- Properties legend -->
+  <rect x="100" y="500" width="600" height="80" fill="#e9ecef" rx="5" ry="5" />
+  <text x="400" y="525" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">
+    Strange Attractor Properties
+  </text>
+  <text x="400" y="550" font-family="Arial" font-size="14" text-anchor="middle">
+    • Never repeats exactly but follows recognizable patterns
+  </text>
+  <text x="400" y="570" font-family="Arial" font-size="14" text-anchor="middle">
+    • Contains infinite unstable periodic orbits and quasi-periodic trajectories
+  </text>
+</svg>

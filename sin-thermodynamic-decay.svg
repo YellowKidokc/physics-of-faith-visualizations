@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#151a30" />
+  
+  <!-- Grid Lines -->
+  <g stroke="#253150" stroke-width="1">
+    <g id="vertical-lines">
+      <line x1="100" y1="100" x2="100" y2="500" />
+      <line x1="200" y1="100" x2="200" y2="500" />
+      <line x1="300" y1="100" x2="300" y2="500" />
+      <line x1="400" y1="100" x2="400" y2="500" />
+      <line x1="500" y1="100" x2="500" y2="500" />
+      <line x1="600" y1="100" x2="600" y2="500" />
+      <line x1="700" y1="100" x2="700" y2="500" />
+    </g>
+    <g id="horizontal-lines">
+      <line x1="100" y1="100" x2="700" y2="100" />
+      <line x1="100" y1="200" x2="700" y2="200" />
+      <line x1="100" y1="300" x2="700" y2="300" />
+      <line x1="100" y1="400" x2="700" y2="400" />
+      <line x1="100" y1="500" x2="700" y2="500" />
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">SIN AS THERMODYNAMIC DECAY</text>
+  <text x="400" y="80" fill="#909ee0" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">The Parallel Between Physical and Spiritual Degradation</text>
+  
+  <!-- Timeline -->
+  <line x1="150" y1="300" x2="650" y2="300" stroke="#607eed" stroke-width="3" />
+  <circle cx="150" cy="300" r="8" fill="#607eed" />
+  <circle cx="400" cy="300" r="8" fill="#9333ea" />
+  <circle cx="650" cy="300" r="8" fill="#be1f4c" />
+  
+  <!-- Stage 1: Pre-Fall -->
+  <g id="stage-1">
+    <rect x="110" y="150" width="120" height="100" rx="10" fill="#253150" opacity="0.8" />
+    <text x="170" y="170" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">INITIAL ORDER</text>
+    <text x="170" y="190" fill="#909ee0" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Creation in Harmony</text>
+    
+    <!-- Ordered Particles -->
+    <g transform="translate(170, 230)">
+      <circle cx="-30" cy="-20" r="6" fill="#4c7eff" />
+      <circle cx="-15" cy="-20" r="6" fill="#4c7eff" />
+      <circle cx="0" cy="-20" r="6" fill="#4c7eff" />
+      <circle cx="15" cy="-20" r="6" fill="#4c7eff" />
+      <circle cx="30" cy="-20" r="6" fill="#4c7eff" />
+      
+      <circle cx="-30" cy="0" r="6" fill="#4c7eff" />
+      <circle cx="-15" cy="0" r="6" fill="#4c7eff" />
+      <circle cx="0" cy="0" r="6" fill="#4c7eff" />
+      <circle cx="15" cy="0" r="6" fill="#4c7eff" />
+      <circle cx="30" cy="0" r="6" fill="#4c7eff" />
+    </g>
+  </g>
+  
+  <!-- Stage 2: Present World -->
+  <g id="stage-2">
+    <rect x="340" y="150" width="120" height="100" rx="10" fill="#253150" opacity="0.8" />
+    <text x="400" y="170" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">INCREASING DISORDER</text>
+    <text x="400" y="190" fill="#909ee0" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Sin's Progressive Impact</text>
+    
+    <!-- Semi-Ordered Particles -->
+    <g transform="translate(400, 230)">
+      <circle cx="-35" cy="-25" r="6" fill="#9333ea" />
+      <circle cx="-20" cy="-15" r="6" fill="#9333ea" />
+      <circle cx="-5" cy="-28" r="6" fill="#9333ea" />
+      <circle cx="15" cy="-18" r="6" fill="#9333ea" />
+      <circle cx="30" cy="-10" r="6" fill="#9333ea" />
+      
+      <circle cx="-25" cy="5" r="6" fill="#9333ea" />
+      <circle cx="-10" cy="0" r="6" fill="#9333ea" />
+      <circle cx="5" cy="15" r="6" fill="#9333ea" />
+      <circle cx="20" cy="5" r="6" fill="#9333ea" />
+      <circle cx="35" cy="10" r="6" fill="#9333ea" />
+    </g>
+  </g>
+  
+  <!-- Stage 3: Maximum Entropy -->
+  <g id="stage-3">
+    <rect x="570" y="150" width="120" height="100" rx="10" fill="#253150" opacity="0.8" />
+    <text x="630" y="170" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">MAXIMUM ENTROPY</text>
+    <text x="630" y="190" fill="#909ee0" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Separation from God</text>
+    
+    <!-- Disordered Particles -->
+    <g transform="translate(630, 230)">
+      <circle cx="-40" cy="-30" r="6" fill="#be1f4c" />
+      <circle cx="-25" cy="15" r="6" fill="#be1f4c" />
+      <circle cx="-5" cy="-10" r="6" fill="#be1f4c" />
+      <circle cx="20" cy="-25" r="6" fill="#be1f4c" />
+      <circle cx="35" cy="5" r="6" fill="#be1f4c" />
+      
+      <circle cx="-30" cy="0" r="6" fill="#be1f4c" />
+      <circle cx="-15" cy="-20" r="6" fill="#be1f4c" />
+      <circle cx="5" cy="25" r="6" fill="#be1f4c" />
+      <circle cx="25" cy="10" r="6" fill="#be1f4c" />
+      <circle cx="40" cy="-15" r="6" fill="#be1f4c" />
+    </g>
+  </g>
+  
+  <!-- Energy Curve -->
+  <path d="M 150,380 Q 250,330 400,400 Q 550,450 650,460" 
+        fill="none" stroke="#be1f4c" stroke-width="3" />
+  <text x="400" y="470" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">INCREASING ENTROPY OVER TIME</text>
+  
+  <!-- Grace as Negentropy -->
+  <path d="M 150,380 Q 250,360 400,340 Q 550,320 650,290" 
+        fill="none" stroke="#9333ea" stroke-width="3" stroke-dasharray="5,5" />
+  <text x="720" y="320" fill="#bd8fea" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end">GRACE AS NEGENTROPY</text>
+  
+  <!-- Scripture Reference -->
+  <g id="scripture">
+    <rect x="250" y="520" width="300" height="50" rx="5" fill="#253150" opacity="0.7" />
+    <text x="400" y="545" fill="white" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle">"For dust you are, and to dust you shall return."</text>
+    <text x="400" y="562" fill="#909ee0" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Genesis 3:19</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#151832" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">SPIRITUAL DECAY (-δχ)</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#aaaacc" text-anchor="middle" font-style="italic">The Natural Degradation of Spiritual State</text>
+  
+  <!-- Coordinate system -->
+  <line x1="150" y1="400" x2="700" y2="400" stroke="white" stroke-width="2" />
+  <line x1="150" y1="150" x2="150" y2="400" stroke="white" stroke-width="2" />
+  
+  <!-- Axis labels -->
+  <text x="425" y="430" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Time (t)</text>
+  <text x="110" y="275" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" transform="rotate(-90,110,275)">Spiritual State (χ)</text>
+  
+  <!-- Decay curve -->
+  <path d="M 150 150 C 200 170, 250 200, 300 240 C 350 280, 400 320, 450 350 C 500 370, 550 385, 700 395" fill="none" stroke="#dd55dd" stroke-width="3" />
+  
+  <!-- Intervention points -->
+  <circle cx="250" cy="200" r="6" fill="#55aaff" />
+  <line x1="250" y1="200" x2="250" y2="400" stroke="#333355" stroke-width="1" stroke-dasharray="3,3" />
+  <text x="250" y="415" font-family="Arial, sans-serif" font-size="12" fill="#55aaff" text-anchor="middle">t₁</text>
+  
+  <circle cx="400" cy="320" r="6" fill="#55aaff" />
+  <line x1="400" y1="320" x2="400" y2="400" stroke="#333355" stroke-width="1" stroke-dasharray="3,3" />
+  <text x="400" y="415" font-family="Arial, sans-serif" font-size="12" fill="#55aaff" text-anchor="middle">t₂</text>
+  
+  <circle cx="550" cy="385" r="6" fill="#55aaff" />
+  <line x1="550" y1="385" x2="550" y2="400" stroke="#333355" stroke-width="1" stroke-dasharray="3,3" />
+  <text x="550" y="415" font-family="Arial, sans-serif" font-size="12" fill="#55aaff" text-anchor="middle">t₃</text>
+  
+  <!-- Renewal/intervention arrows -->
+  <defs>
+    <marker id="renewalarrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#55aaff" />
+    </marker>
+  </defs>
+  
+  <path d="M250 200 L280 170" stroke="#55aaff" stroke-width="1" marker-end="url(#renewalarrow)" />
+  <path d="M400 320 L430 290" stroke="#55aaff" stroke-width="1" marker-end="url(#renewalarrow)" />
+  <path d="M550 385 L580 355" stroke="#55aaff" stroke-width="1" marker-end="url(#renewalarrow)" />
+  
+  <text x="290" y="160" font-family="Arial, sans-serif" font-size="12" fill="#55aaff" text-anchor="start">Renewal</text>
+  <text x="440" y="280" font-family="Arial, sans-serif" font-size="12" fill="#55aaff" text-anchor="start">Renewal</text>
+  <text x="590" y="345" font-family="Arial, sans-serif" font-size="12" fill="#55aaff" text-anchor="start">Renewal</text>
+  
+  <!-- Half-life markers -->
+  <line x1="150" y1="275" x2="700" y2="275" stroke="#ff5555" stroke-width="1" stroke-dasharray="5,5" />
+  <text x="130" y="275" font-family="Arial, sans-serif" font-size="12" fill="#ff5555" text-anchor="end">χ₀/2</text>
+  
+  <line x1="280" y1="150" x2="280" y2="400" stroke="#ff5555" stroke-width="1" stroke-dasharray="5,5" />
+  <text x="280" y="415" font-family="Arial, sans-serif" font-size="12" fill="#ff5555" text-anchor="middle">t₁/₂</text>
+  
+  <!-- Asymptote line -->
+  <line x1="150" y1="395" x2="700" y2="395" stroke="#333355" stroke-width="1" stroke-dasharray="3,3" />
+  <text x="680" y="385" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="end">χₘᵢₙ</text>
+  
+  <!-- Mathematical formula -->
+  <rect x="150" y="450" width="500" height="60" rx="10" fill="#1a1a40" />
+  <text x="400" y="485" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">χ(t) = χₘᵢₙ + (χ₀ - χₘᵢₙ)e^(-δt) + ∑ᵢ Rᵢ(t)</text>
+  
+  <!-- Key for variables -->
+  <text x="250" y="530" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">Where:</text>
+  <text x="150" y="550" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">χ₀ = Initial spiritual state</text>
+  <text x="150" y="570" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">χₘᵢₙ = Minimum spiritual state</text>
+  <text x="350" y="550" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">δ = Decay constant</text>
+  <text x="350" y="570" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">Rᵢ(t) = Renewal interventions</text>
+  <text x="550" y="550" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">t₁/₂ = Spiritual half-life</text>
+  <text x="550" y="570" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">(-δχ) = Rate of decay</text>
+</svg>

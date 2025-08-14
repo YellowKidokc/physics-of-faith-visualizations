@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#151832" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">SPIRITUAL STATE (χ)</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#aaaacc" text-anchor="middle" font-style="italic">The Fundamental Measure of Divine Alignment</text>
+  
+  <!-- Main visualization: spiritual state spectrum -->
+  <circle cx="400" cy="300" r="150" fill="none" stroke="#333355" stroke-width="1" />
+  <circle cx="400" cy="300" r="120" fill="none" stroke="#333355" stroke-width="1" />
+  <circle cx="400" cy="300" r="90" fill="none" stroke="#333355" stroke-width="1" />
+  <circle cx="400" cy="300" r="60" fill="none" stroke="#333355" stroke-width="1" />
+  <circle cx="400" cy="300" r="30" fill="none" stroke="#333355" stroke-width="1" />
+  
+  <!-- Central spiritual core -->
+  <circle cx="400" cy="300" r="30" fill="#7700aa" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="5s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- States of spiritual health - represented as gradients -->
+  <defs>
+    <radialGradient id="stateGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#aa00ff" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#151832" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <circle cx="400" cy="300" r="150" fill="url(#stateGradient)" />
+  
+  <!-- State vectors represented as arrows -->
+  <path d="M400 300 L480 220" stroke="#aa55ff" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M400 300 L320 380" stroke="#ff55aa" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M400 300 L500 320" stroke="#55aaff" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M400 300 L350 220" stroke="#55ffaa" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff" />
+    </marker>
+  </defs>
+  
+  <!-- Labels for the spiritual states -->
+  <text x="490" y="210" font-family="Arial, sans-serif" font-size="14" fill="#aa55ff" text-anchor="middle">Growth</text>
+  <text x="300" y="390" font-family="Arial, sans-serif" font-size="14" fill="#ff55aa" text-anchor="middle">Decay</text>
+  <text x="520" y="320" font-family="Arial, sans-serif" font-size="14" fill="#55aaff" text-anchor="middle">Alignment</text>
+  <text x="330" y="210" font-family="Arial, sans-serif" font-size="14" fill="#55ffaa" text-anchor="middle">Seeking</text>
+  
+  <!-- Mathematical formula -->
+  <rect x="160" y="480" width="480" height="60" rx="10" fill="#1a1a40" />
+  <text x="400" y="520" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">χ = f(B,G) · s(t) · i(E) · r(C)</text>
+  
+  <!-- Key for variables -->
+  <text x="200" y="460" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">Where:</text>
+  <text x="200" y="430" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">B = Base spiritual nature</text>
+  <text x="200" y="410" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">G = Grace factor</text>
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">s(t) = Time-dependent sanctification</text>
+  <text x="400" y="410" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">i(E) = Environmental influences</text>
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">r(C) = Response to challenges</text>
+  
+  <!-- Explanation text -->
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">The Spiritual State (χ) represents the fundamental measure of one's alignment with divine purpose.</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <!-- Background -->
+  <rect width="600" height="600" fill="#1e1e2e"/>
+  
+  <!-- Grid lines for reference -->
+  <line x1="50" y1="300" x2="550" y2="300" stroke="#444" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="300" y1="50" x2="300" y2="550" stroke="#444" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Vector pathway with gradient -->
+  <defs>
+    <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3c096c" />
+      <stop offset="35%" stop-color="#5a189a" />
+      <stop offset="70%" stop-color="#7b2cbf" />
+      <stop offset="100%" stop-color="#c77dff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Curved path from spiritual struggle to liberation -->
+  <path d="M100,450 C150,450 200,400 250,350 S350,250 450,200" stroke="url(#pathGradient)" stroke-width="5" fill="none"/>
+  
+  <!-- Starting point - spiritual struggle -->
+  <circle cx="100" cy="450" r="20" fill="#3c096c"/>
+  <text x="100" y="490" font-family="Arial" font-size="14" fill="#eee" text-anchor="middle" font-weight="bold">SPIRITUAL STRUGGLE</text>
+  <text x="100" y="510" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle">Starting Point</text>
+  
+  <!-- Midpoints - transformation stages -->
+  <circle cx="250" cy="350" r="15" fill="#5a189a"/>
+  <text x="250" y="385" font-family="Arial" font-size="14" fill="#eee" text-anchor="middle" font-weight="bold">AWARENESS</text>
+  <text x="250" y="405" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle">First Movement</text>
+  
+  <circle cx="350" cy="250" r="15" fill="#7b2cbf"/>
+  <text x="350" y="285" font-family="Arial" font-size="14" fill="#eee" text-anchor="middle" font-weight="bold">TRANSFORMATION</text>
+  <text x="350" y="305" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle">Gaining Momentum</text>
+  
+  <!-- Endpoint - spiritual liberation -->
+  <circle cx="450" cy="200" r="20" fill="#c77dff"/>
+  <text x="450" y="160" font-family="Arial" font-size="14" fill="#eee" text-anchor="middle" font-weight="bold">SPIRITUAL LIBERATION</text>
+  <text x="450" y="180" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle">Destination</text>
+  
+  <!-- Vector arrows along the path -->
+  <path d="M170,400 L190,380 L180,380 M190,380 L190,390" fill="none" stroke="#fff" stroke-width="2"/>
+  <path d="M300,300 L320,280 L310,280 M320,280 L320,290" fill="none" stroke="#fff" stroke-width="2"/>
+  <path d="M400,230 L420,210 L410,210 M420,210 L420,220" fill="none" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Physical principle annotations -->
+  <rect x="80" y="120" width="180" height="80" fill="#2d2d3f" rx="5"/>
+  <text x="90" y="140" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">INERTIA PRINCIPLE:</text>
+  <text x="90" y="160" font-family="Arial" font-size="11" fill="#ccc">Objects at rest tend to stay at rest</text>
+  <text x="90" y="180" font-family="Arial" font-size="11" fill="#ccc">unless acted upon by an external</text>
+  <text x="90" y="200" font-family="Arial" font-size="11" fill="#ccc">force - spiritual awakening requires</text>
+  <text x="90" y="220" font-family="Arial" font-size="11" fill="#ccc">intentional movement + grace</text>
+  
+  <rect x="350" y="100" width="180" height="80" fill="#2d2d3f" rx="5"/>
+  <text x="360" y="120" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">ACCELERATION PRINCIPLE:</text>
+  <text x="360" y="140" font-family="Arial" font-size="11" fill="#ccc">Force produces acceleration in the</text>
+  <text x="360" y="160" font-family="Arial" font-size="11" fill="#ccc">direction of the force - spiritual</text>
+  <text x="360" y="180" font-family="Arial" font-size="11" fill="#ccc">practices create momentum</text>
+  <text x="360" y="200" font-family="Arial" font-size="11" fill="#ccc">towards divine alignment</text>
+  
+  <rect x="80" y="350" width="180" height="80" fill="#2d2d3f" rx="5" opacity="0.9"/>
+  <text x="90" y="370" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">RESISTANCE FORCES:</text>
+  <text x="90" y="390" font-family="Arial" font-size="11" fill="#ccc">• Fear and Doubt</text>
+  <text x="90" y="410" font-family="Arial" font-size="11" fill="#ccc">• Old Patterns</text>
+  <text x="90" y="430" font-family="Arial" font-size="11" fill="#ccc">• External Distractions</text>
+  
+  <rect x="350" y="330" width="180" height="100" fill="#2d2d3f" rx="5" opacity="0.9"/>
+  <text x="360" y="350" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">POSITIVE MOMENTUM FORCES:</text>
+  <text x="360" y="370" font-family="Arial" font-size="11" fill="#ccc">• Divine Grace</text>
+  <text x="360" y="390" font-family="Arial" font-size="11" fill="#ccc">• Spiritual Practices</text>
+  <text x="360" y="410" font-family="Arial" font-size="11" fill="#ccc">• Community Support</text>
+  <text x="360" y="430" font-family="Arial" font-size="11" fill="#ccc">• Transformative Experiences</text>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">REDEMPTIVE MOMENTUM VECTOR</text>
+  <text x="300" y="55" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle" font-style="italic">Mapping the directional force of spiritual transformation</text>
+  
+  <!-- Legend at bottom -->
+  <rect x="130" y="540" width="340" height="40" fill="#2d2d3f" rx="5"/>
+  <circle cx="150" cy="560" r="8" fill="#3c096c"/>
+  <text x="170" y="564" font-family="Arial" font-size="11" fill="#fff">Starting Point</text>
+  
+  <circle cx="250" cy="560" r="8" fill="#7b2cbf"/>
+  <text x="270" y="564" font-family="Arial" font-size="11" fill="#fff">Transition</text>
+  
+  <circle cx="350" cy="560" r="8" fill="#c77dff"/>
+  <text x="370" y="564" font-family="Arial" font-size="11" fill="#fff">Destination</text>
+  
+  <path d="M420,560 L440,560 L435,555 M440,560 L435,565" fill="none" stroke="#fff" stroke-width="2"/>
+  <text x="455" y="564" font-family="Arial" font-size="11" fill="#fff">Direction</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#121212" rx="15" ry="15"/>
+  <rect x="10" y="10" width="780" height="480" fill="#1a1a2e" rx="10" ry="10" stroke="#2d2d42" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#e6c619" text-anchor="middle">RESURRECTION FACTOR</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#888" text-anchor="middle">The Quantum Tunnel Through Death</text>
+  
+  <!-- Equation -->
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle">R<tspan font-style="italic">J</tspan></text>
+  
+  <!-- Divider -->
+  <line x1="150" y1="180" x2="650" y2="180" stroke="#444" stroke-width="2"/>
+  
+  <!-- Quantum Tunnel Visualization -->
+  <g transform="translate(400, 320)">
+    <!-- Black hole / quantum tunnel representation -->
+    <defs>
+      <radialGradient id="blackHoleGrad" cx="0" cy="0" r="100" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#000000"/>
+        <stop offset="30%" stop-color="#1a0033"/>
+        <stop offset="60%" stop-color="#220044"/>
+        <stop offset="100%" stop-color="#1a1a2e"/>
+      </radialGradient>
+      <radialGradient id="glowGrad" cx="0" cy="0" r="150" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#e6c61950"/>
+        <stop offset="30%" stop-color="#e6c61930"/>
+        <stop offset="70%" stop-color="#e6c61910"/>
+        <stop offset="100%" stop-color="#e6c61900"/>
+      </radialGradient>
+    </defs>
+    
+    <!-- Outer glow -->
+    <circle cx="0" cy="0" r="150" fill="url(#glowGrad)"/>
+    
+    <!-- Event horizon -->
+    <circle cx="0" cy="0" r="100" fill="url(#blackHoleGrad)"/>
+    
+    <!-- Death side - red entropy particles flowing in -->
+    <g>
+      <circle cx="-70" cy="-70" r="3" fill="#e55"/>
+      <circle cx="-50" cy="-40" r="2" fill="#e55"/>
+      <circle cx="-80" cy="-30" r="4" fill="#e55"/>
+      <circle cx="-40" cy="-80" r="3" fill="#e55"/>
+      <circle cx="-90" cy="-60" r="2" fill="#e55"/>
+      <circle cx="-30" cy="-50" r="3" fill="#e55"/>
+      <circle cx="-60" cy="-25" r="2" fill="#e55"/>
+      
+      <!-- Flow lines -->
+      <path d="M -130,-130 Q -100,-100 -50,-50" fill="none" stroke="#e55" stroke-width="1"/>
+      <path d="M -140,-90 Q -110,-70 -60,-40" fill="none" stroke="#e55" stroke-width="1"/>
+      <path d="M -90,-140 Q -70,-110 -40,-60" fill="none" stroke="#e55" stroke-width="1"/>
+    </g>
+    
+    <!-- Life side - golden grace particles flowing out -->
+    <g>
+      <circle cx="70" cy="70" r="3" fill="#e6c619"/>
+      <circle cx="50" cy="40" r="2" fill="#e6c619"/>
+      <circle cx="80" cy="30" r="4" fill="#e6c619"/>
+      <circle cx="40" cy="80" r="3" fill="#e6c619"/>
+      <circle cx="90" cy="60" r="2" fill="#e6c619"/>
+      <circle cx="30" cy="50" r="3" fill="#e6c619"/>
+      <circle cx="60" cy="25" r="2" fill="#e6c619"/>
+      
+      <!-- Flow lines -->
+      <path d="M 50,50 Q 100,100 130,130" fill="none" stroke="#e6c619" stroke-width="1"/>
+      <path d="M 60,40 Q 110,70 140,90" fill="none" stroke="#e6c619" stroke-width="1"/>
+      <path d="M 40,60 Q 70,110 90,140" fill="none" stroke="#e6c619" stroke-width="1"/>
+    </g>
+    
+    <!-- Central cross -->
+    <path d="M 0,-15 L 0,15 M -15,0 L 15,0" stroke="#ffffff" stroke-width="3"/>
+  </g>
+  
+  <!-- Component Details -->
+  <g transform="translate(100, 450)">
+    <text font-family="Arial, sans-serif" font-size="16" fill="#aaa">
+      <tspan x="0" y="0">• Single cosmic event that rewrote reality's fundamental laws</tspan>
+      <tspan x="0" y="25">• Creates a bridge where entropy (death) is transformed into order (life)</tspan>
+      <tspan x="0" y="50">• Functions as mathematical singularity in the master equation</tspan>
+    </text>
+  </g>
+  
+  <!-- Labels for the tunnel sides -->
+  <text x="250" y="250" font-family="Arial, sans-serif" font-size="18" fill="#e55" text-anchor="middle">Death</text>
+  <text x="550" y="250" font-family="Arial, sans-serif" font-size="18" fill="#e6c619" text-anchor="middle">Life</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="400" cy="320" r="180" fill="none" stroke="#2d2d42" stroke-width="1"/>
+</svg>

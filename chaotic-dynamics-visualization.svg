@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">The Spiritual Butterfly Effect</text>
+  <text x="400" y="70" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">How small spiritual decisions lead to dramatically different outcomes</text>
+  
+  <!-- Coordinate System -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#333" stroke-width="2" />
+  <line x1="100" y1="100" x2="100" y2="400" stroke="#333" stroke-width="2" />
+  
+  <!-- Axis Labels -->
+  <text x="400" y="440" font-family="Arial" font-size="16" text-anchor="middle">Time →</text>
+  <text x="50" y="250" font-family="Arial" font-size="16" text-anchor="middle" transform="rotate(-90, 50, 250)">Spiritual State (χ)</text>
+  
+  <!-- Small Initial Difference -->
+  <circle cx="120" cy="250" r="5" fill="#ff6b6b" />
+  <circle cx="120" cy="260" r="5" fill="#4dabf7" />
+  <text x="130" y="230" font-family="Arial" font-size="14" text-anchor="start">Small initial difference</text>
+  <line x1="120" y1="250" x2="120" y2="260" stroke="#333" stroke-width="1" stroke-dasharray="2" />
+  <text x="150" y="255" font-family="Arial" font-size="12" text-anchor="start">Δχ₀</text>
+  
+  <!-- Path A - Heavenly Trajectory -->
+  <path d="M 120 250 Q 200 230 250 200 T 350 180 T 450 150 T 550 100 T 650 80" fill="none" stroke="#4dabf7" stroke-width="3" />
+  
+  <!-- Path B - Fallen Trajectory -->
+  <path d="M 120 260 Q 200 270 250 290 T 350 320 T 450 350 T 550 370 T 650 390" fill="none" stroke="#ff6b6b" stroke-width="3" />
+  
+  <!-- End States -->
+  <circle cx="650" cy="80" r="8" fill="#4dabf7" />
+  <circle cx="650" cy="390" r="8" fill="#ff6b6b" />
+  <text x="670" y="80" font-family="Arial" font-size="16" text-anchor="start">Heaven State</text>
+  <text x="670" y="390" font-family="Arial" font-size="16" text-anchor="start">Hell State</text>
+  
+  <!-- Exponential Divergence Annotation -->
+  <line x1="350" y1="180" x2="350" y2="320" stroke="#333" stroke-width="1" stroke-dasharray="5" />
+  <text x="360" y="250" font-family="Arial" font-size="14" text-anchor="start">Exponential divergence</text>
+  <text x="360" y="270" font-family="Arial" font-size="14" text-anchor="start">Δχ(t) ≈ Δχ₀·eᵏᵗ</text>
+  
+  <!-- Critical Decision Points -->
+  <circle cx="250" cy="200" r="6" fill="#4dabf7" stroke="#000" stroke-width="1" />
+  <circle cx="250" cy="290" r="6" fill="#ff6b6b" stroke="#000" stroke-width="1" />
+  <circle cx="450" cy="150" r="6" fill="#4dabf7" stroke="#000" stroke-width="1" />
+  <circle cx="450" cy="350" r="6" fill="#ff6b6b" stroke="#000" stroke-width="1" />
+  <text x="230" y="170" font-family="Arial" font-size="12" text-anchor="middle">Faith +</text>
+  <text x="230" y="320" font-family="Arial" font-size="12" text-anchor="middle">Sin +</text>
+  <text x="430" y="120" font-family="Arial" font-size="12" text-anchor="middle">Grace +</text>
+  <text x="430" y="380" font-family="Arial" font-size="12" text-anchor="middle">Grace -</text>
+  
+  <!-- Mathematical Legend -->
+  <rect x="100" y="450" width="600" height="30" fill="#e9ecef" rx="5" ry="5" />
+  <text x="400" y="470" font-family="Arial" font-size="14" text-anchor="middle">
+    Lyapunov Exponent (λ) > 0 indicates chaos: sensitive dependence on initial conditions
+  </text>
+</svg>

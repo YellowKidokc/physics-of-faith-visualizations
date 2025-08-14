@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    
+    <!-- Glows and filters -->
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <filter id="glow2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Particle patterns -->
+    <pattern id="particlePattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1" fill="white" opacity="0.3" />
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="800" height="600" fill="url(#backgroundGradient)" />
+  <rect width="800" height="600" fill="url(#particlePattern)" />
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">Unity Without Uniformity</text>
+  <text x="400" y="80" text-anchor="middle" fill="#d8b4fe" font-family="Arial" font-size="16">The Trinity as Quantum Model</text>
+  
+  <!-- Trinity diagram - left side -->
+  <g transform="translate(250, 250)">
+    <!-- Trinity circle -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#d8b4fe" stroke-width="2" stroke-dasharray="5,3" />
+    
+    <!-- Trinity persons -->
+    <circle cx="-85" cy="0" r="35" fill="#4ade80" filter="url(#glow2)" />
+    <circle cx="42.5" cy="-73.6" r="35" fill="#f87171" filter="url(#glow2)" />
+    <circle cx="42.5" cy="73.6" r="35" fill="#60a5fa" filter="url(#glow2)" />
+    
+    <!-- Trinity connections -->
+    <line x1="-85" y1="0" x2="42.5" y2="-73.6" stroke="white" stroke-width="2" />
+    <line x1="-85" y1="0" x2="42.5" y2="73.6" stroke="white" stroke-width="2" />
+    <line x1="42.5" y1="-73.6" x2="42.5" y2="73.6" stroke="white" stroke-width="2" />
+    
+    <!-- Center point -->
+    <circle cx="0" cy="0" r="15" fill="white" opacity="0.5" filter="url(#glow1)" />
+    
+    <!-- Labels -->
+    <text x="-85" y="-45" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Father</text>
+    <text x="42.5" y="-100" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Son</text>
+    <text x="42.5" y="100" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Spirit</text>
+    <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" fill="#312e81" font-family="Arial" font-size="12" font-weight="bold">ONE</text>
+    
+    <!-- Theological description -->
+    <text x="0" y="170" text-anchor="middle" fill="white" font-family="Arial" font-size="16">Divine Model</text>
+    <text x="0" y="195" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Distinct Persons in Perfect Unity</text>
+  </g>
+  
+  <!-- Quantum model - right side -->
+  <g transform="translate(550, 250)">
+    <!-- Quantum field -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#d8b4fe" stroke-width="2" stroke-dasharray="5,3" />
+    
+    <!-- Electron cloud -->
+    <circle cx="0" cy="0" r="100" fill="rgba(135, 206, 250, 0.1)" />
+    
+    <!-- Quantum particles -->
+    <circle cx="-60" cy="-30" r="10" fill="#4ade80" />
+    <circle cx="20" cy="70" r="10" fill="#f87171" />
+    <circle cx="50" cy="-40" r="10" fill="#60a5fa" />
+    
+    <!-- Quantum waves -->
+    <path d="M -60,-30 Q 0,20 20,70" stroke="#4ade80" stroke-width="2" fill="none" />
+    <path d="M 20,70 Q 40,20 50,-40" stroke="#f87171" stroke-width="2" fill="none" />
+    <path d="M 50,-40 Q 0,-80 -60,-30" stroke="#60a5fa" stroke-width="2" fill="none" />
+    
+    <!-- Entanglement lines -->
+    <line x1="-60" y1="-30" x2="20" y2="70" stroke="white" stroke-width="1" stroke-dasharray="2,2" />
+    <line x1="20" y1="70" x2="50" y2="-40" stroke="white" stroke-width="1" stroke-dasharray="2,2" />
+    <line x1="50" y1="-40" x2="-60" y2="-30" stroke="white" stroke-width="1" stroke-dasharray="2,2" />
+    
+    <!-- Labels -->
+    <text x="0" y="170" text-anchor="middle" fill="white" font-family="Arial" font-size="16">Quantum Model</text>
+    <text x="0" y="195" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Entangled Particles in Unified Field</text>
+  </g>
+  
+  <!-- Connecting arrow -->
+  <g transform="translate(400, 250)">
+    <path d="M -30,0 L 30,0" stroke="#d8b4fe" stroke-width="3" />
+    <polygon points="30,0 20,-8 20,8" fill="#d8b4fe" />
+  </g>
+  
+  <!-- Key insights -->
+  <g transform="translate(400, 420)">
+    <rect x="-300" y="0" width="600" height="120" rx="10" fill="rgba(0,0,0,0.3)" />
+    
+    <text x="0" y="30" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">Key Principle: Unified Multiplicity</text>
+    
+    <text x="-280" y="60" text-anchor="start" fill="white" font-family="Arial" font-size="14">• Distinct Identity ≠ Separation</text>
+    <text x="0" y="60" text-anchor="start" fill="white" font-family="Arial" font-size="14">• Relationship = Reality</text>
+    <text x="0" y="90" text-anchor="middle" fill="white" font-family="Arial" font-size="14">"That they may be one, just as You, Father, are in Me and I in You." - John 17:21</text>
+  </g>
+</svg>

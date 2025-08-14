@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+  <!-- Background -->
+  <rect width="600" height="500" fill="#f8f8f8"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Nucleus Bonding: The Visual Model of Divine Unity</text>
+  
+  <!-- Central Divine Unity Sphere (Strong Nuclear Force / God's Love) -->
+  <circle cx="300" cy="250" r="50" fill="#20B2AA" opacity="0.9">
+    <animate attributeName="r" values="50;52;50" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="300" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Divine Unity</text>
+  
+  <!-- Surrounding Particles -->
+  <!-- Particle 1 (Blue - Top) -->
+  <circle cx="300" cy="130" r="30" fill="#4169E1" opacity="0.9">
+    <animate attributeName="cy" values="130;125;130" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Particle 2 (Green - Right) -->
+  <circle cx="420" cy="250" r="30" fill="#2E8B57" opacity="0.9">
+    <animate attributeName="cx" values="420;425;420" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Particle 3 (Purple - Bottom) -->
+  <circle cx="300" cy="370" r="30" fill="#9370DB" opacity="0.9">
+    <animate attributeName="cy" values="370;375;370" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Particle 4 (Red - Left) -->
+  <circle cx="180" cy="250" r="30" fill="#CD5C5C" opacity="0.9">
+    <animate attributeName="cx" values="180;175;180" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Connection Lines -->
+  <!-- Center to Particle Connections -->
+  <line x1="300" y1="250" x2="300" y2="130" stroke="#FF6347" stroke-width="3" stroke-dasharray="8,4" opacity="0.7"/>
+  <line x1="300" y1="250" x2="420" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="8,4" opacity="0.7"/>
+  <line x1="300" y1="250" x2="300" y2="370" stroke="#FF6347" stroke-width="3" stroke-dasharray="8,4" opacity="0.7"/>
+  <line x1="300" y1="250" x2="180" y2="250" stroke="#FF6347" stroke-width="3" stroke-dasharray="8,4" opacity="0.7"/>
+  
+  <!-- Particle to Particle Connections -->
+  <line x1="300" y1="130" x2="420" y2="250" stroke="#FF6347" stroke-width="2" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="300" y1="130" x2="300" y2="370" stroke="#FF6347" stroke-width="2" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="300" y1="130" x2="180" y2="250" stroke="#FF6347" stroke-width="2" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="420" y1="250" x2="300" y2="370" stroke="#FF6347" stroke-width="2" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="420" y1="250" x2="180" y2="250" stroke="#FF6347" stroke-width="2" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="300" y1="370" x2="180" y2="250" stroke="#FF6347" stroke-width="2" stroke-dasharray="6,3" opacity="0.5"/>
+  
+  <!-- Energy Pulses Radiating from Center -->
+  <circle cx="300" cy="250" r="60" fill="none" stroke="#20B2AA" stroke-width="1.5">
+    <animate attributeName="r" values="60;100;60" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="250" r="80" fill="none" stroke="#20B2AA" stroke-width="1">
+    <animate attributeName="r" values="80;120;80" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Legend -->
+  <rect x="100" y="420" width="400" height="60" rx="10" ry="10" fill="white" stroke="#666" stroke-width="1.5"/>
+  <text x="120" y="440" font-family="Arial" font-size="14" font-weight="bold" fill="#000"><tspan x="120" dy="0">● Teal Sphere: Divine Unity/Strong Nuclear Force</tspan></text>
+  <text x="120" y="460" font-family="Arial" font-size="14" font-weight="bold" fill="#000"><tspan x="120" dy="0">- - - Red Lines: Unbreakable Spiritual Bonds</tspan></text>
+  <text x="360" y="440" font-family="Arial" font-size="14" font-weight="bold" fill="#000"><tspan x="360" dy="0">● Colored Particles: Individual Elements</tspan></text>
+  <text x="360" y="460" font-family="Arial" font-size="14" font-weight="bold" fill="#000"><tspan x="360" dy="0">(Community Members/Trinity Persons)</tspan></text>
+</svg>

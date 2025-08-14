@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#151832" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">SPIRITUAL PHYSICS: MATHEMATICAL MODELS</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#aaaacc" text-anchor="middle" font-style="italic">Quantifying the Dynamics of Faith and Grace</text>
+  
+  <!-- Grid lines -->
+  <line x1="50" y1="150" x2="750" y2="150" stroke="#333355" stroke-width="1" />
+  <line x1="50" y1="300" x2="750" y2="300" stroke="#333355" stroke-width="1" />
+  <line x1="50" y1="450" x2="750" y2="450" stroke="#333355" stroke-width="1" />
+  
+  <!-- Spiritual State χ -->
+  <circle cx="150" cy="220" r="60" fill="#2a1a4a" stroke="#8855dd" stroke-width="2" />
+  <text x="150" y="210" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Spiritual</text>
+  <text x="150" y="235" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">State (χ)</text>
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="middle" font-style="italic">Base consciousness</text>
+  
+  <!-- Grace Function G(Rp) -->
+  <circle cx="350" cy="220" r="60" fill="#1a2a4a" stroke="#5588dd" stroke-width="2" />
+  <text x="350" y="210" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Grace Function</text>
+  <text x="350" y="235" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">G(Rₚ)</text>
+  <text x="350" y="270" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="middle" font-style="italic">Divine intervention</text>
+  
+  <!-- Sin & Entropy (E+S) -->
+  <circle cx="550" cy="220" r="60" fill="#4a1a2a" stroke="#dd5588" stroke-width="2" />
+  <text x="550" y="210" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Sin & Entropy</text>
+  <text x="550" y="235" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">(E + S)</text>
+  <text x="550" y="270" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="middle" font-style="italic">Disorder increase</text>
+  
+  <!-- Quantum Choice Field -->
+  <circle cx="150" cy="380" r="60" fill="#1a4a2a" stroke="#55dd88" stroke-width="2" />
+  <text x="150" y="370" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Quantum Choice</text>
+  <text x="150" y="395" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">e^{-(Q·C)}</text>
+  <text x="150" y="430" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="middle" font-style="italic">Free will probability</text>
+  
+  <!-- Faith Response Function -->
+  <circle cx="350" cy="380" r="60" fill="#2a4a1a" stroke="#88dd55" stroke-width="2" />
+  <text x="350" y="370" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Faith Response</text>
+  <text x="350" y="395" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">R(F)</text>
+  <text x="350" y="430" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="middle" font-style="italic">Belief activation</text>
+  
+  <!-- Spiritual Utility Function -->
+  <circle cx="550" cy="380" r="60" fill="#4a2a1a" stroke="#dd8855" stroke-width="2" />
+  <text x="550" y="370" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Spiritual Utility</text>
+  <text x="550" y="395" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">U(Sₛ)</text>
+  <text x="550" y="430" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="middle" font-style="italic">Value optimization</text>
+  
+  <!-- Spiritual Decay -->
+  <circle cx="150" cy="520" r="60" fill="#4a1a4a" stroke="#dd55dd" stroke-width="2" />
+  <text x="150" y="510" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Spiritual Decay</text>
+  <text x="150" y="535" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">-δχ</text>
+  <text x="150" y="570" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="middle" font-style="italic">Natural degradation</text>
+  
+  <!-- Karma Function -->
+  <circle cx="350" cy="520" r="60" fill="#1a4a4a" stroke="#55dddd" stroke-width="2" />
+  <text x="350" y="510" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Karma Function</text>
+  <text x="350" y="535" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">K(t)</text>
+  <text x="350" y="570" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="middle" font-style="italic">Causal feedback</text>
+  
+  <!-- Divine Mystery Factor -->
+  <circle cx="550" cy="520" r="60" fill="#3a1a5a" stroke="#aa55ff" stroke-width="2" />
+  <text x="550" y="510" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Divine Mystery</text>
+  <text x="550" y="535" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Ω·T(F,S,t)</text>
+  <text x="550" y="570" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="middle" font-style="italic">Transcendent factor</text>
+  
+  <!-- Connection lines -->
+  <path d="M210 220 L290 220" stroke="#6677aa" stroke-width="2" />
+  <path d="M410 220 L490 220" stroke="#6677aa" stroke-width="2" />
+  <path d="M150 280 L150 320" stroke="#6677aa" stroke-width="2" />
+  <path d="M350 280 L350 320" stroke="#6677aa" stroke-width="2" />
+  <path d="M550 280 L550 320" stroke="#6677aa" stroke-width="2" />
+  <path d="M150 440 L150 460" stroke="#6677aa" stroke-width="2" />
+  <path d="M350 440 L350 460" stroke="#6677aa" stroke-width="2" />
+  <path d="M550 440 L550 460" stroke="#6677aa" stroke-width="2" />
+  <path d="M210 380 L290 380" stroke="#6677aa" stroke-width="2" />
+  <path d="M410 380 L490 380" stroke="#6677aa" stroke-width="2" />
+  <path d="M210 520 L290 520" stroke="#6677aa" stroke-width="2" />
+  <path d="M410 520 L490 520" stroke="#6677aa" stroke-width="2" />
+  
+  <!-- Footer -->
+  <text x="400" y="590" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="middle">EXPERIMENTAL FRAMEWORK FOR QUANTIFYING SPIRITUAL DYNAMICS</text>
+</svg>

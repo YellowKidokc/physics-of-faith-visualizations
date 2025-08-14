@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Dark background -->
+  <rect width="800" height="600" fill="#0a0a14" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" fill="#ffffff" text-anchor="middle">Wave-Particle Duality & Divine Nature</text>
+  <text x="400" y="80" font-family="Arial" font-size="16" fill="#aaaaaa" text-anchor="middle">The Paradox of Light Mirrors the Nature of Christ</text>
+  
+  <!-- Dividing line -->
+  <line x1="400" y1="100" x2="400" y2="520" stroke="#333355" stroke-width="2" />
+  
+  <!-- Left side: Quantum Physics -->
+  <text x="200" y="130" font-family="Arial" font-size="20" fill="#8899ff" text-anchor="middle">Quantum Physics</text>
+  
+  <!-- Particle representation -->
+  <circle cx="200" cy="200" r="35" fill="url(#particleGradient)" />
+  <text x="200" y="260" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Particle Nature</text>
+  <text x="200" y="285" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">(Distinct, Localized)</text>
+  
+  <!-- Wave representation -->
+  <path d="M50,380 C90,340 130,420 170,380 C210,340 250,420 290,380 C330,340 370,420 350,380" 
+        stroke="#6677dd" stroke-width="3" fill="none" />
+  <text x="200" y="440" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Wave Nature</text>
+  <text x="200" y="465" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">(Spread, Continuous)</text>
+  
+  <!-- Complementarity explanation -->
+  <text x="200" y="520" font-family="Arial" font-size="14" fill="#cccccc" text-anchor="middle">Both properties exist simultaneously:</text>
+  <text x="200" y="540" font-family="Arial" font-size="14" fill="#cccccc" text-anchor="middle">Light can't be fully defined as</text>
+  <text x="200" y="560" font-family="Arial" font-size="14" fill="#cccccc" text-anchor="middle">just one or the other</text>
+  
+  <!-- Right side: Divine Nature -->
+  <text x="600" y="130" font-family="Arial" font-size="20" fill="#dd99aa" text-anchor="middle">Divine Nature</text>
+  
+  <!-- Fully God representation -->
+  <circle cx="600" cy="200" r="35" fill="url(#divineGradient)" />
+  <text x="600" y="260" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Fully God</text>
+  <text x="600" y="285" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">(Divine, Transcendent)</text>
+  
+  <!-- Fully Human representation -->
+  <path d="M600,380 a15,15 0 0,1 -15,-15 a15,15 0 0,1 15,-15 a15,15 0 0,1 15,15 a15,15 0 0,1 -15,15 z" fill="#aa7788" />
+  <path d="M585,380 h30 v30 h-30 z" fill="#aa7788" />
+  <path d="M590,410 v20 m20,-20 v20" stroke="#aa7788" stroke-width="5" />
+  <path d="M585,385 l-15,15 m45,-15 l15,15" stroke="#aa7788" stroke-width="5" />
+  <text x="600" y="440" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Fully Human</text>
+  <text x="600" y="465" font-family="Arial" font-size="14" fill="#aaaaaa" text-anchor="middle">(Physical, Immanent)</text>
+  
+  <!-- Divine nature explanation -->
+  <text x="600" y="520" font-family="Arial" font-size="14" fill="#cccccc" text-anchor="middle">Both natures exist simultaneously:</text>
+  <text x="600" y="540" font-family="Arial" font-size="14" fill="#cccccc" text-anchor="middle">Christ can't be fully defined as</text>
+  <text x="600" y="560" font-family="Arial" font-size="14" fill="#cccccc" text-anchor="middle">just one or the other</text>
+  
+  <!-- Center connection -->
+  <path d="M350,320 L450,320 L450,360 L350,360 Z" fill="#332244" />
+  <text x="400" y="346" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Paradox</text>
+  
+  <!-- Arrow connections -->
+  <line x1="250" y1="200" x2="330" y2="340" stroke="#5566aa" stroke-width="2" />
+  <line x1="250" y1="380" x2="330" y2="340" stroke="#5566aa" stroke-width="2" />
+  <line x1="550" y1="200" x2="470" y2="340" stroke="#aa6677" stroke-width="2" />
+  <line x1="550" y1="380" x2="470" y2="340" stroke="#aa6677" stroke-width="2" />
+  
+  <!-- Scripture references -->
+  <text x="200" y="330" font-family="Arial" font-size="12" fill="#8899ff" text-anchor="middle">Double-slit experiment</text>
+  <text x="600" y="330" font-family="Arial" font-size="12" fill="#dd99aa" text-anchor="middle">Colossians 2:9</text>
+  
+  <!-- Bottom quote -->
+  <text x="400" y="500" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle" font-style="italic" opacity="0.8">"For in Christ all the fullness of the Deity lives in bodily form."</text>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="particleGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#8899ff" />
+      <stop offset="100%" stop-color="#4466cc" />
+    </radialGradient>
+    <radialGradient id="divineGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#ffddee" />
+      <stop offset="100%" stop-color="#cc6688" />
+    </radialGradient>
+  </defs>
+</svg>

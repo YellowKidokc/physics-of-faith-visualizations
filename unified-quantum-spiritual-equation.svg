@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <!-- Background -->
+  <rect width="600" height="600" fill="#1e1e2e"/>
+  
+  <!-- Central equation circle -->
+  <circle cx="300" cy="300" r="100" fill="#240046" stroke="#c77dff" stroke-width="3"/>
+  <text x="300" y="270" font-family="Arial" font-size="30" fill="#fff" text-anchor="middle" font-weight="bold">Θ = Q + U</text>
+  <text x="300" y="310" font-family="Arial" font-size="16" fill="#bb86fc" text-anchor="middle" font-style="italic">Reality = Quantifiable + Unquantifiable</text>
+  <text x="300" y="335" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle">The Master Equation of Reality</text>
+  
+  <!-- Left side - Q Domain -->
+  <circle cx="150" cy="300" r="80" fill="#16213e" stroke="#4cc9f0" stroke-width="2"/>
+  <text x="150" y="275" font-family="Arial" font-size="24" fill="#4cc9f0" text-anchor="middle" font-weight="bold">Q</text>
+  <text x="150" y="300" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">The Measurable</text>
+  <text x="150" y="320" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">The Known</text>
+  
+  <!-- Right side - U Domain -->
+  <circle cx="450" cy="300" r="80" fill="#5a189a" stroke="#ffafcc" stroke-width="2"/>
+  <text x="450" y="275" font-family="Arial" font-size="24" fill="#ffafcc" text-anchor="middle" font-weight="bold">U</text>
+  <text x="450" y="300" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">The Transcendent</text>
+  <text x="450" y="320" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">The Unknown</text>
+  
+  <!-- Connecting lines with gradient -->
+  <defs>
+    <linearGradient id="gradientQT" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4cc9f0" />
+      <stop offset="100%" stop-color="#bb86fc" />
+    </linearGradient>
+    <linearGradient id="gradientTU" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#bb86fc" />
+      <stop offset="100%" stop-color="#ffafcc" />
+    </linearGradient>
+  </defs>
+  
+  <line x1="230" y1="300" x2="200" y2="300" stroke="#4cc9f0" stroke-width="2"/>
+  <line x1="370" y1="300" x2="400" y2="300" stroke="#ffafcc" stroke-width="2"/>
+  
+  <!-- Q Domain Attributes (Lower Left) -->
+  <rect x="40" y="420" width="220" height="140" fill="#2d2d3f" rx="5" opacity="0.9"/>
+  <text x="50" y="440" font-family="Arial" font-size="14" fill="#4cc9f0" font-weight="bold">Q DOMAIN INCLUDES:</text>
+  <text x="60" y="465" font-family="Arial" font-size="12" fill="#fff">• Physics & Mathematics</text>
+  <text x="60" y="490" font-family="Arial" font-size="12" fill="#fff">• Material Forces (G,M,E...)</text>
+  <text x="60" y="515" font-family="Arial" font-size="12" fill="#fff">• Quantum Mechanics</text>
+  <text x="60" y="540" font-family="Arial" font-size="12" fill="#fff">• Observable Phenomena</text>
+  
+  <!-- U Domain Attributes (Lower Right) -->
+  <rect x="340" y="420" width="220" height="140" fill="#2d2d3f" rx="5" opacity="0.9"/>
+  <text x="350" y="440" font-family="Arial" font-size="14" fill="#ffafcc" font-weight="bold">U DOMAIN INCLUDES:</text>
+  <text x="360" y="465" font-family="Arial" font-size="12" fill="#fff">• Consciousness & Free Will</text>
+  <text x="360" y="490" font-family="Arial" font-size="12" fill="#fff">• Divine Order & Purpose</text>
+  <text x="360" y="515" font-family="Arial" font-size="12" fill="#fff">• Spiritual Experience</text>
+  <text x="360" y="540" font-family="Arial" font-size="12" fill="#fff">• The Unformalized Truth</text>
+  
+  <!-- Bridge between domains -->
+  <rect x="190" y="125" width="220" height="85" fill="#2d2d3f" rx="5" opacity="0.9"/>
+  <text x="300" y="145" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">THE BRIDGE: GÖDEL'S THEOREM</text>
+  <text x="300" y="170" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle" font-style="italic">"Any formal system contains truths</text>
+  <text x="300" y="190" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle" font-style="italic">that cannot be proven within that system."</text>
+  
+  <!-- Title -->
+  <text x="300" y="45" font-family="Arial" font-size="22" fill="#fff" text-anchor="middle" font-weight="bold">THE UNIFIED QUANTUM-SPIRITUAL EQUATION</text>
+  <text x="300" y="70" font-family="Arial" font-size="14" fill="#bb86fc" text-anchor="middle" font-style="italic">Bridging Measurable Reality and Transcendent Truth</text>
+  
+  <!-- Connecting elements - Q to center -->
+  <path d="M215,240 C240,240 240,260 215,260" stroke="url(#gradientQT)" stroke-width="2" fill="none"/>
+  <text x="220" y="230" font-family="Arial" font-size="10" fill="#4cc9f0">Science</text>
+  
+  <!-- Connecting elements - U to center -->
+  <path d="M385,240 C360,240 360,260 385,260" stroke="url(#gradientTU)" stroke-width="2" fill="none"/>
+  <text x="380" y="230" font-family="Arial" font-size="10" fill="#ffafcc" text-anchor="end">Faith</text>
+  
+  <!-- The unifying elements -->
+  <circle cx="150" cy="180" r="25" fill="none" stroke="#4cc9f0" stroke-width="1.5"/>
+  <text x="150" y="183" font-family="Arial" font-size="12" fill="#4cc9f0" text-anchor="middle">Physics</text>
+  
+  <circle cx="450" cy="180" r="25" fill="none" stroke="#ffafcc" stroke-width="1.5"/>
+  <text x="450" y="183" font-family="Arial" font-size="12" fill="#ffafcc" text-anchor="middle">Spirit</text>
+  
+  <circle cx="120" cy="230" r="25" fill="none" stroke="#4cc9f0" stroke-width="1.5"/>
+  <text x="120" y="233" font-family="Arial" font-size="11" fill="#4cc9f0" text-anchor="middle">Quantum</text>
+  
+  <circle cx="480" cy="230" r="25" fill="none" stroke="#ffafcc" stroke-width="1.5"/>
+  <text x="480" y="233" font-family="Arial" font-size="11" fill="#ffafcc" text-anchor="middle">Faith</text>
+  
+  <circle cx="120" cy="370" r="25" fill="none" stroke="#4cc9f0" stroke-width="1.5"/>
+  <text x="120" y="373" font-family="Arial" font-size="11" fill="#4cc9f0" text-anchor="middle">Matter</text>
+  
+  <circle cx="480" cy="370" r="25" fill="none" stroke="#ffafcc" stroke-width="1.5"/>
+  <text x="480" y="373" font-family="Arial" font-size="11" fill="#ffafcc" text-anchor="middle">Soul</text>
+  
+  <circle cx="150" cy="420" r="25" fill="none" stroke="#4cc9f0" stroke-width="1.5"/>
+  <text x="150" y="423" font-family="Arial" font-size="11" fill="#4cc9f0" text-anchor="middle">Time</text>
+  
+  <circle cx="450" cy="420" r="25" fill="none" stroke="#ffafcc" stroke-width="1.5"/>
+  <text x="450" y="423" font-family="Arial" font-size="11" fill="#ffafcc" text-anchor="middle">Eternity</text>
+  
+  <!-- Connection to expanded equation -->
+  <path d="M300,400 L300,420 L300,420" fill="none" stroke="#bb86fc" stroke-width="2" stroke-dasharray="5,3"/>
+  <rect x="200" y="420" width="200" height="30" fill="#2d2d3f" rx="5"/>
+  <text x="300" y="440" font-family="Arial" font-size="13" fill="#fff" text-anchor="middle">𝑋=∭(𝐺⋅𝑀⋅𝐸⋅𝑆⋅𝑇⋅𝐾⋅𝑅⋅𝑄⋅𝐹⋅𝐶)𝑑𝑥𝑑𝑦𝑑𝑡+𝑈</text>
+  
+  <!-- Human-Divine bridge -->
+  <rect x="200" y="470" width="200" height="65" fill="#2d2d3f" rx="5" opacity="0.9"/>
+  <text x="300" y="490" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">OBSERVER EFFECT</text>
+  <text x="300" y="515" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle">Human consciousness exists in</text>
+  <text x="300" y="535" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle">both domains, bridging Q and U</text>
+</svg>

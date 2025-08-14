@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#151a30" />
+  
+  <!-- Grid Lines -->
+  <g stroke="#253150" stroke-width="1">
+    <g id="vertical-lines">
+      <line x1="100" y1="100" x2="100" y2="500" />
+      <line x1="200" y1="100" x2="200" y2="500" />
+      <line x1="300" y1="100" x2="300" y2="500" />
+      <line x1="400" y1="100" x2="400" y2="500" />
+      <line x1="500" y1="100" x2="500" y2="500" />
+      <line x1="600" y1="100" x2="600" y2="500" />
+      <line x1="700" y1="100" x2="700" y2="500" />
+    </g>
+    <g id="horizontal-lines">
+      <line x1="100" y1="100" x2="700" y2="100" />
+      <line x1="100" y1="200" x2="700" y2="200" />
+      <line x1="100" y1="300" x2="700" y2="300" />
+      <line x1="100" y1="400" x2="700" y2="400" />
+      <line x1="100" y1="500" x2="700" y2="500" />
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">SPIRITUAL ENTROPY GRADIENT</text>
+  <text x="400" y="80" fill="#909ee0" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">The Universal Tendency Toward Disorder</text>
+  
+  <!-- Entropy Gradient Background -->
+  <defs>
+    <linearGradient id="entropyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b4bc8" />
+      <stop offset="60%" stop-color="#9333ea" />
+      <stop offset="100%" stop-color="#be1f4c" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Entropy Landscape -->
+  <path d="M 100,400 C 150,300 200,320 250,350 S 350,370 400,300 S 500,250 550,350 S 650,450 700,430" 
+        fill="none" stroke="url(#entropyGradient)" stroke-width="4" />
+  
+  <!-- Order Side (Left) -->
+  <g id="order-side">
+    <circle cx="180" cy="340" r="40" fill="none" stroke="#3b4bc8" stroke-width="2" />
+    <circle cx="180" cy="340" r="30" fill="none" stroke="#3b4bc8" stroke-width="2" />
+    <circle cx="180" cy="340" r="20" fill="none" stroke="#3b4bc8" stroke-width="2" />
+    <circle cx="180" cy="340" r="10" fill="#3b4bc8" />
+    
+    <text x="180" y="250" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">ORDER</text>
+    <text x="180" y="270" fill="#909ee0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Original Creation</text>
+  </g>
+  
+  <!-- Chaos Side (Right) -->
+  <g id="chaos-side">
+    <g transform="translate(600, 380)">
+      <line x1="-25" y1="-25" x2="25" y2="25" stroke="#be1f4c" stroke-width="2" />
+      <line x1="25" y1="-25" x2="-25" y2="25" stroke="#be1f4c" stroke-width="2" />
+      <line x1="-15" y1="-30" x2="20" y2="5" stroke="#be1f4c" stroke-width="2" />
+      <line x1="15" y1="-10" x2="-25" y2="15" stroke="#be1f4c" stroke-width="2" />
+      <line x1="5" y1="-25" x2="-10" y2="30" stroke="#be1f4c" stroke-width="2" />
+    </g>
+    
+    <text x="600" y="250" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">CHAOS</text>
+    <text x="600" y="270" fill="#e99a9a" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Fallen World</text>
+  </g>
+  
+  <!-- Entropy Equation -->
+  <g id="entropy-equation">
+    <rect x="350" y="430" width="100" height="60" rx="10" fill="#253150" />
+    <text x="400" y="460" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">ΔS = Q/T</text>
+    <text x="400" y="480" fill="#909ee0" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Entropy Equation</text>
+  </g>
+  
+  <!-- Scripture Reference -->
+  <g id="scripture">
+    <rect x="250" y="520" width="300" height="50" rx="5" fill="#253150" opacity="0.7" />
+    <text x="400" y="545" fill="white" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle">"For the creation was subjected to frustration...</text>
+    <text x="400" y="562" fill="white" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle">in hope that it will be liberated from its bondage to decay."</text>
+    <text x="580" y="562" fill="#909ee0" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Romans 8:20-21</text>
+  </g>
+  
+  <!-- Restoration Arrow -->
+  <g id="restoration">
+    <path d="M 600,400 C 550,350 450,300 350,340 C 250,380 150,350 100,320" 
+          fill="none" stroke="#9333ea" stroke-width="2" stroke-dasharray="5,5" />
+    <polygon points="105,315 100,320 108,323" fill="#9333ea" />
+    
+    <text x="400" y="180" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">RESTORATION</text>
+    <text x="400" y="200" fill="#bd8fea" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Divine Intervention</text>
+  </g>
+</svg>

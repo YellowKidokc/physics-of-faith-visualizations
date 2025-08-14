@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Sky background with gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB" />
+      <stop offset="100%" stop-color="#E0F7FF" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#skyGradient)" />
+  
+  <!-- Canyon background with gradient -->
+  <defs>
+    <linearGradient id="canyonGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d2691e" />
+      <stop offset="40%" stop-color="#8B4513" />
+      <stop offset="100%" stop-color="#654321" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Canyon layers -->
+  <path d="M0,200 L800,200 L800,500 L0,500 Z" fill="url(#canyonGradient)" />
+  
+  <!-- Canyon details - striated layers -->
+  <path d="M0,240 L800,240 L800,245 L0,245 Z" fill="#b87333" opacity="0.7" />
+  <path d="M0,280 L800,280 L800,285 L0,285 Z" fill="#cd853f" opacity="0.7" />
+  <path d="M0,320 L800,320 L800,325 L0,325 Z" fill="#d2b48c" opacity="0.7" />
+  <path d="M0,360 L800,360 L800,365 L0,365 Z" fill="#bc8f8f" opacity="0.7" />
+  <path d="M0,400 L800,400 L800,405 L0,405 Z" fill="#b87333" opacity="0.7" />
+  <path d="M0,440 L800,440 L800,445 L0,445 Z" fill="#cd853f" opacity="0.7" />
+  
+  <!-- River at the bottom -->
+  <path d="M100,500 L700,500 L700,485 L100,485 Z" fill="#4682B4" />
+  
+  <!-- Ledge where they're sitting -->
+  <path d="M200,200 L600,200 L580,210 L220,210 Z" fill="#a0522d" />
+  
+  <!-- Grandfather silhouette -->
+  <path d="M350,170 L370,170 L370,150 L380,130 L375,120 L380,110 L375,100 L365,105 L360,95 L355,105 L350,90 L345,105 L340,95 L335,105 L325,100 L330,110 L335,120 L330,130 L340,150 L340,170 Z" fill="#333" />
+  
+  <!-- Boy silhouette -->
+  <path d="M410,175 L425,175 L425,160 L430,145 L427,138 L430,131 L427,124 L420,127 L417,120 L413,127 L410,116 L407,127 L403,120 L400,127 L393,124 L396,131 L399,138 L396,145 L405,160 L405,175 Z" fill="#333" />
+  
+  <!-- Legs dangling -->
+  <path d="M355,170 L355,220 M365,170 L365,230" stroke="#333" stroke-width="3" />
+  <path d="M410,175 L410,215 M420,175 L420,225" stroke="#333" stroke-width="2" />
+  
+  <!-- Small rock falling -->
+  <circle cx="380" cy="240" r="5" fill="#777" />
+  <path d="M380,220 Q385,230 380,240" stroke="#fff" stroke-width="1" stroke-dasharray="2,2" fill="none" />
+  
+  <!-- Gravity visualization - subtle arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4b0082" opacity="0.4" />
+    </marker>
+  </defs>
+  
+  <line x1="415" y1="150" x2="415" y2="180" stroke="#4b0082" stroke-width="2" opacity="0.4" stroke-dasharray="3,3" marker-end="url(#arrowhead)" />
+  <line x1="390" y1="150" x2="390" y2="180" stroke="#4b0082" stroke-width="2" opacity="0.4" stroke-dasharray="3,3" marker-end="url(#arrowhead)" />
+  <line x1="380" y1="230" x2="380" y2="260" stroke="#4b0082" stroke-width="2" opacity="0.4" stroke-dasharray="3,3" marker-end="url(#arrowhead)" />
+  
+  <!-- Sun in the sky -->
+  <circle cx="700" cy="80" r="40" fill="#FFD700" />
+  <circle cx="700" cy="80" r="30" fill="#FFA500" />
+  
+  <!-- Question mark thought bubble from boy -->
+  <ellipse cx="450" cy="110" rx="25" ry="20" fill="#fff" stroke="#333" stroke-width="1" />
+  <path d="M430,120 L420,135" stroke="#333" stroke-width="1" fill="none" />
+  <text x="443" y="115" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">?</text>
+</svg>

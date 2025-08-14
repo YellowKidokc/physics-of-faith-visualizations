@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" style="background-color: #1C2541;">
+  <defs>
+    <!-- Gradient Background -->
+    <linearGradient id="cosmicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B3D91;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#182B4A;stop-opacity:0.9"/>
+    </linearGradient>
+
+    <!-- Gravitational Wave Pattern -->
+    <pattern id="gravityPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M0 50 Q25 20, 50 50 T100 50" stroke="#4CC9F0" fill="none" stroke-opacity="0.3" stroke-width="2"/>
+      <path d="M0 50 Q25 80, 50 50 T100 50" stroke="#5E3CD1" fill="none" stroke-opacity="0.3" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <!-- Cosmic Background -->
+  <rect width="1000" height="700" fill="url(#cosmicGradient)"/>
+  <rect width="1000" height="700" fill="url(#gravityPattern)" opacity="0.4"/>
+
+  <!-- Central Gravitational Metaphor -->
+  <g transform="translate(500 350)">
+    <!-- Gravitational Well Representation -->
+    <circle cx="0" cy="0" r="250" fill="rgba(76,201,240,0.1)" stroke="#4CC9F0" stroke-width="3" stroke-dasharray="10,10"/>
+    
+    <!-- Spiritual Descent Paths -->
+    <path d="M-200,-150 Q0,-250,200,-150" fill="none" stroke="#5E3CD1" stroke-width="4" opacity="0.6"/>
+    <path d="M-200,150 Q0,250,200,150" fill="none" stroke="#5E3CD1" stroke-width="4" opacity="0.6"/>
+
+    <!-- Gravitational Equation -->
+    <text x="0" y="-100" font-family="Arial" font-size="25" fill="#4CC9F0" text-anchor="middle">
+      <tspan>F = G * (m₁ * m₂) / r²</tspan>
+      <tspan x="0" dy="30" font-size="18">Gravitational Force</tspan>
+    </text>
+
+    <!-- Spiritual Interpretation -->
+    <text x="0" y="100" font-family="Arial" font-size="25" fill="white" text-anchor="middle">
+      <tspan>Sin's Gravitational Pull</tspan>
+      <tspan x="0" dy="30" font-size="18">Spiritual Descent</tspan>
+    </text>
+  </g>
+
+  <!-- Thematic Annotations -->
+  <g fill="#4CC9F0" font-family="Arial">
+    <text x="100" y="100" font-size="18">
+      <tspan>Mass of Sin</tspan>
+      <tspan x="100" dy="25">Increases Gravitational Force</tspan>
+    </text>
+    
+    <text x="800" y="100" font-size="18" text-anchor="end">
+      <tspan>Distance from</tspan>
+      <tspan x="800" dy="25">Divine Presence</tspan>
+    </text>
+    
+    <text x="500" y="650" font-size="20" text-anchor="middle">
+      <tspan>Escape Velocity: Grace</tspan>
+    </text>
+  </g>
+
+  <!-- Title -->
+  <text x="500" y="50" font-family="Arial" font-size="40" fill="#4CC9F0" text-anchor="middle">
+    Gravity of the Soul
+  </text>
+</svg>

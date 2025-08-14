@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Dark background -->
+  <rect width="800" height="600" fill="#151832"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="28" fill="white" text-anchor="middle" font-weight="bold">THE NEGENTROPY OF GRACE</text>
+  <text x="400" y="85" font-family="Arial" font-size="20" fill="#a98bff" text-anchor="middle" font-style="italic">Reversing the Universal Tendency Toward Disorder</text>
+  
+  <!-- Entropy vs Negentropy visualization -->
+  <g transform="translate(400,320)">
+    <!-- System boundary -->
+    <rect x="-300" y="-150" width="600" height="300" rx="20" ry="20" fill="none" stroke="#5588dd" stroke-width="2" stroke-dasharray="10,5"/>
+    
+    <!-- Dividing line -->
+    <line x1="0" y1="-150" x2="0" y2="150" stroke="white" stroke-width="1" stroke-dasharray="5,5"/>
+    
+    <!-- Entropy side label -->
+    <text x="-150" y="-130" font-family="Arial" font-size="18" fill="#dd5555" text-anchor="middle" font-weight="bold">ENTROPY</text>
+    <text x="-150" y="-110" font-family="Arial" font-size="12" fill="#dd5555" text-anchor="middle">(Natural Decay)</text>
+    
+    <!-- Negentropy side label -->
+    <text x="150" y="-130" font-family="Arial" font-size="18" fill="#55dd88" text-anchor="middle" font-weight="bold">NEGENTROPY</text>
+    <text x="150" y="-110" font-family="Arial" font-size="12" fill="#55dd88" text-anchor="middle">(Divine Grace)</text>
+    
+    <!-- Entropy visualization: Increasing disorder -->
+    <g transform="translate(-150,0)">
+      <!-- Disordered particles -->
+      <circle cx="-80" cy="-60" r="8" fill="#dd5555"/>
+      <circle cx="-60" cy="-20" r="8" fill="#dd5555"/>
+      <circle cx="-40" cy="-80" r="8" fill="#dd5555"/>
+      <circle cx="-20" cy="-40" r="8" fill="#dd5555"/>
+      <circle cx="0" cy="-10" r="8" fill="#dd5555"/>
+      <circle cx="-70" cy="30" r="8" fill="#dd5555"/>
+      <circle cx="-30" cy="60" r="8" fill="#dd5555"/>
+      <circle cx="-90" cy="70" r="8" fill="#dd5555"/>
+      <circle cx="-10" cy="40" r="8" fill="#dd5555"/>
+      <circle cx="-50" cy="10" r="8" fill="#dd5555"/>
+      
+      <!-- Sin labels -->
+      <text x="-80" cy="-60" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Pride</text>
+      <text x="-40" cy="-80" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Fear</text>
+      <text x="-10" cy="40" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Doubt</text>
+      <text x="-90" cy="70" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Greed</text>
+      
+      <!-- Entropy arrow -->
+      <path d="M-100,-90 C-50,-50 -80,50 -30,90" stroke="#dd5555" stroke-width="2" fill="none" marker-end="url(#arrowRed)"/>
+      <text x="-60" y="0" font-family="Arial" font-size="14" fill="#dd5555" text-anchor="middle" transform="rotate(-30 -60,0)">ΔS > 0</text>
+    </g>
+    
+    <!-- Negentropy visualization: Increasing order -->
+    <g transform="translate(150,0)">
+      <!-- Ordered particles forming cross pattern -->
+      <circle cx="-70" cy="0" r="8" fill="#55dd88"/>
+      <circle cx="-50" cy="0" r="8" fill="#55dd88"/>
+      <circle cx="-30" cy="0" r="8" fill="#55dd88"/>
+      <circle cx="-10" cy="0" r="8" fill="#55dd88"/>
+      <circle cx="10" cy="0" r="8" fill="#55dd88"/>
+      <circle cx="30" cy="0" r="8" fill="#55dd88"/>
+      <circle cx="50" cy="0" r="8" fill="#55dd88"/>
+      <circle cx="70" cy="0" r="8" fill="#55dd88"/>
+      
+      <circle cx="0" cy="-70" r="8" fill="#55dd88"/>
+      <circle cx="0" cy="-50" r="8" fill="#55dd88"/>
+      <circle cx="0" cy="-30" r="8" fill="#55dd88"/>
+      <circle cx="0" cy="-10" r="8" fill="#55dd88"/>
+      <circle cx="0" cy="10" r="8" fill="#55dd88"/>
+      <circle cx="0" cy="30" r="8" fill="#55dd88"/>
+      <circle cx="0" cy="50" r="8" fill="#55dd88"/>
+      <circle cx="0" cy="70" r="8" fill="#55dd88"/>
+      
+      <!-- Virtue labels -->
+      <text x="70" cy="0" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Love</text>
+      <text x="0" cy="-70" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Faith</text>
+      <text x="0" cy="70" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Hope</text>
+      <text x="-70" cy="0" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Peace</text>
+      
+      <!-- Negentropy arrow -->
+      <path d="M30,90 C80,50 50,-50 100,-90" stroke="#55dd88" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+      <text x="60" y="0" font-family="Arial" font-size="14" fill="#55dd88" text-anchor="middle" transform="rotate(30 60,0)">ΔS < 0</text>
+    </g>
+    
+    <!-- Central cross transition point -->
+    <g>
+      <circle cx="0" cy="0" r="20" fill="#1d2045" stroke="white" stroke-width="2"/>
+      <rect x="-10" y="-2" width="20" height="4" fill="white"/>
+      <rect x="-2" y="-10" width="4" height="20" fill="white"/>
+      <text x="0" y="30" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Phase Transition</text>
+    </g>
+  </g>
+  
+  <!-- Information boxes -->
+  <!-- Left box: Thermodynamic Entropy -->
+  <g transform="translate(170,500)">
+    <rect x="-120" y="-50" width="240" height="120" rx="5" ry="5" fill="#1d2045" stroke="#5588dd" stroke-width="1"/>
+    <text x="0" y="-25" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">THERMODYNAMIC ENTROPY</text>
+    <line x1="-90" y1="-15" x2="90" y2="-15" stroke="#5588dd" stroke-width="1"/>
+    
+    <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">• 2nd Law of Thermodynamics:</text>
+    <text x="0" y="25" font-family="Arial" font-size="12" fill="white" text-anchor="middle">  Entropy always increases (ΔS ≥ 0)</text>
+    <text x="0" y="45" font-family="Arial" font-size="12" fill="white" text-anchor="middle">• Closed systems move toward</text>
+    <text x="0" y="65" font-family="Arial" font-size="12" fill="white" text-anchor="middle">  maximum disorder</text>
+  </g>
+  
+  <!-- Right box: Grace Physics -->
+  <g transform="translate(630,500)">
+    <rect x="-120" y="-50" width="240" height="120" rx="5" ry="5" fill="#1d2045" stroke="#dd55aa" stroke-width="1"/>
+    <text x="0" y="-25" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">GRACE PHYSICS</text>
+    <line x1="-90" y1="-15" x2="90" y2="-15" stroke="#dd55aa" stroke-width="1"/>
+    
+    <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">• Grace creates order from chaos</text>
+    <text x="0" y="25" font-family="Arial" font-size="12" fill="white" text-anchor="middle">• Spiritual systems with Christ</text>
+    <text x="0" y="45" font-family="Arial" font-size="12" fill="white" text-anchor="middle">  operate as "open systems"</text>
+    <text x="0" y="65" font-family="Arial" font-size="12" fill="white" text-anchor="middle">• Resurrection proves ΔS < 0 is possible</text>
+  </g>
+  
+  <!-- Negentropy Master Equation -->
+  <g transform="translate(400,180)">
+    <rect x="-200" y="-25" width="400" height="50" rx="5" ry="5" fill="#1d2045" fill-opacity="0.7" stroke="#ffffff" stroke-width="1"/>
+    <text x="0" y="5" font-family="Arial" font-size="18" fill="white" text-anchor="middle">ΔSₜₒₜₐₗ = ΔSᵤₙᵢᵥₑᵣₛₑ + ΔSᵣₑₛᵤᵣᵣₑ𝒸ₜᵢₒₙ < 0</text>
+  </g>
+  
+  <!-- Scripture box -->
+  <g transform="translate(400,240)">
+    <rect x="-250" y="-20" width="500" height="40" rx="5" ry="5" fill="#1d2045" fill-opacity="0.5" stroke="#a98bff" stroke-width="1"/>
+    <text x="0" y="5" font-family="Arial" font-size="14" fill="#a98bff" text-anchor="middle" font-style="italic">"Old things have passed away; behold, all things have become new" - 2 Cor 5:17</text>
+  </g>
+  
+  <!-- Markers for arrows -->
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dd5555"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#55dd88"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background dark theme -->
+  <rect width="800" height="600" fill="#2A2B32" rx="10" ry="10"/>
+  
+  <!-- Main window title -->
+  <rect x="20" y="20" width="760" height="40" fill="#1E1F23" rx="5" ry="5"/>
+  <text x="40" y="45" fill="#E0E0E0" font-family="Arial" font-size="18">Enhanced Annotations Settings</text>
+  
+  <!-- Tabs -->
+  <rect x="20" y="70" width="120" height="35" fill="#4A5BEF" rx="5" ry="5"/>
+  <text x="55" y="93" fill="#FFFFFF" font-family="Arial" font-size="14" text-anchor="middle">Templates</text>
+  
+  <rect x="150" y="70" width="120" height="35" fill="#34353B" rx="5" ry="5"/>
+  <text x="185" y="93" fill="#E0E0E0" font-family="Arial" font-size="14" text-anchor="middle">Settings</text>
+  
+  <rect x="280" y="70" width="120" height="35" fill="#34353B" rx="5" ry="5"/>
+  <text x="315" y="93" fill="#E0E0E0" font-family="Arial" font-size="14" text-anchor="middle">Appearance</text>
+  
+  <!-- Templates List -->
+  <rect x="20" y="115" width="250" height="465" fill="#1E1F23" rx="5" ry="5"/>
+  <text x="40" y="145" fill="#E0E0E0" font-family="Arial" font-size="16">Available Templates</text>
+  
+  <!-- Template 1 -->
+  <rect x="30" y="160" width="230" height="50" fill="#34353B" rx="5" ry="5"/>
+  <text x="50" y="187" fill="#FFFFFF" font-family="Arial" font-size="14">Full Visualization Description</text>
+  <rect x="200" y="170" width="30" height="30" fill="#4A5BEF" rx="15" ry="15"/>
+  <text x="215" y="192" fill="#FFFFFF" font-family="Arial" font-size="18" text-anchor="middle">✓</text>
+  
+  <!-- Template 2 -->
+  <rect x="30" y="220" width="230" height="50" fill="#34353B" rx="5" ry="5"/>
+  <text x="50" y="247" fill="#E0E0E0" font-family="Arial" font-size="14">Element Description</text>
+  
+  <!-- Template 3 -->
+  <rect x="30" y="280" width="230" height="50" fill="#34353B" rx="5" ry="5"/>
+  <text x="50" y="307" fill="#E0E0E0" font-family="Arial" font-size="14">Scripture Connection</text>
+  
+  <!-- Template 4 -->
+  <rect x="30" y="340" width="230" height="50" fill="#34353B" rx="5" ry="5"/>
+  <text x="50" y="367" fill="#E0E0E0" font-family="Arial" font-size="14">Concept Explanation</text>
+  
+  <!-- "Add New" button -->
+  <rect x="30" y="400" width="230" height="50" fill="#3C3D44" rx="5" ry="5"/>
+  <text x="145" y="430" fill="#E0E0E0" font-family="Arial" font-size="14" text-anchor="middle">+ Add New Template</text>
+  
+  <!-- Template Editor -->
+  <rect x="290" y="115" width="490" height="465" fill="#1E1F23" rx="5" ry="5"/>
+  <text x="310" y="145" fill="#E0E0E0" font-family="Arial" font-size="16">Template Editor: Full Visualization Description</text>
+  
+  <!-- Editor Box -->
+  <rect x="310" y="160" width="450" height="320" fill="#34353B" rx="5" ry="5"/>
+  <text x="325" y="183" fill="#E0E0E0" font-family="Arial" font-size="14" font-family="monospace">
+    <tspan x="325" dy="0"># {{title}}</tspan>
+    <tspan x="325" dy="25"></tspan>
+    <tspan x="325" dy="25">## Core Concept</tspan>
+    <tspan x="325" dy="25">{{description}}</tspan>
+    <tspan x="325" dy="25"></tspan>
+    <tspan x="325" dy="25">## Key Elements</tspan>
+    <tspan x="325" dy="25">- **{{element1}}**: {{description1}}</tspan>
+    <tspan x="325" dy="25">- **{{element2}}**: {{description2}}</tspan>
+    <tspan x="325" dy="25">- **{{element3}}**: {{description3}}</tspan>
+    <tspan x="325" dy="25"></tspan>
+    <tspan x="325" dy="25">## Spiritual-Physical Connection</tspan>
+    <tspan x="325" dy="25">{{connection}}</tspan>
+    <tspan x="325" dy="25"></tspan>
+    <tspan x="325" dy="25">## Scripture References</tspan>
+    <tspan x="325" dy="25">> {{scripture}}</tspan>
+  </text>
+  
+  <!-- Variables Section -->
+  <rect x="310" y="490" width="450" height="70" fill="#34353B" rx="5" ry="5"/>
+  <text x="325" y="513" fill="#E0E0E0" font-family="Arial" font-size="14">Template Variables</text>
+  <text x="325" y="540" fill="#E0E0E0" font-family="Arial" font-size="12">{{title}}, {{description}}, {{element1}}, {{description1}}, {{element2}}, {{description2}}, {{element3}}, {{description3}}, {{connection}}, {{scripture}}</text>
+  
+  <!-- Buttons -->
+  <rect x="570" y="490" width="90" height="35" fill="#4A5BEF" rx="5" ry="5"/>
+  <text x="615" y="513" fill="#FFFFFF" font-family="Arial" font-size="14" text-anchor="middle">Save</text>
+  
+  <rect x="670" y="490" width="90" height="35" fill="#3C3D44" rx="5" ry="5"/>
+  <text x="715" y="513" fill="#E0E0E0" font-family="Arial" font-size="14" text-anchor="middle">Cancel</text>
+</svg>

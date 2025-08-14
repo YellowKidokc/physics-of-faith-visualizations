@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#151832" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">QUANTUM CHOICE FIELD e^{-(Q·C)}</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#aaaacc" text-anchor="middle" font-style="italic">The Probability Space of Free Will and Divine Sovereignty</text>
+  
+  <!-- Quantum grid -->
+  <g id="quantumGrid">
+    <defs>
+      <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#333355" stroke-width="0.5" />
+      </pattern>
+      <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+        <rect width="100" height="100" fill="url(#smallGrid)" />
+        <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#333355" stroke-width="1" />
+      </pattern>
+    </defs>
+    <rect width="600" height="300" x="100" y="120" fill="url(#grid)" />
+  </g>
+  
+  <!-- Quantum field waves -->
+  <defs>
+    <radialGradient id="choiceGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#55ddaa" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#151832" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Choice points (probability wells) -->
+  <circle cx="200" cy="200" r="40" fill="url(#choiceGradient)" />
+  <circle cx="350" cy="250" r="70" fill="url(#choiceGradient)" />
+  <circle cx="500" cy="180" r="50" fill="url(#choiceGradient)" />
+  <circle cx="600" cy="300" r="30" fill="url(#choiceGradient)" />
+  
+  <!-- Quantum particle (choice agent) -->
+  <circle cx="350" cy="250" r="8" fill="#ffffff">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Probability arrows -->
+  <defs>
+    <marker id="choicearrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#55ddaa" />
+    </marker>
+  </defs>
+  
+  <path d="M350 250 L290 230" stroke="#55ddaa" stroke-width="1" marker-end="url(#choicearrow)" />
+  <path d="M350 250 L410 290" stroke="#55ddaa" stroke-width="1" marker-end="url(#choicearrow)" />
+  <path d="M350 250 L380 180" stroke="#55ddaa" stroke-width="1" marker-end="url(#choicearrow)" />
+  <path d="M350 250 L320 310" stroke="#55ddaa" stroke-width="1" marker-end="url(#choicearrow)" />
+  
+  <!-- Choice labels -->
+  <text x="270" y="220" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Path A</text>
+  <text x="420" y="300" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Path B</text>
+  <text x="390" y="170" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Path C</text>
+  <text x="300" y="320" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Path D</text>
+  
+  <!-- Interference pattern -->
+  <path d="M 100 350 C 150 370, 200 330, 250 350 C 300 370, 350 330, 400 350 C 450 370, 500 330, 550 350 C 600 370, 650 330, 700 350" fill="none" stroke="#55ddaa" stroke-width="1" stroke-dasharray="3,3" />
+  <path d="M 100 360 C 150 380, 200 340, 250 360 C 300 380, 350 340, 400 360 C 450 380, 500 340, 550 360 C 600 380, 650 340, 700 360" fill="none" stroke="#55ddaa" stroke-width="1" stroke-dasharray="3,3" />
+  <path d="M 100 340 C 150 360, 200 320, 250 340 C 300 360, 350 320, 400 340 C 450 360, 500 320, 550 340 C 600 360, 650 320, 700 340" fill="none" stroke="#55ddaa" stroke-width="1" stroke-dasharray="3,3" />
+  
+  <!-- Mathematical formula -->
+  <rect x="100" y="450" width="600" height="60" rx="10" fill="#1a1a40" />
+  <text x="400" y="490" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">P(choice) = e^{-(Q·C)} = e^{-(quantum_field · choice_vector)}</text>
+  
+  <!-- Explanations -->
+  <text x="150" y="530" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">Where:</text>
+  <text x="150" y="550" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">Q = Divine quantum field</text>
+  <text x="150" y="570" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">C = Human choice vector</text>
+  
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">The dot product (Q·C) represents the</text>
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">alignment between will and sovereignty</text>
+</svg>

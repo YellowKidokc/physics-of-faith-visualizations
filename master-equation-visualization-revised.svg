@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 750">
+  <!-- Background -->
+  <rect width="900" height="750" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Master Equation: Including the Unquantifiable Component</text>
+  
+  <!-- Central Equation -->
+  <g transform="translate(450, 100)">
+    <rect x="-320" y="-30" width="640" height="60" rx="10" fill="#e8f4f8" stroke="#4682b4" stroke-width="3" />
+    <text x="0" y="10" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle">χ = ∭(G⋅M⋅E⋅S⋅T⋅K⋅R⋅Q⋅F⋅C)dxdydt + U</text>
+  </g>
+  
+  <!-- Equation Components -->
+  <g transform="translate(180, 170)">
+    <rect x="-150" y="-20" width="300" height="220" rx="10" fill="#f0f7ff" stroke="#6c8ebf" stroke-width="1" />
+    
+    <text x="0" y="10" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Quantifiable Components</text>
+    <line x1="-130" y1="25" x2="130" y2="25" stroke="#6c8ebf" stroke-width="1" />
+    
+    <text x="-120" y="45" font-family="Arial" font-size="16">G = Grace</text>
+    <text x="-120" y="70" font-family="Arial" font-size="16">M = Moral clarity</text>
+    <text x="-120" y="95" font-family="Arial" font-size="16">E = Entropy</text>
+    <text x="-120" y="120" font-family="Arial" font-size="16">S = Sin</text>
+    <text x="-120" y="145" font-family="Arial" font-size="16">T = Time</text>
+    
+    <text x="30" y="45" font-family="Arial" font-size="16">K = Knowledge</text>
+    <text x="30" y="70" font-family="Arial" font-size="16">R = Relationship</text>
+    <text x="30" y="95" font-family="Arial" font-size="16">Q = Quantum state</text>
+    <text x="30" y="120" font-family="Arial" font-size="16">F = Faith</text>
+    <text x="30" y="145" font-family="Arial" font-size="16">C = Consciousness</text>
+    
+    <text x="0" y="180" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle">The measurable aspects of reality</text>
+  </g>
+  
+  <g transform="translate(700, 170)">
+    <rect x="-150" y="-20" width="300" height="220" rx="10" fill="#f9ebea" stroke="#c0392b" stroke-width="2" />
+    
+    <text x="0" y="10" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">The Unquantifiable (U)</text>
+    <line x1="-130" y1="25" x2="130" y2="25" stroke="#c0392b" stroke-width="1" />
+    
+    <text x="-130" y="50" font-family="Arial" font-size="16">• Divine transcendence</text>
+    <text x="-130" y="80" font-family="Arial" font-size="16">• Mystery beyond measurement</text>
+    <text x="-130" y="110" font-family="Arial" font-size="16">• Limits of scientific knowledge</text>
+    <text x="-130" y="140" font-family="Arial" font-size="16">• Irreducible complexity</text>
+    <text x="-130" y="170" font-family="Arial" font-size="16">• Subjective experience</text>
+    
+    <text x="0" y="200" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle">What cannot be reduced to equations</text>
+  </g>
+  
+  <!-- Three Pillars -->
+  <g transform="translate(180, 450)">
+    <!-- Consciousness Pillar -->
+    <rect x="-100" y="-110" width="200" height="200" rx="10" fill="#d4e6f1" stroke="#2980b9" stroke-width="2" />
+    <text x="0" y="-80" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Consciousness (C)</text>
+    <line x1="-80" y1="-60" x2="80" y2="-60" stroke="#2980b9" stroke-width="2" />
+    <text x="0" y="-40" font-family="Arial" font-size="14" text-anchor="middle">• Observer effect</text>
+    <text x="0" y="-20" font-family="Arial" font-size="14" text-anchor="middle">• Creates probability bias</text>
+    <text x="0" y="0" font-family="Arial" font-size="14" text-anchor="middle">• Resists entropy</text>
+    <text x="0" y="20" font-family="Arial" font-size="14" text-anchor="middle">• Generates coherence</text>
+    <text x="0" y="50" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">ρ = |Ψ⟩⟨Ψ| × e^(-sin × time)</text>
+  </g>
+  
+  <g transform="translate(450, 450)">
+    <!-- Quantum Pillar -->
+    <rect x="-100" y="-110" width="200" height="200" rx="10" fill="#d4efdf" stroke="#27ae60" stroke-width="2" />
+    <text x="0" y="-80" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Quantum (Q)</text>
+    <line x1="-80" y1="-60" x2="80" y2="-60" stroke="#27ae60" stroke-width="2" />
+    <text x="0" y="-40" font-family="Arial" font-size="14" text-anchor="middle">• Probability fields</text>
+    <text x="0" y="-20" font-family="Arial" font-size="14" text-anchor="middle">• Wavefunction collapse</text>
+    <text x="0" y="0" font-family="Arial" font-size="14" text-anchor="middle">• Entanglement</text>
+    <text x="0" y="20" font-family="Arial" font-size="14" text-anchor="middle">• Superposition</text>
+    <text x="0" y="50" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">P(choice) = |⟨Ψₘₒᵣₐₗ|Ψₚₑᵣₛₒₙ⟩|² × (1+faith)</text>
+  </g>
+  
+  <g transform="translate(720, 450)">
+    <!-- Gravity Pillar -->
+    <rect x="-100" y="-110" width="200" height="200" rx="10" fill="#ebdef0" stroke="#8e44ad" stroke-width="2" />
+    <text x="0" y="-80" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Gravity (G)</text>
+    <line x1="-80" y1="-60" x2="80" y2="-60" stroke="#8e44ad" stroke-width="2" />
+    <text x="0" y="-40" font-family="Arial" font-size="14" text-anchor="middle">• Shapes probability space</text>
+    <text x="0" y="-20" font-family="Arial" font-size="14" text-anchor="middle">• Attracts coherent systems</text>
+    <text x="0" y="0" font-family="Arial" font-size="14" text-anchor="middle">• Moral inertia</text>
+    <text x="0" y="20" font-family="Arial" font-size="14" text-anchor="middle">• Consciousness field</text>
+    <text x="0" y="50" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">S(t) = S₀e^(-kt)</text>
+  </g>
+  
+  <!-- The U Component -->
+  <g transform="translate(450, 600)">
+    <rect x="-350" y="-30" width="700" height="130" rx="10" fill="#f4f6f6" stroke="#34495e" stroke-width="2" />
+    
+    <text x="0" y="0" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">The Unquantifiable Component (U)</text>
+    <line x1="-300" y1="15" x2="300" y2="15" stroke="#34495e" stroke-width="1" />
+    
+    <text x="-330" y="40" font-family="Arial" font-size="16" text-anchor="start">"U stands as a humble recognition that our mathematical frameworks,</text>
+    <text x="-330" y="65" font-family="Arial" font-size="16" text-anchor="start">no matter how sophisticated, cannot capture the full reality of consciousness,</text>
+    <text x="-330" y="90" font-family="Arial" font-size="16" text-anchor="start">spirituality, and divine action."</text>
+  </g>
+  
+  <!-- Connecting Arrows -->
+  <!-- Connecting left and middle pillars -->
+  <path d="M 230,560 C 300,600 350,600 400,560" fill="none" stroke="#34495e" stroke-width="2" />
+  
+  <!-- Connecting middle and right pillars -->
+  <path d="M 500,560 C 570,600 600,600 670,560" fill="none" stroke="#34495e" stroke-width="2" />
+  
+  <!-- Arrow from all three to the U component -->
+  <path d="M 450,560 L 450,580" fill="none" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)" />
+  
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e" />
+    </marker>
+  </defs>
+</svg>

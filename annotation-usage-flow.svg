@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background with 3 stages -->
+  <rect width="800" height="600" fill="#2A2B32" rx="10" ry="10"/>
+  
+  <!-- Step 1: Select text and use shortcut -->
+  <rect x="20" y="20" width="760" height="180" fill="#1E1F23" rx="5" ry="5"/>
+  <text x="40" y="45" fill="#E0E0E0" font-family="Arial" font-size="18">Step 1: Select text and use shortcut (Ctrl+Alt+1)</text>
+  
+  <!-- Document view -->
+  <rect x="40" y="60" width="720" height="120" fill="#34353B" rx="5" ry="5"/>
+  <text x="60" y="85" fill="#E0E0E0" font-family="Arial" font-size="14">
+    <tspan x="60" dy="0"># Spiritual Trajectory Quadrants</tspan>
+    <tspan x="60" dy="25" fill="#4A5BEF">This diagram maps the stages of spiritual motion by applying physical laws</tspan>
+    <tspan x="60" dy="25" fill="#4A5BEF">to the soul's journey. The four quadrants represent progressive states...</tspan>
+  </text>
+  
+  <!-- Keyboard shortcut -->
+  <rect x="650" y="110" width="100" height="30" fill="#4A5BEF" rx="5" ry="5"/>
+  <text x="700" y="130" fill="#FFFFFF" font-family="Arial" font-size="12" text-anchor="middle">Ctrl+Alt+1</text>
+  
+  <!-- Step 2: Template selection popup -->
+  <rect x="20" y="210" width="760" height="180" fill="#1E1F23" rx="5" ry="5"/>
+  <text x="40" y="235" fill="#E0E0E0" font-family="Arial" font-size="18">Step 2: Choose template</text>
+  
+  <!-- Template popup -->
+  <rect x="170" y="250" width="460" height="120" fill="#34353B" rx="5" ry="5"/>
+  <text x="190" y="275" fill="#FFFFFF" font-family="Arial" font-size="14">Select Annotation Template</text>
+  
+  <!-- Template options -->
+  <rect x="190" y="290" width="420" height="30" fill="#4A5BEF" rx="5" ry="5"/>
+  <text x="210" y="310" fill="#FFFFFF" font-family="Arial" font-size="14">Full Visualization Description</text>
+  
+  <rect x="190" y="325" width="420" height="30" fill="#3C3D44" rx="5" ry="5"/>
+  <text x="210" y="345" fill="#E0E0E0" font-family="Arial" font-size="14">Element Description</text>
+  
+  <!-- Step 3: Fill in template -->
+  <rect x="20" y="400" width="760" height="180" fill="#1E1F23" rx="5" ry="5"/>
+  <text x="40" y="425" fill="#E0E0E0" font-family="Arial" font-size="18">Step 3: Fill in template fields</text>
+  
+  <!-- Template form -->
+  <rect x="40" y="445" width="720" height="120" fill="#34353B" rx="5" ry="5"/>
+  <text x="60" y="470" fill="#FFFFFF" font-family="Arial" font-size="14">Edit Annotation</text>
+  
+  <!-- Form fields -->
+  <rect x="60" y="485" width="100" height="20" fill="#1E1F23" rx="3" ry="3"/>
+  <text x="75" y="500" fill="#E0E0E0" font-family="Arial" font-size="12">title</text>
+  <rect x="170" y="485" width="570" height="20" fill="#4A5BEF" rx="3" ry="3"/>
+  <text x="185" y="500" fill="#FFFFFF" font-family="Arial" font-size="12">Spiritual Trajectory Quadrants</text>
+  
+  <rect x="60" y="515" width="100" height="20" fill="#1E1F23" rx="3" ry="3"/>
+  <text x="75" y="530" fill="#E0E0E0" font-family="Arial" font-size="12">description</text>
+  <rect x="170" y="515" width="570" height="20" fill="#3C3D44" rx="3" ry="3"/>
+  <text x="185" y="530" fill="#E0E0E0" font-family="Arial" font-size="12">A visual representation of spiritual growth stages mapped to physical laws of motion...</text>
+  
+  <!-- Save/Cancel buttons -->
+  <rect x="640" y="545" width="70" height="30" fill="#4A5BEF" rx="5" ry="5"/>
+  <text x="675" y="565" fill="#FFFFFF" font-family="Arial" font-size="14" text-anchor="middle">Save</text>
+  
+  <rect x="720" y="545" width="70" height="30" fill="#3C3D44" rx="5" ry="5"/>
+  <text x="755" y="565" fill="#E0E0E0" font-family="Arial" font-size="14" text-anchor="middle">Cancel</text>
+</svg>

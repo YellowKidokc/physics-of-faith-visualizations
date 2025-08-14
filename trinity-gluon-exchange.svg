@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16222A" />
+      <stop offset="100%" stop-color="#3A6073" />
+    </linearGradient>
+    
+    <!-- Glow effects -->
+    <filter id="glow-white" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <filter id="glow-gold" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feFlood flood-color="gold" result="gold-color"/>
+      <feComposite operator="in" in="gold-color" in2="blur" result="gold-blur"/>
+      <feComposite in="SourceGraphic" in2="gold-blur" operator="over"/>
+    </filter>
+    
+    <!-- Particle animation -->
+    <radialGradient id="particle-glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="1" />
+      <stop offset="100%" stop-color="white" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Trinity symbol -->
+    <symbol id="trinity-knot" viewBox="0 0 200 200">
+      <path d="M100,10 
+               C150,10 180,90 100,180 
+               C20,90 50,10 100,10 
+               Z" 
+            stroke="white" 
+            stroke-width="3" 
+            fill="none" />
+      <path d="M40,70 
+               C40,20 160,20 160,70 
+               C160,120 40,120 40,70 
+               Z" 
+            stroke="white" 
+            stroke-width="3" 
+            fill="none" />
+      <path d="M70,150 
+               C20,150 20,30 70,30 
+               C120,30 120,150 70,150 
+               Z" 
+            stroke="white" 
+            stroke-width="3" 
+            fill="none" />
+    </symbol>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Title -->
+  <text x="400" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white">Trinity & Gluon Exchange</text>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="white" font-style="italic">The constant flow of divine love mirrors quantum chromodynamics</text>
+  
+  <!-- Left side: Physics (QCD) -->
+  <g transform="translate(200, 300)">
+    <!-- Protons and neutrons with gluon exchange -->
+    <g>
+      <!-- Quark 1 -->
+      <circle cx="-60" cy="-60" r="25" fill="#e74c3c" filter="url(#glow-white)">
+        <animate attributeName="cx" values="-60;-65;-60" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="cy" values="-60;-55;-60" dur="4s" repeatCount="indefinite" />
+      </circle>
+      
+      <!-- Quark 2 -->
+      <circle cx="60" cy="-60" r="25" fill="#3498db" filter="url(#glow-white)">
+        <animate attributeName="cx" values="60;65;60" dur="3.5s" repeatCount="indefinite" />
+        <animate attributeName="cy" values="-60;-55;-60" dur="3.2s" repeatCount="indefinite" />
+      </circle>
+      
+      <!-- Quark 3 -->
+      <circle cx="0" cy="70" r="25" fill="#2ecc71" filter="url(#glow-white)">
+        <animate attributeName="cx" values="0;5;0" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="cy" values="70;75;70" dur="3.8s" repeatCount="indefinite" />
+      </circle>
+      
+      <!-- Gluon exchange (animated particles) -->
+      <g filter="url(#glow-gold)">
+        <!-- Exchange 1-2 -->
+        <path d="M-60,-60 C-30,-90 30,-90 60,-60" stroke="gold" stroke-width="2" fill="none" stroke-dasharray="5,5">
+          <animate attributeName="d" values="M-60,-60 C-30,-90 30,-90 60,-60;M-65,-55 C-30,-85 30,-85 65,-55;M-60,-60 C-30,-90 30,-90 60,-60" dur="3s" repeatCount="indefinite" />
+        </path>
+        
+        <!-- Gluon particles -->
+        <circle r="4" fill="url(#particle-glow)">
+          <animateMotion 
+            path="M-60,-60 C-30,-90 30,-90 60,-60" 
+            dur="1.5s" 
+            repeatCount="indefinite" />
+        </circle>
+        
+        <circle r="4" fill="url(#particle-glow)">
+          <animateMotion 
+            path="M60,-60 C30,-90 -30,-90 -60,-60" 
+            dur="1.5s" 
+            repeatCount="indefinite" />
+        </circle>
+        
+        <!-- Exchange 2-3 -->
+        <path d="M60,-60 C70,0 40,50 0,70" stroke="gold" stroke-width="2" fill="none" stroke-dasharray="5,5">
+          <animate attributeName="d" values="M60,-60 C70,0 40,50 0,70;M65,-55 C75,5 45,55 5,75;M60,-60 C70,0 40,50 0,70" dur="3.5s" repeatCount="indefinite" />
+        </path>
+        
+        <!-- Gluon particles -->
+        <circle r="4" fill="url(#particle-glow)">
+          <animateMotion 
+            path="M60,-60 C70,0 40,50 0,70" 
+            dur="1.7s" 
+            repeatCount="indefinite" />
+        </circle>
+        
+        <circle r="4" fill="url(#particle-glow)">
+          <animateMotion 
+            path="M0,70 C40,50 70,0 60,-60" 
+            dur="1.7s" 
+            repeatCount="indefinite" />
+        </circle>
+        
+        <!-- Exchange 3-1 -->
+        <path d="M0,70 C-40,50 -70,0 -60,-60" stroke="gold" stroke-width="2" fill="none" stroke-dasharray="5,5">
+          <animate attributeName="d" values="M0,70 C-40,50 -70,0 -60,-60;M5,75 C-35,55 -65,5 -65,-55;M0,70 C-40,50 -70,0 -60,-60" dur="4s" repeatCount="indefinite" />
+        </path>
+        
+        <!-- Gluon particles -->
+        <circle r="4" fill="url(#particle-glow)">
+          <animateMotion 
+            path="M0,70 C-40,50 -70,0 -60,-60" 
+            dur="2s" 
+            repeatCount="indefinite" />
+        </circle>
+        
+        <circle r="4" fill="url(#particle-glow)">
+          <animateMotion 
+            path="M-60,-60 C-70,0 -40,50 0,70" 
+            dur="2s" 
+            repeatCount="indefinite" />
+        </circle>
+      </g>
+    </g>
+    
+    <!-- Physics label -->
+    <text x="0" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="white">Quantum Chromodynamics</text>
+    <text x="0" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#aaa">Gluon Exchange Between Quarks</text>
+  </g>
+  
+  <!-- Right side: Trinity -->
+  <g transform="translate(600, 300)">
+    <!-- Trinity symbol with glowing effect -->
+    <use href="#trinity-knot" width="200" height="200" x="-100" y="-100" filter="url(#glow-white)" />
+    
+    <!-- Dynamic love exchange between persons of Trinity -->
+    <g filter="url(#glow-gold)">
+      <!-- Father - top -->
+      <circle cx="0" cy="-80" r="25" fill="rgba(255,255,255,0.8)" stroke="white" stroke-width="2">
+        <animate attributeName="r" values="25;28;25" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="-80" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">Father</text>
+      
+      <!-- Son - bottom right -->
+      <circle cx="70" cy="40" r="25" fill="rgba(255,255,255,0.8)" stroke="white" stroke-width="2">
+        <animate attributeName="r" values="25;28;25" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+      <text x="70" y="40" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">Son</text>
+      
+      <!-- Holy Spirit - bottom left -->
+      <circle cx="-70" cy="40" r="25" fill="rgba(255,255,255,0.8)" stroke="white" stroke-width="2">
+        <animate attributeName="r" values="25;28;25" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <text x="-70" y="40" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">Spirit</text>
+      
+      <!-- Love exchange -->
+      <path d="M0,-80 Q35,-20 70,40" stroke="gold" stroke-width="3" fill="none">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="4s" repeatCount="indefinite" />
+      </path>
+      
+      <path d="M70,40 Q0,40 -70,40" stroke="gold" stroke-width="3" fill="none">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="3s" repeatCount="indefinite" />
+      </path>
+      
+      <path d="M-70,40 Q-35,-20 0,-80" stroke="gold" stroke-width="3" fill="none">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="3.5s" repeatCount="indefinite" />
+      </path>
+    </g>
+    
+    <!-- Spiritual label -->
+    <text x="0" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="white">Divine Trinity</text>
+    <text x="0" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#aaa">Perfect Unity in Distinction</text>
+  </g>
+  
+  <!-- Connecting central label -->
+  <g transform="translate(400, 300)">
+    <circle cx="0" cy="0" r="50" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="1" />
+    <text x="0" y="-5" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="white">Mirrors</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="white">↔</text>
+  </g>
+  
+  <!-- Scripture -->
+  <text x="400" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic" font-size="20" fill="white">"God is love." - 1 John 4:8</text>
+  
+  <!-- Additional explanation -->
+  <text x="400" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#aaa">Just as gluons constantly exchange between quarks to maintain nuclear stability,</text>
+  <text x="400" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#aaa">love eternally flows between Father, Son, and Spirit in perfect divine unity.</text>
+</svg>

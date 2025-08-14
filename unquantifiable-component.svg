@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0c0c1d"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">THE UNQUANTIFIABLE COMPONENT (U)</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#a87dff" text-anchor="middle" font-style="italic">Where Mathematics Meets Mystery at the Boundary of Knowledge</text>
+  
+  <!-- Primary Visualization: Boundary of Knowledge -->
+  <g transform="translate(400, 300)">
+    <!-- Outer Observable Universe Circle -->
+    <circle cx="0" cy="0" r="220" fill="none" stroke="#564e8e" stroke-width="2"/>
+    <text x="0" y="-230" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">BOUNDARY OF OBSERVABLE UNIVERSE</text>
+    
+    <!-- Inner Knowable Physics Circle -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#4caee8" stroke-width="2"/>
+    <text x="0" y="-190" font-family="Arial, sans-serif" font-size="16" fill="#4caee8" text-anchor="middle">KNOWABLE PHYSICS</text>
+    
+    <!-- Gödel's Incompleteness Theorem Boundary -->
+    <circle cx="0" cy="0" r="145" fill="none" stroke="#e86b4c" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="-130" y="0" font-family="Arial, sans-serif" font-size="14" fill="#e86b4c" text-anchor="end" transform="rotate(-45, -130, 0)">GÖDEL'S LIMIT</text>
+    
+    <!-- Quantum Uncertainty Boundary -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#ffcc44" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="14" fill="#ffcc44" text-anchor="middle">QUANTUM UNCERTAINTY</text>
+    
+    <!-- Core Knowledge Zone -->
+    <circle cx="0" cy="0" r="80" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-width="1"/>
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">KNOWN</text>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Classical Physics</text>
+    
+    <!-- Unquantifiable Zones -->
+    
+    <!-- Mystery Zone 1: Quantum Phenomena -->
+    <g transform="translate(-40, -90)">
+      <circle cx="0" cy="0" r="25" fill="#a87dff" fill-opacity="0.6"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">QUANTUM</text>
+      <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">U₁</text>
+    </g>
+    
+    <!-- Mystery Zone 2: Consciousness -->
+    <g transform="translate(60, -60)">
+      <circle cx="0" cy="0" r="30" fill="#a87dff" fill-opacity="0.6"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">CONSCIOUSNESS</text>
+      <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">U₂</text>
+    </g>
+    
+    <!-- Mystery Zone 3: Free Will -->
+    <g transform="translate(50, 70)">
+      <circle cx="0" cy="0" r="25" fill="#a87dff" fill-opacity="0.6"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">FREE WILL</text>
+      <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">U₃</text>
+    </g>
+    
+    <!-- Mystery Zone 4: Divine Action -->
+    <g transform="translate(-80, 30)">
+      <circle cx="0" cy="0" r="30" fill="#a87dff" fill-opacity="0.6"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">DIVINE ACTION</text>
+      <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">U₄</text>
+    </g>
+    
+    <!-- Beyond Observable Zone -->
+    <g>
+      <!-- Dark Energy -->
+      <g transform="translate(170, 150)">
+        <circle cx="0" cy="0" r="20" fill="#a87dff" fill-opacity="0.3"/>
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">DARK</text>
+        <text x="0" y="10" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">ENERGY</text>
+      </g>
+      
+      <!-- Dark Matter -->
+      <g transform="translate(-200, 80)">
+        <circle cx="0" cy="0" r="20" fill="#a87dff" fill-opacity="0.3"/>
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">DARK</text>
+        <text x="0" y="10" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">MATTER</text>
+      </g>
+      
+      <!-- Other Dimensions -->
+      <g transform="translate(-160, -160)">
+        <circle cx="0" cy="0" r="20" fill="#a87dff" fill-opacity="0.3"/>
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">HIGHER</text>
+        <text x="0" y="10" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">DIMENSIONS</text>
+      </g>
+      
+      <!-- Infinite Spiritual Realm -->
+      <g transform="translate(180, -120)">
+        <circle cx="0" cy="0" r="20" fill="#a87dff" fill-opacity="0.3"/>
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">SPIRITUAL</text>
+        <text x="0" y="10" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">REALM</text>
+      </g>
+    </g>
+    
+    <!-- Connection Lines for Unquantifiable Components -->
+    <line x1="0" y1="0" x2="-40" y2="-90" stroke="#a87dff" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="0" y1="0" x2="60" y2="-60" stroke="#a87dff" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="0" y1="0" x2="50" y2="70" stroke="#a87dff" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="0" y1="0" x2="-80" y2="30" stroke="#a87dff" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- Left Side: Scientific Precedent -->
+  <g transform="translate(150, 480)">
+    <rect x="-120" y="-70" width="240" height="140" rx="10" fill="rgba(30,30,60,0.7)" stroke="#564e8e" stroke-width="2"/>
+    <text x="0" y="-50" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">SCIENTIFIC PRECEDENT</text>
+    
+    <text x="-100" y="-20" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="start">• Heisenberg Uncertainty</text>
+    <text x="-100" y="5" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="start">• Gödel's Incompleteness</text>
+    <text x="-100" y="30" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="start">• Dark Energy/Matter</text>
+    <text x="-100" y="55" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="start">• Quantum Wave Collapse</text>
+  </g>
+  
+  <!-- Right Side: Mathematical Representation -->
+  <g transform="translate(650, 480)">
+    <rect x="-120" y="-70" width="240" height="140" rx="10" fill="rgba(30,30,60,0.7)" stroke="#564e8e" stroke-width="2"/>
+    <text x="0" y="-50" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">MATHEMATICAL FORM</text>
+    
+    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">U(Sₛ) = U₀ + ΔU(Sₛ)</text>
+    <line x1="-100" y1="-5" x2="100" y2="-5" stroke="#ffffff" stroke-width="1"/>
+    
+    <text x="-100" y="20" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="start">U₀ = Baseline mystery</text>
+    <text x="-100" y="45" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="start">ΔU(Sₛ) = Variable component</text>
+  </g>
+  
+  <!-- Bottom Explanation -->
+  <rect x="150" y="550" width="500" height="30" rx="5" fill="rgba(30,30,60,0.7)" stroke="#564e8e" stroke-width="2"/>
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">"Not everything that exists can be measured, but it still shapes reality."</text>
+</svg>

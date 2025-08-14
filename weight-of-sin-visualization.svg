@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <!-- Background -->
+  <rect width="600" height="600" fill="#1e1e2e"/>
+  
+  <!-- Central gravitational well representation -->
+  <defs>
+    <radialGradient id="wellGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#3c096c" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#5a189a" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#7b2cbf" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Central gravitational well -->
+  <ellipse cx="300" cy="300" rx="200" ry="100" fill="url(#wellGradient)"/>
+  
+  <!-- Hebrew word for sin with meaning -->
+  <text x="300" y="70" font-family="Arial" font-size="40" fill="#e0aaff" text-anchor="middle">חטא</text>
+  <text x="300" y="100" font-family="Arial" font-size="16" fill="#fff" text-anchor="middle" font-style="italic">"chata" - to miss the mark, to bear a weight</text>
+  
+  <!-- Center mass representing sin -->
+  <circle cx="300" cy="300" r="40" fill="#240046" stroke="#c77dff" stroke-width="2"/>
+  <text x="300" y="305" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">SIN</text>
+  
+  <!-- Surrounding orbital paths -->
+  <ellipse cx="300" cy="300" rx="75" ry="40" fill="none" stroke="#bb86fc" stroke-width="1" stroke-dasharray="3,2"/>
+  <ellipse cx="300" cy="300" rx="110" ry="60" fill="none" stroke="#bb86fc" stroke-width="1" stroke-dasharray="3,2"/>
+  <ellipse cx="300" cy="300" rx="145" ry="80" fill="none" stroke="#bb86fc" stroke-width="1" stroke-dasharray="3,2"/>
+  
+  <!-- Event horizon -->
+  <ellipse cx="300" cy="300" rx="180" ry="95" fill="none" stroke="#ff758f" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="430" y="230" font-family="Arial" font-size="12" fill="#ff758f" text-anchor="start" font-style="italic">Event Horizon</text>
+  <text x="430" y="245" font-family="Arial" font-size="10" fill="#ccc" text-anchor="start">Point of spiritual no return</text>
+  
+  <!-- Spiritual behaviors trapped in orbit -->
+  <circle cx="340" cy="275" r="8" fill="#4cc9f0"/>
+  <text x="355" y="270" font-family="Arial" font-size="10" fill="#4cc9f0" text-anchor="start">Addiction</text>
+  
+  <circle cx="270" cy="330" r="8" fill="#4cc9f0"/>
+  <text x="240" y="330" font-family="Arial" font-size="10" fill="#4cc9f0" text-anchor="end">Deception</text>
+  
+  <circle cx="235" cy="275" r="8" fill="#4cc9f0"/>
+  <text x="220" y="270" font-family="Arial" font-size="10" fill="#4cc9f0" text-anchor="end">Pride</text>
+  
+  <circle cx="365" cy="330" r="8" fill="#4cc9f0"/>
+  <text x="385" y="330" font-family="Arial" font-size="10" fill="#4cc9f0" text-anchor="start">Greed</text>
+  
+  <!-- Escape path and velocity -->
+  <defs>
+    <linearGradient id="escapeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c77dff" />
+      <stop offset="100%" stop-color="#ffafcc" />
+    </linearGradient>
+  </defs>
+  
+  <path d="M300,300 C320,200 350,150 400,100" stroke="url(#escapeGradient)" stroke-width="3" fill="none"/>
+  <text x="410" y="90" font-family="Arial" font-size="14" fill="#ffafcc" text-anchor="start" font-weight="bold">GRACE</text>
+  <text x="410" y="110" font-family="Arial" font-size="12" fill="#ccc" text-anchor="start" font-style="italic">Escape Velocity</text>
+  
+  <!-- Downward pull of sin -->
+  <path d="M300,340 L300,400" stroke="#ff758f" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <defs>
+    <marker id="arrowDown" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ff758f" />
+    </marker>
+  </defs>
+  <text x="320" y="380" font-family="Arial" font-size="12" fill="#ff758f" text-anchor="start">Gravitational Pull</text>
+  
+  <!-- Scripture references -->
+  <rect x="80" y="420" width="200" height="100" rx="5" fill="#2d2d3f" opacity="0.9"/>
+  <text x="180" y="440" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">SCRIPTURAL INSIGHT</text>
+  <text x="180" y="465" font-family="Arial" font-size="12" fill="#ccc" text-anchor="middle" font-style="italic">Psalm 38:4</text>
+  <text x="180" y="485" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle" text-width="180">"For my iniquities have gone</text>
+  <text x="180" y="500" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle" text-width="180">over my head; like a heavy burden,</text>
+  <text x="180" y="515" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle" text-width="180">they are too heavy for me."</text>
+  
+  <!-- Gravitational concepts table -->
+  <rect x="320" y="420" width="200" height="130" rx="5" fill="#2d2d3f" opacity="0.9"/>
+  <text x="420" y="440" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">GRAVITATIONAL PARALLELS</text>
+  
+  <line x1="340" y1="450" x2="500" y2="450" stroke="#666" stroke-width="1"/>
+  <line x1="420" y1="450" x2="420" y2="540" stroke="#666" stroke-width="1"/>
+  
+  <text x="380" y="465" font-family="Arial" font-size="10" fill="#4cc9f0" text-anchor="middle">Physical</text>
+  <text x="460" y="465" font-family="Arial" font-size="10" fill="#ffafcc" text-anchor="middle">Spiritual</text>
+  
+  <text x="380" y="485" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Mass</text>
+  <text x="460" y="485" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Sin patterns</text>
+  
+  <text x="380" y="505" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Gravity</text>
+  <text x="460" y="505" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Temptation</text>
+  
+  <text x="380" y="525" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Escape velocity</text>
+  <text x="460" y="525" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Redemption</text>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">THE WEIGHT OF SIN</text>
+  <text x="300" y="140" font-family="Arial" font-size="16" fill="#ccc" text-anchor="middle" font-style="italic">Linguistic and Gravitational Metaphor</text>
+  
+  <!-- Philosophical insight -->
+  <rect x="150" y="550" width="300" height="40" rx="5" fill="#2d2d3f" opacity="0.9"/>
+  <text x="300" y="575" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle" font-style="italic">"Sin is not merely a moral failing, but a fundamental</text>
+  <text x="300" y="590" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle" font-style="italic">constraint on human potential—a weight that distorts</text>
+</svg>

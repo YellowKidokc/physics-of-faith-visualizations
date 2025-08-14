@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0c0c1d"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">CONSCIOUSNESS: THE FIFTH FUNDAMENTAL FORCE</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#9d8ee2" text-anchor="middle" font-style="italic">How awareness bends probability space like mass bends spacetime</text>
+  
+  <!-- Left Side: Gravity & Spacetime -->
+  <g transform="translate(180, 230)">
+    <!-- Gravity Title -->
+    <text x="0" y="-100" font-family="Arial, sans-serif" font-size="20" fill="#4caee8" text-anchor="middle">GRAVITY</text>
+    
+    <!-- Gravity Field Visualization -->
+    <ellipse cx="0" cy="0" rx="150" ry="40" fill="none" stroke="#4caee8" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="120" ry="35" fill="none" stroke="#4caee8" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="90" ry="30" fill="none" stroke="#4caee8" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="60" ry="25" fill="none" stroke="#4caee8" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="30" ry="20" fill="none" stroke="#4caee8" stroke-width="1"/>
+    
+    <!-- Mass -->
+    <circle cx="0" cy="0" r="20" fill="#4caee8"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">MASS</text>
+    
+    <!-- Spacetime Labels -->
+    <text x="0" y="75" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">SPACETIME CURVATURE</text>
+    
+    <!-- Equation -->
+    <text x="0" y="105" font-family="Arial, sans-serif" font-size="14" fill="#4caee8" text-anchor="middle">F = G(m₁m₂/r²)</text>
+  </g>
+  
+  <!-- Right Side: Consciousness & Probability -->
+  <g transform="translate(620, 230)">
+    <!-- Consciousness Title -->
+    <text x="0" y="-100" font-family="Arial, sans-serif" font-size="20" fill="#9d4ee8" text-anchor="middle">CONSCIOUSNESS</text>
+    
+    <!-- Probability Field Visualization -->
+    <ellipse cx="0" cy="0" rx="150" ry="40" fill="none" stroke="#9d4ee8" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="120" ry="35" fill="none" stroke="#9d4ee8" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="90" ry="30" fill="none" stroke="#9d4ee8" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="60" ry="25" fill="none" stroke="#9d4ee8" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="30" ry="20" fill="none" stroke="#9d4ee8" stroke-width="1"/>
+    
+    <!-- Awareness -->
+    <circle cx="0" cy="0" r="20" fill="#9d4ee8"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">AWARENESS</text>
+    
+    <!-- Probability Labels -->
+    <text x="0" y="75" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">PROBABILITY CURVATURE</text>
+    
+    <!-- Equation -->
+    <text x="0" y="105" font-family="Arial, sans-serif" font-size="14" fill="#9d4ee8" text-anchor="middle">Ψ(Q,C) = e^(-(Q·C))</text>
+  </g>
+  
+  <!-- Center Connection -->
+  <g transform="translate(400, 230)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">≡</text>
+    <line x1="-170" y1="0" x2="-50" y2="0" stroke="white" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="50" y1="0" x2="170" y2="0" stroke="white" stroke-width="1" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- Comparative Properties -->
+  <g transform="translate(400, 400)">
+    <rect x="-350" y="0" width="700" height="150" rx="10" fill="rgba(30,30,60,0.7)" stroke="#564e8e" stroke-width="2"/>
+    
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">COMPARATIVE PROPERTIES</text>
+    
+    <line x1="-350" y1="40" x2="350" y2="40" stroke="#564e8e" stroke-width="1"/>
+    <line x1="0" y1="40" x2="0" y2="150" stroke="#564e8e" stroke-width="1"/>
+    
+    <text x="-175" y="60" font-family="Arial, sans-serif" font-size="16" fill="#4caee8" text-anchor="middle" font-weight="bold">GRAVITY</text>
+    <text x="175" y="60" font-family="Arial, sans-serif" font-size="16" fill="#9d4ee8" text-anchor="middle" font-weight="bold">CONSCIOUSNESS</text>
+    
+    <text x="-175" y="90" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Warps space through mass</text>
+    <text x="175" y="90" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Warps probability through intention</text>
+    
+    <text x="-175" y="120" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Stronger with more mass</text>
+    <text x="175" y="120" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Stronger with moral clarity</text>
+    
+    <text x="-175" y="150" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Weakens with distance</text>
+    <text x="175" y="150" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Weakens with spiritual distance</text>
+  </g>
+  
+  <!-- Key Message -->
+  <g transform="translate(400, 570)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">"Consciousness doesn't just observe reality—it shapes it, just like gravity shapes space."</text>
+  </g>
+</svg>

@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#220000" />
+      <stop offset="100%" stop-color="#000022" />
+    </linearGradient>
+    
+    <!-- Tree of Life/Death filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+      <feOffset dx="0" dy="0" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.8" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-gradient)" />
+  
+  <!-- Dividing line down the middle -->
+  <line x1="400" y1="50" x2="400" y2="450" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="10,5" />
+  
+  <!-- Left side: Tree of Life -->
+  <g id="tree-of-life" transform="translate(200, 280)">
+    <!-- Tree trunk -->
+    <path d="M0,-180 C0,-180 -20,-120 -20,-80 C-20,-40 0,0 0,0" fill="none" stroke="#80a040" stroke-width="15" stroke-linecap="round" />
+    <path d="M0,-180 C0,-180 20,-120 20,-80 C20,-40 0,0 0,0" fill="none" stroke="#80a040" stroke-width="15" stroke-linecap="round" />
+    
+    <!-- Branches -->
+    <path d="M0,-150 C0,-150 -40,-130 -70,-140" fill="none" stroke="#80a040" stroke-width="10" stroke-linecap="round" />
+    <path d="M0,-150 C0,-150 40,-130 70,-140" fill="none" stroke="#80a040" stroke-width="10" stroke-linecap="round" />
+    <path d="M0,-100 C0,-100 -50,-90 -90,-80" fill="none" stroke="#80a040" stroke-width="8" stroke-linecap="round" />
+    <path d="M0,-100 C0,-100 50,-90 90,-80" fill="none" stroke="#80a040" stroke-width="8" stroke-linecap="round" />
+    <path d="M0,-50 C0,-50 -40,-45 -60,-30" fill="none" stroke="#80a040" stroke-width="6" stroke-linecap="round" />
+    <path d="M0,-50 C0,-50 40,-45 60,-30" fill="none" stroke="#80a040" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Leaves - vibrant and healthy -->
+    <circle cx="-70" cy="-140" r="15" fill="#60c040" />
+    <circle cx="-60" cy="-135" r="18" fill="#60c040" />
+    <circle cx="-80" cy="-145" r="12" fill="#60c040" />
+    
+    <circle cx="70" cy="-140" r="15" fill="#60c040" />
+    <circle cx="60" cy="-135" r="18" fill="#60c040" />
+    <circle cx="80" cy="-145" r="12" fill="#60c040" />
+    
+    <circle cx="-90" cy="-80" r="15" fill="#60c040" />
+    <circle cx="-80" cy="-75" r="18" fill="#60c040" />
+    <circle cx="-100" cy="-85" r="12" fill="#60c040" />
+    
+    <circle cx="90" cy="-80" r="15" fill="#60c040" />
+    <circle cx="80" cy="-75" r="18" fill="#60c040" />
+    <circle cx="100" cy="-85" r="12" fill="#60c040" />
+    
+    <circle cx="-60" cy="-30" r="15" fill="#60c040" />
+    <circle cx="-50" cy="-25" r="18" fill="#60c040" />
+    <circle cx="-70" cy="-35" r="12" fill="#60c040" />
+    
+    <circle cx="60" cy="-30" r="15" fill="#60c040" />
+    <circle cx="50" cy="-25" r="18" fill="#60c040" />
+    <circle cx="70" cy="-35" r="12" fill="#60c040" />
+    
+    <!-- Eden ground -->
+    <path d="M-150,0 Q-75,-15 0,0 Q75,-15 150,0" fill="none" stroke="#40a060" stroke-width="5" />
+    
+    <!-- Fruit of life -->
+    <circle cx="0" cy="-180" r="25" fill="#ffd700" filter="url(#glow)" />
+    <circle cx="0" cy="-180" r="20" fill="#ffff00" filter="url(#glow)" />
+    
+    <!-- Water of life -->
+    <path d="M-30,0 Q0,20 30,0" fill="none" stroke="#40a0ff" stroke-width="3" />
+    <path d="M-40,10 Q0,35 40,10" fill="none" stroke="#40a0ff" stroke-width="3" />
+    <path d="M-50,20 Q0,50 50,20" fill="none" stroke="#40a0ff" stroke-width="3" />
+  </g>
+  
+  <!-- Right side: Tree of Death/Sin -->
+  <g id="tree-of-death" transform="translate(600, 280)">
+    <!-- Dead tree trunk -->
+    <path d="M0,-180 C0,-180 -20,-120 -20,-80 C-20,-40 0,0 0,0" fill="none" stroke="#505050" stroke-width="15" stroke-linecap="round" />
+    <path d="M0,-180 C0,-180 20,-120 20,-80 C20,-40 0,0 0,0" fill="none" stroke="#505050" stroke-width="15" stroke-linecap="round" />
+    
+    <!-- Dead branches -->
+    <path d="M0,-150 C0,-150 -40,-130 -70,-140" fill="none" stroke="#505050" stroke-width="10" stroke-linecap="round" />
+    <path d="M0,-150 C0,-150 40,-130 70,-140" fill="none" stroke="#505050" stroke-width="10" stroke-linecap="round" />
+    <path d="M0,-100 C0,-100 -50,-90 -90,-80" fill="none" stroke="#505050" stroke-width="8" stroke-linecap="round" />
+    <path d="M0,-100 C0,-100 50,-90 90,-80" fill="none" stroke="#505050" stroke-width="8" stroke-linecap="round" />
+    <path d="M0,-50 C0,-50 -40,-45 -60,-30" fill="none" stroke="#505050" stroke-width="6" stroke-linecap="round" />
+    <path d="M0,-50 C0,-50 40,-45 60,-30" fill="none" stroke="#505050" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Withered leaves - decayed and dying -->
+    <path d="M-70,-140 l-5,-10 l-10,5 l-5,-10 l-10,5 l5,10 l10,-5 l5,10 z" fill="#703010" />
+    <path d="M-85,-125 l5,-10 l-10,-5 l5,-10 l-10,-5 l-5,10 l10,5 l-5,10 z" fill="#703010" />
+    
+    <path d="M70,-140 l-5,-10 l-10,5 l-5,-10 l-10,5 l5,10 l10,-5 l5,10 z" fill="#703010" />
+    <path d="M85,-125 l5,-10 l-10,-5 l5,-10 l-10,-5 l-5,10 l10,5 l-5,10 z" fill="#703010" />
+    
+    <path d="M-90,-80 l-5,-10 l-10,5 l-5,-10 l-10,5 l5,10 l10,-5 l5,10 z" fill="#703010" />
+    <path d="M-105,-65 l5,-10 l-10,-5 l5,-10 l-10,-5 l-5,10 l10,5 l-5,10 z" fill="#703010" />
+    
+    <path d="M90,-80 l-5,-10 l-10,5 l-5,-10 l-10,5 l5,10 l10,-5 l5,10 z" fill="#703010" />
+    <path d="M105,-65 l5,-10 l-10,-5 l5,-10 l-10,-5 l-5,10 l10,5 l-5,10 z" fill="#703010" />
+    
+    <path d="M-60,-30 l-5,-10 l-10,5 l-5,-10 l-10,5 l5,10 l10,-5 l5,10 z" fill="#703010" />
+    <path d="M-75,-15 l5,-10 l-10,-5 l5,-10 l-10,-5 l-5,10 l10,5 l-5,10 z" fill="#703010" />
+    
+    <path d="M60,-30 l-5,-10 l-10,5 l-5,-10 l-10,5 l5,10 l10,-5 l5,10 z" fill="#703010" />
+    <path d="M75,-15 l5,-10 l-10,-5 l5,-10 l-10,-5 l-5,10 l10,5 l-5,10 z" fill="#703010" />
+    
+    <!-- Cracked ground -->
+    <path d="M-150,0 l30,10 l40,-5 l35,8 l45,-13" fill="none" stroke="#504030" stroke-width="3" />
+    <path d="M-120,10 l20,-15 l35,12 l40,-9 l25,12 l50,-10" fill="none" stroke="#504030" stroke-width="2" />
+    
+    <!-- Forbidden fruit (decayed) -->
+    <circle cx="0" cy="-180" r="25" fill="#800000" filter="url(#glow)" />
+    <path d="M0,-180 m-15,0 a15,15 0 1,0 30,0 a15,15 0 1,0 -30,0" fill="#600000" filter="url(#glow)" />
+    
+    <!-- Entropy symbols -->
+    <g transform="translate(0, -100) rotate(20)">
+      <path d="M0,0 C20,-20 20,20 40,0 C60,-20 60,20 80,0" fill="none" stroke="#a04040" stroke-width="2" />
+      <path d="M0,15 C20,-5 20,35 40,15 C60,-5 60,35 80,15" fill="none" stroke="#a04040" stroke-width="2" />
+      <path d="M0,30 C20,10 20,50 40,30 C60,10 60,50 80,30" fill="none" stroke="#a04040" stroke-width="2" />
+    </g>
+  </g>
+  
+  <!-- Central title -->
+  <g transform="translate(400, 50)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="white" text-anchor="middle" filter="url(#shadow)">Sin as Spiritual Entropy</text>
+    <text x="0" y="40" font-family="Georgia, serif" font-size="18" fill="#d0d0ff" text-anchor="middle" filter="url(#shadow)">The Force That Corrupts and Destroys</text>
+  </g>
+  
+  <!-- Left side label -->
+  <g transform="translate(200, 110)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="20" fill="#80ff80" text-anchor="middle" filter="url(#shadow)">Eden</text>
+    <text x="0" y="30" font-family="Georgia, serif" font-size="16" fill="#60d060" text-anchor="middle" filter="url(#shadow)">Perfect Order</text>
+  </g>
+  
+  <!-- Right side label -->
+  <g transform="translate(600, 110)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="20" fill="#ff8080" text-anchor="middle" filter="url(#shadow)">Fallen World</text>
+    <text x="0" y="30" font-family="Georgia, serif" font-size="16" fill="#d06060" text-anchor="middle" filter="url(#shadow)">Increasing Disorder</text>
+  </g>
+  
+  <!-- Scripture quote -->
+  <g transform="translate(400, 430)">
+    <rect x="-300" y="-25" width="600" height="50" rx="10" fill="rgba(0,0,0,0.5)" />
+    <text x="0" y="0" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#e0e0ff" text-anchor="middle">
+      "For the wages of sin is death, but the gift of God is eternal life."
+    </text>
+    <text x="0" y="25" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#e0e0ff" text-anchor="middle">
+      — Romans 6:23
+    </text>
+  </g>
+</svg>

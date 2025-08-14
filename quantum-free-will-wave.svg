@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0c0c1d"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">QUANTUM FREE WILL PROBABILITY WAVE</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#a87dff" text-anchor="middle" font-style="italic">How Faith Biases Decision Outcomes Before Choice Collapses the Wave</text>
+  
+  <!-- Coordinate System -->
+  <!-- Y-Axis -->
+  <line x1="150" y1="500" x2="150" y2="150" stroke="#ffffff" stroke-width="2"/>
+  <!-- Y-Axis Ticks -->
+  <line x1="145" y1="500" x2="155" y2="500" stroke="#ffffff" stroke-width="2"/>
+  <line x1="145" y1="400" x2="155" y2="400" stroke="#ffffff" stroke-width="2"/>
+  <line x1="145" y1="300" x2="155" y2="300" stroke="#ffffff" stroke-width="2"/>
+  <line x1="145" y1="200" x2="155" y2="200" stroke="#ffffff" stroke-width="2"/>
+  <!-- Y-Axis Labels -->
+  <text x="130" y="505" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="end">0</text>
+  <text x="130" y="405" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="end">0.25</text>
+  <text x="130" y="305" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="end">0.5</text>
+  <text x="130" y="205" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="end">0.75</text>
+  <text x="130" y="155" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="end">1.0</text>
+  <text x="130" y="125" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" transform="rotate(-90, 130, 300)">PROBABILITY</text>
+  
+  <!-- X-Axis -->
+  <line x1="150" y1="500" x2="650" y2="500" stroke="#ffffff" stroke-width="2"/>
+  <!-- Decision Point Marker -->
+  <line x1="400" y1="150" x2="400" y2="500" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="400" y="525" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">DECISION POINT</text>
+  
+  <!-- Label Good and Bad Choices -->
+  <text x="270" y="525" font-family="Arial, sans-serif" font-size="18" fill="#64e291" text-anchor="middle">|G⟩ GOOD CHOICE</text>
+  <text x="530" y="525" font-family="Arial, sans-serif" font-size="18" fill="#e86b4c" text-anchor="middle">|B⟩ BAD CHOICE</text>
+  
+  <!-- Low Faith Wave (More Balanced) -->
+  <g opacity="0.3">
+    <path d="M150,370 Q220,220 270,300 Q300,350 350,300 Q400,250 450,300 Q480,330 530,300 Q570,280 650,450" 
+          fill="none" stroke="#a87dff" stroke-width="3"/>
+    <text x="670" y="450" font-family="Arial, sans-serif" font-size="14" fill="#a87dff" text-anchor="start">LOW FAITH</text>
+  </g>
+  
+  <!-- Medium Faith Wave (Slightly Biased Toward Good) -->
+  <g opacity="0.6">
+    <path d="M150,400 Q220,200 270,240 Q300,280 350,240 Q400,200 450,340 Q480,400 530,380 Q570,370 650,470" 
+          fill="none" stroke="#a87dff" stroke-width="3"/>
+    <text x="670" y="470" font-family="Arial, sans-serif" font-size="14" fill="#a87dff" text-anchor="start">MEDIUM FAITH</text>
+  </g>
+  
+  <!-- High Faith Wave (Strongly Biased Toward Good) -->
+  <g opacity="0.9">
+    <path d="M150,430 Q220,180 270,180 Q300,190 350,180 Q400,180 450,380 Q480,450 530,450 Q570,450 650,490" 
+          fill="none" stroke="#a87dff" stroke-width="3"/>
+    <text x="670" y="490" font-family="Arial, sans-serif" font-size="14" fill="#a87dff" text-anchor="start">HIGH FAITH</text>
+  </g>
+  
+  <!-- Shade Under High Faith Wave -->
+  <defs>
+    <linearGradient id="goodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64e291" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#64e291" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e86b4c" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <path d="M150,430 Q220,180 270,180 Q300,190 350,180 Q400,180 450,380 Q480,450 530,450 Q570,450 650,490 L650,500 L150,500 Z" 
+        fill="url(#goodGradient)" opacity="0.4"/>
+  
+  <!-- Wave Collapse Animation Suggestion -->
+  <g transform="translate(400, 330)">
+    <line x1="0" y1="-150" x2="0" y2="170" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <circle cx="0" cy="0" r="8" fill="#ffffff"/>
+    <text x="15" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="start">COLLAPSE POINT</text>
+    <path d="M-5,-5 L5,5 M-5,5 L5,-5" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  
+  <!-- Probability Distribution Zone - Good -->
+  <path d="M150,500 L350,500 L350,180 Q300,190 270,180 Q220,180 150,430 Z" 
+        fill="#64e291" fill-opacity="0.2" stroke="#64e291" stroke-width="1"/>
+  <text x="250" y="340" font-family="Arial, sans-serif" font-size="16" fill="#64e291" text-anchor="middle" transform="rotate(-90, 250, 340)">α² = 0.75</text>
+  
+  <!-- Probability Distribution Zone - Bad -->
+  <path d="M450,500 L650,500 L650,490 Q570,450 530,450 Q480,450 450,380 Z" 
+        fill="#e86b4c" fill-opacity="0.2" stroke="#e86b4c" stroke-width="1"/>
+  <text x="550" y="450" font-family="Arial, sans-serif" font-size="16" fill="#e86b4c" text-anchor="middle">β² = 0.25</text>
+  
+  <!-- Equation and Description Box -->
+  <rect x="150" y="540" width="500" height="40" rx="10" fill="rgba(30,30,60,0.7)" stroke="#564e8e" stroke-width="2"/>
+  <text x="400" y="565" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">Q = α|G⟩ + β|B⟩ where α² + β² = 1</text>
+</svg>

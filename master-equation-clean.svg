@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <!-- Background -->
+  <rect width="900" height="400" fill="#121212" rx="15" ry="15"/>
+  <rect x="10" y="10" width="880" height="380" fill="#1a1a2e" rx="10" ry="10" stroke="#2d2d42" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="450" y="70" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#e6c619" text-anchor="middle">THE MASTER EQUATION</text>
+  
+  <!-- Equation -->
+  <g transform="translate(450, 200)">
+    <text font-family="Arial, sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+      <tspan x="0" y="-35">χ = ∭∭</tspan> 
+      <tspan x="0" y="15">
+        <tspan>(</tspan>
+        <tspan>G₀e^(Rₚ/S)·R</tspan><tspan font-style="italic">J</tspan>
+        <tspan>)</tspan>
+        <tspan>/</tspan>
+        <tspan>(</tspan>
+        <tspan>1+E₀e^(kt)+S₀e^(-λRₚt)</tspan>
+        <tspan>)</tspan>
+      </tspan>
+      <tspan x="0" y="65">
+        <tspan>×</tspan>
+        <tspan>e^(-(Q·C))</tspan>
+        <tspan>×</tspan>
+        <tspan>(</tspan>
+        <tspan>1+∑F</tspan><tspan font-size="20">i</tspan><tspan>e^(-d</tspan><tspan font-size="20">i</tspan><tspan>)</tspan>
+        <tspan>)</tspan>
+        <tspan>×</tspan>
+        <tspan>U(S</tspan><tspan font-size="20">s</tspan><tspan>)</tspan>
+      </tspan>
+      <tspan x="0" y="115">dx dy dt dS</tspan><tspan font-size="20">s</tspan>
+    </text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="450" cy="200" r="180" fill="none" stroke="#2d2d42" stroke-width="1"/>
+  <circle cx="450" cy="200" r="200" fill="none" stroke="#2d2d42" stroke-width="0.5"/>
+</svg>
