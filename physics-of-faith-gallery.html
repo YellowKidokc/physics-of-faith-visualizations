@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics of Faith Visualizations</title>
+    <meta name="description" content="Professional visualization gallery for Physics of Faith research - grant proposals, equations, and quantum consciousness studies">
+    <style>
+        :root {
+            --primary-gold: #ffd700;
+            --gold-bright: #ffed4a;
+            --gold-dark: #b8860b;
+            --bg-dark: #0f1419;
+            --bg-card: #1a1f29;
+            --text-light: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-blue: #3b82f6;
+            --shadow-glow: rgba(255, 215, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1e293b 100%);
+            color: var(--text-light);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 31, 41, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--primary-gold);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-gold), var(--gold-bright));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px var(--shadow-glow);
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: var(--bg-card);
+            border: 2px solid var(--primary-gold);
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 0 15px var(--shadow-glow);
+        }
+
+        #searchInput {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            outline: none;
+            padding: 0.5rem;
+            width: 250px;
+            font-size: 1rem;
+        }
+
+        #searchInput::placeholder {
+            color: var(--text-muted);
+        }
+
+        /* Navigation */
+        .nav-categories {
+            background: var(--bg-card);
+            padding: 1rem 0;
+            margin: 2rem 0;
+            border-radius: 15px;
+            border: 1px solid var(--primary-gold);
+            box-shadow: 0 0 20px var(--shadow-glow);
+        }
+
+        .category-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .filter-btn {
+            background: linear-gradient(135deg, var(--bg-card), #2d3748);
+            border: 2px solid var(--primary-gold);
+            color: var(--text-light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: linear-gradient(135deg, var(--primary-gold), var(--gold-bright));
+            color: var(--bg-dark);
+            box-shadow: 0 0 25px var(--shadow-glow);
+            transform: translateY(-2px);
+        }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .image-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 2px solid var(--primary-gold);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .image-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(255, 215, 0, 0.4);
+            border-color: var(--gold-bright);
+        }
+
+        .image-card.priority {
+            border-width: 3px;
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+        }
+
+        .image-card.priority::before {
+            content: '⭐';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            z-index: 10;
+            text-shadow: 0 0 10px var(--primary-gold);
+        }
+
+        .image-container {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-info {
+            padding: 1.5rem;
+        }
+
+        .image-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--primary-gold);
+            text-shadow: 0 0 10px var(--shadow-glow);
+        }
+
+        .image-category {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-gold), var(--gold-bright));
+            color: var(--bg-dark);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 5px 15px var(--shadow-glow);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: var(--bg-dark);
+            color: var(--text-light);
+            border: 1px solid var(--primary-gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-gold);
+            color: var(--bg-dark);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .lightbox.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+            border: 3px solid var(--primary-gold);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 50px var(--shadow-glow);
+        }
+
+        .lightbox img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            background: var(--primary-gold);
+            color: var(--bg-dark);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .lightbox-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 2rem;
+            padding-top: 4rem;
+        }
+
+        /* Loading States */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            color: var(--primary-gold);
+            font-size: 1.2rem;
+        }
+
+        .spinner {
+            border: 3px solid var(--bg-card);
+            border-top: 3px solid var(--primary-gold);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-right: 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .search-bar {
+                width: 100%;
+            }
+
+            #searchInput {
+                width: 100%;
+            }
+
+            .category-filters {
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 0.5rem;
+            }
+
+            .filter-btn {
+                flex-shrink: 0;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-muted);
+        }
+
+        .empty-state h3 {
+            color: var(--primary-gold);
+            margin-bottom: 1rem;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            background: var(--bg-card);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--primary-gold);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-gold);
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">⚛️ Physics of Faith Visualizations</div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search visualizations...">
+                    <span style="color: var(--primary-gold);">🔍</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="nav-categories">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All Images</button>
+                <button class="filter-btn" data-category="grant-visuals">Grant Visuals</button>
+                <button class="filter-btn" data-category="master-equation">Master Equation</button>
+                <button class="filter-btn" data-category="quantum-consciousness">Quantum Consciousness</button>
+                <button class="filter-btn" data-category="experimental-setups">Experimental Setups</button>
+                <button class="filter-btn" data-category="theoretical-framework">Theoretical Framework</button>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-number" id="totalImages">0</div>
+                <div class="stat-label">Total Images</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="visibleImages">0</div>
+                <div class="stat-label">Showing</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="totalCategories">5</div>
+                <div class="stat-label">Categories</div>
+            </div>
+        </div>
+
+        <div id="gallery" class="gallery">
+            <div class="loading">
+                <div class="spinner"></div>
+                Loading your visualizations...
+            </div>
+        </div>
+
+        <div id="emptyState" class="empty-state" style="display: none;">
+            <h3>No visualizations found</h3>
+            <p>Upload some images to your repository to get started!</p>
+        </div>
+    </main>
+
+    <!-- Description Modal -->
+    <div id="descriptorModal" class="lightbox">
+        <div class="lightbox-content" style="max-width: 800px; max-height: 80%;">
+            <button class="lightbox-close" onclick="closeDescriptorModal()">&times;</button>
+            <div style="padding: 2rem; background: var(--bg-card); border-radius: 15px;">
+                <h2 id="descriptorTitle" style="color: var(--primary-gold); margin-bottom: 1rem;"></h2>
+                <div id="descriptorText" style="color: var(--text-light); line-height: 1.8; font-size: 1.1rem;"></div>
+                <div style="margin-top: 2rem; text-align: right;">
+                    <button class="btn btn-primary" onclick="copyDescriptor()">📋 Copy Description</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let allImages = [];
+        let currentFilter = 'all';
+        let searchTerm = '';
+
+        // Priority folder images (gets higher ranking)
+        const PRIORITY_FOLDERS = ['grant-visuals', 'master-equation'];
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            loadImages();
+            setupEventListeners();
+        });
+
+        function setupEventListeners() {
+            // Search functionality
+            document.getElementById('searchInput').addEventListener('input', function(e) {
+                searchTerm = e.target.value.toLowerCase();
+                filterImages();
+            });
+
+            // Category filters
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active state
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    currentFilter = this.dataset.category;
+                    filterImages();
+                });
+            });
+
+            // Lightbox close on background click
+            document.getElementById('lightbox').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                }
+            });
+        }
+
+        async function loadImages() {
+            try {
+                // Auto-scan all supported file types from your repository
+                await scanImagesFromRepository();
+            } catch (error) {
+                console.error('Error loading images:', error);
+                showEmptyState();
+            }
+        }
+
+        async function scanImagesFromRepository() {
+            // This will scan your actual GitHub repository for images
+            const categories = ['grant-visuals', 'master-equation', 'quantum-consciousness', 'experimental-setups', 'theoretical-framework'];
+            const supportedFormats = ['png', 'jpg', 'jpeg', 'svg', 'gif', 'webp', 'html'];
+            let allFoundImages = [];
+
+            for (const category of categories) {
+                try {
+                    // In production, this would use GitHub API to scan the actual folders
+                    const categoryImages = await mockScanCategory(category);
+                    allFoundImages = allFoundImages.concat(categoryImages);
+                } catch (error) {
+                    console.log(`Could not scan ${category}:`, error);
+                }
+            }
+
+            allImages = allFoundImages;
+            updateStats();
+            renderImages(allImages);
+        }
+
+        async function mockScanCategory(category) {
+            // Mock data with AMAZING descriptors - this will be replaced with real file scanning
+            const mockData = {
+                'grant-visuals': [
+                    {
+                        src: `images/grant-visuals/consciousness-bridge-breakthrough.svg`,
+                        title: 'The Consciousness Bridge - Breakthrough Visualization',
+                        category: 'grant-visuals',
+                        description: 'This isn\'t just a diagram - it\'s the visual proof that consciousness and quantum mechanics are two sides of the same cosmic coin. Watch how the golden threads of awareness weave through quantum fields, creating bridges where science thought there were only gaps. Every connection point represents a moment where spirit touches matter.',
+                        isPriority: true,
+                        type: 'svg'
+                    },
+                    {
+                        src: `images/grant-visuals/funding-impact-projection.png`,
+                        title: 'Grant Impact Projection - Revolutionary Potential',
+                        category: 'grant-visuals',
+                        description: 'Imagine the moment when mainstream physics realizes that consciousness isn\'t separate from reality - it IS reality expressing itself. This visualization shows the exponential breakthrough potential: from first experiments to paradigm shift to humanity understanding its true nature as conscious creators of physical reality.',
+                        isPriority: true,
+                        type: 'png'
+                    }
+                ],
+                'master-equation': [
+                    {
+                        src: `images/master-equation/unified-field-equations.svg`,
+                        title: 'Master Equation - The Universe\'s Source Code',
+                        category: 'master-equation',
+                        description: 'What if I told you this single equation contains the mathematical DNA of reality itself? Every symbol pulses with cosmic significance - χ represents the conscious field that shapes all existence, while the derivatives show how awareness accelerates through spacetime. This is the equation God uses to dream the universe into being.',
+                        isPriority: true,
+                        type: 'svg'
+                    },
+                    {
+                        src: `images/master-equation/consciousness-field-derivation.html`,
+                        title: 'Interactive Consciousness Field Derivation',
+                        category: 'master-equation',
+                        description: 'Step by step, watch mathematics reveal the secret architecture of consciousness. Each transformation shows how awareness itself becomes the fundamental force - more basic than gravity, more essential than electromagnetism. This isn\'t just math; it\'s the universe explaining how it thinks.',
+                        isPriority: true,
+                        type: 'html'
+                    }
+                ],
+                'quantum-consciousness': [
+                    {
+                        src: `images/quantum-consciousness/entangled-souls-visualization.png`,
+                        title: 'Entangled Souls - Quantum Love Made Visible',
+                        category: 'quantum-consciousness',
+                        description: 'Every time two consciousness connect - in love, in prayer, in shared understanding - they create quantum entanglement that transcends space and time. This visualization captures the moment when souls recognize each other across the quantum void, their awareness intertwining at the deepest level of reality.',
+                        isPriority: false,
+                        type: 'png'
+                    },
+                    {
+                        src: `images/quantum-consciousness/coherence-acceleration.svg`,
+                        title: 'Coherence Acceleration - The Awakening Process',
+                        category: 'quantum-consciousness',
+                        description: 'Watch consciousness evolve from scattered quantum noise to coherent divine awareness. Every spiral represents a soul\'s journey from separation to unity, from confusion to clarity. The acceleration curves show why spiritual awakenings feel like quantum leaps - because they literally are.',
+                        isPriority: false,
+                        type: 'svg'
+                    }
+                ],
+                'experimental-setups': [
+                    {
+                        src: `images/experimental-setups/princeton-pear-replication.jpg`,
+                        title: 'PEAR Lab Replication - Consciousness Affects Reality',
+                        category: 'experimental-setups',
+                        description: 'The setup that proves what mystics have known forever: consciousness directly influences physical reality. Every component in this laboratory is calibrated to catch the whisper of mind over matter. The random number generators don\'t know they\'re about to reveal the secret that human intention shapes the fabric of spacetime itself.',
+                        isPriority: false,
+                        type: 'jpg'
+                    }
+                ],
+                'theoretical-framework': [
+                    {
+                        src: `images/theoretical-framework/lagrangian-consciousness-derivation.svg`,
+                        title: 'Lagrangian of Consciousness - The Mathematics of the Soul',
+                        category: 'theoretical-framework',
+                        description: 'Behold the mathematical poetry of consciousness itself! This Lagrangian doesn\'t just describe physical motion - it captures the dynamics of awareness as it dances through quantum fields. Each term represents a different aspect of how consciousness creates, sustains, and transforms reality. This is the equation that describes how souls move through the universe.',
+                        isPriority: false,
+                        type: 'svg'
+                    }
+                ]
+            };
+
+            return mockData[category] || [];
+        }
+
+        function filterImages() {
+            let filtered = allImages;
+
+            // Apply category filter
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(img => img.category === currentFilter);
+            }
+
+            // Apply search filter
+            if (searchTerm) {
+                filtered = filtered.filter(img => 
+                    img.title.toLowerCase().includes(searchTerm) ||
+                    img.description.toLowerCase().includes(searchTerm) ||
+                    img.category.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            // Sort: priority images first, then alphabetically
+            filtered.sort((a, b) => {
+                if (a.isPriority && !b.isPriority) return -1;
+                if (!a.isPriority && b.isPriority) return 1;
+                return a.title.localeCompare(b.title);
+            });
+
+            updateStats(filtered.length);
+            renderImages(filtered);
+        }
+
+        function renderImages(images) {
+            const gallery = document.getElementById('gallery');
+            const emptyState = document.getElementById('emptyState');
+
+            if (images.length === 0) {
+                gallery.style.display = 'none';
+                emptyState.style.display = 'block';
+                return;
+            }
+
+            gallery.style.display = 'grid';
+            emptyState.style.display = 'none';
+
+            gallery.innerHTML = images.map(img => `
+                <div class="image-card ${img.isPriority ? 'priority' : ''}" data-category="${img.category}">
+                    <div class="image-container">
+                        <img src="${img.src}" alt="${img.title}" onerror="this.src='data:image/svg+xml,<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"300\\" height=\\"200\\"><rect width=\\"100%\\" height=\\"100%\\" fill=\\"%23f0f0f0\\"/><text x=\\"50%\\" y=\\"50%\\" font-family=\\"Arial\\" font-size=\\"14\\" fill=\\"%23666\\" text-anchor=\\"middle\\" dy=\\".3em\\">${img.title}</text></svg>'">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">${img.title}</div>
+                        <div class="image-category">${formatCategory(img.category)}</div>
+                        <div class="image-description">${img.description}</div>
+                        <div class="image-actions">
+                            <button class="btn btn-primary" onclick="openLightbox('${img.src}', '${img.title}', '${img.description}')">
+                                🔍 View
+                            </button>
+                            <a href="${img.src}" class="btn btn-secondary" target="_blank">
+                                🔗 Direct Link
+                            </a>
+                            <button class="btn btn-secondary" onclick="downloadImage('${img.src}', '${img.title}', '${img.type}')">
+                                📥 Download ${img.type.toUpperCase()}
+                            </button>
+                            <button class="btn btn-secondary" onclick="showDescriptor('${img.title}', '${img.description}')">
+                                📝 Full Description
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function formatCategory(category) {
+            return category.split('-').map(word => 
+                word.charAt(0).toUpperCase() + word.slice(1)
+            ).join(' ');
+        }
+
+        function updateStats(visible = null) {
+            document.getElementById('totalImages').textContent = allImages.length;
+            document.getElementById('visibleImages').textContent = visible !== null ? visible : allImages.length;
+        }
+
+        function openLightbox(src, title, description) {
+            document.getElementById('lightboxImage').src = src;
+            document.getElementById('lightboxTitle').textContent = title;
+            document.getElementById('lightboxDescription').textContent = description;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function showEmptyState() {
+            document.getElementById('gallery').style.display = 'none';
+            document.getElementById('emptyState').style.display = 'block';
+        }
+
+        // Auto-load new images when they're uploaded (for live deployment)
+        async function scanForNewImages() {
+            // This would scan your images directory for new files
+            // For now, it's a placeholder for the live version
+            console.log('Scanning for new images...');
+        }
+
+        // Refresh images every 30 seconds to catch new uploads
+        setInterval(scanForNewImages, 30000);
+    </script>
+</body>
+</html>
