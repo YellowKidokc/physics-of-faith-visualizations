@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Classroom background -->
+  <rect width="800" height="500" fill="#f8f8f8" />
+  
+  <!-- Blackboard -->
+  <rect x="150" y="50" width="500" height="300" fill="#2a3d45" />
+  <rect x="160" y="60" width="480" height="280" fill="#304b58" stroke="#2a3d45" stroke-width="2" />
+  
+  <!-- Newton's Law on blackboard -->
+  <text x="400" y="150" font-family="Times New Roman, serif" font-size="36" text-anchor="middle" fill="#fff" font-style="italic">F = G(m₁m₂)/r²</text>
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#fff">Universal Gravitation</text>
+  
+  <!-- Professor (Elijah) -->
+  <circle cx="250" cy="400" r="30" fill="#d6d6d6" /> <!-- head -->
+  <rect x="235" y="430" width="30" height="60" fill="#2c3e50" /> <!-- body -->
+  <line x1="235" y1="440" x2="210" y2="460" stroke="#2c3e50" stroke-width="8" /> <!-- left arm -->
+  <line x1="265" y1="440" x2="290" y2="460" stroke="#2c3e50" stroke-width="8" /> <!-- right arm -->
+  <line x1="240" y1="490" x2="235" y2="530" stroke="#2c3e50" stroke-width="8" /> <!-- left leg -->
+  <line x1="260" y1="490" x2="265" y2="530" stroke="#2c3e50" stroke-width="8" /> <!-- right leg -->
+  
+  <!-- Chalk in hand -->
+  <line x1="210" y1="460" x2="205" y2="455" stroke="#fff" stroke-width="3" />
+  
+  <!-- Dust particles -->
+  <circle cx="200" cy="465" r="1" fill="#fff" opacity="0.6" />
+  <circle cx="203" cy="470" r="1" fill="#fff" opacity="0.7" />
+  <circle cx="198" cy="472" r="1" fill="#fff" opacity="0.5" />
+  <circle cx="205" cy="468" r="1" fill="#fff" opacity="0.6" />
+  <circle cx="207" cy="473" r="1" fill="#fff" opacity="0.7" />
+  
+  <!-- Space-time fabric demonstration -->
+  <rect x="500" y="350" width="200" height="150" fill="#f8f8f8" />
+  <path d="M500,380 Q600,420 700,380 Q600,540 500,380" fill="#e6e6fa" stroke="#9370db" stroke-width="1" opacity="0.7" />
+  
+  <!-- Bowling ball on fabric -->
+  <circle cx="600" cy="430" r="20" fill="#333" />
+  
+  <!-- Marbles -->
+  <circle cx="530" cy="400" r="5" fill="#6495ed" />
+  <circle cx="670" cy="400" r="5" fill="#6495ed" />
+  
+  <!-- Orbit paths -->
+  <path d="M530,400 Q580,390 600,430" stroke="#6495ed" stroke-width="1" fill="none" stroke-dasharray="3,3" />
+  <path d="M670,400 Q620,390 600,430" stroke="#6495ed" stroke-width="1" fill="none" stroke-dasharray="3,3" />
+  
+  <!-- Students (silhouettes) -->
+  <!-- Student 1 -->
+  <circle cx="350" cy="430" r="15" fill="#a9a9a9" />
+  <rect x="340" y="445" width="20" height="35" fill="#a9a9a9" />
+  
+  <!-- Student 2 (raising hand) -->
+  <circle cx="400" cy="430" r="15" fill="#a9a9a9" />
+  <rect x="390" y="445" width="20" height="35" fill="#a9a9a9" />
+  <line x1="410" y1="450" x2="430" y2="420" stroke="#a9a9a9" stroke-width="5" />
+  
+  <!-- Student 3 -->
+  <circle cx="450" cy="430" r="15" fill="#a9a9a9" />
+  <rect x="440" y="445" width="20" height="35" fill="#a9a9a9" />
+  
+  <!-- Title at top -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">The Invisible Thread</text>
+  
+  <!-- Apple and Moon visual near blackboard -->
+  <circle cx="650" cy="100" r="15" fill="#d3d3d3" /> <!-- moon -->
+  <circle cx="650" cy="150" r="5" fill="#ff6347" /> <!-- apple -->
+  <path d="M650,100 Q700,125 650,150" stroke="#2c3e50" stroke-width="1" stroke-dasharray="4,4" fill="none" /> <!-- connection -->
+  
+  <!-- Subtle gravity arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4b0082" opacity="0.3" />
+    </marker>
+  </defs>
+  
+  <line x1="650" y1="115" x2="650" y2="135" stroke="#4b0082" stroke-width="2" opacity="0.3" stroke-dasharray="3,3" marker-end="url(#arrowhead)" />
+  <line x1="600" y1="410" x2="600" y2="425" stroke="#4b0082" stroke-width="2" opacity="0.3" stroke-dasharray="3,3" marker-end="url(#arrowhead)" />
+</svg>

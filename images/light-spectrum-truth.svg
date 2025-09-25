@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#121726" />
+  
+  <!-- Stars -->
+  <g id="stars">
+    <circle cx="50" cy="70" r="1.5" fill="white" opacity="0.8" />
+    <circle cx="120" cy="40" r="1" fill="white" opacity="0.5" />
+    <circle cx="200" cy="90" r="1.8" fill="white" opacity="0.7" />
+    <circle cx="300" cy="60" r="1.2" fill="white" opacity="0.6" />
+    <circle cx="400" cy="30" r="1.6" fill="white" opacity="0.9" />
+    <circle cx="500" cy="80" r="1.3" fill="white" opacity="0.7" />
+    <circle cx="600" cy="50" r="1.7" fill="white" opacity="0.8" />
+    <circle cx="700" cy="70" r="1.4" fill="white" opacity="0.6" />
+    <circle cx="750" cy="40" r="1.1" fill="white" opacity="0.5" />
+    <circle cx="180" cy="20" r="1.5" fill="white" opacity="0.7" />
+    <circle cx="250" cy="45" r="1.3" fill="white" opacity="0.6" />
+    <circle cx="350" cy="85" r="1.8" fill="white" opacity="0.9" />
+    <circle cx="450" cy="25" r="1.2" fill="white" opacity="0.5" />
+    <circle cx="550" cy="65" r="1.6" fill="white" opacity="0.8" />
+    <circle cx="650" cy="35" r="1.4" fill="white" opacity="0.7" />
+  </g>
+  
+  <!-- Electromagnetic Spectrum Bar -->
+  <g id="spectrum-bar">
+    <rect x="100" y="150" width="600" height="60" rx="5" ry="5" fill="#1a1a1a" stroke="#444" stroke-width="2" />
+    
+    <!-- Spectrum colors -->
+    <linearGradient id="spectrum" x1="0%" y1="0%" x2="100%" y1="0%">
+      <stop offset="0%" stop-color="#3b0c46" /> <!-- Gamma Rays -->
+      <stop offset="13%" stop-color="#7030A0" /> <!-- X-Rays -->
+      <stop offset="28%" stop-color="#0070C0" /> <!-- Ultraviolet -->
+      <stop offset="34%" stop-color="#4472C4" /> <!-- Visible starts -->
+      <stop offset="36%" stop-color="#3366FF" /> <!-- Blue -->
+      <stop offset="37%" stop-color="#00B0F0" /> <!-- Cyan -->
+      <stop offset="38%" stop-color="#00B050" /> <!-- Green -->
+      <stop offset="39%" stop-color="#FFFF00" /> <!-- Yellow -->
+      <stop offset="40%" stop-color="#FF9933" /> <!-- Orange -->
+      <stop offset="41%" stop-color="#FF0000" /> <!-- Red -->
+      <stop offset="42%" stop-color="#C00000" /> <!-- Visible ends -->
+      <stop offset="56%" stop-color="#E36C0A" /> <!-- Infrared -->
+      <stop offset="75%" stop-color="#FFC000" /> <!-- Microwave -->
+      <stop offset="100%" stop-color="#ED7D31" /> <!-- Radio Waves -->
+    </linearGradient>
+    
+    <rect x="105" y="155" width="590" height="50" rx="3" ry="3" fill="url(#spectrum)" />
+    
+    <!-- Visible Light Section Highlight -->
+    <rect x="360" y="140" width="50" height="80" stroke="#FFFFFF" stroke-width="2" fill="none" />
+    <text x="385" y="235" text-anchor="middle" fill="white" font-family="Arial" font-size="16">Visible Light (0.0035%)</text>
+    <line x1="385" y1="235" x2="385" y2="220" stroke="white" stroke-width="1" />
+  </g>
+  
+  <!-- Prism Illustration -->
+  <g id="prism">
+    <polygon points="380,300 430,300 405,350" fill="none" stroke="white" stroke-width="2" />
+    
+    <!-- Incoming light beam -->
+    <line x1="405" y1="270" x2="405" y2="300" stroke="white" stroke-width="4" />
+    
+    <!-- Outgoing rainbow -->
+    <path d="M380,300 Q350,330 320,350" stroke="#FF0000" stroke-width="2" fill="none" /> <!-- Red -->
+    <path d="M380,300 Q350,335 325,360" stroke="#FF9900" stroke-width="2" fill="none" /> <!-- Orange -->
+    <path d="M380,300 Q350,340 330,370" stroke="#FFFF00" stroke-width="2" fill="none" /> <!-- Yellow -->
+    <path d="M390,300 Q360,340 345,370" stroke="#00FF00" stroke-width="2" fill="none" /> <!-- Green -->
+    <path d="M400,300 Q370,340 360,370" stroke="#00FFFF" stroke-width="2" fill="none" /> <!-- Cyan -->
+    <path d="M410,300 Q380,340 375,370" stroke="#0000FF" stroke-width="2" fill="none" /> <!-- Blue -->
+    <path d="M420,300 Q390,340 390,370" stroke="#9900FF" stroke-width="2" fill="none" /> <!-- Violet -->
+    
+    <text x="405" y="400" text-anchor="middle" fill="white" font-family="Arial" font-size="18">Truth Contains All Perspectives</text>
+  </g>
+  
+  <!-- Title and key concepts -->
+  <text x="400" y="60" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">The Electromagnetic Spectrum of Truth</text>
+  
+  <g id="key-concepts" font-family="Arial" font-size="16" fill="white">
+    <text x="100" y="440" text-anchor="start">"What we perceive as truth is often just a small fraction of reality"</text>
+    <text x="100" y="470" text-anchor="start">"Like the visible light spectrum, our understanding is limited"</text>
+  </g>
+</svg>

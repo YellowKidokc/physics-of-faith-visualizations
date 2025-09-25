@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gravity-Sin Parallel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(20, 20, 40, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            border: 2px solid #6a5acd;
+            box-shadow: 0 0 50px rgba(106, 90, 205, 0.3);
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #9370db, #6a5acd, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #b19cd9;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 100px 1fr;
+            gap: 40px;
+            align-items: center;
+            margin: 40px 0;
+        }
+        
+        .physics-side {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d4a72 100%);
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid #4a90e2;
+            position: relative;
+        }
+        
+        .spiritual-side {
+            background: linear-gradient(135deg, #4a1a4a 0%, #6a2c70 100%);
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid #9370db;
+            position: relative;
+        }
+        
+        .side-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .physics-title {
+            color: #87ceeb;
+        }
+        
+        .spiritual-title {
+            color: #dda0dd;
+        }
+        
+        .object {
+            width: 60px;
+            height: 60px;
+            margin: 20px auto;
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        .falling-object {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+        }
+        
+        .person {
+            background: linear-gradient(45deg, #9370db, #6a5acd);
+            box-shadow: 0 0 20px rgba(147, 112, 219, 0.5);
+            position: relative;
+        }
+        
+        .person::before {
+            content: "👤";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+        }
+        
+        .equation {
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            font-size: 1.4em;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        
+        .physics-equation {
+            border-left-color: #4a90e2;
+            color: #87ceeb;
+        }
+        
+        .spiritual-equation {
+            border-left-color: #9370db;
+            color: #dda0dd;
+        }
+        
+        .connection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .equals {
+            font-size: 3em;
+            color: #ffd700;
+            margin: 10px 0;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        .connection-text {
+            font-size: 0.9em;
+            color: #b19cd9;
+            text-align: center;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        
+        .force-arrows {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .arrow {
+            width: 0;
+            height: 0;
+            margin: 0 10px;
+        }
+        
+        .down-arrow {
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 30px solid #ff6b6b;
+            filter: drop-shadow(0 0 5px rgba(255, 107, 107, 0.7));
+        }
+        
+        .pull-arrow {
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 30px solid #9370db;
+            filter: drop-shadow(0 0 5px rgba(147, 112, 219, 0.7));
+        }
+        
+        .law-statement {
+            text-align: center;
+            font-size: 1.1em;
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(106, 90, 205, 0.2), rgba(147, 112, 219, 0.2));
+            border-radius: 12px;
+            border: 1px solid #6a5acd;
+        }
+        
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">THE INVISIBLE WEIGHT OF SIN</h1>
+        <p class="subtitle">When Physics Meets Moral Reality</p>
+        
+        <div class="comparison">
+            <div class="physics-side">
+                <h2 class="side-title physics-title">🌌 GRAVITATIONAL PHYSICS</h2>
+                <div class="object falling-object"></div>
+                <div class="force-arrows">
+                    <div class="arrow down-arrow"></div>
+                    <div class="arrow down-arrow"></div>
+                    <div class="arrow down-arrow"></div>
+                </div>
+                <div class="equation physics-equation">
+                    F = G(m₁m₂)/r²
+                </div>
+                <p style="text-align: center; color: #87ceeb; font-size: 0.9em;">
+                    Invisible force • Universal attraction<br>
+                    Stronger as distance decreases<br>
+                    <span class="highlight">Follows inverse square law</span>
+                </p>
+            </div>
+            
+            <div class="connection">
+                <div class="connection-text">SAME</div>
+                <div class="equals">=</div>
+                <div class="connection-text">LAW</div>
+            </div>
+            
+            <div class="spiritual-side">
+                <h2 class="side-title spiritual-title">✝️ MORAL GRAVITY</h2>
+                <div class="object person"></div>
+                <div class="force-arrows">
+                    <div class="arrow pull-arrow"></div>
+                    <div class="arrow pull-arrow"></div>
+                    <div class="arrow pull-arrow"></div>
+                </div>
+                <div class="equation spiritual-equation">
+                    Sin Pull ∝ 1/d²
+                </div>
+                <p style="text-align: center; color: #dda0dd; font-size: 0.9em;">
+                    Invisible force • Universal temptation<br>
+                    Stronger as distance decreases<br>
+                    <span class="highlight">Follows inverse square law</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="law-statement">
+            <strong>The Inverse Square Law:</strong> Double the distance from the source, and the force becomes <span class="highlight">4 times weaker</span>. This applies to gravity, light, electromagnetic fields... <span class="highlight">and moral temptation.</span>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px; color: #b19cd9; font-style: italic;">
+            "Both are invisible, universal forces that get stronger as you get closer.<br>
+            The difference? You have a choice."
+        </div>
+    </div>
+</body>
+</html>

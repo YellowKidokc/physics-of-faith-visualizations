@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#121212" rx="15" ry="15"/>
+  <rect x="10" y="10" width="880" height="480" fill="#1a1a2e" rx="10" ry="10" stroke="#2d2d42" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="450" y="70" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#e6c619" text-anchor="middle">THE MASTER EQUATION</text>
+  <text x="450" y="110" font-family="Arial, sans-serif" font-size="20" fill="#888" text-anchor="middle">Quantum-Spiritual Framework</text>
+  
+  <!-- Equation -->
+  <g transform="translate(450, 260)">
+    <text font-family="Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+      <tspan x="0" y="-20">χ = ∭∭</tspan> 
+      <tspan x="0" y="20">
+        <tspan fill="#e6c619">(</tspan>
+        <tspan fill="#62d6e6">G₀e^(Rₚ/S)·R</tspan><tspan font-style="italic" fill="#62d6e6">J</tspan>
+        <tspan fill="#e6c619">)</tspan>
+        <tspan fill="#ffffff">/</tspan>
+        <tspan fill="#e6c619">(</tspan>
+        <tspan fill="#e55">1+E₀e^(kt)+S₀e^(-λRₚt)</tspan>
+        <tspan fill="#e6c619">)</tspan>
+      </tspan>
+      <tspan x="0" y="60">
+        <tspan fill="#ffffff">×</tspan>
+        <tspan fill="#e6c619">e^(-(Q·C))</tspan>
+        <tspan fill="#ffffff">×</tspan>
+        <tspan fill="#e6c619">(</tspan>
+        <tspan fill="#7bd66a">1+∑F</tspan><tspan font-size="18" fill="#7bd66a">i</tspan><tspan fill="#7bd66a">e^(-d</tspan><tspan font-size="18" fill="#7bd66a">i</tspan><tspan fill="#7bd66a">)</tspan>
+        <tspan fill="#e6c619">)</tspan>
+        <tspan fill="#ffffff">×</tspan>
+        <tspan fill="#a66ade">U(S</tspan><tspan font-size="18" fill="#a66ade">s</tspan><tspan fill="#a66ade">)</tspan>
+      </tspan>
+      <tspan x="0" y="100">dx dy dt dS</tspan><tspan font-size="18">s</tspan>
+    </text>
+  </g>
+  
+  <!-- Color coded legend -->
+  <g transform="translate(450, 400)">
+    <text font-family="Arial, sans-serif" font-size="16" text-anchor="middle">
+      <tspan x="0" y="0" fill="#62d6e6">■ Grace Function</tspan>
+      <tspan x="-200" y="0" fill="#e55">■ Entropy Term</tspan>
+      <tspan x="200" y="0" fill="#e6c619">■ Quantum Choice</tspan>
+      <tspan x="-200" y="30" fill="#7bd66a">■ Faith Network</tspan>
+      <tspan x="0" y="30" fill="#a66ade">■ Spiritual Utility</tspan>
+      <tspan x="200" y="30" fill="#ffffff">■ Integration Across Reality</tspan>
+    </text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="450" cy="250" r="200" fill="none" stroke="#2d2d42" stroke-width="1"/>
+  <circle cx="450" cy="250" r="220" fill="none" stroke="#2d2d42" stroke-width="0.5"/>
+  
+  <!-- Subtle cross shape in the background -->
+  <rect x="445" y="50" width="10" height="400" fill="#222240" rx="5" ry="5"/>
+  <rect x="250" y="245" width="400" height="10" fill="#222240" rx="5" ry="5"/>
+</svg>

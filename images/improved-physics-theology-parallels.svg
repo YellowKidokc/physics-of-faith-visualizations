@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold" fill="#333">
+    Physics-Theology Parallels: Empirical Validation
+  </text>
+  
+  <!-- Divider -->
+  <line x1="400" y1="60" x2="400" y2="560" stroke="#ccc" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Physics Side Title -->
+  <text x="200" y="80" font-family="Arial, sans-serif"

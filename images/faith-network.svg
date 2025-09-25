@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#121212" rx="15" ry="15"/>
+  <rect x="10" y="10" width="780" height="480" fill="#1a1a2e" rx="10" ry="10" stroke="#2d2d42" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#e6c619" text-anchor="middle">FAITH NETWORK FUNCTION</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#888" text-anchor="middle">Why Faith Multiplies in Groups</text>
+  
+  <!-- Equation -->
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="28" fill="#7bd66a" text-anchor="middle">R(F) = 1 + ∑F<tspan font-size="16">i</tspan>e<tspan font-size="22">-d</tspan><tspan font-size="16">i</tspan></text>
+  
+  <!-- Divider -->
+  <line x1="150" y1="180" x2="650" y2="180" stroke="#444" stroke-width="2"/>
+  
+  <!-- Faith Network Visualization -->
+  <g transform="translate(400, 320)">
+    <!-- Network nodes (believers) -->
+    <circle cx="0" cy="0" r="25" fill="#7bd66a" opacity="0.8"/>
+    <circle cx="-90" cy="-60" r="20" fill="#7bd66a" opacity="0.7"/>
+    <circle cx="80" cy="-70" r="22" fill="#7bd66a" opacity="0.75"/>
+    <circle cx="-100" cy="50" r="18" fill="#7bd66a" opacity="0.65"/>
+    <circle cx="110" cy="40" r="15" fill="#7bd66a" opacity="0.6"/>
+    <circle cx="-20" cy="90" r="17" fill="#7bd66a" opacity="0.63"/>
+    <circle cx="70" cy="90" r="12" fill="#7bd66a" opacity="0.55"/>
+    
+    <!-- Connection links between nodes (distance matters) -->
+    <line x1="0" y1="0" x2="-90" y2="-60" stroke="#7bd66a" stroke-width="3" opacity="0.7"/>
+    <line x1="0" y1="0" x2="80" y2="-70" stroke="#7bd66a" stroke-width="4" opacity="0.8"/>
+    <line x1="0" y1="0" x2="-100" y2="50" stroke="#7bd66a" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="110" y2="40" stroke="#7bd66a" stroke-width="2" opacity="0.55"/>
+    <line x1="0" y1="0" x2="-20" y2="90" stroke="#7bd66a" stroke-width="3" opacity="0.65"/>
+    <line x1="0" y1="0" x2="70" y2="90" stroke="#7bd66a" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Secondary connections (community strengthening) -->
+    <line x1="-90" y1="-60" x2="80" y2="-70" stroke="#7bd66a" stroke-width="1" opacity="0.4" stroke-dasharray="5,3"/>
+    <line x1="-100" y1="50" x2="-20" y2="90" stroke="#7bd66a" stroke-width="1" opacity="0.4" stroke-dasharray="5,3"/>
+    <line x1="110" y1="40" x2="70" y2="90" stroke="#7bd66a" stroke-width="1" opacity="0.4" stroke-dasharray="5,3"/>
+    <line x1="-90" y1="-60" x2="-100" y2="50" stroke="#7bd66a" stroke-width="1" opacity="0.3" stroke-dasharray="5,3"/>
+    <line x1="80" y1="-70" x2="110" y2="40" stroke="#7bd66a" stroke-width="1" opacity="0.3" stroke-dasharray="5,3"/>
+    
+    <!-- Labels for nodes -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#1a1a2e" text-anchor="middle" dominant-baseline="middle">F₁</text>
+    <text x="-90" y="-60" font-family="Arial, sans-serif" font-size="12" fill="#1a1a2e" text-anchor="middle" dominant-baseline="middle">F₂</text>
+    <text x="80" y="-70" font-family="Arial, sans-serif" font-size="12" fill="#1a1a2e" text-anchor="middle" dominant-baseline="middle">F₃</text>
+    <text x="-100" y="50" font-family="Arial, sans-serif" font-size="12" fill="#1a1a2e" text-anchor="middle" dominant-baseline="middle">F₄</text>
+    <text x="110" y="40" font-family="Arial, sans-serif" font-size="10" fill="#1a1a2e" text-anchor="middle" dominant-baseline="middle">F₅</text>
+    <text x="-20" y="90" font-family="Arial, sans-serif" font-size="10" fill="#1a1a2e" text-anchor="middle" dominant-baseline="middle">F₆</text>
+    <text x="70" y="90" font-family="Arial, sans-serif" font-size="10" fill="#1a1a2e" text-anchor="middle" dominant-baseline="middle">F₇</text>
+    
+    <!-- Faith intensification effect (glowing center) -->
+    <circle cx="0" cy="0" r="40" fill="url(#faithGlow)" opacity="0.4"/>
+    
+    <!-- Radial glow gradient for center node -->
+    <defs>
+      <radialGradient id="faithGlow" cx="0" cy="0" r="40" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#e6c619"/>
+        <stop offset="100%" stop-color="#7bd66a00"/>
+      </radialGradient>
+    </defs>
+  </g>
+  
+  <!-- Component Details -->
+  <g transform="translate(100, 440)">
+    <text font-family="Arial, sans-serif" font-size="16" fill="#aaa">
+      <tspan x="0" y="0">Where:</tspan>
+      <tspan x="0" y="25">• F<tspan font-size="12">i</tspan>: Faith strength of each believer in the network</tspan>
+      <tspan x="400" y="25">• d<tspan font-size="12">i</tspan>: Spiritual distance between believers</tspan>
+      <tspan x="100" y="50">• Faith grows exponentially when believers are closely connected</tspan>
+    </text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="400" cy="320" r="180" fill="none" stroke="#2d2d42" stroke-width="1"/>
+</svg>

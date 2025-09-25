@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0c0c1d"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">GRACE: THE FORCE THAT RESTORES ORDER</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#64e291" text-anchor="middle" font-style="italic">The spiritual counterforce to entropy and decoherence</text>
+  
+  <!-- Left Side: Physical Entropy -->
+  <g transform="translate(200, 250)">
+    <!-- Entropy Title -->
+    <text x="0" y="-120" font-family="Arial, sans-serif" font-size="20" fill="#e86b4c" text-anchor="middle">PHYSICAL ENTROPY</text>
+    <text x="0" y="-95" font-family="Arial, sans-serif" font-size="16" fill="#e86b4c" text-anchor="middle" font-style="italic">Always Increases</text>
+    
+    <!-- Entropy Visualization -->
+    <rect x="-150" y="-70" width="300" height="220" rx="10" fill="none" stroke="#e86b4c" stroke-width="2"/>
+    
+    <!-- Ordered State -->
+    <g transform="translate(-100, -40)">
+      <rect x="-30" y="-30" width="60" height="60" fill="#e86b4c" opacity="0.9"/>
+      <rect x="-30" y="-30" width="60" height="60" fill="none" stroke="white" stroke-width="1"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">ORDERED</text>
+    </g>
+    
+    <!-- Arrow -->
+    <line x1="-35" y1="0" x2="35" y2="0" stroke="white" stroke-width="2"/>
+    <polygon points="35,0 25,-5 25,5" fill="white"/>
+    
+    <!-- Disorder State -->
+    <g transform="translate(100, 0)">
+      <circle cx="-20" cy="-20" r="10" fill="#e86b4c" opacity="0.7"/>
+      <circle cx="15" cy="-15" r="12" fill="#e86b4c" opacity="0.6"/>
+      <circle cx="-10" cy="20" r="15" fill="#e86b4c" opacity="0.5"/>
+      <circle cx="20" cy="10" r="8" fill="#e86b4c" opacity="0.8"/>
+      <text x="0" y="45" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">DISORDERED</text>
+    </g>
+    
+    <!-- Equation -->
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="16" fill="#e86b4c" text-anchor="middle">E(t) = E₀e^(kt)</text>
+    <text x="0" y="130" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Entropy always increases</text>
+  </g>
+  
+  <!-- Right Side: Spiritual Negentropy -->
+  <g transform="translate(600, 250)">
+    <!-- Grace Title -->
+    <text x="0" y="-120" font-family="Arial, sans-serif" font-size="20" fill="#64e291" text-anchor="middle">SPIRITUAL GRACE</text>
+    <text x="0" y="-95" font-family="Arial, sans-serif" font-size="16" fill="#64e291" text-anchor="middle" font-style="italic">Restores Order</text>
+    
+    <!-- Grace Visualization -->
+    <rect x="-150" y="-70" width="300" height="220" rx="10" fill="none" stroke="#64e291" stroke-width="2"/>
+    
+    <!-- Disordered State -->
+    <g transform="translate(-100, 0)">
+      <circle cx="-20" cy="-20" r="10" fill="#64e291" opacity="0.5"/>
+      <circle cx="15" cy="-15" r="12" fill="#64e291" opacity="0.4"/>
+      <circle cx="-10" cy="20" r="15" fill="#64e291" opacity="0.3"/>
+      <circle cx="20" cy="10" r="8" fill="#64e291" opacity="0.6"/>
+      <text x="0" y="45" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">BROKEN</text>
+    </g>
+    
+    <!-- Arrow -->
+    <line x1="-35" y1="0" x2="35" y2="0" stroke="white" stroke-width="2"/>
+    <polygon points="35,0 25,-5 25,5" fill="white"/>
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="14" fill="#ffcc44" text-anchor="middle">REPENTANCE</text>
+    
+    <!-- Restored State -->
+    <g transform="translate(100, -40)">
+      <rect x="-30" y="-30" width="60" height="60" fill="#64e291" opacity="0.9"/>
+      <rect x="-30" y="-30" width="60" height="60" fill="none" stroke="white" stroke-width="1"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">RESTORED</text>
+    </g>
+    
+    <!-- Equation -->
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="16" fill="#64e291" text-anchor="middle">G(Rₚ) = G₀·e^(Rₚ/S)</text>
+    <text x="0" y="130" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Grace restores order</text>
+  </g>
+  
+  <!-- Center Connection -->
+  <g transform="translate(400, 250)">
+    <circle cx="0" cy="0" r="40" fill="#ffcc44" opacity="0.5"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">VS</text>
+  </g>
+  
+  <!-- Bottom Panel -->
+  <g transform="translate(400, 450)">
+    <rect x="-350" y="0" width="700" height="100" rx="10" fill="rgba(30,30,60,0.7)" stroke="#564e8e" stroke-width="2"/>
+    
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">GRACE AS SPIRITUAL NEGENTROPY</text>
+    
+    <line x1="-350" y1="40" x2="350" y2="40" stroke="#564e8e" stroke-width="1"/>
+    
+    <text x="-230" y="70" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Higher Repentance (Rₚ)</text>
+    <text x="-230" y="90" font-family="Arial, sans-serif" font-size="14" fill="#64e291" text-anchor="middle">→ Stronger Restoration</text>
+    
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Higher Sin Intensity (S)</text>
+    <text x="0" y="90" font-family="Arial, sans-serif" font-size="14" fill="#e86b4c" text-anchor="middle">→ More Grace Required</text>
+    
+    <text x="230" y="70" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Baseline Grace (G₀)</text>
+    <text x="230" y="90" font-family="Arial, sans-serif" font-size="14" fill="#ffcc44" text-anchor="middle">→ Always Present</text>
+  </g>
+  
+  <!-- Key Message -->
+  <g transform="translate(400, 570)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">"While physical entropy always increases, spiritual entropy can be reversed through grace."</text>
+  </g>
+</svg>

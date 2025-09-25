@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Night sky background -->
+  <rect width="800" height="500" fill="#0A0E17" />
+  
+  <!-- Stars -->
+  <g id="stars">
+    <circle cx="120" cy="80" r="1.2" fill="white" opacity="0.7" />
+    <circle cx="200" cy="120" r="1" fill="white" opacity="0.6" />
+    <circle cx="280" cy="60" r="1.5" fill="white" opacity="0.8" />
+    <circle cx="350" cy="100" r="1.1" fill="white" opacity="0.7" />
+    <circle cx="420" cy="50" r="1.3" fill="white" opacity="0.9" />
+    <circle cx="480" cy="130" r="1" fill="white" opacity="0.6" />
+    <circle cx="550" cy="70" r="1.4" fill="white" opacity="0.8" />
+    <circle cx="620" cy="110" r="1.2" fill="white" opacity="0.7" />
+    <circle cx="680" cy="40" r="1.5" fill="white" opacity="0.9" />
+    <circle cx="150" cy="40" r="1.1" fill="white" opacity="0.7" />
+    <circle cx="250" cy="90" r="1.3" fill="white" opacity="0.8" />
+    <circle cx="320" cy="30" r="1" fill="white" opacity="0.6" />
+    <circle cx="400" cy="110" r="1.4" fill="white" opacity="0.9" />
+    <circle cx="450" cy="70" r="1.2" fill="white" opacity="0.7" />
+    <circle cx="520" cy="40" r="1.5" fill="white" opacity="0.8" />
+    <circle cx="580" cy="100" r="1.1" fill="white" opacity="0.7" />
+    <circle cx="650" cy="60" r="1.3" fill="white" opacity="0.9" />
+    <circle cx="720" cy="120" r="1" fill="white" opacity="0.6" />
+  </g>
+  
+  <!-- Dark landscape silhouette -->
+  <path d="M0,380 Q100,350 200,370 Q300,390 400,350 Q500,330 600,360 Q700,380 800,370 L800,500 L0,500 Z" fill="#0E1621" />
+  <path d="M0,400 Q80,380 160,390 Q240,400 320,380 Q400,360 480,380 Q560,400 640,390 Q720,380 800,390 L800,500 L0,500 Z" fill="#061018" />
+  
+  <!-- Trees silhouette -->
+  <path d="M180,400 L190,350 L200,400 Z" fill="#071119" />
+  <path d="M600,390 L620,330 L640,390 Z" fill="#071119" />
+  <path d="M650,400 L665,350 L680,400 Z" fill="#071119" />
+  
+  <!-- House silhouette -->
+  <rect x="300" y="370" width="80" height="50" fill="#030812" />
+  <polygon points="290,370 390,370 340,330" fill="#030812" />
+  
+  <!-- Flashlight beam -->
+  <defs>
+    <linearGradient id="beam-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFAE6" stop-opacity="1" />
+      <stop offset="100%" stop-color="#FFFAE6" stop-opacity="0" />
+    </linearGradient>
+    <clipPath id="beam-clip">
+      <polygon points="460,470 540,250 380,250" />
+    </clipPath>
+  </defs>
+  
+  <!-- Illuminated area -->
+  <polygon points="460,470 540,250 380,250" fill="url(#beam-gradient)" clip-path="url(#beam-clip)" opacity="0.7" />
+  
+  <!-- Trees revealed in light -->
+  <g clip-path="url(#beam-clip)">
+    <path d="M430,350 L445,300 L460,350 L455,350 L455,380 L435,380 L435,350 Z" fill="#1F3520" />
+    <path d="M470,330 L485,290 L500,330 L495,330 L495,360 L475,360 L475,330 Z" fill="#1F3520" />
+  </g>
+  
+  <!-- Flashlight -->
+  <rect x="450" y="460" width="20" height="30" fill="#555555" />
+  <path d="M450,460 L450,450 Q450,440 460,440 Q470,440 470,450 L470,460 Z" fill="#555555" />
+  <circle cx="460" cy="440" r="12" fill="#444444" stroke="#666666" stroke-width="2" />
+  <circle cx="460" cy="440" r="8" fill="#FFFAE6" />
+  
+  <!-- Key concepts -->
+  <g font-family="Arial" font-size="16" fill="white">
+    <text x="140" y="440" text-anchor="middle" opacity="0.9">Darkness</text>
+    <text x="140" y="460" text-anchor="middle" opacity="0.9">= Absence of light</text>
+    
+    <text x="660" y="440" text-anchor="middle" opacity="0.9">Reality exists</text>
+    <text x="660" y="460" text-anchor="middle" opacity="0.9">whether illuminated or not</text>
+  </g>
+  
+  <!-- Truth parallels -->
+  <g font-family="Arial" font-size="14" fill="#FFFAE6" opacity="0.9">
+    <text x="240" y="250" text-anchor="middle">"Lies only exist where truth isn't present"</text>
+    <text x="560" y="250" text-anchor="middle">"Truth reveals what was always there"</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="80" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">The Nature of Light and Darkness</text>
+  <text x="400" y="110" text-anchor="middle" fill="white" font-family="Arial" font-size="18">"Truth is like light - it doesn't create reality, it reveals it"</text>
+</svg>

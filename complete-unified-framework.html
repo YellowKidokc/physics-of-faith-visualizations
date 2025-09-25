@@ -1,0 +1,148 @@
+<!-- 10-Law Integration - Add this before closing body tag -->
+<script>
+// 10-Law canonical catalog (names + links)
+const LAWS_10 = [
+  { id:"L1", n:1, title:"Downward Pull",           phys:"Gravity",               href:"law-1.html"  },
+  { id:"L2", n:2, title:"Unbreakable Bond",        phys:"Strong Force",          href:"law-2.html"  },
+  { id:"L3", n:3, title:"Illuminating Force",      phys:"Electromagnetism",      href:"law-3.html"  },
+  { id:"L4", n:4, title:"Universal Decay",         phys:"Entropy",               href:"law-4.html"  },
+  { id:"L5", n:5, title:"Observer Effect",         phys:"Quantum Measurement",   href:"law-5.html"  },
+  { id:"L6", n:6, title:"Uncertainty Principle",   phys:"Heisenberg Limits",     href:"law-6.html"  },
+  { id:"L7", n:7, title:"Dual Nature",             phys:"Wave–Particle",         href:"law-7.html"  },
+  { id:"L8", n:8, title:"Relativistic Framework",  phys:"Relativity",            href:"law-8.html"  },
+  { id:"L9", n:9, title:"Quantum Connection",      phys:"Entanglement",          href:"law-9.html"  },
+  { id:"L10",n:10,title:"Unified Theory",          phys:"Θ = Q + U / GUT",       href:"law-10.html" }
+];
+
+// Map variables to laws
+const varToLaw = {
+    'var-g': 1,  // Gravity/Grace maps to Law 1
+    'var-s': 2,  // Strong Force/Sin-Entropy maps to Law 2
+    'var-e': 3,  // Energy/Truth maps to Law 3
+    'var-t': 8,  // Time/Trinity maps to Law 8 (Relativistic Framework)
+    'var-q': 5,  // Quantum Effects maps to Law 5 (Observer Effect)
+    'var-f': 5,  // Faith Force also maps to Law 5
+    'var-c': 9,  // Consciousness/Soul maps to Law 9 (Quantum Connection)
+    'var-r': 10, // Relations/Resurrection maps to Law 10 (Unified Theory)
+    'var-m': 7,  // Motion/Momentum maps to Law 7 (Dual Nature)
+    'var-k': 6   // Kinetic/Kingdom maps to Law 6 (Uncertainty Principle)
+};
+
+// Make variables clickable to navigate to laws
+document.querySelectorAll('.variable').forEach(variable => {
+    const id = variable.id;
+    const lawNum = varToLaw[id];
+    if (lawNum) {
+        const lawData = LAWS_10.find(law => law.n === lawNum);
+        if (lawData) {
+            variable.style.cursor = 'pointer';
+            
+            // Enhanced tooltip to show law connection
+            const originalTooltipHandler = variable.onmouseenter;
+            variable.onmouseenter = function(e) {
+                if (originalTooltipHandler) originalTooltipHandler.call(this, e);
+                
+                // Add law connection to tooltip
+                setTimeout(() => {
+                    const tooltip = document.getElementById('tooltip');
+                    if (tooltip && tooltip.innerHTML) {
+                        tooltip.innerHTML += `<hr style="border-color: rgba(255,215,0,0.3); margin: 8px 0">
+                        <strong>Connects to:</strong> Law ${lawNum}: ${lawData.title}<br>
+                        <em>Click to explore this universal law</em>`;
+                    }
+                }, 10);
+            };
+            
+            // Add click handler to navigate to law page
+            variable.onclick = function() {
+                window.location.href = lawData.href;
+            };
+        }
+    }
+});
+
+// Add an info block to explain the clickable variables
+const infoText = document.createElement('div');
+infoText.style.cssText = `
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #ffd700;
+    max-width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    font-size: 0.9em;
+    color: #fff;
+`;
+infoText.innerHTML = `
+    <div style="color: #ffd700; font-weight: bold; margin-bottom: 8px;">Interactive Variables</div>
+    <div>Hover over any variable bubble to see details.</div>
+    <div style="margin-top: 8px;">Click any variable to explore its corresponding Universal Law.</div>
+`;
+document.querySelector('.container').appendChild(infoText);
+
+// Add animation to highlight clickable variables
+const highlightStyle = document.createElement('style');
+highlightStyle.textContent = `
+@keyframes highlightVariable {
+    0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.3); }
+}
+
+.variable {
+    animation: highlightVariable 3s infinite;
+    animation-delay: var(--delay);
+}`;
+document.head.appendChild(highlightStyle);
+
+// Apply sequential animation delays
+document.querySelectorAll('.variable').forEach((variable, index) => {
+    variable.style.setProperty('--delay', `${index * 0.3}s`);
+});
+
+// Update framework info to mention the 10 Laws
+const frameworkInfo = document.querySelector('.framework-info');
+if (frameworkInfo) {
+    const infoItems = frameworkInfo.querySelectorAll('.info-item');
+    if (infoItems.length >= 2) {
+        infoItems[1].innerHTML = 'Variables: <span class="info-value">10 Universal Laws</span>';
+    }
+}
+
+// Add a "View 10 Laws" button
+const lawsButton = document.createElement('div');
+lawsButton.style.cssText = `
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 25px;
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.6), rgba(255, 165, 0, 0.6));
+    color: #000;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 100;
+`;
+lawsButton.innerHTML = 'View All 10 Laws';
+lawsButton.onmouseover = function() {
+    this.style.transform = 'translateX(-50%) scale(1.05)';
+    this.style.boxShadow = '0 8px 25px rgba(0,0,0,0.4)';
+};
+lawsButton.onmouseout = function() {
+    this.style.transform = 'translateX(-50%)';
+    this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.3)';
+};
+lawsButton.onclick = function() {
+    window.location.href = 'index.html#laws';  // Assumes your home page has a laws section
+};
+document.querySelector('.container').appendChild(lawsButton);
+
+console.log('✓ 10 Laws integration complete - variables are now clickable and mapped to their respective law pages');
+</script>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Dark background -->
+  <rect width="800" height="600" fill="#1A1A2E" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" fill="#E0E0E0" text-anchor="middle" font-weight="bold">Consciousness vs Physical Gravity</text>
+  <text x="400" y="80" font-family="Arial" font-size="16" fill="#9FA0FF" text-anchor="middle" font-style="italic">A Comparative Framework</text>
+  
+  <!-- Dividing line -->
+  <line x1="400" y1="100" x2="400" y2="550" stroke="#555580" stroke-width="2" stroke-dasharray="10,5"/>
+  
+  <!-- Physical Gravity Side -->
+  <text x="200" y="130" font-family="Arial" font-size="20" fill="#6DA9E4" text-anchor="middle" font-weight="bold">Physical Gravity</text>
+  
+  <!-- Physical gravity illustration -->
+  <circle cx="200" cy="250" r="60" fill="#304D6D"/>
+  <circle cx="200" cy="250" r="60" fill="url(#earthGradient)"/>
+  <ellipse cx="200" cy="250" rx="120" ry="20" fill="none" stroke="#6DA9E4" stroke-width="1" stroke-dasharray="5,3"/>
+  <ellipse cx="200" cy="250" rx="160" ry="30" fill="none" stroke="#6DA9E4" stroke-width="1" stroke-dasharray="5,3"/>
+  <ellipse cx="200" cy="250" rx="200" ry="40" fill="none" stroke="#6DA9E4" stroke-width="1" stroke-dasharray="5,3"/>
+  
+  <!-- Small orbiting body -->
+  <circle cx="320" cy="230" r="10" fill="#9FA0FF"/>
+  
+  <!-- Physical gravity properties -->
+  <rect x="50" y="350" width="300" height="180" rx="10" ry="10" fill="#16213E" stroke="#304D6D" stroke-width="2"/>
+  <text x="200" y="380" font-family="Arial" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">Key Properties</text>
+  
+  <text x="70" y="410" font-family="Arial" font-size="14" fill="#E0E0E0">• Pulls masses together</text>
+  <text x="70" y="440" font-family="Arial" font-size="14" fill="#E0E0E0">• Follows predictable mathematical laws</text>
+  <text x="70" y="470" font-family="Arial" font-size="14" fill="#E0E0E0">• Defines structural relationships in space</text>
+  <text x="70" y="500" font-family="Arial" font-size="14" fill="#E0E0E0">• Creates gravitational wells & orbits</text>
+  
+  <!-- Consciousness Gravity Side -->
+  <text x="600" y="130" font-family="Arial" font-size="20" fill="#D67BFF" text-anchor="middle" font-weight="bold">Consciousness Gravity</text>
+  
+  <!-- Consciousness gravity illustration -->
+  <circle cx="600" cy="250" r="60" fill="url(#consciousnessGradient)"/>
+  
+  <!-- Thought/idea nodes around consciousness -->
+  <circle cx="670" cy="200" r="15" fill="#F1B4BB"/>
+  <line x1="615" y1="200" x2="655" y2="200" stroke="#F1B4BB" stroke-width="2"/>
+  
+  <circle cx="650" cy="280" r="12" fill="#9FA0FF"/>
+  <line x1="610" y1="265" x2="638" y2="278" stroke="#9FA0FF" stroke-width="2"/>
+  
+  <circle cx="560" cy="180" r="10" fill="#6DA9E4"/>
+  <line x1="580" y1="210" x2="565" y2="190" stroke="#6DA9E4" stroke-width="2"/>
+  
+  <circle cx="530" cy="250" r="18" fill="#D67BFF"/>
+  <line x1="560" y1="240" x2="548" y2="245" stroke="#D67BFF" stroke-width="2"/>
+  
+  <circle cx="580" cy="320" r="14" fill="#F1B4BB"/>
+  <line x1="590" y1="290" x2="585" y2="306" stroke="#F1B4BB" stroke-width="2"/>
+  
+  <!-- Consciousness gravity fields - more irregular -->
+  <path d="M600,250 C750,300 720,180 600,140 C480,100 450,400 600,360 C750,320 700,220 600,250" fill="none" stroke="#D67BFF" stroke-width="1" stroke-dasharray="5,3" opacity="0.6"/>
+  <path d="M600,250 C680,330 730,140 600,120 C470,100 520,380 600,340 C680,300 680,220 600,250" fill="none" stroke="#D67BFF" stroke-width="1" stroke-dasharray="5,3" opacity="0.4"/>
+  
+  <!-- Consciousness gravity properties -->
+  <rect x="450" y="350" width="300" height="180" rx="10" ry="10" fill="#16213E" stroke="#4A246D" stroke-width="2"/>
+  <text x="600" y="380" font-family="Arial" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">Key Properties</text>
+  
+  <text x="470" y="410" font-family="Arial" font-size="14" fill="#E0E0E0">• Invisible attractions between ideas</text>
+  <text x="470" y="440" font-family="Arial" font-size="14" fill="#E0E0E0">• Generates spiritual & emotional resonance</text>
+  <text x="470" y="470" font-family="Arial" font-size="14" fill="#E0E0E0">• Creates unseen networks of influence</text>
+  <text x="470" y="500" font-family="Arial" font-size="14" fill="#E0E0E0">• Forms behavioral & thought patterns</text>
+  
+  <!-- Connection between the two systems -->
+  <path d="M300,550 C370,570 430,570 500,550" fill="none" stroke="#9FA0FF" stroke-width="2"/>
+  <text x="400" y="575" font-family="Arial" font-size="16" fill="#9FA0FF" text-anchor="middle" font-style="italic">Parallel Systems?</text>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="earthGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#6DA9E4"/>
+      <stop offset="70%" stop-color="#304D6D"/>
+      <stop offset="100%" stop-color="#16213E"/>
+    </radialGradient>
+    
+    <radialGradient id="consciousnessGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#F1B4BB"/>
+      <stop offset="40%" stop-color="#D67BFF"/>
+      <stop offset="90%" stop-color="#4A246D"/>
+    </radialGradient>
+  </defs>
+</svg>

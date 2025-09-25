@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0c0c1d"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">GRACE VS ENTROPY GRADIENT FIELD</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#a87dff" text-anchor="middle" font-style="italic">How Spiritual Forces Interact Across Different States</text>
+  
+  <!-- Axes Labels -->
+  <text x="70" y="300" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" transform="rotate(-90, 70, 300)">REPENTANCE FACTOR (Rₚ)</text>
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">SIN INTENSITY (S)</text>
+  
+  <!-- Graph Container -->
+  <rect x="120" y="100" width="560" height="400" fill="none" stroke="#564e8e" stroke-width="2"/>
+  
+  <!-- Gradient Field Background -->
+  <defs>
+    <radialGradient id="graceField" cx="0.7" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#64e291" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0c0c1d" stop-opacity="0.1"/>
+    </radialGradient>
+    <radialGradient id="entropyField" cx="0.3" cy="0.7" r="0.7">
+      <stop offset="0%" stop-color="#e86b4c" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0c0c1d" stop-opacity="0.1"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Field Visualizations -->
+  <rect x="120" y="100" width="560" height="400" fill="url(#entropyField)"/>
+  <rect x="120" y="100" width="560" height="400" fill="url(#graceField)"/>
+  
+  <!-- Vector Field - Grace Vectors (Upper Left) -->
+  <g>
+    <defs>
+      <marker id="graceArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#64e291"/>
+      </marker>
+    </defs>
+    
+    <!-- Grace Vector Field (upper left quadrant) -->
+    <g opacity="0.8">
+      <!-- Row 1 -->
+      <line x1="180" y1="140" x2="210" y2="120" stroke="#64e291" stroke-width="2" marker-end="url(#graceArrow)"/>
+      <line x1="240" y1="140" x2="270" y2="120" stroke="#64e291" stroke-width="2" marker-end="url(#graceArrow)"/>
+      <line x1="300" y1="140" x2="330" y2="125" stroke="#64e291" stroke-width="1.5" marker-end="url(#graceArrow)"/>
+      <line x1="360" y1="140" x2="380" y2="130" stroke="#64e291" stroke-width="1" marker-end="url(#graceArrow)"/>
+      
+      <!-- Row 2 -->
+      <line x1="180" y1="200" x2="220" y2="170" stroke="#64e291" stroke-width="2.5" marker-end="url(#graceArrow)"/>
+      <line x1="240" y1="200" x2="280" y2="175" stroke="#64e291" stroke-width="2" marker-end="url(#graceArrow)"/>
+      <line x1="300" y1="200" x2="330" y2="180" stroke="#64e291" stroke-width="1.5" marker-end="url(#graceArrow)"/>
+      <line x1="360" y1="200" x2="380" y2="190" stroke="#64e291" stroke-width="1" marker-end="url(#graceArrow)"/>
+      
+      <!-- Row 3 -->
+      <line x1="180" y1="260" x2="230" y2="230" stroke="#64e291" stroke-width="2" marker-end="url(#graceArrow)"/>
+      <line x1="240" y1="260" x2="280" y2="240" stroke="#64e291" stroke-width="1.5" marker-end="url(#graceArrow)"/>
+      <line x1="300" y1="260" x2="320" y2="250" stroke="#64e291" stroke-width="1" marker-end="url(#graceArrow)"/>
+      
+      <!-- Row 4 -->
+      <line x1="180" y1="320" x2="200" y2="310" stroke="#64e291" stroke-width="1" marker-end="url(#graceArrow)"/>
+      <line x1="240" y1="320" x2="255" y2="315" stroke="#64e291" stroke-width="0.8" marker-end="url(#graceArrow)"/>
+    </g>
+  </g>
+  
+  <!-- Vector Field - Entropy Vectors (Lower Right) -->
+  <g>
+    <defs>
+      <marker id="entropyArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#e86b4c"/>
+      </marker>
+    </defs>
+    
+    <!-- Entropy Vector Field (lower right quadrant) -->
+    <g opacity="0.8">
+      <!-- Row 1 -->
+      <line x1="420" y1="240" x2="440" y2="250" stroke="#e86b4c" stroke-width="0.8" marker-end="url(#entropyArrow)"/>
+      <line x1="480" y1="240" x2="495" y2="245" stroke="#e86b4c" stroke-width="1" marker-end="url(#entropyArrow)"/>
+      <line x1="540" y1="240" x2="560" y2="250" stroke="#e86b4c" stroke-width="1.2" marker-end="url(#entropyArrow)"/>
+      <line x1="600" y1="240" x2="620" y2="260" stroke="#e86b4c" stroke-width="1.5" marker-end="url(#entropyArrow)"/>
+      
+      <!-- Row 2 -->
+      <line x1="420" y1="300" x2="450" y2="320" stroke="#e86b4c" stroke-width="1" marker-end="url(#entropyArrow)"/>
+      <line x1="480" y1="300" x2="510" y2="325" stroke="#e86b4c" stroke-width="1.5" marker-end="url(#entropyArrow)"/>
+      <line x1="540" y1="300" x2="580" y2="330" stroke="#e86b4c" stroke-width="2" marker-end="url(#entropyArrow)"/>
+      <line x1="600" y1="300" x2="650" y2="340" stroke="#e86b4c" stroke-width="2.5" marker-end="url(#entropyArrow)"/>
+      
+      <!-- Row 3 -->
+      <line x1="420" y1="360" x2="450" y2="380" stroke="#e86b4c" stroke-width="1.5" marker-end="url(#entropyArrow)"/>
+      <line x1="480" y1="360" x2="520" y2="390" stroke="#e86b4c" stroke-width="2" marker-end="url(#entropyArrow)"/>
+      <line x1="540" y1="360" x2="590" y2="400" stroke="#e86b4c" stroke-width="2.5" marker-end="url(#entropyArrow)"/>
+      <line x1="600" y1="360" x2="660" y2="410" stroke="#e86b4c" stroke-width="3" marker-end="url(#entropyArrow)"/>
+      
+      <!-- Row 4 -->
+      <line x1="420" y1="420" x2="460" y2="450" stroke="#e86b4c" stroke-width="2" marker-end="url(#entropyArrow)"/>
+      <line x1="480" y1="420" x2="530" y2="460" stroke="#e86b4c" stroke-width="2.5" marker-end="url(#entropyArrow)"/>
+      <line x1="540" y1="420" x2="600" y2="470" stroke="#e86b4c" stroke-width="3" marker-end="url(#entropyArrow)"/>
+      <line x1="600" y1="420" x2="670" y2="480" stroke="#e86b4c" stroke-width="3.5" marker-end="url(#entropyArrow)"/>
+    </g>
+  </g>
+  
+  <!-- Equilibrium Zone (Center) -->
+  <circle cx="400" cy="300" r="40" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">EQUILIBRIUM</text>
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">G(Rₚ) = S</text>
+  
+  <!-- Zone Labels -->
+  <text x="200" y="180" font-family="Arial, sans-serif" font-size="20" fill="#64e291" text-anchor="middle">GRACE DOMINANT</text>
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Order increasing</text>
+  
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="20" fill="#e86b4c" text-anchor="middle">ENTROPY DOMINANT</text>
+  <text x="600" y="440" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Disorder increasing</text>
+  
+  <!-- Equation Reminder -->
+  <rect x="120" y="510" width="560" height="40" rx="10" fill="rgba(30,30,60,0.7)" stroke="#564e8e" stroke-width="2"/>
+  <text x="400" y="535" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">G(Rₚ) = G₀·e^(Rₚ/S) : Grace grows exponentially with repentance</text>
+</svg>

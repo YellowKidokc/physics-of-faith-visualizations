@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background gradient representing the cosmic-spiritual realm -->
+  <defs>
+    <linearGradient id="cosmosBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B0B3B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A1A3A;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gravitational well gradient -->
+    <radialGradient id="gravityWell" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#4A90E2;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Spiritual force field gradient -->
+    <radialGradient id="spiritField" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#E2A14A;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#E2A14A;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Cosmos background -->
+  <rect width="800" height="600" fill="url(#cosmosBg)" />
+  
+  <!-- Stars/quantum particles -->
+  <g id="stars">
+    <circle cx="100" cy="100" r="1" fill="white" opacity="0.8" />
+    <circle cx="200" cy="150" r="1" fill="white" opacity="0.6" />
+    <circle cx="300" cy="200" r="1" fill="white" opacity="0.7" />
+    <circle cx="400" cy="250" r="1" fill="white" opacity="0.9" />
+    <circle cx="500" cy="300" r="1" fill="white" opacity="0.5" />
+    <!-- Add more stars throughout -->
+  </g>
+
+  <!-- Left side: Physical Gravity -->
+  <g transform="translate(200,300)">
+    <!-- Gravitational well representation -->
+    <ellipse cx="0" cy="0" rx="150" ry="50" fill="none" stroke="#4A90E2" stroke-width="2" />
+    <circle cx="0" cy="0" r="100" fill="url(#gravityWell)" opacity="0.5" />
+    
+    <!-- Orbital paths -->
+    <ellipse cx="0" cy="0" rx="80" ry="30" fill="none" stroke="#4A90E2" stroke-width="1" opacity="0.6" />
+    <ellipse cx="0" cy="0" rx="60" ry="20" fill="none" stroke="#4A90E2" stroke-width="1" opacity="0.7" />
+    
+    <!-- Central mass -->
+    <circle cx="0" cy="0" r="20" fill="#4A90E2" />
+    
+    <!-- Orbiting body -->
+    <circle cx="60" cy="0" r="8" fill="#87CEEB" />
+  </g>
+
+  <!-- Right side: Spiritual Pull -->
+  <g transform="translate(600,300)">
+    <!-- Spiritual field representation -->
+    <ellipse cx="0" cy="0" rx="150" ry="50" fill="none" stroke="#E2A14A" stroke-width="2" />
+    <circle cx="0" cy="0" r="100" fill="url(#spiritField)" opacity="0.5" />
+    
+    <!-- Spiritual influence paths -->
+    <ellipse cx="0" cy="0" rx="80" ry="30" fill="none" stroke="#E2A14A" stroke-width="1" opacity="0.6" />
+    <ellipse cx="0" cy="0" rx="60" ry="20" fill="none" stroke="#E2A14A" stroke-width="1" opacity="0.7" />
+    
+    <!-- Divine center -->
+    <circle cx="0" cy="0" r="20" fill="#E2A14A" />
+    
+    <!-- Soul representation -->
+    <circle cx="60" cy="0" r="8" fill="#FFD700" />
+  </g>
+
+  <!-- Connecting lines showing parallel nature -->
+  <g stroke="#FFFFFF" stroke-width="1" opacity="0.3">
+    <line x1="200" y1="250" x2="600" y2="250" />
+    <line x1="200" y1="350" x2="600" y2="350" />
+  </g>
+
+  <!-- Labels -->
+  <g font-family="Arial" fill="white" text-anchor="middle">
+    <text x="200" y="200" font-size="16">Physical Gravity</text>
+    <text x="600" y="200" font-size="16">Spiritual Pull</text>
+    <text x="400" y="450" font-size="14" opacity="0.8">Universal Forces</text>
+  </g>
+</svg>

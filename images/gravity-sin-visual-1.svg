@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Sky background -->
+  <linearGradient id="sky-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#7CB9E8" />
+    <stop offset="100%" stop-color="#C4E0F9" />
+  </linearGradient>
+  <rect width="800" height="300" fill="url(#sky-gradient)" />
+  
+  <!-- Canyon background -->
+  <linearGradient id="canyon-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#CD853F" />
+    <stop offset="40%" stop-color="#8B4513" />
+    <stop offset="100%" stop-color="#5D2906" />
+  </linearGradient>
+  <rect x="0" y="300" width="800" height="300" fill="url(#canyon-gradient)" />
+  
+  <!-- Canyon layers -->
+  <path d="M0,300 L800,300 L800,450 L0,450 Z" fill="#CD853F" opacity="0.6" />
+  <path d="M0,370 L800,370 L800,520 L0,520 Z" fill="#A0522D" opacity="0.6" />
+  <path d="M0,440 L800,440 L800,590 L0,590 Z" fill="#8B4513" opacity="0.6" />
+  
+  <!-- Canyon edge -->
+  <rect x="0" y="295" width="800" height="10" fill="#C19A6B" />
+  
+  <!-- Grandfather -->
+  <circle cx="350" cy="270" r="20" fill="#E0AC69" /> <!-- head -->
+  <rect x="340" y="290" width="20" height="40" fill="#708090" /> <!-- body -->
+  <rect x="340" y="330" width="20" height="20" fill="#000080" /> <!-- pants -->
+  <line x1="340" y1="305" x2="325" y2="320" stroke="#708090" stroke-width="6" /> <!-- left arm -->
+  <line x1="360" y1="305" x2="375" y2="320" stroke="#708090" stroke-width="6" /> <!-- right arm -->
+  <rect x="345" y="350" width="10" height="25" fill="#000080" /> <!-- legs -->
+  
+  <!-- Boy -->
+  <circle cx="400" cy="280" r="15" fill="#FFDBAC" /> <!-- head -->
+  <rect x="392.5" y="295" width="15" height="30" fill="#FF6347" /> <!-- body -->
+  <rect x="392.5" y="325" width="15" height="15" fill="#4169E1" /> <!-- pants -->
+  <line x1="392.5" y1="310" x2="380" y2="320" stroke="#FF6347" stroke-width="4" /> <!-- left arm -->
+  <line x1="407.5" y1="310" x2="420" y2="320" stroke="#FF6347" stroke-width="4" /> <!-- right arm -->
+  <rect x="392.5" y="340" width="7" height="20" fill="#4169E1" /> <!-- left leg -->
+  <rect x="400.5" y="340" width="7" height="20" fill="#4169E1" /> <!-- right leg -->
+  
+  <!-- Stone with arrow -->
+  <circle cx="375" cy="320" r="8" fill="#A9A9A9" /> <!-- stone -->
+  <line x1="375" y1="335" x2="375" y2="450" stroke="#FF0000" stroke-width="2" stroke-dasharray="5,5" /> <!-- path line -->
+  <polygon points="375,450 370,440 380,440" fill="#FF0000" /> <!-- arrow head -->
+  
+  <!-- Gravity visualization -->
+  <circle cx="375" cy="400" r="60" fill="none" stroke="#FF0000" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="30;60;30" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="375" cy="400" r="40" fill="none" stroke="#FF0000" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="20;40;20" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="375" cy="400" r="20" fill="none" stroke="#FF0000" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Title and captions -->
+  <rect x="20" y="20" width="380" height="40" rx="10" fill="white" opacity="0.8" />
+  <text x="40" y="48" font-family="Arial" font-size="24" font-weight="bold" fill="#333">Canyon Edge: The Downward Pull</text>
+  
+  <rect x="500" y="80" width="280" height="100" rx="10" fill="white" opacity="0.8" />
+  <text x="520" y="110" font-family="Arial" font-size="18" fill="#333">Physical: Gravity pulls the</text>
+  <text x="520" y="135" font-family="Arial" font-size="18" fill="#333">stone downward with</text>
+  <text x="520" y="160" font-family="Arial" font-size="18" fill="#333">constant, invisible force</text>
+  
+  <rect x="500" y="200" width="280" height="100" rx="10" fill="white" opacity="0.8" />
+  <text x="520" y="230" font-family="Arial" font-size="18" fill="#333">Spiritual: Sin exerts a</text>
+  <text x="520" y="255" font-family="Arial" font-size="18" fill="#333">constant pull away from</text>
+  <text x="520" y="280" font-family="Arial" font-size="18" fill="#333">our highest purpose</text>
+</svg>

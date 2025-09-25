@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#151832" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">KARMA FUNCTION K(t)</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#aaaacc" text-anchor="middle" font-style="italic">The Mathematical Model of Causal Feedback Systems</text>
+  
+  <!-- Circular karma flow diagram -->
+  <circle cx="400" cy="270" r="150" fill="none" stroke="#55dddd" stroke-width="2" />
+  
+  <!-- Karma flow direction arrows -->
+  <defs>
+    <marker id="karmaarrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#55dddd" />
+    </marker>
+  </defs>
+  
+  <path d="M400 120 A150 150 0 0 1 550 270" fill="none" stroke="#55dddd" stroke-width="2" marker-end="url(#karmaarrow)" />
+  <path d="M550 270 A150 150 0 0 1 400 420" fill="none" stroke="#55dddd" stroke-width="2" marker-end="url(#karmaarrow)" />
+  <path d="M400 420 A150 150 0 0 1 250 270" fill="none" stroke="#55dddd" stroke-width="2" marker-end="url(#karmaarrow)" />
+  <path d="M250 270 A150 150 0 0 1 400 120" fill="none" stroke="#55dddd" stroke-width="2" marker-end="url(#karmaarrow)" />
+  
+  <!-- Karma cycle points -->
+  <circle cx="400" cy="120" r="10" fill="#55dddd" />
+  <circle cx="550" cy="270" r="10" fill="#55dddd" />
+  <circle cx="400" cy="420" r="10" fill="#55dddd" />
+  <circle cx="250" cy="270" r="10" fill="#55dddd" />
+  
+  <!-- Karma cycle labels -->
+  <text x="400" y="100" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Action (A)</text>
+  <text x="580" y="270" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Consequence (C)</text>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Experience (E)</text>
+  <text x="220" y="270" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="end">Growth (G)</text>
+  
+  <!-- Ripple effect visualization -->
+  <circle cx="400" cy="270" r="20" fill="none" stroke="#55dddd" stroke-width="1" opacity="0.8">
+    <animate attributeName="r" values="20;40;60;80;100;120;140" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.8;0.6;0.4;0.2;0.1;0.05;0" dur="4s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Cause-effect vectors -->
+  <line x1="320" y1="200" x2="480" y2="340" stroke="#dd55dd" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="330" y="190" font-family="Arial, sans-serif" font-size="12" fill="#dd55dd" text-anchor="start">Cause</text>
+  <text x="490" y="350" font-family="Arial, sans-serif" font-size="12" fill="#dd55dd" text-anchor="start">Effect</text>
+  
+  <!-- Time delay spiral -->
+  <path d="M 600 270 C 590 240, 610 210, 590 190 C 570 170, 550 190, 540 170" fill="none" stroke="#aadd55" stroke-width="1" stroke-dasharray="3,3" />
+  <text x="620" y="240" font-family="Arial, sans-serif" font-size="12" fill="#aadd55" text-anchor="start">Time Delay</text>
+  
+  <!-- Mathematical formula -->
+  <rect x="150" y="500" width="500" height="60" rx="10" fill="#1a1a40" />
+  <text x="400" y="535" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">K(t) = ∫₀ᵗ [A(τ) · C(t-τ) · w(τ)] dτ</text>
+  
+  <!-- Key for variables -->
+  <text x="250" y="480" font-family="Arial, sans-serif" font-size="14" fill="#aaaacc" text-anchor="start">Where:</text>
+  <text x="150" y="570" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">A(τ) = Action function at time τ</text>
+  <text x="350" y="570" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">C(t-τ) = Consequence function</text>
+  <text x="550" y="570" font-family="Arial, sans-serif" font-size="12" fill="#aaaacc" text-anchor="start">w(τ) = Weight function</text>
+</svg>

@@ -1,0 +1,230 @@
+<!-- Link Auditor Utility - Add temporarily to any page -->
+<script>
+// Create UI for the link auditor
+const auditUI = document.createElement('div');
+auditUI.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    z-index: 10000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    max-width: 300px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+`;
+
+auditUI.innerHTML = `
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <div style="font-weight: bold; color: #ffd700;">Link Auditor</div>
+        <div id="audit-close" style="cursor: pointer; font-size: 18px;">×</div>
+    </div>
+    <div style="margin-bottom: 15px;">Check for broken links or old Law-5 references</div>
+    <button id="run-audit" style="background: linear-gradient(45deg, #ffd700, #ffa500); border: none; border-radius: 5px; padding: 8px 15px; color: black; font-weight: bold; cursor: pointer; width: 100%;">Run Audit</button>
+    <div id="audit-results" style="margin-top: 15px; max-height: 200px; overflow-y: auto; display: none;"></div>
+`;
+
+document.body.appendChild(auditUI);
+
+// Close button functionality
+document.getElementById('audit-close').addEventListener('click', function() {
+    auditUI.style.opacity = '0';
+    setTimeout(() => auditUI.style.display = 'none', 300);
+});
+
+// Run audit functionality
+document.getElementById('run-audit').addEventListener('click', function() {
+    const resultsDiv = document.getElementById('audit-results');
+    resultsDiv.style.display = 'block';
+    resultsDiv.innerHTML = '<div style="color: #ffd700; text-align: center;">Scanning links...</div>';
+    
+    setTimeout(runLinkAudit, 300); // Short delay for UI feedback
+});
+
+// Comprehensive link auditing function
+function runLinkAudit() {
+    const links = document.querySelectorAll('a');
+    const results = {
+        total: links.length,
+        valid: 0,
+        broken: [],
+        oldLaw5: [],
+        emptyLinks: []
+    };
+    
+    links.forEach((link, index) => {
+        const href = link.getAttribute('href');
+        const text = link.textContent.trim() || '[No Text]';
+        
+        if (!href || href === '#') {
+            results.emptyLinks.push({
+                element: link,
+                text: text,
+                location: getElementPath(link)
+            });
+        } 
+        else if (href.includes('law-5-light') || href.includes('law-5.html') && text.toLowerCase().includes('light')) {
+            results.oldLaw5.push({
+                element: link,
+                text: text,
+                href: href,
+                location: getElementPath(link)
+            });
+        }
+        else if (href.startsWith('javascript:')) {
+            // JavaScript links are valid
+            results.valid++;
+        }
+        else {
+            results.valid++;
+        }
+    });
+    
+    displayAuditResults(results);
+}
+
+// Get a path description for an element
+function getElementPath(el) {
+    let path = '';
+    let current = el;
+    const maxDepth = 3;
+    let depth = 0;
+    
+    while(current && current !== document.body && depth < maxDepth) {
+        let identifier = current.id ? `#${current.id}` : 
+                        current.className ? `.${current.className.split(' ')[0]}` : 
+                        current.tagName.toLowerCase();
+        path = `${identifier} > ${path}`;
+        current = current.parentElement;
+        depth++;
+    }
+    
+    return path.slice(0, -3); // Remove trailing ' > '
+}
+
+// Format and display audit results
+function displayAuditResults(results) {
+    const resultsDiv = document.getElementById('audit-results');
+    let html = `
+        <div style="margin-bottom: 10px;">
+            <div style="display: flex; justify-content: space-between;">
+                <div>Total Links:</div>
+                <div style="font-weight: bold;">${results.total}</div>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <div>Valid Links:</div>
+                <div style="font-weight: bold; color: #8BC34A;">${results.valid}</div>
+            </div>`;
+    
+    if (results.oldLaw5.length > 0) {
+        html += `<div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                <div>Old Law-5 References:</div>
+                <div style="font-weight: bold; color: #FFC107;">${results.oldLaw5.length}</div>
+            </div>`;
+            
+        html += `<div style="margin-top: 5px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 5px;">
+                <div style="color: #FFC107; font-weight: bold; margin-bottom: 5px;">References to old Law-5 page:</div>`;
+                
+        results.oldLaw5.forEach((item, i) => {
+            html += `<div style="margin-bottom: 8px; padding: 5px; background: rgba(255, 193, 7, 0.1); border-radius: 3px;">
+                <div style="word-break: break-all;"><strong>${item.text}</strong></div>
+                <div style="font-size: 12px; color: #aaa;">→ ${item.href}</div>
+                <div style="font-size: 12px; color: #aaa;">At: ${item.location}</div>
+                <button class="highlight-btn" data-index="${i}" style="background: rgba(255, 193, 7, 0.3); border: none; border-radius: 3px; margin-top: 5px; padding: 3px 8px; font-size: 12px; cursor: pointer;">Highlight</button>
+            </div>`;
+        });
+        html += `</div>`;
+    }
+    
+    if (results.emptyLinks.length > 0) {
+        html += `<div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                <div>Empty Links:</div>
+                <div style="font-weight: bold; color: #FF5722;">${results.emptyLinks.length}</div>
+            </div>`;
+            
+        html += `<div style="margin-top: 5px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 5px;">
+                <div style="color: #FF5722; font-weight: bold; margin-bottom: 5px;">Links with no destination:</div>`;
+                
+        results.emptyLinks.forEach((item, i) => {
+            html += `<div style="margin-bottom: 8px; padding: 5px; background: rgba(255, 87, 34, 0.1); border-radius: 3px;">
+                <div><strong>${item.text}</strong></div>
+                <div style="font-size: 12px; color: #aaa;">At: ${item.location}</div>
+            </div>`;
+        });
+        html += `</div>`;
+    }
+    
+    if (results.oldLaw5.length === 0 && results.emptyLinks.length === 0) {
+        html += `<div style="margin-top: 15px; text-align: center; color: #8BC34A; font-weight: bold;">
+            ✓ All links look good!
+        </div>`;
+    }
+    
+    // Add fix instructions for Law-5 references
+    if (results.oldLaw5.length > 0) {
+        html += `
+        <div style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 10px;">
+            <div style="font-weight: bold; margin-bottom: 5px;">How to fix Law-5 references:</div>
+            <div style="font-size: 13px; line-height: 1.4;">
+                Update all links pointing to "law-5-light-darkness.html" to point to "law-3.html" instead, as Light/Darkness has been merged into Law 3 (Illuminating Force).
+            </div>
+        </div>`;
+    }
+    
+    resultsDiv.innerHTML = html;
+    
+    // Add highlight functionality
+    document.querySelectorAll('.highlight-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const index = this.getAttribute('data-index');
+            const element = results.oldLaw5[index].element;
+            
+            // Remove any existing highlights
+            document.querySelectorAll('.audit-highlight').forEach(el => {
+                el.classList.remove('audit-highlight');
+            });
+            
+            // Add highlight
+            element.classList.add('audit-highlight');
+            
+            // Scroll to the element
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+            
+            // Flash effect
+            setTimeout(() => {
+                element.style.transition = 'outline 0.5s ease';
+                element.style.outline = '5px solid rgba(255, 193, 7, 0.8)';
+                setTimeout(() => {
+                    element.style.outline = '3px solid rgba(255, 193, 7, 0.5)';
+                }, 500);
+            }, 500);
+        });
+    });
+    
+    // Add highlight style if it doesn't exist
+    if (!document.getElementById('audit-highlight-style')) {
+        const style = document.createElement('style');
+        style.id = 'audit-highlight-style';
+        style.textContent = `
+            .audit-highlight {
+                outline: 3px solid rgba(255, 193, 7, 0.5) !important;
+                position: relative !important;
+                z-index: 9999 !important;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
+// Notify that auditor is ready
+console.log('✓ Link Auditor initialized - click the panel in the bottom left to check for broken links');
+</script>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#121212" rx="15" ry="15"/>
+  <rect x="10" y="10" width="780" height="480" fill="#1a1a2e" rx="10" ry="10" stroke="#2d2d42" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#e6c619" text-anchor="middle">ENTROPY TERM</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="18" fill="#888" text-anchor="middle">Why Death Wins Without Christ</text>
+  
+  <!-- Equation -->
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="28" fill="#e55" text-anchor="middle">1 + E₀e^(kt) + S₀e^(-λRₚt)</text>
+  
+  <!-- Divider -->
+  <line x1="150" y1="180" x2="650" y2="180" stroke="#444" stroke-width="2"/>
+  
+  <!-- Entropy Visualization -->
+  <g transform="translate(180, 300)">
+    <!-- Axes -->
+    <line x1="0" y1="-150" x2="0" y2="100" stroke="#777" stroke-width="2"/>
+    <line x1="0" y1="0" x2="450" y2="0" stroke="#777" stroke-width="2"/>
+    
+    <!-- Axis labels -->
+    <text x="460" y="15" font-family="Arial, sans-serif" font-size="16" fill="#aaa">Time</text>
+    <text x="-10" y="-160" font-family="Arial, sans-serif" font-size="16" fill="#aaa">Energy/Entropy</text>
+    
+    <!-- Grid lines -->
+    <line x1="0" y1="-120" x2="450" y2="-120" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="0" y1="-60" x2="450" y2="-60" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="0" y1="-30" x2="450" y2="-30" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="150" y1="-150" x2="150" y2="50" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="300" y1="-150" x2="300" y2="50" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+    
+    <!-- Physical entropy curve (exponential growth) -->
+    <path d="M 0,-30 Q 75,-20 150,-10 T 300,30 T 450,100" fill="none" stroke="#e55" stroke-width="4"/>
+    
+    <!-- Sin curve (decays with repentance) -->
+    <path d="M 0,-120 Q 75,-80 150,-60 T 300,-40 T 450,-30" fill="none" stroke="#d66a6a" stroke-width="3" stroke-dasharray="5,3"/>
+    
+    <!-- Combined entropy/sin curve -->
+    <path d="M 0,-150 Q 75,-100 150,-70 T 300,-10 T 450,70" fill="none" stroke="#ff7777" stroke-width="3"/>
+    
+    <!-- Resurrection point marker -->
+    <line x1="300" y1="-150" x2="300" y2="70" stroke="#e6c619" stroke-width="1"/>
+    <text x="300" y="90" font-family="Arial, sans-serif" font-size="14" fill="#e6c619" text-anchor="middle">Resurrection (RJ)</text>
+    
+    <!-- Labels for curves -->
+    <text x="460" y="100" font-family="Arial, sans-serif" font-size="14" fill="#e55">Physical Entropy (E₀e^(kt))</text>
+    <text x="460" y="-30" font-family="Arial, sans-serif" font-size="14" fill="#d66a6a">Sin (S₀e^(-λRₚt))</text>
+    <text x="460" y="70" font-family="Arial, sans-serif" font-size="14" fill="#ff7777">Combined Effect</text>
+  </g>
+  
+  <!-- Component Details -->
+  <g transform="translate(100, 440)">
+    <text font-family="Arial, sans-serif" font-size="16" fill="#aaa">
+      <tspan x="0" y="0">Where:</tspan>
+      <tspan x="0" y="25">• E₀e^(kt): Physical entropy increasing exponentially with time</tspan>
+      <tspan x="0" y="50">• S₀e^(-λRₚt): Sin decreasing as repentance (Rₚ) increases</tspan>
+    </text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="400" cy="300" r="150" fill="none" stroke="#2d2d42" stroke-width="1"/>
+</svg>

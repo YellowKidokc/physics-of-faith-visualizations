@@ -1,0 +1,16 @@
+[
+  {
+    "id": "sample-1",
+    "file": "sample1.jpg",
+    "src": "images/sample1.jpg",
+    "thumb": "images/sample1.jpg",
+    "title": "Sample Concept Render",
+    "caption": "Electromagnetism \u2192 Truth & Light visual motif.",
+    "tags": [
+      "law-3",
+      "light",
+      "truth"
+    ],
+    "created": "2025-09-20"
+  }
+]

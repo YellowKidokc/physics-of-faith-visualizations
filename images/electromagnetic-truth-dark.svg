@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Dark background -->
+  <rect width="800" height="600" fill="#121212" />
+  
+  <!-- Central Light Beam -->
+  <path d="M400,120 L320,480 L480,480 Z" fill="url(#lightGradient)" opacity="0.8" />
+  
+  <!-- Electromagnetic Wave -->
+  <path d="M100,300 C150,250 200,350 250,300 C300,250 350,350 400,300 C450,250 500,350 550,300 C600,250 650,350 700,300" 
+        stroke="#4f8fea" stroke-width="3" fill="none" opacity="0.7" />
+  
+  <!-- Truth Wave (Spiritual) -->
+  <path d="M100,320 C150,270 200,370 250,320 C300,270 350,370 400,320 C450,270 500,370 550,320 C600,270 650,370 700,320" 
+        stroke="#e34c67" stroke-width="3" fill="none" opacity="0.7" />
+  
+  <!-- Physical Light (Sun) -->
+  <circle cx="180" cy="150" r="40" fill="url(#sunGradient)" />
+  
+  <!-- Divine Light -->
+  <circle cx="620" cy="150" r="40" fill="url(#divineGradient)" />
+  
+  <!-- Spiritual Photosynthesis -->
+  <path d="M400,400 C400,350 380,320 350,310 C320,300 300,330 300,360 C300,390 320,410 350,420 C380,430 400,410 400,380 Z" 
+        fill="#2c7d45" opacity="0.8" />
+  <path d="M400,400 C400,350 420,320 450,310 C480,300 500,330 500,360 C500,390 480,410 450,420 C420,430 400,410 400,380 Z" 
+        fill="#2c7d45" opacity="0.8" />
+  <line x1="400" y1="320" x2="400" y2="400" stroke="#2c7d45" stroke-width="3" />
+  
+  <!-- Maxwell's Equation -->
+  <text x="400" y="240" font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle">c = 1/√(ε₀μ₀)</text>
+  
+  <!-- Labels -->
+  <text x="180" y="100" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Physical Light</text>
+  <text x="620" y="100" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Divine Truth</text>
+  <text x="180" y="220" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Reveals Reality</text>
+  <text x="620" y="220" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Reveals Truth</text>
+  <text x="400" y="270" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Constant & Unchanging</text>
+  <text x="400" y="520" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Spiritual Photosynthesis</text>
+  <text x="400" y="540" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Truth Transforms Lives</text>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="lightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1"/>
+    </linearGradient>
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#fff7d1" />
+      <stop offset="70%" stop-color="#ffc929" />
+      <stop offset="100%" stop-color="#ff8c00" />
+    </radialGradient>
+    <radialGradient id="divineGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#c4e0ff" />
+      <stop offset="100%" stop-color="#4f8fea" />
+    </radialGradient>
+  </defs>
+</svg>

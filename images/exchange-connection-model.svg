@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    
+    <!-- Glows and filters -->
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <filter id="particleGlow" x="-300%" y="-300%" width="600%" height="600%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Animation for exchange particles -->
+    <animate 
+      xlink:href="#gluon1"
+      attributeName="cx"
+      values="200;600;200"
+      dur="3s"
+      repeatCount="indefinite"
+    />
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="800" height="600" fill="url(#backgroundGradient)" />
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">The Exchange That Creates Connection</text>
+  <text x="400" y="80" text-anchor="middle" fill="#facc15" font-family="Arial" font-size="16">Physical and Spiritual Bonds Through Exchange</text>
+  
+  <!-- The Quantum Exchange - Top section -->
+  <g transform="translate(400, 200)">
+    <!-- Label -->
+    <text x="0" y="-100" text-anchor="middle" fill="white" font-family="Arial" font-size="18" font-weight="bold">Quantum Chromodynamics</text>
+    
+    <!-- Quarks -->
+    <circle cx="-200" cy="0" r="40" fill="#3b82f6" filter="url(#glow1)" />
+    <circle cx="200" cy="0" r="40" fill="#ef4444" filter="url(#glow1)" />
+    
+    <!-- Quark labels -->
+    <text x="-200" y="0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">Quark</text>
+    <text x="200" y="0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">Quark</text>
+    
+    <!-- Gluon exchange -->
+    <line x1="-160" y1="0" x2="160" y2="0" stroke="#facc15" stroke-width="10" stroke-opacity="0.3" />
+    
+    <!-- Exchange particles (gluons) -->
+    <circle id="gluon1" cx="-100" cy="0" r="8" fill="#facc15" filter="url(#particleGlow)">
+      <animate attributeName="cx" values="-160;160;-160" dur="3s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle id="gluon2" cx="50" cy="0" r="8" fill="#facc15" filter="url(#particleGlow)">
+      <animate attributeName="cx" values="160;-160;160" dur="3s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Force description -->
+    <text x="0" y="70" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Strong Force via Gluon Exchange</text>
+  </g>
+  
+  <!-- The Spiritual Exchange - Bottom section -->
+  <g transform="translate(400, 400)">
+    <!-- Label -->
+    <text x="0" y="-70" text-anchor="middle" fill="white" font-family="Arial" font-size="18" font-weight="bold">Spiritual Exchange</text>
+    
+    <!-- People -->
+    <g transform="translate(-200, 0)">
+      <circle cx="0" cy="0" r="40" fill="#14b8a6" filter="url(#glow1)" />
+      <path d="M -15,-10 C -10,-15 10,-15 15,-10 M -10,10 C -5,15 5,15 10,10" stroke="white" stroke-width="2" fill="none" />
+    </g>
+    
+    <g transform="translate(200, 0)">
+      <circle cx="0" cy="0" r="40" fill="#8b5cf6" filter="url(#glow1)" />
+      <path d="M -15,-10 C -10,-15 10,-15 15,-10 M -10,10 C -5,15 5,15 10,10" stroke="white" stroke-width="2" fill="none" />
+    </g>
+    
+    <!-- Connection -->
+    <line x1="-160" y1="0" x2="160" y2="0" stroke="#facc15" stroke-width="10" stroke-opacity="0.3" />
+    
+    <!-- Exchange elements -->
+    <g id="prayer">
+      <circle cx="-100" cy="0" r="15" fill="#facc15" opacity="0.8" filter="url(#particleGlow)">
+        <animate attributeName="cx" values="-160;160;-160" dur="6s" repeatCount="indefinite" />
+      </circle>
+      <text x="-100" y="0" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-family="Arial" font-size="10" font-weight="bold">🙏</text>
+    </g>
+    
+    <g id="service">
+      <circle cx="50" cy="0" r="15" fill="#facc15" opacity="0.8" filter="url(#particleGlow)">
+        <animate attributeName="cx" values="160;-160;160" dur="6s" repeatCount="indefinite" />
+      </circle>
+      <text x="50" y="0" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-family="Arial" font-size="10" font-weight="bold">🤲</text>
+    </g>
+    
+    <!-- Connection description -->
+    <text x="0" y="70" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Spiritual Bond via Prayer, Service, Communion</text>
+  </g>
+  
+  <!-- Key insights -->
+  <g transform="translate(400, 520)">
+    <rect x="-350" y="0" width="700" height="60" rx="10" fill="rgba(0,0,0,0.3)" />
+    
+    <text x="-335" y="35" text-anchor="start" fill="white" font-family="Arial" font-size="14">"The stronger the exchange, the stronger the bond."</text>
+    <text x="0" y="35" text-anchor="middle" fill="#facc15" font-family="Arial" font-size="14">|</text>
+    <text x="20" y="35" text-anchor="start" fill="white" font-family="Arial" font-size="14">"Relationships grow through meaningful exchanges of vulnerability, service, and presence."</text>
+  </g>
+</svg>

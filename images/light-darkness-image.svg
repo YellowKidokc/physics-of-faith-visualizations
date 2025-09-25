@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="room-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000033" />
+      <stop offset="50%" stop-color="#101040" />
+      <stop offset="100%" stop-color="#000033" />
+    </linearGradient>
+    
+    <radialGradient id="light-beam" cx="30%" cy="50%" r="70%" fx="30%" fy="50%">
+      <stop offset="0%" stop-color="rgba(255,255,240,0.9)" />
+      <stop offset="40%" stop-color="rgba(255,255,200,0.7)" />
+      <stop offset="70%" stop-color="rgba(255,255,180,0.4)" />
+      <stop offset="100%" stop-color="rgba(255,255,160,0)" />
+    </radialGradient>
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow-text" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.7" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Dark room background -->
+  <rect width="800" height="500" fill="url(#room-gradient)" />
+  
+  <!-- Room outline -->
+  <g id="room-outline" stroke="#102050" stroke-width="2" fill="none">
+    <line x1="100" y1="100" x2="700" y2="100" /> <!-- Top wall -->
+    <line x1="100" y1="100" x2="100" y2="400" /> <!-- Left wall -->
+    <line x1="700" y1="100" x2="700" y2="400" /> <!-- Right wall -->
+    <line x1="100" y1="400" x2="700" y2="400" /> <!-- Bottom wall -->
+    
+    <!-- Floor tiles suggestion -->
+    <line x1="100" y1="400" x2="200" y2="450" stroke-width="1" opacity="0.5" />
+    <line x1="700" y1="400" x2="600" y2="450" stroke-width="1" opacity="0.5" />
+    <line x1="200" y1="450" x2="600" y2="450" stroke-width="1" opacity="0.5" />
+    
+    <!-- Tile grid lines -->
+    <line x1="250" y1="400" x2="300" y2="450" stroke-width="0.5" opacity="0.3" />
+    <line x1="400" y1="400" x2="400" y2="450" stroke-width="0.5" opacity="0.3" />
+    <line x1="550" y1="400" x2="500" y2="450" stroke-width="0.5" opacity="0.3" />
+    <line x1="100" y1="400" x2="200" y2="450" stroke-width="0.5" opacity="0.3" />
+    
+    <line x1="200" y1="450" x2="200" y2="425" stroke-width="0.5" opacity="0.3" />
+    <line x1="300" y1="450" x2="300" y2="417" stroke-width="0.5" opacity="0.3" />
+    <line x1="400" y1="450" x2="400" y2="400" stroke-width="0.5" opacity="0.3" />
+    <line x1="500" y1="450" x2="500" y2="417" stroke-width="0.5" opacity="0.3" />
+    <line x1="600" y1="450" x2="600" y2="425" stroke-width="0.5" opacity="0.3" />
+  </g>
+  
+  <!-- Shadow monsters that flee from light -->
+  <g id="shadow-monsters" opacity="0.7">
+    <!-- Left side monster (fleeing) -->
+    <g id="monster1" transform="translate(200, 300)">
+      <path d="M0,0 C-20,-30 -40,-10 -30,10 C-40,30 -10,40 0,20 C10,40 40,30 30,10 C40,-10 20,-30 0,0 Z" 
+            fill="#000022" opacity="0.6">
+        <animate attributeName="d" 
+                 from="M0,0 C-20,-30 -40,-10 -30,10 C-40,30 -10,40 0,20 C10,40 40,30 30,10 C40,-10 20,-30 0,0 Z"
+                 to="M-50,0 C-70,-30 -90,-10 -80,10 C-90,30 -60,40 -50,20 C-40,40 -10,30 -20,10 C-10,-10 -30,-30 -50,0 Z"
+                 dur="3s" repeatCount="indefinite" />
+      </path>
+      <!-- Eyes -->
+      <circle cx="-10" cy="0" r="3" fill="#200020" opacity="0.6">
+        <animate attributeName="cx" from="-10" to="-60" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="10" cy="0" r="3" fill="#200020" opacity="0.6">
+        <animate attributeName="cx" from="10" to="-40" dur="3s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Right side monster (fleeing) -->
+    <g id="monster2" transform="translate(600, 250)">
+      <path d="M0,0 C10,-20 30,-30 40,-10 C50,10 30,40 10,30 C-10,40 -30,20 -20,0 C-30,-20 -10,-20 0,0 Z" 
+            fill="#000022" opacity="0.6">
+        <animate attributeName="d" 
+                 from="M0,0 C10,-20 30,-30 40,-10 C50,10 30,40 10,30 C-10,40 -30,20 -20,0 C-30,-20 -10,-20 0,0 Z"
+                 to="M50,0 C60,-20 80,-30 90,-10 C100,10 80,40 60,30 C40,40 20,20 30,0 C20,-20 40,-20 50,0 Z"
+                 dur="4s" repeatCount="indefinite" />
+      </path>
+      <!-- Eyes -->
+      <circle cx="-5" cy="0" r="4" fill="#200020" opacity="0.6">
+        <animate attributeName="cx" from="-5" to="45" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="15" cy="0" r="4" fill="#200020" opacity="0.6">
+        <animate attributeName="cx" from="15" to="65" dur="4s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Bottom monster (fleeing) -->
+    <g id="monster3" transform="translate(400, 350)">
+      <path d="M0,0 C-30,-10 -25,15 -10,20 C0,40 10,40 20,20 C35,15 30,-10 0,0 Z" 
+            fill="#000022" opacity="0.6">
+        <animate attributeName="d" 
+                 from="M0,0 C-30,-10 -25,15 -10,20 C0,40 10,40 20,20 C35,15 30,-10 0,0 Z"
+                 to="M0,50 C-30,40 -25,65 -10,70 C0,90 10,90 20,70 C35,65 30,40 0,50 Z"
+                 dur="3.5s" repeatCount="indefinite" />
+      </path>
+      <!-- Eyes -->
+      <circle cx="-10" cy="10" r="3" fill="#200020" opacity="0.6">
+        <animate attributeName="cy" from="10" to="60" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="10" cy="10" r="3" fill="#200020" opacity="0.6">
+        <animate attributeName="cy" from="10" to="60" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+    </g>
+  </g>
+  
+  <!-- Toys in the room -->
+  <g id="toys">
+    <!-- Teddy bear (revealed in light) -->
+    <g id="teddy" transform="translate(400, 320)">
+      <!-- Body -->
+      <ellipse cx="0" cy="0" rx="25" ry="30" fill="#502010" />
+      <!-- Head -->
+      <circle cx="0" cy="-40" r="20" fill="#502010" />
+      <!-- Ears -->
+      <circle cx="-15" cy="-55" r="8" fill="#502010" />
+      <circle cx="15" cy="-55" r="8" fill="#502010" />
+      <!-- Arms -->
+      <ellipse cx="-30" cy="-10" rx="10" ry="20" fill="#502010" transform="rotate(-20, -30, -10)" />
+      <ellipse cx="30" cy="-10" rx="10" ry="20" fill="#502010" transform="rotate(20, 30, -10)" />
+      <!-- Legs -->
+      <ellipse cx="-15" cy="30" rx="10" ry="15" fill="#502010" transform="rotate(-10, -15, 30)" />
+      <ellipse cx="15" cy="30" rx="10" ry="15" fill="#502010" transform="rotate(10, 15, 30)" />
+      <!-- Face -->
+      <circle cx="-8" cy="-45" r="3" fill="#000000" />
+      <circle cx="8" cy="-45" r="3" fill="#000000" />
+      <ellipse cx="0" cy="-35" rx="5" ry="3" fill="#000000" />
+    </g>
+    
+    <!-- Ball -->
+    <circle cx="325" cy="380" r="15" fill="#4040a0" stroke="#6060c0" stroke-width="2" />
+    
+    <!-- Blocks -->
+    <g id="blocks">
+      <rect x="450" y="360" width="20" height="20" fill="#a04040" />
+      <rect x="470" y="360" width="20" height="20" fill="#40a040" />
+      <rect x="460" y="340" width="20" height="20" fill="#4040a0" />
+    </g>
+  </g>
+  
+  <!-- Flashlight and light beam -->
+  <g id="flashlight" transform="translate(150, 220)">
+    <!-- Flashlight body -->
+    <rect x="0" y="-15" width="50" height="30" rx="5" fill="#404040" />
+    <rect x="50" y="-10" width="10" height="20" rx="2" fill="#303030" />
+    <circle cx="60" cy="0" r="12" fill="#606060" stroke="#707070" stroke-width="2" />
+    <circle cx="60" cy="0" r="8" fill="#ffffcc" />
+    
+    <!-- Light beam -->
+    <path d="M60,0 L400,0 L325,150 L60,0 Z" fill="url(#light-beam)" opacity="0.9" />
+    
+    <!-- Hand holding flashlight -->
+    <path d="M-10,-5 C-15,0 -15,10 -5,15 C5,20 10,10 15,5 C20,0 15,-10 10,-15 C0,-15 -5,-10 -10,-5 Z" fill="#d0a080" />
+  </g>
+  
+  <!-- Title -->
+  <g transform="translate(400, 50)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle" filter="url(#shadow-text)">Light Dispels Darkness</text>
+    <text x="0" y="35" font-family="Georgia, serif" font-size="18" fill="#d0d0ff" text-anchor="middle" filter="url(#shadow-text)">Truth Reveals What Deception Hides</text>
+  </g>
+  
+  <!-- Scripture quote -->
+  <g transform="translate(400, 450)">
+    <rect x="-320" y="-25" width="640" height="50" rx="10" fill="rgba(0,0,0,0.5)" />
+    <text x="0" y="0" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#e0e0ff" text-anchor="middle" filter="url(#shadow-text)">
+      "The light shines in the darkness, and the darkness has not overcome it."
+    </text>
+    <text x="0" y="25" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#e0e0ff" text-anchor="middle" filter="url(#shadow-text)">
+      — John 1:5
+    </text>
+  </g>
+</svg>

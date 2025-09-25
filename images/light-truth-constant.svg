@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="space-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000033" />
+      <stop offset="40%" stop-color="#000044" />
+      <stop offset="100%" stop-color="#000022" />
+    </linearGradient>
+    
+    <radialGradient id="sun-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="20%" stop-color="#ffffdd" />
+      <stop offset="40%" stop-color="#ffff88" />
+      <stop offset="60%" stop-color="#ffdd44" />
+      <stop offset="80%" stop-color="#ff8800" />
+      <stop offset="100%" stop-color="#ff4400" />
+    </radialGradient>
+    
+    <radialGradient id="sun-corona" cx="50%" cy="50%" r="80%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="rgba(255,255,200,0.8)" />
+      <stop offset="20%" stop-color="rgba(255,255,150,0.6)" />
+      <stop offset="40%" stop-color="rgba(255,220,100,0.4)" />
+      <stop offset="60%" stop-color="rgba(255,180,50,0.2)" />
+      <stop offset="80%" stop-color="rgba(255,140,0,0.1)" />
+      <stop offset="100%" stop-color="rgba(255,100,0,0)" />
+    </radialGradient>
+    
+    <linearGradient id="beam-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.9)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+    
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.6" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="text-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.7" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Space background -->
+  <rect width="800" height="500" fill="url(#space-gradient)" />
+  
+  <!-- Stars background -->
+  <g id="stars">
+    <circle cx="50" cy="30" r="1" fill="white" opacity="0.8" />
+    <circle cx="120" cy="80" r="0.8" fill="white" opacity="0.7" />
+    <circle cx="190" cy="40" r="1.2" fill="white" opacity="0.9" />
+    <circle cx="250" cy="90" r="0.7" fill="white" opacity="0.6" />
+    <circle cx="320" cy="20" r="1" fill="white" opacity="0.8" />
+    <circle cx="390" cy="60" r="0.9" fill="white" opacity="0.7" />
+    <circle cx="450" cy="30" r="1.1" fill="white" opacity="0.9" />
+    <circle cx="520" cy="80" r="0.8" fill="white" opacity="0.7" />
+    <circle cx="590" cy="50" r="1" fill="white" opacity="0.8" />
+    <circle cx="650" cy="20" r="0.7" fill="white" opacity="0.6" />
+    <circle cx="710" cy="70" r="1.2" fill="white" opacity="0.9" />
+    <circle cx="770" cy="40" r="0.9" fill="white" opacity="0.7" />
+    <circle cx="80" cy="110" r="1" fill="white" opacity="0.8" />
+    <circle cx="150" cy="140" r="0.8" fill="white" opacity="0.7" />
+    <circle cx="220" cy="120" r="1.2" fill="white" opacity="0.9" />
+    <circle cx="290" cy="150" r="0.7" fill="white" opacity="0.6" />
+    <circle cx="360" cy="130" r="1" fill="white" opacity="0.8" />
+    <circle cx="430" cy="160" r="0.9" fill="white" opacity="0.7" />
+    <circle cx="500" cy="120" r="1.1" fill="white" opacity="0.9" />
+    <circle cx="570" cy="150" r="0.8" fill="white" opacity="0.7" />
+    <circle cx="640" cy="130" r="1" fill="white" opacity="0.8" />
+    <circle cx="710" cy="170" r="0.7" fill="white" opacity="0.6" />
+    <circle cx="780" cy="140" r="1.2" fill="white" opacity="0.9" />
+    <circle cx="40" cy="200" r="0.9" fill="white" opacity="0.7" />
+    <circle cx="110" cy="230" r="1" fill="white" opacity="0.8" />
+    <circle cx="180" cy="210" r="0.8" fill="white" opacity="0.7" />
+    <circle cx="250" cy="240" r="1.2" fill="white" opacity="0.9" />
+    <circle cx="320" cy="220" r="0.7" fill="white" opacity="0.6" />
+    <circle cx="390" cy="250" r="1" fill="white" opacity="0.8" />
+    <circle cx="460" cy="230" r="0.9" fill="white" opacity="0.7" />
+    <circle cx="530" cy="260" r="1.1" fill="white" opacity="0.9" />
+    <circle cx="600" cy="240" r="0.8" fill="white" opacity="0.7" />
+    <circle cx="670" cy="270" r="1" fill="white" opacity="0.8" />
+    <circle cx="740" cy="250" r="0.7" fill="white" opacity="0.6" />
+    <circle cx="70" cy="300" r="1.2" fill="white" opacity="0.9" />
+    <circle cx="140" cy="330" r="0.9" fill="white" opacity="0.7" />
+    <circle cx="210" cy="310" r="1" fill="white" opacity="0.8" />
+    <circle cx="280" cy="340" r="0.8" fill="white" opacity="0.7" />
+    <circle cx="350" cy="320" r="1.2" fill="white" opacity="0.9" />
+    <circle cx="420" cy="350" r="0.7" fill="white" opacity="0.6" />
+    <circle cx="490" cy="330" r="1" fill="white" opacity="0.8" />
+    <circle cx="560" cy="360" r="0.9" fill="white" opacity="0.7" />
+    <circle cx="630" cy="340" r="1.1" fill="white" opacity="0.9" />
+    <circle cx="700" cy="370" r="0.8" fill="white" opacity="0.7" />
+    <circle cx="770" cy="350" r="1" fill="white" opacity="0.8" />
+    <circle cx="40" cy="400" r="0.7" fill="white" opacity="0.6" />
+    <circle cx="110" cy="430" r="1.2" fill="white" opacity="0.9" />
+    <circle cx="180" cy="410" r="0.9" fill="white" opacity="0.7" />
+    <circle cx="250" cy="440" r="1" fill="white" opacity="0.8" />
+    <circle cx="320" cy="420" r="0.8" fill="white" opacity="0.7" />
+    <circle cx="390" cy="450" r="1.2" fill="white" opacity="0.9" />
+    <circle cx="460" cy="430" r="0.7" fill="white" opacity="0.6" />
+    <circle cx="530" cy="460" r="1" fill="white" opacity="0.8" />
+    <circle cx="600" cy="440" r="0.9" fill="white" opacity="0.7" />
+    <circle cx="670" cy="470" r="1.1" fill="white" opacity="0.9" />
+    <circle cx="740" cy="450" r="0.8" fill="white" opacity="0.7" />
+  </g>
+  
+  <!-- Center dividing line -->
+  <line x1="400" y1="100" x2="400" y2="400" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Sun/Light source -->
+  <g id="sun" transform="translate(400, 170)">
+    <circle cx="0" cy="0" r="60" fill="url(#sun-gradient)" filter="url(#glow)" />
+    <circle cx="0" cy="0" r="90" fill="url(#sun-corona)" />
+    
+    <!-- Light rays -->
+    <g id="rays">
+      <line x1="0" y1="-90" x2="0" y2="-130" stroke="rgba(255,255,200,0.6)" stroke-width="2" />
+      <line x1="63.6" y1="-63.6" x2="91.9" y2="-91.9" stroke="rgba(255,255,200,0.6)" stroke-width="2" />
+      <line x1="90" y1="0" x2="130" y2="0" stroke="rgba(255,255,200,0.6)" stroke-width="2" />
+      <line x1="63.6" y1="63.6" x2="91.9" y2="91.9" stroke="rgba(255,255,200,0.6)" stroke-width="2" />
+      <line x1="0" y1="90" x2="0" y2="130" stroke="rgba(255,255,200,0.6)" stroke-width="2" />
+      <line x1="-63.6" y1="63.6" x2="-91.9" y2="91.9" stroke="rgba(255,255,200,0.6)" stroke-width="2" />
+      <line x1="-90" y1="0" x2="-130" y2="0" stroke="rgba(255,255,200,0.6)" stroke-width="2" />
+      <line x1="-63.6" y1="-63.6" x2="-91.9" y2="-91.9" stroke="rgba(255,255,200,0.6)" stroke-width="2" />
+    </g>
+  </g>
+  
+  <!-- Planet 1 (Observer moving toward) -->
+  <g id="planet1" transform="translate(200, 320)">
+    <circle cx="0" cy="0" r="30" fill="#3050a0" />
+    <path d="M-30,0 A30,15 0 0,0 30,0" fill="none" stroke="#4070c0" stroke-width="2" />
+    <path d="M-20,-10 A25,10 0 0,0 20,-10" fill="none" stroke="#4070c0" stroke-width="1" />
+    <path d="M-15,10 A20,8 0 0,0 15,10" fill="none" stroke="#4070c0" stroke-width="1" />
+    
+    <!-- Arrow showing movement -->
+    <path d="M60,0 L120,0" stroke="white" stroke-width="2" fill="none" stroke-dasharray="5,3" />
+    <polygon points="120,0 110,-7 110,7" fill="white" />
+    
+    <!-- Light beam hitting planet -->
+    <path d="M30,0 L180,-120" stroke="rgba(255,255,200,0.6)" stroke-width="1" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Planet 2 (Observer moving away) -->
+  <g id="planet2" transform="translate(600, 320)">
+    <circle cx="0" cy="0" r="30" fill="#a03050" />
+    <ellipse cx="0" cy="0" rx="20" ry="5" fill="#c04060" />
+    <ellipse cx="0" cy="-15" rx="8" ry="3" fill="#c04060" />
+    <ellipse cx="10" cy="10" rx="5" ry="2" fill="#c04060" />
+    
+    <!-- Arrow showing movement -->
+    <path d="M-60,0 L-120,0" stroke="white" stroke-width="2" fill="none" stroke-dasharray="5,3" />
+    <polygon points="-120,0 -110,-7 -110,7" fill="white" />
+    
+    <!-- Light beam hitting planet -->
+    <path d="M-30,0 L-180,-120" stroke="rgba(255,255,200,0.6)" stroke-width="1" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Light measurement observers -->
+  <g id="observer1" transform="translate(200, 350)">
+    <rect x="-20" y="35" width="40" height="20" rx="5" fill="#404040" />
+    <rect x="-15" y="55" width="30" height="10" rx="2" fill="#606060" />
+    <circle cx="0" cy="40" r="5" fill="#80ff80" />
+    <text x="25" y="45" font-family="monospace" font-size="14" fill="white" filter="url(#text-shadow)">c</text>
+  </g>
+  
+  <g id="observer2" transform="translate(600, 350)">
+    <rect x="-20" y="35" width="40" height="20" rx="5" fill="#404040" />
+    <rect x="-15" y="55" width="30" height="10" rx="2" fill="#606060" />
+    <circle cx="0" cy="40" r="5" fill="#80ff80" />
+    <text x="-25" y="45" font-family="monospace" font-size="14" fill="white" text-anchor="end" filter="url(#text-shadow)">c</text>
+  </g>
+  
+  <!-- Central formula -->
+  <g id="formula" transform="translate(400, 250)">
+    <rect x="-120" y="-35" width="240" height="70" rx="10" fill="rgba(0,0,40,0.7)" />
+    <text x="0" y="-5" font-family="serif" font-size="24" fill="white" text-anchor="middle" filter="url(#text-shadow)">c = 1 / √(ε₀μ₀)</text>
+    <text x="0" y="25" font-family="serif" font-size="16" fill="#d0d0ff" text-anchor="middle" filter="url(#text-shadow)">Light's speed is constant for all observers</text>
+  </g>
+  
+  <!-- Title -->
+  <g transform="translate(400, 50)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle" filter="url(#text-shadow)">The Constancy of Light and Truth</text>
+    <text x="0" y="35" font-family="Georgia, serif" font-size="18" fill="#d0d0ff" text-anchor="middle" filter="url(#text-shadow)">Unchanging Regardless of Perspective</text>
+  </g>
+  
+  <!-- Left side label -->
+  <g transform="translate(200, 270)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="16" fill="#80c0ff" text-anchor="middle" filter="url(#text-shadow)">Moving Toward Truth</text>
+    <text x="0" y="25" font-family="Georgia, serif" font-size="14" fill="#a0d0ff" text-anchor="middle" filter="url(#text-shadow)">Faster Reception</text>
+  </g>
+  
+  <!-- Right side label -->
+  <g transform="translate(600, 270)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="16" fill="#ff80c0" text-anchor="middle" filter="url(#text-shadow)">Moving Away From Truth</text>
+    <text x="0" y="25" font-family="Georgia, serif" font-size="14" fill="#ffa0d0" text-anchor="middle" filter="url(#text-shadow)">Slower Reception</text>
+  </g>
+  
+  <!-- Scripture quote -->
+  <g transform="translate(400, 450)">
+    <rect x="-320" y="-25" width="640" height="50" rx="10" fill="rgba(0,0,0,0.5)" />
+    <text x="0" y="0" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#e0e0ff" text-anchor="middle" filter="url(#text-shadow)">
+      "Jesus Christ is the same yesterday and today and forever."
+    </text>
+    <text x="0" y="25" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#e0e0ff" text-anchor="middle" filter="url(#text-shadow)">
+      — Hebrews 13:8
+    </text>
+  </g>

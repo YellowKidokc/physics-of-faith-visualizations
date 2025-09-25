@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "master-equation",
+    "title": "Master Equation Set",
+    "summary": "High-quality multi-page set explaining \u03c7 with 10 variables.",
+    "href": "collections/master-equation/index.html",
+    "cover": "images/sample1.jpg",
+    "pages": 6,
+    "images": 24,
+    "tags": [
+      "\u03c7",
+      "unified",
+      "equation"
+    ]
+  }
+]

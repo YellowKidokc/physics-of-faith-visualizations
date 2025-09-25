@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Moral Event Horizon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: radial-gradient(ellipse at center, #0f0f23 0%, #000000 70%);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(15, 15, 35, 0.8);
+            border-radius: 25px;
+            padding: 40px;
+            border: 2px solid #6a5acd;
+            box-shadow: 0 0 60px rgba(106, 90, 205, 0.4);
+            position: relative;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 2.6em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #dc143c, #ff6347, #ff4500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #b19cd9;
+            margin-bottom: 50px;
+            font-style: italic;
+        }
+        
+        .event-horizon-container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            margin: 50px auto;
+            border-radius: 50%;
+            background: radial-gradient(circle at center, 
+                transparent 0%,
+                rgba(139, 0, 0, 0.1) 20%,
+                rgba(220, 20, 60, 0.2) 40%,
+                rgba(220, 20, 60, 0.4) 60%,
+                rgba(139, 0, 0, 0.8) 80%,
+                #000000 100%);
+        }
+        
+        .center-mass {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 120px;
+            height: 120px;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, #000000 0%, #8b0000 100%);
+            border-radius: 50%;
+            border: 3px solid #dc143c;
+            box-shadow: 0 0 40px rgba(220, 20, 60, 0.8), inset 0 0 20px rgba(0, 0, 0, 0.9);
+        }
+        
+        .center-mass::before {
+            content: "MORAL COLLAPSE";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10px;
+            font-weight: bold;
+            color: #dc143c;
+            text-align: center;
+            text-shadow: 0 0 5px rgba(220, 20, 60, 0.8);
+        }
+        
+        .temptation-zones {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .zone {
+            position: absolute;
+            border: 2px solid;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.7;
+        }
+        
+        .safe-zone {
+            width: 560px;
+            height: 560px;
+            border-color: #32cd32;
+            animation: safe-pulse 4s infinite ease-in-out;
+        }
+        
+        .caution-zone {
+            width: 420px;
+            height: 420px;
+            border-color: #ffd700;
+            animation: caution-pulse 3s infinite ease-in-out;
+        }
+        
+        .danger-zone {
+            width: 280px;
+            height: 280px;
+            border-color: #ff6347;
+            animation: danger-pulse 2s infinite ease-in-out;
+        }
+        
+        .event-horizon {
+            width: 180px;
+            height: 180px;
+            border-color: #dc143c;
+            border-width: 4px;
+            animation: horizon-pulse 1s infinite ease-in-out;
+            box-shadow: 0 0 20px rgba(220, 20, 60, 0.6);
+        }
+        
+        @keyframes safe-pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+        }
+        
+        @keyframes caution-pulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+        
+        @keyframes danger-pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.9; }
+        }
+        
+        @keyframes horizon-pulse {
+            0%, 100% { opacity: 0.6; border-width: 4px; }
+            50% { opacity: 1; border-width: 6px; }
+        }
+        
+        .zone-labels {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .label {
+            position: absolute;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .safe-label {
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(50, 205, 50, 0.8);
+            color: white;
+        }
+        
+        .caution-label {
+            top: 25%;
+            right: 20px;
+            background: rgba(255, 215, 0, 0.8);
+            color: black;
+        }
+        
+        .danger-label {
+            bottom: 25%;
+            right: 20px;
+            background: rgba(255, 99, 71, 0.8);
+            color: white;
+        }
+        
+        .horizon-label {
+            bottom: 30%;
+            left: 20px;
+            background: rgba(220, 20, 60, 0.9);
+            color: white;
+            font-size: 0.8em;
+        }
+        
+        .grace-arrows {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .grace-arrow {
+            position: absolute;
+            width: 4px;
+            height: 100px;
+            background: linear-gradient(0deg, transparent, #ffd700, transparent);
+            transform-origin: bottom;
+            animation: grace-beam 2s infinite ease-in-out;
+        }
+        
+        .grace-arrow:nth-child(1) {
+            top: 10%;
+            left: 30%;
+            transform: rotate(-30deg);
+            animation-delay: 0s;
+        }
+        
+        .grace-arrow:nth-child(2) {
+            top: 20%;
+            right: 25%;
+            transform: rotate(45deg);
+            animation-delay: 0.5s;
+        }
+        
+        .grace-arrow:nth-child(3) {
+            bottom: 15%;
+            left: 35%;
+            transform: rotate(-60deg);
+            animation-delay: 1s;
+        }
+        
+        .grace-arrow:nth-child(4) {
+            bottom: 25%;
+            right: 30%;
+            transform: rotate(30deg);
+            animation-delay: 1.5s;
+        }
+        
+        @keyframes grace-beam {
+            0%, 100% { opacity: 0.3; box-shadow: 0 0 5px rgba(255, 215, 0, 0.3); }
+            50% { opacity: 1; box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); }
+        }
+        
+        .physics-explanation {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .physics-card, .grace-card {
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid;
+        }
+        
+        .physics-card {
+            background: linear-gradient(135deg, rgba(30, 58, 95, 0.3), rgba(45, 74, 114, 0.3));
+            border-color: #4a90e2;
+        }
+        
+        .grace-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.2));
+            border-color: #ffd700;
+        }
+        
+        .card-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .physics-title { color: #87ceeb; }
+        .grace-title { color: #ffd700; }
+        
+        .card-content {
+            font-size: 0.95em;
+            line-height: 1.5;
+            color: #b19cd9;
+        }
+        
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .warning {
+            color: #ff6347;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">THE MORAL EVENT HORIZON</h1>
+        <p class="subtitle">The Point Where Self-Rescue Becomes Impossible</p>
+        
+        <div class="event-horizon-container">
+            <div class="temptation-zones">
+                <div class="zone safe-zone"></div>
+                <div class="zone caution-zone"></div>
+                <div class="zone danger-zone"></div>
+                <div class="zone event-horizon"></div>
+            </div>
+            
+            <div class="center-mass"></div>
+            
+            <div class="zone-labels">
+                <div class="label safe-label">SAFE ZONE<br><small>Negligible Pull</small></div>
+                <div class="label caution-label">CAUTION<br><small>Increasing Pull</small></div>
+                <div class="label danger-label">DANGER<br><small>Strong Pull</small></div>
+                <div class="label horizon-label">EVENT HORIZON<br><small>Escape Impossible</small></div>
+            </div>
+            
+            <div class="grace-arrows">
+                <div class="grace-arrow"></div>
+                <div class="grace-arrow"></div>
+                <div class="grace-arrow"></div>
+                <div class="grace-arrow"></div>
+            </div>
+        </div>
+        
+        <div class="physics-explanation">
+            <div class="physics-card">
+                <h3 class="card-title physics-title">🕳️ Black Hole Physics</h3>
+                <div class="card-content">
+                    In a black hole, the <span class="highlight">event horizon</span> is the point of no return. Once you cross it, the gravitational pull becomes so strong that not even light can escape.
+                    <br><br>
+                    The closer you get, the more <span class="warning">time dilates</span> and space warps. What seems like moments to you could be hours to outside observers.
+                    <br><br>
+                    <strong>Key insight:</strong> The event horizon appears as a surface, but it's actually a <span class="highlight">one-way membrane</span> through spacetime itself.
+                </div>
+            </div>
+            
+            <div class="grace-card">
+                <h3 class="card-title grace-title">✝️ Moral Event Horizon</h3>
+                <div class="card-content">
+                    In moral gravity, the event horizon is where <span class="highlight">willpower alone</span> becomes insufficient to escape. The pull of temptation overwhelms human capacity for self-rescue.
+                    <br><br>
+                    But unlike physics, <span class="highlight">grace</span> can penetrate this barrier. Divine intervention doesn't follow the laws of moral thermodynamics.
+                    <br><br>
+                    <strong>Key insight:</strong> What's impossible for finite willpower becomes possible through <span class="highlight">infinite grace</span>.
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; padding: 25px; background: rgba(106, 90, 205, 0.1); border-radius: 12px; border: 1px solid #6a5acd; margin-top: 30px;">
+            <div style="font-size: 1.2em; color: #ffd700; font-weight: bold; margin-bottom: 10px;">
+                The Critical Difference
+            </div>
+            <div style="color: #b19cd9; line-height: 1.6;">
+                In physics, crossing the event horizon means certain doom.<br>
+                In theology, crossing the event horizon means <span class="highlight">certain need for grace</span>.<br><br>
+                <em>"What is impossible with man is possible with God." - Luke 18:27</em>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

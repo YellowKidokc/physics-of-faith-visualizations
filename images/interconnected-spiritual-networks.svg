@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <!-- Background -->
+  <rect width="600" height="600" fill="#1e1e2e"/>
+  
+  <!-- Network connections - background connections first -->
+  <line x1="300" y1="300" x2="150" y2="200" stroke="#bb86fc" stroke-width="1.5" opacity="0.4"/>
+  <line x1="300" y1="300" x2="180" y2="420" stroke="#bb86fc" stroke-width="2" opacity="0.5"/>
+  <line x1="300" y1="300" x2="450" y2="200" stroke="#bb86fc" stroke-width="1.5" opacity="0.4"/>
+  <line x1="300" y1="300" x2="430" y2="380" stroke="#bb86fc" stroke-width="2.5" opacity="0.6"/>
+  <line x1="300" y1="300" x2="200" y2="300" stroke="#bb86fc" stroke-width="1" opacity="0.3"/>
+  <line x1="300" y1="300" x2="400" y2="300" stroke="#bb86fc" stroke-width="3" opacity="0.7"/>
+  <line x1="300" y1="300" x2="300" y2="200" stroke="#bb86fc" stroke-width="3.5" opacity="0.8"/>
+  <line x1="300" y1="300" x2="300" y2="400" stroke="#bb86fc" stroke-width="4" opacity="0.9"/>
+  
+  <!-- Secondary connections between experiences -->
+  <line x1="150" y1="200" x2="200" y2="300" stroke="#bb86fc" stroke-width="1" opacity="0.2"/>
+  <line x1="180" y1="420" x2="300" y2="400" stroke="#bb86fc" stroke-width="1" opacity="0.2"/>
+  <line x1="450" y1="200" x2="400" y2="300" stroke="#bb86fc" stroke-width="1" opacity="0.2"/>
+  <line x1="430" y1="380" x2="300" y2="400" stroke="#bb86fc" stroke-width="1" opacity="0.2"/>
+  <line x1="300" y1="200" x2="450" y2="200" stroke="#bb86fc" stroke-width="1" opacity="0.2"/>
+  <line x1="300" y1="200" x2="150" y2="200" stroke="#bb86fc" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Experience nodes with labels -->
+  <circle cx="150" cy="200" r="30" fill="#9d4edd" stroke="#bb86fc" stroke-width="2"/>
+  <text x="150" y="195" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">CHALLENGES</text>
+  <text x="150" y="210" font-family="Arial" font-size="9" fill="#fff" text-anchor="middle">Growth Points</text>
+  
+  <circle cx="180" cy="420" r="35" fill="#7b2cbf" stroke="#bb86fc" stroke-width="2"/>
+  <text x="180" y="415" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">RELATIONSHIPS</text>
+  <text x="180" y="430" font-family="Arial" font-size="9" fill="#fff" text-anchor="middle">Connection Points</text>
+  
+  <circle cx="450" cy="200" r="30" fill="#9d4edd" stroke="#bb86fc" stroke-width="2"/>
+  <text x="450" y="195" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">INSIGHTS</text>
+  <text x="450" y="210" font-family="Arial" font-size="9" fill="#fff" text-anchor="middle">Revelations</text>
+  
+  <circle cx="430" cy="380" r="35" fill="#5a189a" stroke="#bb86fc" stroke-width="2"/>
+  <text x="430" y="375" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">TRANSFORMATIONS</text>
+  <text x="430" y="390" font-family="Arial" font-size="9" fill="#fff" text-anchor="middle">Major Shifts</text>
+  
+  <circle cx="200" cy="300" r="25" fill="#9d4edd" stroke="#bb86fc" stroke-width="2"/>
+  <text x="200" y="295" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">DOUBTS</text>
+  <text x="200" y="310" font-family="Arial" font-size="9" fill="#fff" text-anchor="middle">Questions</text>
+  
+  <circle cx="400" cy="300" r="30" fill="#7b2cbf" stroke="#bb86fc" stroke-width="2"/>
+  <text x="400" y="295" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">WISDOM</text>
+  <text x="400" y="310" font-family="Arial" font-size="9" fill="#fff" text-anchor="middle">Knowledge</text>
+  
+  <circle cx="300" cy="200" r="40" fill="#5a189a" stroke="#bb86fc" stroke-width="2"/>
+  <text x="300" y="195" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">DIVINE CONNECTION</text>
+  <text x="300" y="210" font-family="Arial" font-size="9" fill="#fff" text-anchor="middle">Grace Points</text>
+  
+  <circle cx="300" cy="400" r="40" fill="#3c096c" stroke="#bb86fc" stroke-width="2"/>
+  <text x="300" y="395" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">PURPOSE</text>
+  <text x="300" y="410" font-family="Arial" font-size="9" fill="#fff" text-anchor="middle">Life Mission</text>
+  
+  <!-- Central core - spiritual center -->
+  <circle cx="300" cy="300" r="45" fill="#240046" stroke="#bb86fc" stroke-width="3"/>
+  <text x="300" y="295" font-family="Arial" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">SPIRITUAL</text>
+  <text x="300" y="315" font-family="Arial" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">CORE</text>
+  
+  <!-- Legend -->
+  <rect x="40" y="500" width="520" height="60" fill="#2d2d3f" rx="5"/>
+  <text x="50" y="520" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">CONNECTION STRENGTH:</text>
+  
+  <line x1="210" y1="520" x2="240" y2="520" stroke="#bb86fc" stroke-width="1" opacity="0.3"/>
+  <text x="255" y="524" font-family="Arial" font-size="10" fill="#fff">Subtle</text>
+  
+  <line x1="300" y1="520" x2="330" y2="520" stroke="#bb86fc" stroke-width="2" opacity="0.5"/>
+  <text x="345" y="524" font-family="Arial" font-size="10" fill="#fff">Moderate</text>
+  
+  <line x1="410" y1="520" x2="440" y2="520" stroke="#bb86fc" stroke-width="4" opacity="0.9"/>
+  <text x="455" y="524" font-family="Arial" font-size="10" fill="#fff">Strong</text>
+  
+  <text x="50" y="545" font-family="Arial" font-size="10" fill="#ccc" font-style="italic">Node color intensity represents depth of transformative potential</text>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">INTERCONNECTED SPIRITUAL NETWORKS</text>
+</svg>

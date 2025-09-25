@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#151a30" />
+  
+  <!-- Grid Lines -->
+  <g stroke="#253150" stroke-width="1">
+    <g id="vertical-lines">
+      <line x1="100" y1="100" x2="100" y2="500" />
+      <line x1="200" y1="100" x2="200" y2="500" />
+      <line x1="300" y1="100" x2="300" y2="500" />
+      <line x1="400" y1="100" x2="400" y2="500" />
+      <line x1="500" y1="100" x2="500" y2="500" />
+      <line x1="600" y1="100" x2="600" y2="500" />
+      <line x1="700" y1="100" x2="700" y2="500" />
+    </g>
+    <g id="horizontal-lines">
+      <line x1="100" y1="100" x2="700" y2="100" />
+      <line x1="100" y1="200" x2="700" y2="200" />
+      <line x1="100" y1="300" x2="700" y2="300" />
+      <line x1="100" y1="400" x2="700" y2="400" />
+      <line x1="100" y1="500" x2="700" y2="500" />
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">ENTROPY VS. GRACE: MATHEMATICAL MODEL</text>
+  <text x="400" y="80" fill="#909ee0" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Quantifying the Spiritual Battle Against Decay</text>
+  
+  <!-- Coordinate System -->
+  <g id="axes">
+    <!-- X-Axis -->
+    <line x1="100" y1="400" x2="700" y2="400" stroke="white" stroke-width="2" />
+    <polygon points="700,400 690,395 690,405" fill="white" />
+    <text x="710" y="410" fill="white" font-family="Arial, sans-serif" font-size="16" text-anchor="start">TIME</text>
+    
+    <!-- Y-Axis -->
+    <line x1="100" y1="500" x2="100" y2="100" stroke="white" stroke-width="2" />
+    <polygon points="100,100 95,110 105,110" fill="white" />
+    <text x="70" y="120" fill="white" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">SPIRITUAL</text>
+    <text x="70" y="140" fill="white" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">ENTROPY</text>
+    
+    <!-- Origin -->
+    <circle cx="100" cy="400" r="4" fill="white" />
+  </g>
+  
+  <!-- Entropy Curve (Natural State) -->
+  <path d="M 100,350 Q 200,300 300,250 Q 400,200 500,150 Q 600,100 700,50" 
+        fill="none" stroke="#be1f4c" stroke-width="3" />
+  <text x="150" y="320" fill="#be1f4c" font-family="Arial, sans-serif" font-size="14" font-weight="bold">NATURAL TRAJECTORY</text>
+  <text x="150" y="340" fill="white" font-family="Arial, sans-serif" font-size="12">S = log(Ω)</text>
+  
+  <!-- Grace Function -->
+  <path d="M 300,250 Q 400,230 500,270 Q 600,310 700,350" 
+        fill="none" stroke="#9333ea" stroke-width="3" />
+  <text x="520" y="290" fill="#9333ea" font-family="Arial, sans-serif" font-size="14" font-weight="bold">GRACE FUNCTION</text>
+  <text x="520" y="310" fill="white" font-family="Arial, sans-serif" font-size="12">G = -S + C</text>
+  
+  <!-- Redemption Curve -->
+  <path d="M 300,250 Q 400,280 500,350 Q 600,420 700,450" 
+        fill="none" stroke="#4c7eff" stroke-width="3" stroke-dasharray="5,5" />
+  <text x="600" y="440" fill="#4c7eff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">REDEMPTION CURVE</text>
+  <text x="600" y="460" fill="white" font-family="Arial, sans-serif" font-size="12">R = S×G</text>
+  
+  <!-- Intersection Point -->
+  <circle cx="300" cy="250" r="8" fill="#9333ea" />
+  <text x="320" y="230" fill="white" font-family="Arial, sans-serif" font-size="14">GRACE</text>
+  <text x="320" y="250" fill="white" font-family="Arial, sans-serif" font-size="14">INTERVENTION</text>
+  
+  <!-- Color-coded Regions -->
+  <g opacity="0.2">
+    <!-- Natural State Region -->
+    <path d="M 100,350 Q 200,300 300,250 L 300,400 L 100,400 Z" fill="#be1f4c" />
+    <!-- Restoration State Region -->
+    <path d="M 300,250 Q 400,280 500,350 Q 600,420 700,450 L 700,400 L 300,400 Z" fill="#9333ea" />
+  </g>
+  
+  <!-- Labels for Regions -->
+  <text x="200" y="380" fill="#be1f4c" font-family="Arial, sans-serif" font-size="14" font-weight="bold">NATURAL STATE</text>
+  <text x="200" y="395" fill="white" font-family="Arial, sans-serif" font-size="12">(Increasing Disorder)</text>
+  
+  <text x="550" y="380" fill="#9333ea" font-family="Arial, sans-serif" font-size="14" font-weight="bold">RESTORATION STATE</text>
+  <text x="550" y="395" fill="white" font-family="Arial, sans-serif" font-size="12">(Grace Counteracting Entropy)</text>
+  
+  <!-- Scripture Reference -->
+  <g id="scripture">
+    <rect x="250" y="520" width="300" height="50" rx="5" fill="#253150" opacity="0.7" />
+    <text x="400" y="545" fill="white" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle">"For the wages of sin is death, but the gift of</text>
+    <text x="400" y="562" fill="white" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle">God is eternal life in Christ Jesus our Lord."</text>
+    <text x="530" y="562" fill="#909ee0" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Romans 6:23</text>
+  </g>
+</svg>
