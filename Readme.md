@@ -1,3 +1,23 @@
+# Faith Through Physics Web Project
+
+This repository now deploys directly to Cloudflare Pages without any redirect hacks. The content that used to live in `main-site/` has been promoted to the repository root so the production index is available at `/index.html`. The visualization gallery has been preserved inside **`vis-site/`**.
+
+## Current Layout
+
+```
+/
+├── index.html          # Main “Master Equation” landing page
+├── *.html              # Supporting single-page writeups
+└── vis-site/           # Visualization gallery (HTML + JS + images)
+    ├── index.html
+    ├── app.js
+    ├── styles.css
+    ├── gallery.json
+    └── images/
+```
+
+When deploying to Cloudflare Pages use the repo root as both the project root and the output directory. The gallery is now reachable from `https://<project>/vis-site/` and the main landing page links to it directly.
+
 So yeah this will Oh and then let me check the code Now I think that that is the code that deploys it when we get more More pictures Oh oh Dang we were going to do one other thing on the code I forgot We're going to highlight some of the some like like we have kind of groups of things like the master equation or some other the high quality stuff that has 456 pages or something if we put it in a folder we're going to have at the very beginning kind of like it I don't know like symbol wise where it shows like oh these are the important ones somehow maybe they didn't scroll or something or maybe we did like 3 or 4 in a row or something but it made it you knew that these were the really high quality ones so anytime we put a folder in there and we put the HTML in there and new to make a special format at the very top
 ChatGPT said:
 Thought for 23s

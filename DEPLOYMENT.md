@@ -1,14 +1,23 @@
 # 🚀 Cloudflare Pages Deployment Guide
 
-## Step-by-Step Instructions to Host Your Physics of Faith Site
+## Current Repository Layout
+
+```
+/
+├── index.html      # Master Equation landing page (production entry point)
+├── *.html          # Supporting deep-dive pages
+└── vis-site/       # Visualization gallery (HTML, JS, assets)
+```
+
+Cloudflare Pages must serve the repository root so that `/index.html` loads by default. The visualization gallery remains accessible at `/vis-site/`.
 
 ### Method 1: Direct Upload (Easiest - 5 minutes)
 
 #### Step 1: Prepare Your Files
-1. **Zip the entire `physics-of-faith-site` folder**
-   - Right-click on the folder
-   - Select "Send to" → "Compressed (zipped) folder"
-   - Name it `physics-of-faith-site.zip`
+1. **Zip the entire repository contents** (all files shown above)
+   - Select everything inside the repo folder
+   - Right-click → "Send to" → "Compressed (zipped) folder"
+   - Name it `faiththruphysics.zip`
 
 #### Step 2: Access Cloudflare Pages
 1. **Go to Cloudflare Dashboard**: https://dash.cloudflare.com
@@ -32,20 +41,20 @@
 #### Step 1: Create GitHub Repository
 1. **Go to GitHub**: https://github.com
 2. **Click "New repository"**
-3. **Name**: `physics-of-faith-site`
+3. **Name**: `faiththruphysics`
 4. **Make it Public**
 5. **Click "Create repository"**
 
 #### Step 2: Upload Your Files
 1. **Click "uploading an existing file"**
-2. **Drag all files** from your `physics-of-faith-site` folder
+2. **Drag all files** from your local repository folder
 3. **Commit changes**
 
 #### Step 3: Connect to Cloudflare Pages
 1. **Go to Cloudflare Pages Dashboard**
 2. **Click "Connect to Git"**
 3. **Choose GitHub**
-4. **Select your `physics-of-faith-site` repository**
+4. **Select your `faiththruphysics` (or similarly named) repository**
 5. **Click "Begin setup"**
 
 #### Step 4: Configure Build Settings

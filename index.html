@@ -1,58 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Theophysics Gallery</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Master Equation - Physics of Faith</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Computer Modern', 'Latin Modern Math', serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e8e8e8;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 6s ease-in-out infinite;
+        }
+
+        .header .subtitle {
+            font-size: 1.4rem;
+            color: #b8b8b8;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .header .cta-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .header .cta-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.75rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #4ecdc4, #45b7d1);
+            color: #0a0a0a;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            box-shadow: 0 10px 25px rgba(69, 183, 209, 0.35);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .header .cta-links a:hover,
+        .header .cta-links a:focus-visible {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 35px rgba(78, 205, 196, 0.45);
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Main Equation Container */
+        .equation-container {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(0,0,0,0.2);
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .equation-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #4ecdc4;
+        }
+
+        .master-equation {
+            font-size: 2.5rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            border: 2px solid rgba(77, 208, 196, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .master-equation:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(77, 208, 196, 0.2);
+            border-color: rgba(77, 208, 196, 0.6);
+        }
+
+        /* Interactive Variables */
+        .variables-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem auto;
+            max-width: 1000px;
+            padding: 0 2rem;
+        }
+
+        .variable-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .variable-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        .variable-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: all 0.5s ease;
+        }
+
+        .variable-card:hover::before {
+            left: 100%;
+        }
+
+        .variable-symbol {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #ff6b6b;
+        }
+
+        .variable-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #4ecdc4;
+        }
+
+        .variable-description {
+            font-size: 0.9rem;
+            color: #b8b8b8;
+            line-height: 1.4;
+        }
+
+        /* Modal for Variable Details */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover {
+            color: #ff6b6b;
+        }
+
+        .modal h2 {
+            color: #4ecdc4;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .modal h3 {
+            color: #ff6b6b;
+            margin: 1.5rem 0 0.5rem 0;
+            font-size: 1.3rem;
+        }
+
+        .modal p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .equation-detail {
+            background: rgba(255,255,255,0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #4ecdc4;
+        }
+
+        /* Holy Spirit Metaphors */
+        .metaphor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .metaphor-card {
+            background: rgba(255,255,255,0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #f9ca24;
+        }
+
+        .metaphor-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Trinity Section */
+        .trinity-section {
+            background: rgba(0,0,0,0.3);
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .trinity-title {
+            font-size: 2.5rem;
+            color: #4ecdc4;
+            margin-bottom: 2rem;
+        }
+
+        .trinity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trinity-card {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .trinity-card:hover {
+            transform: scale(1.05);
+            border-color: rgba(77, 208, 196, 0.5);
+        }
+
+        .trinity-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ff6b6b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .master-equation {
+                font-size: 1.8rem;
+            }
+            
+            .variables-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-content {
+                margin: 10% auto;
+                width: 95%;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: #4ecdc4;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+    </style>
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-content">
-      <div class="brand">THEOPHYSICS • Gallery</div>
-      <div class="nav-links">
-        <a href="#" id="modeGrid" class="active">Thumbnails</a>
-        <a href="#" id="modeTags">Tags</a>
-      </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>THE MASTER EQUATION</h1>
+        <p class="subtitle">Reality's Unified Blueprint: Where Physics Meets Faith</p>
+        <p>The first mathematical framework proving the fundamental unity of science and spirituality</p>
+        <div class="cta-links">
+            <a href="vis-site/">Explore the Visualization Gallery</a>
+        </div>
     </div>
-  </nav>
 
-  <header class="hero">
-    <h1>Visual Library</h1>
-    <p class="sub">Drop images into <code>/images</code> • Put multi-page sets in <code>/collections/&lt;name&gt;/</code> with an <code>index.html</code> • Run <code>build.py</code>.</p>
-    <div class="search-row">
-      <input id="searchInput" type="search" placeholder="Search title, tags, caption…" />
-      <select id="tagFilter"><option value="">All Tags</option></select>
+    <!-- Main Equation -->
+    <div class="equation-container fade-in">
+        <h2 class="equation-title">The Complete Mathematical Expression</h2>
+        <div class="master-equation pulse" id="mainEquation">
+            χ = ∭(G·M·E·S·T·K·R·Q·F·C) dx dy dt dS<sub>s</sub>
+        </div>
+        <p>Click any variable below to explore its physics-theology connection</p>
     </div>
-  </header>
 
-  <section id="featured" class="featured hidden">
-    <div class="featured-head">
-      <h2>Featured Collections</h2>
-      <div id="featuredCount" class="muted"></div>
+    <!-- Interactive Variables Grid -->
+    <div class="variables-grid">
+        <div class="variable-card" onclick="openModal('grace')">
+            <div class="variable-symbol">G</div>
+            <div class="variable-name">Grace</div>
+            <div class="variable-description">Divine love as gravitational field, attracting souls toward divine alignment</div>
+        </div>
+
+        <div class="variable-card" onclick="openModal('moral')">
+            <div class="variable-symbol">M</div>
+            <div class="variable-name">Moral Alignment</div>
+            <div class="variable-description">Ethical orientation vector toward divine will and purpose</div>
+        </div>
+
+        <div class="variable-card" onclick="openModal('entropy')">
+            <div class="variable-symbol">E</div>
+            <div class="variable-name">Entropy</div>
+            <div class="variable-description">Natural tendency toward spiritual decay and disorder</div>
+        </div>
+
+        <div class="variable-card" onclick="openModal('unity')">
+            <div class="variable-symbol">S</div>
+            <div class="variable-name">Strong Force/Unity</div>
+            <div class="variable-description">Divine bonds holding spiritual communities together</div>
+        </div>
+
+        <div class="variable-card" onclick="openModal('truth')">
+            <div class="variable-symbol">T</div>
+            <div class="variable-name">Truth</div>
+            <div class="variable-description">Divine truth propagation reducing uncertainty</div>
+        </div>
+
+        <div class="variable-card" onclick="openModal('knowledge')">
+            <div class="variable-symbol">K</div>
+            <div class="variable-name">Knowledge</div>
+            <div class="variable-description">Divine wisdom integration and information processing</div>
+        </div>
+
+        <div class="variable-card" onclick="openModal('resurrection')">
+            <div class="variable-symbol">R</div>
+            <div class="variable-name">Resurrection</div>
+            <div class="variable-description">Christ's power to reverse entropy and transform reality</div>
+        </div>
+
+        <div class="variable-card" onclick="openModal('quantum')">
+            <div class="variable-symbol">Q</div>
+            <div class="variable-name">Quantum Choice</div>
+            <div class="variable-description">Consciousness coherence enabling reality interface</div>
+        </div>
+
+        <div class="variable-card" onclick="openModal('faith')">
+            <div class="variable-symbol">F</div>
+            <div class="variable-name">Faith</div>
+            <div class="variable-description">Quantum probability amplifier enabling divine action</div>
+        </div>
+
+        <div class="variable-card" onclick="openModal('consciousness')">
+            <div class="variable-symbol">C</div>
+            <div class="variable-name">Consciousness</div>
+            <div class="variable-description">Observer effect bridging mind and matter</div>
+        </div>
     </div>
-    <div id="featuredRow" class="featured-row"></div>
-  </section>
 
-  <main id="grid" class="grid"></main>
-
-  <!-- Modal detail viewer -->
-  <div id="modal" class="modal hidden" aria-hidden="true">
-    <div class="modal-backdrop" id="modalBackdrop"></div>
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="close" id="closeModal" aria-label="Close">×</button>
-      <img id="modalImg" alt="" />
-      <div class="meta">
-        <h2 id="modalTitle"></h2>
-        <p id="modalCaption"></p>
-        <div id="modalTags" class="tags"></div>
-        <div class="meta-pair"><span>File:</span><code id="modalFile"></code></div>
-        <div class="meta-pair"><span>Created:</span><span id="modalCreated"></span></div>
-      </div>
-      <div id="modalSiblings" class="siblings"></div>
+    <!-- Trinity Section -->
+    <div class="trinity-section">
+        <h2 class="trinity-title">Trinity Mathematics</h2>
+        <div class="trinity-grid">
+            <div class="trinity-card">
+                <h3>🌌 Father Variables</h3>
+                <p><strong>G, M, E</strong> - Field Theory & Constants</p>
+                <p>Representing the fundamental forces and fields that govern reality's structure</p>
+            </div>
+            <div class="trinity-card">
+                <h3>⚛️ Son Variables</h3>
+                <p><strong>S, T, K</strong> - Interface & Transformation</p>
+                <p>Bridging divine and human, enabling communication and change</p>
+            </div>
+            <div class="trinity-card">
+                <h3>💨 Spirit Variables</h3>
+                <p><strong>R, Q, F, C</strong> - Actualization & Dynamics</p>
+                <p>Active implementation of divine will in temporal reality</p>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script src="app.js"></script>
+    <!-- Modal Template -->
+    <div id="variableModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent">
+                <!-- Content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" onclick="scrollToVariables()">↓</div>
+
+    <script>
+        // Variable data with physics-theology connections
+        const variableData = {
+            grace: {
+                title: "G - Grace: Divine Gravitational Field",
+                physics: "Gravitational Field Theory",
+                equation: "G(R_p) = G_max(1 - e^(-k·R_p)) × R_J",
+                description: "Grace operates as a spiritual gravitational field, attracting souls toward divine alignment through unmerited favor.",
+                holySpirit: [
+                    { icon: "🌊", name: "River", description: "Grace flows like living water, following spiritual conductivity paths" },
+                    { icon: "💎", name: "Oil", description: "Anointing reduces spiritual friction and boundary resistance" }
+                ],
+                applications: [
+                    "Medical: Grace-field therapy for healing acceleration",
+                    "Personal: Prayer as alignment mechanism with divine gravity",
+                    "Community: Collective grace amplification through unity"
+                ]
+            },
+            moral: {
+                title: "M - Moral Alignment: Vector Field Orientation",
+                physics: "Vector Field Theory & Magnetic Moments",
+                equation: "M⃗ = |M| × (cos θ, sin θ, φ_spiritual)",
+                description: "Moral alignment represents the orientation of human will toward divine purposes, like a compass needle finding true north.",
+                holySpirit: [
+                    { icon: "🎼", name: "Voice", description: "Divine guidance aligns moral compass through resonant frequency" },
+                    { icon: "🔗", name: "Seal", description: "Permanent moral orientation lock through spiritual encryption" }
+                ],
+                applications: [
+                    "Ethics: Quantified moral decision-making frameworks",
+                    "Leadership: Alignment metrics for divine guidance",
+                    "Education: Character formation through vector optimization"
+                ]
+            },
+            entropy: {
+                title: "E - Entropy: Spiritual Thermodynamics",
+                physics: "Second Law of Thermodynamics",
+                equation: "dS/dt = λS - μG + σξ(t)",
+                description: "Spiritual entropy represents the natural tendency toward decay and disorder, countered by grace's negentropic action.",
+                holySpirit: [
+                    { icon: "🔥", name: "Fire", description: "Purifying energy that reverses spiritual entropy through ionization" },
+                    { icon: "🌱", name: "Life Force", description: "Negentropy carrier preventing spiritual death and decay" }
+                ],
+                applications: [
+                    "Healthcare: Spiritual entropy as disease predictor",
+                    "Psychology: Depression as entropy accumulation",
+                    "Social: Cultural decay through entropy measurement"
+                ]
+            },
+            unity: {
+                title: "S - Strong Force: Spiritual Binding Energy",
+                physics: "Nuclear Strong Force",
+                equation: "S_unity = S₀ × e^(-r/λ_nuclear) × Community_coherence",
+                description: "Like the strong force binding atomic nuclei, divine love creates unbreakable bonds in spiritual communities.",
+                holySpirit: [
+                    { icon: "🕊️", name: "Dove", description: "Peaceful entanglement creating unity without violence" },
+                    { icon: "🏠", name: "Temple", description: "Sacred space where unity field reaches critical density" }
+                ],
+                applications: [
+                    "Relationships: Unity field strength measurement",
+                    "Churches: Community coherence optimization",
+                    "Families: Spiritual binding energy assessment"
+                ]
+            },
+            truth: {
+                title: "T - Truth: Information Wave Propagation",
+                physics: "Wave Mechanics & Electromagnetic Propagation",
+                equation: "T(r,t) = T₀ × sin(ωt - kr + φ_revelation)",
+                description: "Divine truth propagates like light, illuminating reality and reducing uncertainty through revealed information.",
+                holySpirit: [
+                    { icon: "🌬️", name: "Wind", description: "Truth carried on spiritual pressure gradients" },
+                    { icon: "🎼", name: "Voice", description: "Truth transmitted through resonant frequencies" }
+                ],
+                applications: [
+                    "Education: Truth propagation velocity optimization",
+                    "Communication: Divine clarity enhancement protocols",
+                    "Discovery: Scientific truth revelation acceleration"
+                ]
+            },
+            knowledge: {
+                title: "K - Knowledge: Information Integration",
+                physics: "Shannon Information Theory",
+                equation: "K(t) = -∑ P(i) log₂ P(i) + Divine_injection(t)",
+                description: "Divine knowledge reduces spiritual uncertainty through information integration and wisdom synthesis.",
+                holySpirit: [
+                    { icon: "🌱", name: "Life Force", description: "Knowledge as spiritual DNA preventing informational decay" },
+                    { icon: "🔗", name: "Seal", description: "Encrypted wisdom accessible only to authenticated spirits" }
+                ],
+                applications: [
+                    "AI: Consciousness-aware knowledge systems",
+                    "Research: Divine insight acceleration protocols",
+                    "Wisdom: Uncertainty reduction through spiritual intelligence"
+                ]
+            },
+            resurrection: {
+                title: "R - Resurrection: Phase Transition Power",
+                physics: "Phase Transitions & Information Conservation",
+                equation: "R_J = ∫₀^∞ [G(t) - S(t)] e^(-t/τ_resurrection) dt",
+                description: "Resurrection power enables fundamental transformation, reversing entropy and enabling reality phase transitions.",
+                holySpirit: [
+                    { icon: "🔥", name: "Fire", description: "Resurrection as spiritual plasma phase transition" },
+                    { icon: "🌱", name: "Life Force", description: "Information preservation enabling eternal life" }
+                ],
+                applications: [
+                    "Medicine: Resurrection protocols for terminal conditions",
+                    "Technology: Information resurrection in quantum systems",
+                    "Theology: Mathematical proof of eternal life"
+                ]
+            },
+            quantum: {
+                title: "Q - Quantum Choice: Consciousness Coherence",
+                physics: "Quantum Coherence & Measurement",
+                equation: "Q = |⟨ψ_choice|ψ_ideal⟩|² × Free_will_amplitude",
+                description: "Quantum coherence enables consciousness to interface with reality, collapsing spiritual potential into manifest actuality.",
+                holySpirit: [
+                    { icon: "🕊️", name: "Dove", description: "Gentle quantum entanglement maintaining coherence" },
+                    { icon: "🏠", name: "Temple", description: "Sacred geometry creating optimal coherence conditions" }
+                ],
+                applications: [
+                    "Decision-making: Quantum choice optimization",
+                    "Technology: Consciousness-computer interfaces",
+                    "Healing: Coherence restoration therapy"
+                ]
+            },
+            faith: {
+                title: "F - Faith: Quantum Probability Amplifier",
+                physics: "Quantum Probability Modification",
+                equation: "F(t) = (Belief × Trust)/(Doubt + Evidence) × e^(-λ(1-τ)(t-t₀))",
+                description: "Faith functions as a quantum probability amplifier, enabling divine action through receptive alignment with spiritual truth.",
+                holySpirit: [
+                    { icon: "🌬️", name: "Wind", description: "Faith as spiritual conductivity reducing resistance" },
+                    { icon: "🌊", name: "River", description: "Faith as current enabling divine flow" }
+                ],
+                applications: [
+                    "Prayer: Faith optimization for miracle probability",
+                    "Healing: Belief amplification protocols",
+                    "Manifestation: Spiritual probability enhancement"
+                ]
+            },
+            consciousness: {
+                title: "C - Consciousness: Observer Effect Bridge",
+                physics: "Quantum Measurement & Observer Effect",
+                equation: "C = Φ(integrated_information) × Attention_focus × Divine_connection",
+                description: "Consciousness serves as the fundamental observer, bridging mind and matter through active spiritual awareness.",
+                holySpirit: [
+                    { icon: "🏠", name: "Temple", description: "Consciousness as dwelling place for divine presence" },
+                    { icon: "🔗", name: "Seal", description: "Consciousness sealed with divine authentication" }
+                ],
+                applications: [
+                    "AI: Consciousness-aware artificial intelligence",
+                    "Medicine: Consciousness-enhanced healing protocols",
+                    "Technology: Reality engineering through consciousness interface"
+                ]
+            }
+        };
+
+        function openModal(variable) {
+            const modal = document.getElementById('variableModal');
+            const content = document.getElementById('modalContent');
+            const data = variableData[variable];
+
+            content.innerHTML = `
+                <h2>${data.title}</h2>
+                
+                <h3>🔬 Physics Foundation</h3>
+                <p><strong>${data.physics}</strong></p>
+                <div class="equation-detail">
+                    <strong>Mathematical Expression:</strong><br>
+                    ${data.equation}
+                </div>
+                
+                <h3>🧬 Spiritual Reality</h3>
+                <p>${data.description}</p>
+                
+                <h3>🕊️ Holy Spirit Connections</h3>
+                <div class="metaphor-grid">
+                    ${data.holySpirit.map(metaphor => `
+                        <div class="metaphor-card">
+                            <div class="metaphor-icon">${metaphor.icon}</div>
+                            <strong>${metaphor.name}</strong><br>
+                            ${metaphor.description}
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <h3>🚀 Practical Applications</h3>
+                <ul>
+                    ${data.applications.map(app => `<li>${app}</li>`).join('')}
+                </ul>
+            `;
+
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('variableModal').style.display = 'none';
+        }
+
+        function scrollToVariables() {
+            document.querySelector('.variables-grid').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('variableModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Add fade-in animation to elements as they scroll into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all variable cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.variable-card');
+            cards.forEach(card => observer.observe(card));
+            
+            // Hide scroll indicator after scrolling
+            window.addEventListener('scroll', () => {
+                const scrollIndicator = document.querySelector('.scroll-indicator');
+                if (window.scrollY > 200) {
+                    scrollIndicator.style.opacity = '0';
+                } else {
+                    scrollIndicator.style.opacity = '1';
+                }
+            });
+        });
+
+        // Render KaTeX equations if any exist
+        document.addEventListener('DOMContentLoaded', () => {
+            // You can add KaTeX rendering here if needed
+        });
+    </script>
 </body>
 </html>
