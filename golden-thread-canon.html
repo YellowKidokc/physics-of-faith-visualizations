@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Theophysics · Golden Thread Canon (10 Laws)</title>
+<style>
+  :root{
+    --bg1:#0f0f23; --bg2:#1a1a2e; --bg3:#16213e;
+    --gold:#ffd700; --amber:#ffb300; --orange:#ff6b35;
+    --ice:#e0e6ed; --muted:#9fb0d6; --panel:#0e1432; --line:#334;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:Arial,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",sans-serif;
+    color:var(--ice);
+    background:
+      radial-gradient(ellipse at 50% -10%, #1a237e 0%, #0d1421 50%, #000 100%),
+      linear-gradient(135deg,var(--bg1) 0%, var(--bg2) 50%, var(--bg3) 100%);
+    min-height:100svh; padding:24px;
+  }
+  header{ text-align:center; margin:4px 0 24px }
+  h1{
+    margin:0; font-weight:800; letter-spacing:.02em;
+    font-size:clamp(26px,4.8vw,44px);
+    background:linear-gradient(45deg,var(--gold),var(--amber),var(--orange));
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    text-shadow:0 0 20px rgba(255,215,0,.35);
+  }
+  p.lead{ margin:.35rem 0 0; color:#90caf9; font-size:clamp(12px,1.6vw,16px) }
+
+  .grid{
+    display:grid; gap:18px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width:1400px; margin:0 auto 24px;
+  }
+  .card{
+    background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+    border:1px solid rgba(160,180,255,.25);
+    border-radius:16px; overflow:hidden; display:flex; flex-direction:column;
+    transition:transform .15s ease, box-shadow .2s ease;
+  }
+  .card:hover{ transform:translateY(-2px); box-shadow:0 16px 44px rgba(0,0,0,.35) }
+
+  .art{
+    background:radial-gradient(ellipse at 50% 30%, rgba(255,215,0,.12), transparent 60%);
+    position:relative; aspect-ratio:4/3; border-bottom:1px solid rgba(160,180,255,.18);
+  }
+  .meta{ padding:14px 14px 16px }
+  .law{ font-weight:800; color:#ffd98a; letter-spacing:.03em; margin:0 0 6px }
+  .sub{ color:#cfd6ff; margin:0 0 8px }
+  .desc{ color:var(--muted); font-size:13px; line-height:1.4; margin:0 }
+
+  /* Shared SVG styling via classes */
+  svg{ width:100%; height:100% }
+  .stars circle{ fill:#ffd700; opacity:.35; }
+  .glow{ filter: drop-shadow(0 0 6px rgba(255,215,0,.45)) drop-shadow(0 0 14px rgba(255,165,0,.25)); }
+  .thread{
+    stroke:url(#goldGrad); stroke-width:3.2; fill:none;
+    stroke-linecap:round; stroke-linejoin:round; opacity:.95;
+  }
+  .threadSoft{ stroke:url(#goldGradSoft); stroke-width:2.4; opacity:.85 }
+  .threadBold{ stroke:url(#goldGrad); stroke-width:5; opacity:1 }
+  .pulseDot{ fill:url(#goldGrad); }
+  .fade{ opacity:.5 }
+  .blur1{ filter:url(#blur1) } .blur2{ filter:url(#blur2) }
+
+  .card:hover .thread, .card:hover .threadSoft, .card:hover .threadBold { opacity:1 }
+  .card:hover .pulseDot { filter: drop-shadow(0 0 6px rgba(255,215,0,.75)); }
+
+  /* Tiny helper for labels inside art */
+  .label{
+    position:absolute; left:10px; top:8px; font-size:12px; color:#b9c6ff; background:#0a0e21cc;
+    padding:4px 8px; border:1px solid #2b3569; border-radius:10px;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .anim, .wave, .dash, .wiggle, .spin { animation:none !important }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>THEOPHYSICS · Golden Thread Canon</h1>
+    <p class="lead">The 10 Laws rendered as one visual language — gold threads in a living cosmos.</p>
+  </header>
+
+  <section class="grid">
+
+    <!-- Law 1: Downward Pull -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 1 · Downward Pull</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 1 Golden Thread">
+          <defs>
+            <radialGradient id="goldGrad" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="#ffd700"/><stop offset="60%" stop-color="#ffb300"/><stop offset="100%" stop-color="#ff6b35"/>
+            </radialGradient>
+            <linearGradient id="goldGradSoft" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ffd98a"/><stop offset="100%" stop-color="#ffb300"/>
+            </linearGradient>
+            <filter id="blur1"><feGaussianBlur stdDeviation="2.2"/></filter>
+          </defs>
+          <!-- faint stars -->
+          <g class="stars">
+            <circle cx="60" cy="60" r="1.6"/><circle cx="540" cy="80" r="1.3"/><circle cx="520" cy="30" r="1.1"/>
+            <circle cx="100" cy="40" r="1.2"/><circle cx="280" cy="70" r="1.4"/>
+          </g>
+          <!-- gravitational/intentional well -->
+          <ellipse cx="300" cy="330" rx="180" ry="30" fill="#ffd98a22" class="glow"/>
+          <circle cx="300" cy="290" r="22" fill="#ffd700" class="glow"/>
+          <!-- heavy dark golden thread falling inward (centripetal) -->
+          <path class="threadBold glow" d="M300,40 C300,120 300,200 300,260 S300,320 300,330"/>
+          <!-- side tendrils curving inward -->
+          <path class="thread blur1" d="M180,60 C220,120 240,180 260,240 S280,300 300,330"/>
+          <path class="thread blur1" d="M420,60 C380,120 360,180 340,240 S320,300 300,330"/>
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Downward Pull</h3>
+        <p class="sub">Physics: Gravity · Theology: Sin</p>
+        <p class="desc">A heavy, centripetal golden thread descending into a well — mass and misalignment both draw toward a focal influence.</p>
+      </div>
+    </article>
+
+    <!-- Law 2: Unbreakable Bond -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 2 · Unbreakable Bond</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 2 Golden Thread">
+          <defs>
+            <radialGradient id="goldGrad2" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="#fff0a8"/><stop offset="60%" stop-color="#ffd700"/><stop offset="100%" stop-color="#ffb300"/>
+            </radialGradient>
+          </defs>
+          <!-- woven luminous cord -->
+          <g class="glow">
+            <path class="thread" stroke="url(#goldGrad2)" d="M90,300 C180,200 240,220 300,260 S420,320 510,240" />
+            <path class="thread" stroke="url(#goldGrad2)" d="M90,260 C180,160 240,180 300,220 S420,280 510,200" />
+            <path class="thread" stroke="url(#goldGrad2)" d="M90,340 C180,240 240,260 300,300 S420,360 510,280" />
+          </g>
+          <!-- clamp ends -->
+          <circle cx="88" cy="300" r="10" fill="#ffd700" class="glow"/><circle cx="512" cy="240" r="10" fill="#ffd700" class="glow"/>
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Unbreakable Bond</h3>
+        <p class="sub">Physics: Strong Force · Theology: Divine Unity</p>
+        <p class="desc">A densely woven, brightly luminous golden cord — fundamental connection that holds creation together.</p>
+      </div>
+    </article>
+
+    <!-- Law 3: Illuminating Force -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 3 · Illuminating Force</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 3 Golden Thread">
+          <defs>
+            <linearGradient id="ray" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#fff2b2"/><stop offset="100%" stop-color="#ffb300"/>
+            </linearGradient>
+          </defs>
+          <!-- radiant thread beam -->
+          <path class="thread glow" stroke="url(#ray)" d="M60,380 C160,360 260,300 360,260 S500,220 540,80">
+            <animate attributeName="stroke-dasharray" values="0 800; 80 720; 0 800" dur="2.5s" repeatCount="indefinite"/>
+            <animate attributeName="stroke-dashoffset" values="0; -120; 0" dur="2.5s" repeatCount="indefinite"/>
+          </path>
+          <!-- spark -->
+          <circle class="pulseDot glow" cx="540" cy="80" r="8">
+            <animate attributeName="r" values="6;9;6" dur="1.8s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Illuminating Force</h3>
+        <p class="sub">Physics: Electromagnetism · Theology: Truth & Revelation</p>
+        <p class="desc">A radiant, fast-moving golden thread racing across the field — light and truth illuminating all.</p>
+      </div>
+    </article>
+
+    <!-- Law 4: Universal Decay -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 4 · Universal Decay</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 4 Golden Thread">
+          <defs>
+            <linearGradient id="fadeGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#ffd700"/><stop offset="60%" stop-color="#ffb300"/><stop offset="100%" stop-color="#ffb30000"/>
+            </linearGradient>
+            <filter id="blur2"><feGaussianBlur stdDeviation="3.2"/></filter>
+          </defs>
+          <!-- fraying thread to mist -->
+          <path class="thread glow" stroke="url(#fadeGrad)" d="M80,350 C180,330 270,310 360,300 S480,290 540,280"/>
+          <path class="threadSoft blur2" stroke="url(#fadeGrad)" d="M100,366 C190,346 280,328 360,318 S470,306 540,298"/>
+          <path class="threadSoft blur2" stroke="url(#fadeGrad)" d="M90,332 C180,314 270,300 360,292 S480,286 540,282"/>
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Universal Decay</h3>
+        <p class="sub">Physics: Entropy · Theology: Spiritual Corruption</p>
+        <p class="desc">A thread that frays and dissolves into mist — the drift toward disorder without sustaining order.</p>
+      </div>
+    </article>
+
+    <!-- Law 5: Observer Effect -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 5 · Observer Effect</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 5 Golden Thread">
+          <defs>
+            <radialGradient id="observerGlow" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="#fff9c2"/><stop offset="100%" stop-color="#ffd70000"/>
+            </radialGradient>
+          </defs>
+          <!-- base thread -->
+          <path class="thread glow" d="M60,340 C180,300 260,260 340,220 S460,160 540,120"/>
+          <!-- observer node that brightens the thread on approach -->
+          <circle cx="220" cy="260" r="16" fill="url(#observerGlow)" class="glow">
+            <animate attributeName="r" values="12;18;12" dur="2.2s" repeatCount="indefinite"/>
+          </circle>
+          <circle class="pulseDot glow" cx="220" cy="260" r="5">
+            <animate attributeName="r" values="4;7;4" dur="2.2s" repeatCount="indefinite"/>
+          </circle>
+          <!-- responsive bright segment -->
+          <path class="threadBold" d="M200,268 C240,252 280,236 320,220">
+            <animate attributeName="stroke-width" values="3;6;3" dur="2.2s" repeatCount="indefinite"/>
+          </path>
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Observer Effect</h3>
+        <p class="sub">Physics: Quantum Measurement · Theology: Faith & Consciousness</p>
+        <p class="desc">A golden thread that brightens and changes where an “observer” node approaches — attention shapes outcome.</p>
+      </div>
+    </article>
+
+    <!-- Law 6: Uncertainty Principle -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 6 · Uncertainty Principle</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 6 Golden Thread">
+          <defs>
+            <filter id="shimmer">
+              <feTurbulence baseFrequency="0.015" numOctaves="2" seed="7" result="noise"/>
+              <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+          </defs>
+          <!-- shimmering blurred thread -->
+          <path class="thread blur1" d="M80,360 C160,320 240,300 320,290 S440,285 520,280">
+            <animate attributeName="stroke-dasharray" values="2 10; 10 10; 2 10" dur="3s" repeatCount="indefinite"/>
+          </path>
+          <path class="thread blur2" style="filter:url(#shimmer)" d="M80,360 C160,320 240,300 320,290 S440,285 520,280"/>
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Uncertainty Principle</h3>
+        <p class="sub">Physics: Heisenberg · Theology: Divine Mystery</p>
+        <p class="desc">A shimmering, slightly blurred thread — the truth stands, but its precise manifestation stays veiled.</p>
+      </div>
+    </article>
+
+    <!-- Law 7: Dual Nature -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 7 · Dual Nature</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 7 Golden Thread">
+          <!-- wave thread -->
+          <path class="thread glow" d="M60,300 Q110,240 160,300 T260,300 T360,300 T460,300 T540,300">
+            <animate attributeName="d" dur="3s" repeatCount="indefinite"
+              values="M60,300 Q110,240 160,300 T260,300 T360,300 T460,300 T540,300;
+                      M60,300 Q110,260 160,300 T260,300 T360,300 T460,300 T540,300;
+                      M60,300 Q110,240 160,300 T260,300 T360,300 T460,300 T540,300"/>
+          </path>
+          <!-- particle thread (discrete beads) -->
+          <g>
+            <circle class="pulseDot glow" cx="100" cy="300" r="5"/>
+            <circle class="pulseDot glow" cx="200" cy="300" r="5"/>
+            <circle class="pulseDot glow" cx="300" cy="300" r="5"/>
+            <circle class="pulseDot glow" cx="400" cy="300" r="5"/>
+            <circle class="pulseDot glow" cx="500" cy="300" r="5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Dual Nature</h3>
+        <p class="sub">Physics: Wave–Particle · Theology: Divine Paradox</p>
+        <p class="desc">Two inseparable aspects: a flowing wave thread intertwined with discrete golden beads.</p>
+      </div>
+    </article>
+
+    <!-- Law 8: Relativistic Framework -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 8 · Relativistic Framework</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 8 Golden Thread">
+          <!-- overarching golden framework -->
+          <g class="glow" opacity=".65">
+            <path class="thread" d="M60,220 C160,160 440,160 540,220"/>
+            <path class="thread" d="M60,260 C160,210 440,210 540,260"/>
+            <path class="thread" d="M60,300 C160,260 440,260 540,300"/>
+            <path class="thread" d="M180,120 C200,220 200,300 180,380"/>
+            <path class="thread" d="M300,100 C320,220 320,300 300,400"/>
+            <path class="thread" d="M420,120 C440,220 440,300 420,380"/>
+          </g>
+          <!-- invariant light bound ring -->
+          <circle cx="300" cy="250" r="120" fill="none" stroke="#ffd67e" stroke-dasharray="10 8" />
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Relativistic Framework</h3>
+        <p class="sub">Physics: Relativity · Theology: God’s Omniscient Vantage</p>
+        <p class="desc">A vast golden framework of curves with a light-bound ring — the all-encompassing perspective.</p>
+      </div>
+    </article>
+
+    <!-- Law 9: Quantum Connection -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 9 · Quantum Connection</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 9 Golden Thread">
+          <!-- twin parallel threads pulsing identically -->
+          <path id="q1" class="thread glow" d="M80,220 C160,210 240,210 320,220 S480,230 520,220"/>
+          <path id="q2" class="thread glow" d="M80,280 C160,270 240,270 320,280 S480,290 520,280"/>
+          <circle class="pulseDot glow">
+            <animate attributeName="cx" values="80;520;80" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="cy" values="220;220;220" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="r" values="4;8;4" dur="1.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle class="pulseDot glow">
+            <animate attributeName="cx" values="80;520;80" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="cy" values="280;280;280" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="r" values="4;8;4" dur="1.5s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Quantum Connection</h3>
+        <p class="sub">Physics: Entanglement · Theology: Communion & Non-local Love</p>
+        <p class="desc">Two parallel golden threads pulse in lockstep across a void — instantaneous unity.</p>
+      </div>
+    </article>
+
+    <!-- Law 10: Unified Theory -->
+    <article class="card">
+      <div class="art">
+        <div class="label">Law 10 · Unified Theory</div>
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" aria-label="Law 10 Golden Thread">
+          <!-- converging threads into a brilliant nexus -->
+          <defs>
+            <radialGradient id="nexus" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="#fff6b8"/><stop offset="60%" stop-color="#ffd700"/><stop offset="100%" stop-color="#ffb30000"/>
+            </radialGradient>
+          </defs>
+          <g class="glow">
+            <path class="thread" d="M60,120 300,230" />
+            <path class="thread" d="M60,220 300,230" />
+            <path class="thread" d="M60,320 300,230" />
+            <path class="thread" d="M540,120 300,230" />
+            <path class="thread" d="M540,220 300,230" />
+            <path class="thread" d="M540,320 300,230" />
+          </g>
+          <circle cx="300" cy="230" r="18" fill="url(#nexus)" class="glow">
+            <animate attributeName="r" values="16;24;16" dur="2.2s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <div class="meta">
+        <h3 class="law">Unified Theory</h3>
+        <p class="sub">Physics: TOE · Theology: Oneness</p>
+        <p class="desc">All ten golden threads converge at a brilliant nexus — the unified expression of reality.</p>
+      </div>
+    </article>
+
+  </section>
+</body>
+</html>

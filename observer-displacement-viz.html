@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observer Displacement Hypothesis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+        
+        .main-layout {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .controls-panel {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .control-group {
+            margin-bottom: 30px;
+        }
+        
+        .control-group h3 {
+            color: #a78bfa;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .slider-container {
+            margin-bottom: 20px;
+        }
+        
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+        
+        .slider-name {
+            color: #d1d5db;
+        }
+        
+        .slider-value {
+            color: #60a5fa;
+            font-weight: bold;
+        }
+        
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: rgba(255, 255, 255, 0.1);
+            outline: none;
+            -webkit-appearance: none;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+        }
+        
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+        }
+        
+        .visualization-panel {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        canvas {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+        }
+        
+        .equation-panel {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .equation-title {
+            color: #a78bfa;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .equation {
+            font-family: 'Courier New', monospace;
+            font-size: 1.3em;
+            text-align: center;
+            color: #60a5fa;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .result-display {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .result-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .result-label {
+            color: #9ca3af;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        
+        .result-value {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .result-value.positive {
+            color: #10b981;
+        }
+        
+        .result-value.negative {
+            color: #ef4444;
+        }
+        
+        .result-value.neutral {
+            color: #60a5fa;
+        }
+        
+        .interpretation {
+            background: rgba(102, 126, 234, 0.1);
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            color: #d1d5db;
+            line-height: 1.6;
+        }
+        
+        .mode-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .mode-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.1);
+            color: #d1d5db;
+        }
+        
+        .mode-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Observer Displacement Hypothesis</h1>
+        <p class="subtitle">Why observers "move" during quantum collapse</p>
+        
+        <div class="mode-toggle">
+            <button class="mode-btn active" onclick="setMode('physics')">Physics Language</button>
+            <button class="mode-btn" onclick="setMode('information')">Information Language</button>
+            <button class="mode-btn" onclick="setMode('spiritual')">Spiritual Language</button>
+        </div>
+        
+        <div class="equation-panel">
+            <div class="equation-title">Core Displacement Formula</div>
+            <div class="equation" id="mainEquation">
+                Δx<sub>obs</sub> ∝ (S<sub>obs</sub> - S<sub>target</sub>) / (C<sub>obs</sub> + C<sub>target</sub>)
+            </div>
+            <div class="result-display">
+                <div class="result-box">
+                    <div class="result-label">Entropy Differential</div>
+                    <div class="result-value neutral" id="entropyDiff">0.00</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-label">Coherence Sum</div>
+                    <div class="result-value neutral" id="coherenceSum">1.00</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-label">Displacement (Δx)</div>
+                    <div class="result-value neutral" id="displacement">0.00</div>
+                </div>
+            </div>
+            <div class="interpretation" id="interpretation">
+                Adjust the sliders to see how entropy and coherence differences between observer and target affect displacement.
+            </div>
+        </div>
+        
+        <div class="main-layout">
+            <div class="controls-panel">
+                <div class="control-group">
+                    <h3 id="observerLabel">Observer Properties</h3>
+                    <div class="slider-container">
+                        <div class="slider-label">
+                            <span class="slider-name" id="obsEntropyLabel">Entropy (S<sub>obs</sub>)</span>
+                            <span class="slider-value" id="obsEntropyValue">0.5</span>
+                        </div>
+                        <input type="range" id="obsEntropy" min="0" max="1" step="0.01" value="0.5">
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-label">
+                            <span class="slider-name" id="obsCoherenceLabel">Coherence (C<sub>obs</sub>)</span>
+                            <span class="slider-value" id="obsCoherenceValue">0.5</span>
+                        </div>
+                        <input type="range" id="obsCoherence" min="0" max="1" step="0.01" value="0.5">
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <h3 id="targetLabel">Target Properties</h3>
+                    <div class="slider-container">
+                        <div class="slider-label">
+                            <span class="slider-name" id="targetEntropyLabel">Entropy (S<sub>target</sub>)</span>
+                            <span class="slider-value" id="targetEntropyValue">0.3</span>
+                        </div>
+                        <input type="range" id="targetEntropy" min="0" max="1" step="0.01" value="0.3">
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-label">
+                            <span class="slider-name" id="targetCoherenceLabel">Coherence (C<sub>target</sub>)</span>
+                            <span class="slider-value" id="targetCoherenceValue">0.7</span>
+                        </div>
+                        <input type="range" id="targetCoherence" min="0" max="1" step="0.01" value="0.7">
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <h3>Collapse Conditions</h3>
+                    <div class="slider-container">
+                        <div class="slider-label">
+                            <span class="slider-name" id="faithLabel">Faith/Measurement (F)</span>
+                            <span class="slider-value" id="faithValue">0.6</span>
+                        </div>
+                        <input type="range" id="faith" min="0" max="1" step="0.01" value="0.6">
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-label">
+                            <span class="slider-name" id="potentialLabel">Quantum Potential (Q)</span>
+                            <span class="slider-value" id="potentialValue">0.7</span>
+                        </div>
+                        <input type="range" id="potential" min="0" max="1" step="0.01" value="0.7">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="visualization-panel">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        let mode = 'physics';
+        const labels = {
+            physics: {
+                observer: 'Observer Properties',
+                target: 'Target Properties',
+                obsEntropy: 'Entropy (S<sub>obs</sub>)',
+                obsCoherence: 'Coherence (C<sub>obs</sub>)',
+                targetEntropy: 'Entropy (S<sub>target</sub>)',
+                targetCoherence: 'Coherence (C<sub>target</sub>)',
+                faith: 'Measurement Intensity (F)',
+                potential: 'Quantum Potential (Q)'
+            },
+            information: {
+                observer: 'Observer Signal State',
+                target: 'Target Signal State',
+                obsEntropy: 'Noise Level (N<sub>obs</sub>)',
+                obsCoherence: 'Signal Clarity (S<sub>obs</sub>)',
+                targetEntropy: 'Noise Level (N<sub>target</sub>)',
+                targetCoherence: 'Signal Clarity (S<sub>target</sub>)',
+                faith: 'Alignment Confidence (A)',
+                potential: 'Channel Capacity (C)'
+            },
+            spiritual: {
+                observer: 'Observer Spiritual State',
+                target: 'Target Spiritual State',
+                obsEntropy: 'Sin/Disorder (S<sub>obs</sub>)',
+                obsCoherence: 'Christ-Unity (C<sub>obs</sub>)',
+                targetEntropy: 'Sin/Disorder (S<sub>target</sub>)',
+                targetCoherence: 'Christ-Unity (C<sub>target</sub>)',
+                faith: 'Faith (F)',
+                potential: 'Divine Potential (P)'
+            }
+        };
+        
+        function setMode(newMode) {
+            mode = newMode;
+            document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            const l = labels[mode];
+            document.getElementById('observerLabel').innerHTML = l.observer;
+            document.getElementById('targetLabel').innerHTML = l.target;
+            document.getElementById('obsEntropyLabel').innerHTML = l.obsEntropy;
+            document.getElementById('obsCoherenceLabel').innerHTML = l.obsCoherence;
+            document.getElementById('targetEntropyLabel').innerHTML = l.targetEntropy;
+            document.getElementById('targetCoherenceLabel').innerHTML = l.targetCoherence;
+            document.getElementById('faithLabel').innerHTML = l.faith;
+            document.getElementById('potentialLabel').innerHTML = l.potential;
+            
+            draw();
+        }
+        
+        function resizeCanvas() {
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width * window.devicePixelRatio;
+            canvas.height = rect.height * window.devicePixelRatio;
+            ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+            draw();
+        }
+        
+        function getValues() {
+            return {
+                obsEntropy: parseFloat(document.getElementById('obsEntropy').value),
+                obsCoherence: parseFloat(document.getElementById('obsCoherence').value),
+                targetEntropy: parseFloat(document.getElementById('targetEntropy').value),
+                targetCoherence: parseFloat(document.getElementById('targetCoherence').value),
+                faith: parseFloat(document.getElementById('faith').value),
+                potential: parseFloat(document.getElementById('potential').value)
+            };
+        }
+        
+        function updateDisplay() {
+            const v = getValues();
+            
+            document.getElementById('obsEntropyValue').textContent = v.obsEntropy.toFixed(2);
+            document.getElementById('obsCoherenceValue').textContent = v.obsCoherence.toFixed(2);
+            document.getElementById('targetEntropyValue').textContent = v.targetEntropy.toFixed(2);
+            document.getElementById('targetCoherenceValue').textContent = v.targetCoherence.toFixed(2);
+            document.getElementById('faithValue').textContent = v.faith.toFixed(2);
+            document.getElementById('potentialValue').textContent = v.potential.toFixed(2);
+            
+            const entropyDiff = v.obsEntropy - v.targetEntropy;
+            const coherenceSum = v.obsCoherence + v.targetCoherence;
+            const displacement = coherenceSum > 0 ? entropyDiff / coherenceSum : 0;
+            
+            document.getElementById('entropyDiff').textContent = entropyDiff.toFixed(3);
+            document.getElementById('coherenceSum').textContent = coherenceSum.toFixed(3);
+            document.getElementById('displacement').textContent = displacement.toFixed(3);
+            
+            const dispElement = document.getElementById('displacement');
+            dispElement.className = 'result-value ' + (displacement > 0.1 ? 'negative' : displacement < -0.1 ? 'positive' : 'neutral');
+            
+            const interpretation = document.getElementById('interpretation');
+            if (Math.abs(displacement) < 0.1) {
+                interpretation.innerHTML = '⚖️ <strong>Balanced State:</strong> Observer and target have similar entropy-coherence ratios. Minimal displacement occurs during collapse.';
+            } else if (displacement > 0) {
+                interpretation.innerHTML = '⚠️ <strong>Observer Displaced:</strong> Observer has higher entropy or lower coherence than target. The observer loses frame control and is "pushed" during collapse. Target anchors reality.';
+            } else {
+                interpretation.innerHTML = '✓ <strong>Observer Anchored:</strong> Observer has lower entropy or higher coherence than target. The observer maintains frame control. Reality collapses around the observer\'s reference.';
+            }
+        }
+        
+        function draw() {
+            const rect = canvas.getBoundingClientRect();
+            const w = rect.width;
+            const h = rect.height;
+            
+            ctx.clearRect(0, 0, w, h);
+            
+            const v = getValues();
+            const entropyDiff = v.obsEntropy - v.targetEntropy;
+            const coherenceSum = v.obsCoherence + v.targetCoherence;
+            const displacement = coherenceSum > 0 ? entropyDiff / coherenceSum : 0;
+            
+            // Draw central axis
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(w/2, 0);
+            ctx.lineTo(w/2, h);
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.moveTo(0, h/2);
+            ctx.lineTo(w, h/2);
+            ctx.stroke();
+            
+            // Observer position (left)
+            const obsX = w * 0.25;
+            const obsY = h/2;
+            const obsSize = 40 + v.obsCoherence * 30;
+            
+            // Observer circle
+            const obsGradient = ctx.createRadialGradient(obsX, obsY, 0, obsX, obsY, obsSize);
+            obsGradient.addColorStop(0, `rgba(102, 126, 234, ${0.8 - v.obsEntropy * 0.5})`);
+            obsGradient.addColorStop(1, `rgba(102, 126, 234, ${0.2 - v.obsEntropy * 0.15})`);
+            
+            ctx.fillStyle = obsGradient;
+            ctx.beginPath();
+            ctx.arc(obsX, obsY, obsSize, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Entropy noise around observer
+            if (v.obsEntropy > 0.3) {
+                ctx.strokeStyle = `rgba(239, 68, 68, ${v.obsEntropy * 0.6})`;
+                ctx.lineWidth = 2;
+                for (let i = 0; i < v.obsEntropy * 8; i++) {
+                    const angle = (Math.PI * 2 * i) / (v.obsEntropy * 8);
+                    const len = 15 + Math.random() * v.obsEntropy * 20;
+                    const x1 = obsX + Math.cos(angle) * (obsSize + 5);
+                    const y1 = obsY + Math.sin(angle) * (obsSize + 5);
+                    const x2 = x1 + Math.cos(angle) * len;
+                    const y2 = y1 + Math.sin(angle) * len;
+                    ctx.beginPath();
+                    ctx.moveTo(x1, y1);
+                    ctx.lineTo(x2, y2);
+                    ctx.stroke();
+                }
+            }
+            
+            // Target position (right)
+            const targetX = w * 0.75;
+            const targetY = h/2;
+            const targetSize = 40 + v.targetCoherence * 30;
+            
+            // Target circle
+            const targetGradient = ctx.createRadialGradient(targetX, targetY, 0, targetX, targetY, targetSize);
+            targetGradient.addColorStop(0, `rgba(167, 139, 250, ${0.8 - v.targetEntropy * 0.5})`);
+            targetGradient.addColorStop(1, `rgba(167, 139, 250, ${0.2 - v.targetEntropy * 0.15})`);
+            
+            ctx.fillStyle = targetGradient;
+            ctx.beginPath();
+            ctx.arc(targetX, targetY, targetSize, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Entropy noise around target
+            if (v.targetEntropy > 0.3) {
+                ctx.strokeStyle = `rgba(239, 68, 68, ${v.targetEntropy * 0.6})`;
+                ctx.lineWidth = 2;
+                for (let i = 0; i < v.targetEntropy * 8; i++) {
+                    const angle = (Math.PI * 2 * i) / (v.targetEntropy * 8);
+                    const len = 15 + Math.random() * v.targetEntropy * 20;
+                    const x1 = targetX + Math.cos(angle) * (targetSize + 5);
+                    const y1 = targetY + Math.sin(angle) * (targetSize + 5);
+                    const x2 = x1 + Math.cos(angle) * len;
+                    const y2 = y1 + Math.sin(angle) * len;
+                    ctx.beginPath();
+                    ctx.moveTo(x1, y1);
+                    ctx.lineTo(x2, y2);
+                    ctx.stroke();
+                }
+            }
+            
+            // Interaction line with displacement
+            const midX = (obsX + targetX) / 2;
+            const displacementPixels = displacement * 100;
+            
+            ctx.strokeStyle = displacement > 0 ? 'rgba(239, 68, 68, 0.8)' : displacement < 0 ? 'rgba(16, 185, 129, 0.8)' : 'rgba(96, 165, 250, 0.5)';
+            ctx.lineWidth = 3;
+            ctx.setLineDash([5, 5]);
+            ctx.beginPath();
+            ctx.moveTo(obsX + obsSize, obsY);
+            ctx.lineTo(targetX - targetSize, targetY);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            
+            // Displacement arrow
+            if (Math.abs(displacement) > 0.05) {
+                const arrowY = h/2 + displacementPixels;
+                const arrowDir = displacement > 0 ? 1 : -1;
+                
+                ctx.fillStyle = displacement > 0 ? 'rgba(239, 68, 68, 0.9)' : 'rgba(16, 185, 129, 0.9)';
+                ctx.beginPath();
+                ctx.moveTo(midX, h/2);
+                ctx.lineTo(midX, arrowY);
+                ctx.lineTo(midX - 8, arrowY - arrowDir * 15);
+                ctx.moveTo(midX, arrowY);
+                ctx.lineTo(midX + 8, arrowY - arrowDir * 15);
+                ctx.stroke();
+                
+                ctx.font = '14px "Segoe UI"';
+                ctx.fillText('Δx', midX + 15, (h/2 + arrowY) / 2);
+            }
+            
+            // F·Q threshold indicator
+            const fq = v.faith * v.potential;
+            const threshold = 0.35;
+            const collapseOccurs = fq >= threshold;
+            
+            ctx.fillStyle = collapseOccurs ? 'rgba(16, 185, 129, 0.8)' : 'rgba(239, 68, 68, 0.8)';
+            ctx.font = 'bold 16px "Segoe UI"';
+            ctx.fillText(collapseOccurs ? 'COLLAPSE OCCURS' : 'NO COLLAPSE', w/2 - 70, h - 30);
+            ctx.font = '12px "Segoe UI"';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+            ctx.fillText(`F·Q = ${fq.toFixed(3)} ${collapseOccurs ? '≥' : '<'} Θc = ${threshold}`, w/2 - 75, h - 10);
+            
+            // Labels
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+            ctx.font = 'bold 14px "Segoe UI"';
+            ctx.fillText('OBSERVER', obsX - 35, obsY - obsSize - 10);
+            ctx.fillText('TARGET', targetX - 25, targetY - targetSize - 10);
+            
+            ctx.font = '11px "Segoe UI"';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+            ctx.fillText(`S=${v.obsEntropy.toFixed(2)}`, obsX - 25, obsY + obsSize + 20);
+            ctx.fillText(`C=${v.obsCoherence.toFixed(2)}`, obsX - 25, obsY + obsSize + 35);
+            
+            ctx.fillText(`S=${v.targetEntropy.toFixed(2)}`, targetX - 25, targetY + targetSize + 20);
+            ctx.fillText(`C=${v.targetCoherence.toFixed(2)}`, targetX - 25, targetY + targetSize + 35);
+        }
+        
+        // Event listeners
+        ['obsEntropy', 'obsCoherence', 'targetEntropy', 'targetCoherence', 'faith', 'potential'].forEach(id => {
+            document.getElementById(id).addEventListener('input', () => {
+                updateDisplay();
+                draw();
+            });
+        });
+        
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Initialize
+        resizeCanvas();
+        updateDisplay();
+    </script>
+</body>
+</html>
