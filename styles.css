@@ -37,37 +37,44 @@ body{
 .badges{display:flex;gap:.4rem;flex-wrap:wrap;margin:.4rem 0}
 .badge{font-size:.72rem;background:rgba(255,255,255,0.08);border:1px solid var(--border);padding:.2rem .5rem;border-radius:.5rem}
 .badge.gold{background:linear-gradient(135deg,var(--accent1),var(--accent3));color:#222}
-.grid{max-width:1200px;margin:0 auto 4rem;padding:1rem;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-@media (max-width:900px){.grid{grid-template-columns:1fr}}
+.grid{max-width:1200px;margin:0 auto 4rem;padding:1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
 
-.card{background:var(--card);border:1px solid var(--border);border-radius:1rem;overflow:hidden;display:flex;flex-direction:column}
+.card{background:var(--card);border:1px solid var(--border);border-radius:1rem;overflow:hidden;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(0,0,0,0.4)}
 .thumb{aspect-ratio:16/10;object-fit:cover;width:100%;display:block}
-.card .pad{padding:.8rem}
-.card h3{margin:.2rem 0 .4rem;font-size:1rem}
 .tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
 .tag{font-size:.75rem;background:rgba(255,255,255,0.08);border:1px solid var(--border);padding:.2rem .5rem;border-radius:.5rem}
-.actions{display:flex;gap:.5rem;margin-top:.6rem}
 .btn{
   flex:1;text-align:center;text-decoration:none;color:var(--fg);
   background:linear-gradient(135deg,var(--accent1),var(--accent2));
-  padding:.5rem .8rem;border-radius:.6rem;border:1px solid var(--border)
+  padding:.55rem .9rem;border-radius:.6rem;border:1px solid var(--border);
+  display:inline-flex;align-items:center;justify-content:center;gap:.35rem;
+  cursor:pointer;font:inherit;
 }
+.btn:hover{filter:brightness(1.05)}
 .btn.secondary{background:transparent}
+.btn:focus-visible{outline:2px solid var(--accent3);outline-offset:2px}
 
 .modal.hidden{display:none}
 .modal{position:fixed;inset:0;z-index:50}
 .modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,0.6)}
 .modal-card{
-  position:relative; max-width:1100px; margin:4vh auto; background:var(--bg2);
+  position:relative; width:min(1200px,96vw); height:min(92vh,96vh); margin:2vh auto; background:var(--bg2);
   border:1px solid var(--border); border-radius:1rem; overflow:hidden; display:grid;
-  grid-template-columns: 2fr 1fr; gap:0; box-shadow:0 20px 50px rgba(0,0,0,.5)
+  grid-template-columns:minmax(0,2fr) minmax(0,1fr); gap:0; box-shadow:0 20px 50px rgba(0,0,0,.6)
 }
 @media (max-width:900px){.modal-card{grid-template-columns:1fr}}
 .modal-card img{width:100%; height:100%; object-fit:contain; background:var(--bg1)}
-.meta{padding:1rem;border-left:1px solid var(--border)}
+.meta{padding:1rem;border-left:1px solid var(--border);overflow:auto}
 .meta h2{margin:.2rem 0 .4rem}
 .meta p{margin:.2rem 0 .8rem;color:var(--muted)}
 .meta .meta-pair{display:flex;gap:.6rem;align-items:center;margin:.2rem 0;color:var(--muted)}
+.modal-actions{display:flex;gap:.5rem;margin:1rem 0 .6rem;flex-wrap:wrap}
+.modal-actions .btn{flex:1 1 48%}
+.share-link{width:100%;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:.5rem;padding:.5rem .75rem;color:var(--fg);font-family:monospace;font-size:.85rem}
+.share-link:focus-visible{outline:2px solid var(--accent3);outline-offset:2px}
+.share-status{margin-top:.4rem;font-size:.85rem;color:var(--muted);min-height:1.2em}
+.share-status.error{color:var(--accent4)}
 .close{
   position:absolute;top:.6rem;right:.6rem;background:rgba(0,0,0,0.5);
   color:#fff;border:1px solid var(--border);border-radius:.5rem;padding:.2rem .5rem;font-size:1.1rem;cursor:pointer

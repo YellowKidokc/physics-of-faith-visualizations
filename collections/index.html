@@ -48,6 +48,13 @@
         <div id="modalTags" class="tags"></div>
         <div class="meta-pair"><span>File:</span><code id="modalFile"></code></div>
         <div class="meta-pair"><span>Created:</span><span id="modalCreated"></span></div>
+        <div class="modal-actions">
+          <button id="modalShare" class="btn" type="button">Share Link</button>
+          <a id="modalDownload" class="btn secondary" href="#" download>Download</a>
+          <a id="modalOpenFull" class="btn secondary" href="#" target="_blank" rel="noopener">Open Full Page</a>
+        </div>
+        <input id="modalShareLink" class="share-link" type="text" readonly aria-label="Shareable link for this image" />
+        <div id="modalShareStatus" class="share-status" role="status" aria-live="polite"></div>
       </div>
       <div id="modalSiblings" class="siblings"></div>
     </div>
