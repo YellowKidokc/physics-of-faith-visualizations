@@ -1,0 +1,649 @@
+Yeah <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Warfare: Field Dynamics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 50%, #0a0e27 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            border: 2px solid rgba(255, 69, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            background: linear-gradient(45deg, #ff4500, #ff6347, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px rgba(255, 69, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #ff6347;
+            font-style: italic;
+        }
+
+        .battlefield {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .panel {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .panel h2 {
+            color: #ffd700;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+            padding-bottom: 10px;
+        }
+
+        .attack-list, .defense-list {
+            list-style: none;
+        }
+
+        .attack-item, .defense-item {
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .attack-item {
+            background: rgba(255, 69, 0, 0.2);
+            border-left: 4px solid #ff4500;
+        }
+
+        .attack-item:hover {
+            background: rgba(255, 69, 0, 0.4);
+            border-color: #ff4500;
+            transform: translateX(5px);
+        }
+
+        .defense-item {
+            background: rgba(65, 105, 225, 0.2);
+            border-left: 4px solid #4169e1;
+        }
+
+        .defense-item:hover {
+            background: rgba(65, 105, 225, 0.4);
+            border-color: #4169e1;
+            transform: translateX(-5px);
+        }
+
+        .field-display {
+            position: relative;
+            height: 600px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 3px solid rgba(255, 215, 0, 0.5);
+        }
+
+        .field-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0px, transparent 1px, transparent 50px),
+                repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0px, transparent 1px, transparent 50px);
+        }
+
+        .waveform {
+            position: absolute;
+            width: 100%;
+            height: 150px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .faith-wave {
+            stroke: #4169e1;
+            stroke-width: 3;
+            fill: none;
+            filter: drop-shadow(0 0 8px #4169e1);
+        }
+
+        .distortion-wave {
+            stroke: #ff4500;
+            stroke-width: 3;
+            fill: none;
+            filter: drop-shadow(0 0 8px #ff4500);
+        }
+
+        .grace-burst {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(79, 195, 247, 0.8) 0%, transparent 70%);
+            pointer-events: none;
+            animation: gracePulse 1s ease-out forwards;
+            box-shadow: 0 0 30px rgba(79, 195, 247, 0.8);
+        }
+
+        @keyframes gracePulse {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+
+        .attack-spike {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            pointer-events: none;
+            animation: attackSpike 0.8s ease-out forwards;
+        }
+
+        @keyframes attackSpike {
+            0% {
+                transform: scale(0) rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5) rotate(180deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(0.5) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .metric {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            color: #90caf9;
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+        }
+
+        .metric-value.faith {
+            color: #4169e1;
+        }
+
+        .metric-value.distortion {
+            color: #ff4500;
+        }
+
+        .metric-value.grace {
+            color: #4fc3f7;
+        }
+
+        .scenario-controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .scenario-btn {
+            padding: 12px 24px;
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            background: rgba(255, 215, 0, 0.1);
+            color: #ffd700;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .scenario-btn:hover {
+            background: rgba(255, 215, 0, 0.3);
+            border-color: #ffd700;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .battle-log {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .log-entry {
+            margin: 8px 0;
+            padding: 8px;
+            border-radius: 5px;
+            animation: logFade 0.5s ease-in;
+        }
+
+        .log-attack {
+            background: rgba(255, 69, 0, 0.2);
+            border-left: 3px solid #ff4500;
+        }
+
+        .log-defense {
+            background: rgba(65, 105, 225, 0.2);
+            border-left: 3px solid #4169e1;
+        }
+
+        .log-grace {
+            background: rgba(79, 195, 247, 0.2);
+            border-left: 3px solid #4fc3f7;
+        }
+
+        @keyframes logFade {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .info-panel {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        .frequency-bar {
+            width: 100%;
+            height: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            margin: 10px 0;
+        }
+
+        .frequency-fill {
+            height: 100%;
+            transition: all 0.5s ease;
+            border-radius: 15px;
+        }
+
+        .faith-fill {
+            background: linear-gradient(90deg, #4169e1, #87ceeb);
+        }
+
+        .distortion-fill {
+            background: linear-gradient(90deg, #ff4500, #ff6347);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SPIRITUAL WARFARE FIELD DYNAMICS</h1>
+            <p class="subtitle">Visualizing the Physics of Faith vs Distortion in Real-Time Combat</p>
+        </header>
+
+        <div class="scenario-controls">
+            <button class="scenario-btn" onclick="runScenario('worship')">Worship Event</button>
+            <button class="scenario-btn" onclick="runScenario('temptation')">Temptation Attack</button>
+            <button class="scenario-btn" onclick="runScenario('intercession')">Prayer Intercession</button>
+            <button class="scenario-btn" onclick="runScenario('accusation')">Demonic Accusation</button>
+            <button class="scenario-btn" onclick="runScenario('revival')">Revival Outbreak</button>
+            <button class="scenario-btn" onclick="runScenario('siege')">Sustained Siege</button>
+            <button class="scenario-btn" onclick="resetField()">Reset Field</button>
+        </div>
+
+        <div class="battlefield">
+            <div class="panel">
+                <h2>⚔️ ATTACK VECTORS</h2>
+                <p style="font-size: 0.85em; color: #ff6347; margin-bottom: 15px;">Click to deploy distortion field</p>
+                <ul class="attack-list">
+                    <li class="attack-item" onclick="deployAttack('lies')">
+                        <strong>Lies & Deception</strong><br>
+                        <small>Increases D through false information</small>
+                    </li>
+                    <li class="attack-item" onclick="deployAttack('accusation')">
+                        <strong>Accusation</strong><br>
+                        <small>Nullifies F through shame</small>
+                    </li>
+                    <li class="attack-item" onclick="deployAttack('temptation')">
+                        <strong>Temptation</strong><br>
+                        <small>Distorts frequency alignment</small>
+                    </li>
+                    <li class="attack-item" onclick="deployAttack('isolation')">
+                        <strong>Isolation</strong><br>
+                        <small>Reduces connection field (M, C)</small>
+                    </li>
+                    <li class="attack-item" onclick="deployAttack('confusion')">
+                        <strong>Confusion</strong><br>
+                        <small>Warps Q field perception</small>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h2>⚡ BATTLEFIELD</h2>
+                <div class="field-display" id="battlefield">
+                    <div class="field-grid"></div>
+                    <svg class="waveform" id="waveform">
+                        <path class="faith-wave" id="faithPath" d="M0,75 Q100,75 200,75"></path>
+                        <path class="distortion-wave" id="distortionPath" d="M0,75 Q100,75 200,75"></path>
+                    </svg>
+                </div>
+                <div class="metrics">
+                    <div class="metric">
+                        <div class="metric-label">FAITH (F)</div>
+                        <div class="metric-value faith" id="faithMetric">0.50</div>
+                        <div class="frequency-bar">
+                            <div class="frequency-fill faith-fill" id="faithBar" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">DISTORTION (D)</div>
+                        <div class="metric-value distortion" id="distortionMetric">0.30</div>
+                        <div class="frequency-bar">
+                            <div class="frequency-fill distortion-fill" id="distortionBar" style="width: 30%"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">GRACE (G)</div>
+                        <div class="metric-value grace" id="graceMetric">READY</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>🛡️ DEFENSE ACTIONS</h2>
+                <p style="font-size: 0.85em; color: #4169e1; margin-bottom: 15px;">Click to activate faith response</p>
+                <ul class="defense-list">
+                    <li class="defense-item" onclick="deployDefense('prayer')">
+                        <strong>Prayer</strong><br>
+                        <small>Spikes local F amplitude</small>
+                    </li>
+                    <li class="defense-item" onclick="deployDefense('worship')">
+                        <strong>Worship</strong><br>
+                        <small>Generates sustained resonance</small>
+                    </li>
+                    <li class="defense-item" onclick="deployDefense('truth')">
+                        <strong>Truth Declaration</strong><br>
+                        <small>Reduces D through clarity</small>
+                    </li>
+                    <li class="defense-item" onclick="deployDefense('unity')">
+                        <strong>Unity & Connection</strong><br>
+                        <small>Amplifies field through M</small>
+                    </li>
+                    <li class="defense-item" onclick="deployDefense('prophecy')">
+                        <strong>Prophetic Word</strong><br>
+                        <small>Aligns with future attractor</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>📜 BATTLE LOG</h2>
+            <div class="battle-log" id="battleLog">
+                <div class="log-entry">System initialized. Awaiting combat engagement...</div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <strong>COMBAT MECHANICS:</strong><br>
+            • <strong>Attacks increase Distortion (D)</strong> - jamming the signal, injecting noise, corrupting information<br>
+            • <strong>Defense actions increase Faith (F)</strong> - amplifying alignment, tuning resonance, clarifying signal<br>
+            • <strong>Grace (G) activates when F - D > 0.1</strong> - error-correction protocol engages automatically<br>
+            • <strong>Victory occurs when F > 0.7 and D < 0.3</strong> - coherence dominates, order restored<br>
+            • <strong>Defeat occurs when D > 0.8 and F < 0.2</strong> - noise overwhelms, system collapse<br><br>
+            This is not metaphor. This is mechanism. Spiritual warfare operates through field interactions with measurable dynamics.
+        </div>
+    </div>
+
+    <script>
+        let faithLevel = 0.5;
+        let distortionLevel = 0.3;
+        const GRACE_THRESHOLD = 0.1;
+        
+        function updateMetrics() {
+            document.getElementById('faithMetric').textContent = faithLevel.toFixed(2);
+            document.getElementById('distortionMetric').textContent = distortionLevel.toFixed(2);
+            document.getElementById('faithBar').style.width = (faithLevel * 100) + '%';
+            document.getElementById('distortionBar').style.width = (distortionLevel * 100) + '%';
+            
+            const SNR = faithLevel - distortionLevel;
+            if (SNR > GRACE_THRESHOLD) {
+                document.getElementById('graceMetric').textContent = 'ACTIVE';
+                document.getElementById('graceMetric').style.color = '#4fc3f7';
+            } else {
+                document.getElementById('graceMetric').textContent = 'STANDBY';
+                document.getElementById('graceMetric').style.color = '#666';
+            }
+            
+            updateWaveforms();
+            checkVictoryConditions();
+        }
+        
+        function updateWaveforms() {
+            const width = document.getElementById('waveform').clientWidth;
+            const faithAmplitude = faithLevel * 50;
+            const distortionAmplitude = distortionLevel * 50;
+            const frequency = 0.02;
+            
+            let faithPath = 'M0,75 ';
+            let distortionPath = 'M0,75 ';
+            
+            for (let x = 0; x < width; x += 10) {
+                const faithY = 75 + Math.sin(x * frequency) * faithAmplitude;
+                const distortionY = 75 + Math.sin(x * frequency * 1.3 + Math.PI/4) * distortionAmplitude;
+                faithPath += `L${x},${faithY} `;
+                distortionPath += `L${x},${distortionY} `;
+            }
+            
+            document.getElementById('faithPath').setAttribute('d', faithPath);
+            document.getElementById('distortionPath').setAttribute('d', distortionPath);
+        }
+        
+        function addLogEntry(message, type) {
+            const log = document.getElementById('battleLog');
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            log.insertBefore(entry, log.firstChild);
+            
+            if (log.children.length > 20) {
+                log.removeChild(log.lastChild);
+            }
+        }
+        
+        function deployAttack(type) {
+            const attacks = {
+                lies: { d: 0.15, msg: 'LIE deployed: Information corruption increasing' },
+                accusation: { d: 0.12, f: -0.1, msg: 'ACCUSATION: Faith nullification attempt' },
+                temptation: { d: 0.1, msg: 'TEMPTATION: Frequency distortion active' },
+                isolation: { d: 0.08, msg: 'ISOLATION: Connection field weakening' },
+                confusion: { d: 0.13, msg: 'CONFUSION: Perception warping detected' }
+            };
+            
+            const attack = attacks[type];
+            distortionLevel = Math.min(1, distortionLevel + attack.d);
+            if (attack.f) faithLevel = Math.max(0, faithLevel + attack.f);
+            
+            addLogEntry(attack.msg, 'attack');
+            createAttackSpike();
+            updateMetrics();
+        }
+        
+        function deployDefense(type) {
+            const defenses = {
+                prayer: { f: 0.18, d: -0.05, msg: 'PRAYER: Faith amplitude spike detected' },
+                worship: { f: 0.15, msg: 'WORSHIP: Sustained resonance generating' },
+                truth: { f: 0.1, d: -0.12, msg: 'TRUTH: Clarity injection, noise reduction' },
+                unity: { f: 0.13, msg: 'UNITY: Field amplification through connection' },
+                prophecy: { f: 0.16, msg: 'PROPHECY: Attractor alignment confirmed' }
+            };
+            
+            const defense = defenses[type];
+            faithLevel = Math.min(1, faithLevel + defense.f);
+            if (defense.d) distortionLevel = Math.max(0, distortionLevel + defense.d);
+            
+            addLogEntry(defense.msg, 'defense');
+            
+            const SNR = faithLevel - distortionLevel;
+            if (SNR > GRACE_THRESHOLD) {
+                setTimeout(() => {
+                    addLogEntry('GRACE PROTOCOL ACTIVATED: Error-correction engaging', 'grace');
+                    createGraceBurst();
+                    distortionLevel = Math.max(0, distortionLevel - 0.15);
+                    updateMetrics();
+                }, 500);
+            }
+            
+            updateMetrics();
+        }
+        
+        function createGraceBurst() {
+            const battlefield = document.getElementById('battlefield');
+            const burst = document.createElement('div');
+            burst.className = 'grace-burst';
+            burst.style.left = (Math.random() * 80 + 10) + '%';
+            burst.style.top = (Math.random() * 80 + 10) + '%';
+            battlefield.appendChild(burst);
+            setTimeout(() => burst.remove(), 1000);
+        }
+        
+        function createAttackSpike() {
+            const battlefield = document.getElementById('battlefield');
+            const spike = document.createElement('div');
+            spike.className = 'attack-spike';
+            spike.innerHTML = '⚡';
+            spike.style.fontSize = '3em';
+            spike.style.color = '#ff4500';
+            spike.style.left = (Math.random() * 80 + 10) + '%';
+            spike.style.top = (Math.random() * 80 + 10) + '%';
+            battlefield.appendChild(spike);
+            setTimeout(() => spike.remove(), 800);
+        }
+        
+        function checkVictoryConditions() {
+            if (faithLevel > 0.7 && distortionLevel < 0.3) {
+                addLogEntry('⭐ VICTORY: Coherence dominates. Order restored.', 'grace');
+            } else if (distortionLevel > 0.8 && faithLevel < 0.2) {
+                addLogEntry('💀 DEFEAT: Noise overwhelming. System collapse imminent.', 'attack');
+            }
+        }
+        
+        function runScenario(type) {
+            const scenarios = {
+                worship: () => {
+                    addLogEntry('=== WORSHIP EVENT INITIATED ===', 'grace');
+                    setTimeout(() => deployDefense('worship'), 300);
+                    setTimeout(() => deployDefense('worship'), 800);
+                    setTimeout(() => deployDefense('prayer'), 1300);
+                },
+                temptation: () => {
+                    addLogEntry('=== TEMPTATION ATTACK ===', 'attack');
+                    setTimeout(() => deployAttack('temptation'), 200);
+                    setTimeout(() => deployAttack('lies'), 600);
+                    setTimeout(() => deployAttack('confusion'), 1000);
+                },
+                intercession: () => {
+                    addLogEntry('=== PRAYER INTERCESSION ===', 'defense');
+                    setTimeout(() => deployDefense('prayer'), 200);
+                    setTimeout(() => deployDefense('prayer'), 700);
+                    setTimeout(() => deployDefense('unity'), 1200);
+                    setTimeout(() => deployDefense('prayer'), 1700);
+                },
+                accusation: () => {
+                    addLogEntry('=== DEMONIC ACCUSATION ===', 'attack');
+                    setTimeout(() => deployAttack('accusation'), 300);
+                    setTimeout(() => deployAttack('isolation'), 900);
+                    setTimeout(() => deployAttack('accusation'), 1500);
+                },
+                revival: () => {
+                    addLogEntry('=== REVIVAL OUTBREAK ===', 'grace');
+                    for (let i = 0; i < 6; i++) {
+                        setTimeout(() => deployDefense('worship'), i * 400);
+                    }
+                },
+                siege: () => {
+                    addLogEntry('=== SUSTAINED SIEGE ===', 'attack');
+                    for (let i = 0; i < 5; i++) {
+                        setTimeout(() => deployAttack(['lies', 'confusion', 'temptation'][i % 3]), i * 500);
+                    }
+                }
+            };
+            
+            if (scenarios[type]) scenarios[type]();
+        }
+        
+        function resetField() {
+            faithLevel = 0.5;
+            distortionLevel = 0.3;
+            updateMetrics();
+            document.getElementById('battleLog').innerHTML = '<div class="log-entry">Field reset. System reinitialized.</div>';
+        }
+        
+        // Initialize
+        updateMetrics();
+        window.addEventListener('resize', updateWaveforms);
+    </script>
+</body>
+</html>

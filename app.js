@@ -17,6 +17,7 @@ async function loadAll(){
   filtered = [...DATA];
   hydrateTagFilter();
   renderFeatured();
+  renderPrimoImages();  // Primo pictures at top
   renderGrid();
   handleHashOpen();
 }
@@ -60,30 +61,94 @@ function renderFeatured(){
   });
 }
 
+function createImageCard(item){
+  const card = document.createElement('article');
+  card.className='card';
+  const img = document.createElement('img');
+  img.className='thumb'; img.loading='lazy'; img.src=item.thumb || item.src; img.alt=item.title || item.file || '';
+  img.onerror=()=>{ img.src=item.src; };
+  card.appendChild(img);
+  const pad = document.createElement('div'); pad.className='pad';
+  const h3 = document.createElement('h3'); h3.textContent = item.title || item.file;
+  pad.appendChild(h3);
+  const caption = document.createElement('p'); caption.textContent = item.caption || ''; caption.style.opacity=.85; caption.style.margin='0 0 .4rem';
+  pad.appendChild(caption);
+  const tags = document.createElement('div'); tags.className='tags';
+  (item.tags||[]).forEach(t=>{ const span=document.createElement('span'); span.className='tag'; span.textContent=t; span.onclick=(e)=>{e.stopPropagation(); filterByTag(t);} ; tags.appendChild(span);});
+  pad.appendChild(tags);
+  const actions=document.createElement('div'); actions.className='actions';
+  const viewBtn=document.createElement('a'); viewBtn.className='btn'; viewBtn.textContent='View'; viewBtn.href='#'+(item.id||slug(item.file)); viewBtn.onclick=(e)=>{e.preventDefault(); openModal(item);};
+  const openBtn=document.createElement('a'); openBtn.className='btn secondary'; openBtn.textContent='Open Image'; openBtn.href=item.src; openBtn.target='_blank';
+  actions.appendChild(viewBtn); actions.appendChild(openBtn); pad.appendChild(actions);
+  card.onclick=()=>openModal(item);
+  card.appendChild(pad);
+  return card;
+}
+
+function renderPrimoImages(){
+  const primoImages = DATA.filter(item => item.featured === true);
+  if (!primoImages.length) return;
+  
+  const grid = byId('grid');
+  
+  // Create primo section
+  const primoSection = document.createElement('section');
+  primoSection.className = 'primo-section';
+  primoSection.style.marginBottom = '3rem';
+  
+  const header = document.createElement('div');
+  header.style.display = 'flex';
+  header.style.justifyContent = 'space-between';
+  header.style.alignItems = 'center';
+  header.style.marginBottom = '1.5rem';
+  
+  const title = document.createElement('h2');
+  title.textContent = '⭐ Featured Visualizations';
+  title.style.margin = '0';
+  title.style.fontSize = '1.5rem';
+  
+  const count = document.createElement('span');
+  count.className = 'muted';
+  count.textContent = `${primoImages.length} primo images`;
+  
+  header.appendChild(title);
+  header.appendChild(count);
+  primoSection.appendChild(header);
+  
+  // Create grid for primo images
+  const primoGrid = document.createElement('div');
+  primoGrid.className = 'grid';
+  primoGrid.style.gridTemplateColumns = 'repeat(auto-fit, minmax(280px, 1fr))';
+  primoGrid.style.gap = '1.5rem';
+  primoGrid.style.padding = '0';
+  
+  primoImages.forEach(item => {
+    const card = createImageCard(item);
+    primoGrid.appendChild(card);
+  });
+  
+  primoSection.appendChild(primoGrid);
+  grid.before(primoSection);
+}
+
 function renderGrid(){
   const grid = byId('grid');
   grid.innerHTML='';
-  filtered.forEach(item => {
-    const card = document.createElement('article');
-    card.className='card';
-    const img = document.createElement('img');
-    img.className='thumb'; img.loading='lazy'; img.src=item.thumb || item.src; img.alt=item.title || item.file || '';
-    img.onerror=()=>{ img.src=item.src; };
-    card.appendChild(img);
-    const pad = document.createElement('div'); pad.className='pad';
-    const h3 = document.createElement('h3'); h3.textContent = item.title || item.file;
-    pad.appendChild(h3);
-    const caption = document.createElement('p'); caption.textContent = item.caption || ''; caption.style.opacity=.85; caption.style.margin='0 0 .4rem';
-    pad.appendChild(caption);
-    const tags = document.createElement('div'); tags.className='tags';
-    (item.tags||[]).forEach(t=>{ const span=document.createElement('span'); span.className='tag'; span.textContent=t; span.onclick=(e)=>{e.stopPropagation(); filterByTag(t);} ; tags.appendChild(span);});
-    pad.appendChild(tags);
-    const actions=document.createElement('div'); actions.className='actions';
-    const viewBtn=document.createElement('a'); viewBtn.className='btn'; viewBtn.textContent='View'; viewBtn.href='#'+(item.id||slug(item.file)); viewBtn.onclick=(e)=>{e.preventDefault(); openModal(item);};
-    const openBtn=document.createElement('a'); openBtn.className='btn secondary'; openBtn.textContent='Open Image'; openBtn.href=item.src; openBtn.target='_blank';
-    actions.appendChild(viewBtn); actions.appendChild(openBtn); pad.appendChild(actions);
-    card.onclick=()=>openModal(item);
-    card.appendChild(pad);
+  
+  // Only show non-featured images in main grid
+  const regularImages = filtered.filter(item => item.featured !== true);
+  
+  // Add section header for regular images
+  if (regularImages.length > 0 && DATA.some(item => item.featured === true)) {
+    const header = document.createElement('h2');
+    header.textContent = '📁 Gallery Collection';
+    header.style.marginBottom = '1.5rem';
+    header.style.fontSize = '1.5rem';
+    grid.appendChild(header);
+  }
+  
+  regularImages.forEach(item => {
+    const card = createImageCard(item);
     grid.appendChild(card);
   });
 }

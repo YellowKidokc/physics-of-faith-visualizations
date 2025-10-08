@@ -69,6 +69,9 @@ def count_images(folder: pathlib.Path):
 def build_gallery():
     items = []
     IMG.mkdir(exist_ok=True, parents=True)
+    
+    # First: Root-level images (PRIMO PICTURES - always featured at top)
+    root_images = []
     for p in sorted(IMG.iterdir()):
         if p.is_file() and p.suffix.lower() in IMG_EXT:
             item = {
@@ -80,10 +83,37 @@ def build_gallery():
                 "caption": read_sidecar(p.stem),
                 "tags": [],
                 "created": time.strftime("%Y-%m-%d", time.localtime(p.stat().st_mtime)),
+                "featured": True,  # PRIMO - stays at top
+                "category": "Featured"
             }
-            items.append(item)
+            root_images.append(item)
+    
+    # Second: Subfolder images (organized by folder)
+    subfolder_images = []
+    for folder in sorted([d for d in IMG.iterdir() if d.is_dir()]):
+        folder_name = folder.name.replace('-', ' ').title()
+        for p in sorted(folder.rglob("*")):
+            if p.is_file() and p.suffix.lower() in IMG_EXT:
+                rel_path = p.relative_to(IMG)
+                item = {
+                    "id": slugify(f"{folder.name}-{p.stem}"),
+                    "file": p.name,
+                    "src": f"images/{rel_path}".replace("\\", "/"),
+                    "thumb": f"images/{rel_path}".replace("\\", "/"),
+                    "title": p.stem.replace('_',' ').title(),
+                    "caption": read_sidecar(p.stem),
+                    "tags": [folder_name],
+                    "created": time.strftime("%Y-%m-%d", time.localtime(p.stat().st_mtime)),
+                    "featured": False,  # Regular gallery item
+                    "category": folder_name
+                }
+                subfolder_images.append(item)
+    
+    # Combine: Featured first, then subfolder images
+    items = root_images + subfolder_images
+    
     OUT_G.write_text(json.dumps(items, indent=2), encoding="utf-8")
-    print(f"Wrote {OUT_G} with {len(items)} items.")
+    print(f"Wrote {OUT_G} with {len(items)} items ({len(root_images)} featured, {len(subfolder_images)} in subfolders).")
 
 def build_collections():
     entries = []

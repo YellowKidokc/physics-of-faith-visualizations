@@ -1,0 +1,94 @@
+<!-- 10-Law Integration - Add this before closing body tag -->
+<script>
+// 10-Law canonical catalog (names + links)
+const LAWS_10 = [
+  { id:"L1", n:1, title:"Downward Pull",           phys:"Gravity",               href:"law-1.html"  },
+  { id:"L2", n:2, title:"Unbreakable Bond",        phys:"Strong Force",          href:"law-2.html"  },
+  { id:"L3", n:3, title:"Illuminating Force",      phys:"Electromagnetism",      href:"law-3.html"  },
+  { id:"L4", n:4, title:"Universal Decay",         phys:"Entropy",               href:"law-4.html"  },
+  { id:"L5", n:5, title:"Observer Effect",         phys:"Quantum Measurement",   href:"law-5.html"  },
+  { id:"L6", n:6, title:"Uncertainty Principle",   phys:"Heisenberg Limits",     href:"law-6.html"  },
+  { id:"L7", n:7, title:"Dual Nature",             phys:"Wave–Particle",         href:"law-7.html"  },
+  { id:"L8", n:8, title:"Relativistic Framework",  phys:"Relativity",            href:"law-8.html"  },
+  { id:"L9", n:9, title:"Quantum Connection",      phys:"Entanglement",          href:"law-9.html"  },
+  { id:"L10",n:10,title:"Unified Theory",          phys:"Θ = Q + U / GUT",       href:"law-10.html" }
+];
+
+// Add 10 Laws button to control panel - add this right after your existing buttons
+document.querySelector('.controls').innerHTML += '<div class="control-btn" onclick="showMode(\'laws10\')" id="btnLaws10">10 Laws</div>';
+
+// Replace the existing showMode function with this enhanced version
+function showMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('.control-btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('btn' + mode.charAt(0).toUpperCase() + mode.slice(1)).classList.add('active');
+    
+    // Clear field and keep divine center
+    const field = document.getElementById('convergenceField');
+    field.innerHTML = document.getElementById('divineCenter').outerHTML;
+    
+    // Build appropriate view
+    if (mode === 'laws10') {
+        renderLaws10(field);
+        // Update info panel to show 10 Laws
+        document.querySelector('.info-panel h3').textContent = "The 10 Universal Laws Framework";
+        document.querySelector('.info-panel p').innerHTML = "<strong>10 Universal Laws</strong> • <strong>1 Divine Center</strong>";
+    } else {
+        // Create appropriate elements for other modes
+        createTheoryOrbs();
+        
+        const orbs = document.querySelectorAll('.theory-orb');
+        const particles = document.querySelectorAll('.particle');
+        const streams = document.querySelectorAll('.energy-stream');
+        
+        // Reset info panel for other modes
+        document.querySelector('.info-panel h3').textContent = "The Ultimate Unified Framework";
+        document.querySelector('.info-panel p').innerHTML = "<strong>12 Theoretical Frameworks</strong> • <strong>48 Sub-Components</strong> • <strong>1 Divine Center</strong>";
+        
+        switch(mode) {
+            case 'theories':
+                orbs.forEach(orb => orb.style.display = 'flex');
+                particles.forEach(p => p.style.display = 'none');
+                streams.forEach(s => s.style.display = 'block');
+                break;
+            case 'components':
+                orbs.forEach(orb => orb.style.display = 'none');
+                particles.forEach(p => p.style.display = 'block');
+                streams.forEach(s => s.style.display = 'none');
+                break;
+            case 'full':
+            default:
+                orbs.forEach(orb => orb.style.display = 'flex');
+                particles.forEach(p => p.style.display = 'block');
+                streams.forEach(s => s.style.display = 'block');
+                break;
+        }
+    }
+}
+
+// Add the new 10 Laws rendering function
+function renderLaws10(field) {
+    const center = {x: 600, y: 600};
+    const radius = 320;
+    
+    LAWS_10.forEach((law, i) => {
+        // Calculate position around center
+        const angle = (i / LAWS_10.length) * 2 * Math.PI;
+        const x = center.x + radius * Math.cos(angle);
+        const y = center.y + radius * Math.sin(angle);
+        
+        // Create the law orb
+        const orb = document.createElement('a');
+        orb.className = 'theory-orb';
+        orb.href = law.href;
+        orb.style.background = 'linear-gradient(135deg, #FFD700, #FFA500)';
+        orb.style.left = (x - 40) + 'px';
+        orb.style.top = (y - 40) + 'px';
+        orb.innerHTML = `Law ${law.n}<br>${law.title}<br><small>${law.phys}</small>`;
+        field.appendChild(orb);
+        
+        // Create energy stream to center
+        createEnergyStream({x, y}, center, i);
+    });
+}
+</script>

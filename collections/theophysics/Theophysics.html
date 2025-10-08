@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEOPHYSICS: Complete Unified Framework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(ellipse at center, #1a237e 0%, #0d1421 50%, #000000 100%);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffd700, #ffaa00, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            z-index: 100;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .subtitle {
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2em;
+            color: #90caf9;
+            text-align: center;
+            z-index: 100;
+        }
+
+        .central-core {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, #ffd700 0%, #ffaa00 30%, #ff6b35 70%, transparent 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 100px rgba(255, 215, 0, 0.8);
+            animation: pulse 3s ease-in-out infinite;
+            z-index: 50;
+        }
+
+        .central-text {
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .variable {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid;
+            z-index: 40;
+        }
+
+        .variable:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 30px;
+            z-index: 60;
+        }
+
+        .variable-symbol {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .variable-name {
+            font-size: 0.8em;
+            text-align: center;
+            line-height: 1.1;
+        }
+
+        /* Individual variable styling */
+        .var-g {
+            background: linear-gradient(135deg, #4fc3f7, #29b6f6);
+            border-color: #4fc3f7;
+            color: white;
+        }
+
+        .var-m {
+            background: linear-gradient(135deg, #66bb6a, #4caf50);
+            border-color: #66bb6a;
+            color: white;
+        }
+
+        .var-e {
+            background: linear-gradient(135deg, #ff7043, #ff5722);
+            border-color: #ff7043;
+            color: white;
+        }
+
+        .var-s {
+            background: linear-gradient(135deg, #ab47bc, #9c27b0);
+            border-color: #ab47bc;
+            color: white;
+        }
+
+        .var-t {
+            background: linear-gradient(135deg, #ffd54f, #ffc107);
+            border-color: #ffd54f;
+            color: #333;
+        }
+
+        .var-k {
+            background: linear-gradient(135deg, #8bc34a, #689f38);
+            border-color: #8bc34a;
+            color: white;
+        }
+
+        .var-r {
+            background: linear-gradient(135deg, #ff8a65, #ff7043);
+            border-color: #ff8a65;
+            color: white;
+        }
+
+        .var-q {
+            background: linear-gradient(135deg, #ce93d8, #ba68c8);
+            border-color: #ce93d8;
+            color: white;
+        }
+
+        .var-f {
+            background: linear-gradient(135deg, #90caf9, #64b5f6);
+            border-color: #90caf9;
+            color: white;
+        }
+
+        .var-c {
+            background: linear-gradient(135deg, #ffb74d, #ffa726);
+            border-color: #ffb74d;
+            color: white;
+        }
+
+        /* Orbital animations with proper positioning */
+        .orbit-animation {
+            animation: orbit 20s linear infinite;
+            transform-origin: 50vw 50vh;
+        }
+
+        @keyframes orbit {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .connection-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .energy-beam {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ffd700, transparent);
+            transform-origin: left center;
+            animation: energyFlow 3s ease-in-out infinite;
+        }
+
+        @keyframes energyFlow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .equation-display {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #ffd700;
+            font-size: 1.4em;
+            color: #ffd700;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        .framework-info {
+            position: absolute;
+            top: 140px;
+            right: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+            max-width: 300px;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+            color: #90caf9;
+        }
+
+        .info-value {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+        }
+
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 5;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #ffd700;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { opacity: 0; transform: translateY(100vh) scale(0); }
+            10%, 90% { opacity: 1; transform: translateY(-10px) scale(1); }
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="particles" id="particles"></div>
+        <div class="connection-lines" id="connectionLines"></div>
+        
+        <h1 class="title">THEOPHYSICS</h1>
+        <p class="subtitle">Complete Unified Framework</p>
+        
+        <div class="central-core">
+            <div class="central-text">
+                χ<br>
+                <small>Spiritual Growth<br>Index</small>
+            </div>
+        </div>
+
+        <!-- The 10 Variables positioned in perfect orbital pattern -->
+        <div class="variable var-g orbit-animation" id="var-g" style="left: calc(50vw + 250px); top: calc(50vh - 60px);">
+            <div class="variable-symbol">G</div>
+            <div class="variable-name">Gravity<br>Grace</div>
+        </div>
+
+        <div class="variable var-m orbit-animation" id="var-m" style="left: calc(50vw + 177px); top: calc(50vh - 237px); animation-delay: -2s;">
+            <div class="variable-symbol">M</div>
+            <div class="variable-name">Motion<br>Momentum</div>
+        </div>
+
+        <div class="variable var-e orbit-animation" id="var-e" style="left: calc(50vw - 60px); top: calc(50vh - 310px); animation-delay: -4s;">
+            <div class="variable-symbol">E</div>
+            <div class="variable-name">Energy<br>Truth</div>
+        </div>
+
+        <div class="variable var-s orbit-animation" id="var-s" style="left: calc(50vw - 237px); top: calc(50vh - 237px); animation-delay: -6s;">
+            <div class="variable-symbol">S</div>
+            <div class="variable-name">Strong Force<br>Sin-Entropy</div>
+        </div>
+
+        <div class="variable var-t orbit-animation" id="var-t" style="left: calc(50vw - 310px); top: calc(50vh - 60px); animation-delay: -8s;">
+            <div class="variable-symbol">T</div>
+            <div class="variable-name">Time<br>Trinity</div>
+        </div>
+
+        <div class="variable var-k orbit-animation" id="var-k" style="left: calc(50vw - 237px); top: calc(50vh + 117px); animation-delay: -10s;">
+            <div class="variable-symbol">K</div>
+            <div class="variable-name">Kinetic<br>Kingdom</div>
+        </div>
+
+        <div class="variable var-r orbit-animation" id="var-r" style="left: calc(50vw - 60px); top: calc(50vh + 190px); animation-delay: -12s;">
+            <div class="variable-symbol">R</div>
+            <div class="variable-name">Relations<br>Resurrection</div>
+        </div>
+
+        <div class="variable var-q orbit-animation" id="var-q" style="left: calc(50vw + 117px); top: calc(50vh + 190px); animation-delay: -14s;">
+            <div class="variable-symbol">Q</div>
+            <div class="variable-name">Quantum<br>Effects</div>
+        </div>
+
+        <div class="variable var-f orbit-animation" id="var-f" style="left: calc(50vw + 190px); top: calc(50vh + 117px); animation-delay: -16s;">
+            <div class="variable-symbol">F</div>
+            <div class="variable-name">Faith<br>Force</div>
+        </div>
+
+        <div class="variable var-c orbit-animation" id="var-c" style="left: calc(50vw + 190px); top: calc(50vh - 177px); animation-delay: -18s;">
+            <div class="variable-symbol">C</div>
+            <div class="variable-name">Consciousness<br>Soul</div>
+        </div>
+
+        <div class="framework-info">
+            <div class="info-item">Framework: <span class="info-value">Complete Unified Theory</span></div>
+            <div class="info-item">Variables: <span class="info-value">10 Universal Forces</span></div>
+            <div class="info-item">Integration: <span class="info-value">Physics + Consciousness + Theology</span></div>
+            <div class="info-item">Output: <span class="info-value">χ (Spiritual Growth Index)</span></div>
+            <div class="info-item">Scope: <span class="info-value">Quantum to Cosmic</span></div>
+        </div>
+
+        <div class="equation-display">
+            χ = ∭(G⋅M⋅E⋅S⋅T⋅K⋅R⋅Q⋅F⋅C) dx dy dt
+        </div>
+
+        <div class="tooltip" id="tooltip"></div>
+    </div>
+
+    <script>
+        // Variable descriptions for tooltips
+        const variableData = {
+            'var-g': {
+                name: 'Gravity/Grace (G)',
+                description: 'Physical gravity and spiritual grace both bend spacetime toward divine attraction. Grace operates like gravitational field curvature in spiritual dimensions.'
+            },
+            'var-m': {
+                name: 'Motion/Momentum (M)',
+                description: 'Conserved momentum in physics parallels spiritual momentum in faith journeys. Consistent spiritual motion builds unstoppable kingdom momentum.'
+            },
+            'var-e': {
+                name: 'Energy/Truth (E)',
+                description: 'Energy-mass equivalence (E=mc²) reflects truth-reality equivalence. Truth contains infinite potential energy for transformation.'
+            },
+            'var-s': {
+                name: 'Strong Force/Sin-Entropy (S)',
+                description: 'Nuclear strong force vs entropy. Sin represents information degradation; divine order counters entropy through negative entropy injection.'
+            },
+            'var-t': {
+                name: 'Time/Trinity (T)',
+                description: 'Relativistic time dilation parallels Trinity temporal mechanics. Past-Present-Future unified in eternal now perspective.'
+            },
+            'var-k': {
+                name: 'Kinetic/Kingdom (K)',
+                description: 'Kinetic energy of motion reflects kingdom expansion dynamics. Active faith generates exponential kingdom kinetic energy.'
+            },
+            'var-r': {
+                name: 'Relations/Resurrection (R)',
+                description: 'Relational dynamics and resurrection power. Death-to-life transformation follows relationship restoration patterns.'
+            },
+            'var-q': {
+                name: 'Quantum Effects (Q)',
+                description: 'Observer effect and wave function collapse. Consciousness shapes reality through quantum observation mechanisms.'
+            },
+            'var-f': {
+                name: 'Faith Force (F)',
+                description: 'Faith as fundamental force field. Faith creates probability distortion fields affecting quantum outcome distributions.'
+            },
+            'var-c': {
+                name: 'Consciousness/Soul (C)',
+                description: 'Hard problem of consciousness meets soul reality. Consciousness transcends but interfaces with physical substrate.'
+            }
+        };
+
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Create energy beams connecting variables to center
+        function createEnergyBeams() {
+            const connectionLines = document.getElementById('connectionLines');
+            const variables = document.querySelectorAll('.variable');
+            
+            variables.forEach((variable, index) => {
+                const beam = document.createElement('div');
+                beam.className = 'energy-beam';
+                
+                // Calculate beam from variable to center
+                const rect = variable.getBoundingClientRect();
+                const centerX = window.innerWidth / 2;
+                const centerY = window.innerHeight / 2;
+                const varX = rect.left + rect.width / 2;
+                const varY = rect.top + rect.height / 2;
+                
+                const dx = centerX - varX;
+                const dy = centerY - varY;
+                const length = Math.sqrt(dx * dx + dy * dy);
+                const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+                
+                beam.style.left = varX + 'px';
+                beam.style.top = varY + 'px';
+                beam.style.width = length + 'px';
+                beam.style.transform = `rotate(${angle}deg)`;
+                beam.style.animationDelay = index * 0.2 + 's';
+                
+                connectionLines.appendChild(beam);
+            });
+        }
+
+        // Tooltip functionality
+        function showTooltip(event, data) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.innerHTML = `<strong>${data.name}</strong><br>${data.description}`;
+            tooltip.style.left = event.pageX + 10 + 'px';
+            tooltip.style.top = event.pageY - 10 + 'px';
+            tooltip.classList.add('show');
+        }
+
+        function hideTooltip() {
+            document.getElementById('tooltip').classList.remove('show');
+        }
+
+        // Add hover effects to variables
+        document.querySelectorAll('.variable').forEach(variable => {
+            variable.addEventListener('mouseenter', function(e) {
+                this.style.animationPlayState = 'paused';
+                this.style.boxShadow = '0 0 50px ' + getComputedStyle(this).borderColor;
+                
+                const data = variableData[this.id];
+                if (data) {
+                    showTooltip(e, data);
+                }
+            });
+            
+            variable.addEventListener('mouseleave', function() {
+                this.style.animationPlayState = 'running';
+                this.style.boxShadow = '';
+                hideTooltip();
+            });
+
+            variable.addEventListener('mousemove', function(e) {
+                const tooltip = document.getElementById('tooltip');
+                if (tooltip.classList.contains('show')) {
+                    tooltip.style.left = e.pageX + 10 + 'px';
+                    tooltip.style.top = e.pageY - 10 + 'px';
+                }
+            });
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            setTimeout(createEnergyBeams, 100); // Delay to ensure elements are positioned
+        });
+
+        // Pause/resume animations with spacebar
+        document.addEventListener('keydown', (e) => {
+            if (e.key === ' ') {
+                e.preventDefault();
+                const variables = document.querySelectorAll('.variable');
+                const isPaused = variables[0].style.animationPlayState === 'paused';
+                
+                variables.forEach(variable => {
+                    variable.style.animationPlayState = isPaused ? 'running' : 'paused';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

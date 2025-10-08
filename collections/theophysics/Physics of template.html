@@ -1,0 +1,451 @@
+# Upgrade the previously created gallery template with "Featured Collections" support.
+# A collection is any folder under ./collections with an index.html (or any .html)
+# The builder will parse title from <title>, allow optional meta.json, and count pages/images.
+# The homepage will render a horizontal "Featured" strip above the thumbnails.
+
+import os, json, re, time, pathlib, zipfile
+
+root = "/mnt/data/theophysics_gallery_template_featured"
+os.makedirs(root, exist_ok=True)
+os.makedirs(os.path.join(root, "images"), exist_ok=True)
+os.makedirs(os.path.join(root, "collections"), exist_ok=True)
+os.makedirs(os.path.join(root, "descriptions"), exist_ok=True)
+
+index_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Theophysics Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-content">
+      <div class="brand">THEOPHYSICS • Gallery</div>
+      <div class="nav-links">
+        <a href="#" id="modeGrid" class="active">Thumbnails</a>
+        <a href="#" id="modeTags">Tags</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Visual Library</h1>
+    <p class="sub">Drop images into <code>/images</code> • Put multi-page sets in <code>/collections/&lt;name&gt;/</code> with an <code>index.html</code> • Run <code>build.py</code>.</p>
+    <div class="search-row">
+      <input id="searchInput" type="search" placeholder="Search title, tags, caption…" />
+      <select id="tagFilter"><option value="">All Tags</option></select>
+    </div>
+  </header>
+
+  <section id="featured" class="featured hidden">
+    <div class="featured-head">
+      <h2>Featured Collections</h2>
+      <div id="featuredCount" class="muted"></div>
+    </div>
+    <div id="featuredRow" class="featured-row"></div>
+  </section>
+
+  <main id="grid" class="grid"></main>
+
+  <!-- Modal detail viewer -->
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <img id="modalImg" alt="" />
+      <div class="meta">
+        <h2 id="modalTitle"></h2>
+        <p id="modalCaption"></p>
+        <div id="modalTags" class="tags"></div>
+        <div class="meta-pair"><span>File:</span><code id="modalFile"></code></div>
+        <div class="meta-pair"><span>Created:</span><span id="modalCreated"></span></div>
+      </div>
+      <div id="modalSiblings" class="siblings"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+"""
+
+styles_css = """
+*{box-sizing:border-box}
+:root{
+  --bg1:#0f0f23; --bg2:#1a1a2e; --bg3:#16213e;
+  --fg:#e0e6ed; --muted:#aab2bf; --card:rgba(255,255,255,0.04);
+  --accent1:#ffd166; --accent2:#06d6a0; --accent3:#118ab2; --accent4:#ef476f;
+  --border:rgba(255,255,255,0.15)
+}
+html,body{height:100%}
+body{
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  color:var(--fg);
+  background:linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 50%,var(--bg3) 100%);
+}
+.muted{color:var(--muted);font-size:.9rem}
+.nav{position:sticky;top:0;z-index:20;background:rgba(15,15,35,0.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav-content{max-width:1200px;margin:0 auto;padding:0.75rem 1rem;display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:700;letter-spacing:0.04em}
+.nav-links a{color:var(--fg);text-decoration:none;margin-left:1rem;opacity:.85;padding:.25rem .5rem;border-radius:.5rem}
+.nav-links a.active,.nav-links a:hover{opacity:1;background:rgba(255,255,255,0.06)}
+.hero{max-width:1200px;margin:1rem auto 0;padding:1.5rem 1rem}
+.hero h1{margin:0 0 .25rem;font-size:2rem}
+.sub{margin:0 0 1rem;color:var(--muted)}
+.search-row{display:flex;gap:.5rem}
+.search-row input, .search-row select{
+  flex:1; max-width:480px;
+  background:var(--card); color:var(--fg);
+  border:1px solid var(--border); border-radius:.6rem; padding:.6rem .8rem;
+}
+.featured{max-width:1200px;margin:0 auto;padding:0 1rem 1rem}
+.featured.hidden{display:none}
+.featured-head{display:flex;justify-content:space-between;align-items:end;margin:.5rem 0}
+.featured-row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,1fr);gap:1rem;overflow-x:auto;padding-bottom:.5rem;scroll-snap-type:x mandatory}
+.featured-card{scroll-snap-align:start;background:var(--card);border:1px solid var(--border);border-radius:1rem;overflow:hidden;display:flex;flex-direction:column;min-width:280px}
+.featured-cover{aspect-ratio:16/9;width:100%;object-fit:cover;display:block}
+.featured-pad{padding:.8rem}
+.badges{display:flex;gap:.4rem;flex-wrap:wrap;margin:.4rem 0}
+.badge{font-size:.72rem;background:rgba(255,255,255,0.08);border:1px solid var(--border);padding:.2rem .5rem;border-radius:.5rem}
+.badge.gold{background:linear-gradient(135deg,var(--accent1),var(--accent3));color:#222}
+.grid{max-width:1200px;margin:0 auto 4rem;padding:1rem;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:1rem;overflow:hidden;display:flex;flex-direction:column}
+.thumb{aspect-ratio:16/10;object-fit:cover;width:100%;display:block}
+.card .pad{padding:.8rem}
+.card h3{margin:.2rem 0 .4rem;font-size:1rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
+.tag{font-size:.75rem;background:rgba(255,255,255,0.08);border:1px solid var(--border);padding:.2rem .5rem;border-radius:.5rem}
+.actions{display:flex;gap:.5rem;margin-top:.6rem}
+.btn{
+  flex:1;text-align:center;text-decoration:none;color:var(--fg);
+  background:linear-gradient(135deg,var(--accent1),var(--accent2));
+  padding:.5rem .8rem;border-radius:.6rem;border:1px solid var(--border)
+}
+.btn.secondary{background:transparent}
+
+.modal.hidden{display:none}
+.modal{position:fixed;inset:0;z-index:50}
+.modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,0.6)}
+.modal-card{
+  position:relative; max-width:1100px; margin:4vh auto; background:var(--bg2);
+  border:1px solid var(--border); border-radius:1rem; overflow:hidden; display:grid;
+  grid-template-columns: 2fr 1fr; gap:0; box-shadow:0 20px 50px rgba(0,0,0,.5)
+}
+@media (max-width:900px){.modal-card{grid-template-columns:1fr}}
+.modal-card img{width:100%; height:100%; object-fit:contain; background:var(--bg1)}
+.meta{padding:1rem;border-left:1px solid var(--border)}
+.meta h2{margin:.2rem 0 .4rem}
+.meta p{margin:.2rem 0 .8rem;color:var(--muted)}
+.meta .meta-pair{display:flex;gap:.6rem;align-items:center;margin:.2rem 0;color:var(--muted)}
+.close{
+  position:absolute;top:.6rem;right:.6rem;background:rgba(0,0,0,0.5);
+  color:#fff;border:1px solid var(--border);border-radius:.5rem;padding:.2rem .5rem;font-size:1.1rem;cursor:pointer
+}
+.siblings{grid-column:1 / -1; padding:0.6rem 1rem; background:rgba(255,255,255,0.04); border-top:1px solid var(--border)}
+.siblings a{margin-right:.5rem; text-decoration:none; color:var(--fg); opacity:.8}
+.siblings a:hover{opacity:1}
+"""
+
+app_js = r"""
+let DATA = [];
+let COLLECTIONS = [];
+let filtered = [];
+const byId = (id)=>document.getElementById(id);
+
+async function loadJSON(path){
+  const res = await fetch(path, {cache:'no-store'});
+  return res.ok ? res.json() : [];
+}
+
+async function loadAll(){
+  [DATA, COLLECTIONS] = await Promise.all([
+    loadJSON('gallery.json'),
+    loadJSON('collections.json')
+  ]);
+  filtered = [...DATA];
+  hydrateTagFilter();
+  renderFeatured();
+  renderGrid();
+  handleHashOpen();
+}
+
+function renderFeatured(){
+  const wrap = byId('featured');
+  const row = byId('featuredRow');
+  const count = byId('featuredCount');
+  if(!COLLECTIONS.length){ wrap.classList.add('hidden'); return; }
+  wrap.classList.remove('hidden');
+  count.textContent = `${COLLECTIONS.length} highlighted set${COLLECTIONS.length>1?'s':''}`;
+  row.innerHTML = '';
+  COLLECTIONS.forEach(col => {
+    const card = document.createElement('article');
+    card.className='featured-card';
+    const img = document.createElement('img');
+    img.className='featured-cover';
+    img.src = col.cover || 'images/sample1.jpg';
+    img.alt = col.title || col.slug;
+    card.appendChild(img);
+    const pad = document.createElement('div'); pad.className='featured-pad';
+    const h3 = document.createElement('h3'); h3.textContent = col.title || col.slug;
+    pad.appendChild(h3);
+    const p = document.createElement('p'); p.textContent = col.summary || '';
+    p.style.opacity=.85; p.style.margin='0.25rem 0 0.5rem';
+    pad.appendChild(p);
+    const badges = document.createElement('div'); badges.className='badges';
+    const b1 = document.createElement('span'); b1.className='badge gold'; b1.textContent='FEATURED';
+    badges.appendChild(b1);
+    if(col.pages){ const b = document.createElement('span'); b.className='badge'; b.textContent = `${col.pages} pages`; badges.appendChild(b); }
+    if(col.images){ const b = document.createElement('span'); b.className='badge'; b.textContent = `${col.images} images`; badges.appendChild(b); }
+    if(col.tags){ col.tags.slice(0,3).forEach(t=>{ const b=document.createElement('span'); b.className='badge'; b.textContent=t; badges.appendChild(b); }); }
+    pad.appendChild(badges);
+    const actions = document.createElement('div'); actions.className='actions';
+    const open = document.createElement('a'); open.className='btn'; open.textContent='Open Set'; open.href = col.href || `collections/${col.slug}/index.html`; open.target='_self';
+    const view = document.createElement('a'); view.className='btn secondary'; view.textContent='Cover Image'; view.href = col.cover || '#'; view.target='_blank';
+    actions.appendChild(open); actions.appendChild(view);
+    pad.appendChild(actions);
+    card.appendChild(pad);
+    row.appendChild(card);
+  });
+}
+
+function renderGrid(){
+  const grid = byId('grid');
+  grid.innerHTML='';
+  filtered.forEach(item => {
+    const card = document.createElement('article');
+    card.className='card';
+    const img = document.createElement('img');
+    img.className='thumb'; img.loading='lazy'; img.src=item.thumb || item.src; img.alt=item.title || item.file || '';
+    img.onerror=()=>{ img.src=item.src; };
+    card.appendChild(img);
+    const pad = document.createElement('div'); pad.className='pad';
+    const h3 = document.createElement('h3'); h3.textContent = item.title || item.file;
+    pad.appendChild(h3);
+    const caption = document.createElement('p'); caption.textContent = item.caption || ''; caption.style.opacity=.85; caption.style.margin='0 0 .4rem';
+    pad.appendChild(caption);
+    const tags = document.createElement('div'); tags.className='tags';
+    (item.tags||[]).forEach(t=>{ const span=document.createElement('span'); span.className='tag'; span.textContent=t; span.onclick=(e)=>{e.stopPropagation(); filterByTag(t);} ; tags.appendChild(span);});
+    pad.appendChild(tags);
+    const actions=document.createElement('div'); actions.className='actions';
+    const viewBtn=document.createElement('a'); viewBtn.className='btn'; viewBtn.textContent='View'; viewBtn.href='#'+(item.id||slug(item.file)); viewBtn.onclick=(e)=>{e.preventDefault(); openModal(item);};
+    const openBtn=document.createElement('a'); openBtn.className='btn secondary'; openBtn.textContent='Open Image'; openBtn.href=item.src; openBtn.target='_blank';
+    actions.appendChild(viewBtn); actions.appendChild(openBtn); pad.appendChild(actions);
+    card.onclick=()=>openModal(item);
+    card.appendChild(pad);
+    grid.appendChild(card);
+  });
+}
+
+function slug(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,''); }
+
+function openModal(item){
+  history.replaceState(null,'','#'+(item.id || slug(item.file)));
+  const m = byId('modal');
+  byId('modalImg').src = item.src;
+  byId('modalTitle').textContent = item.title || item.file;
+  byId('modalCaption').textContent = item.caption || '';
+  byId('modalFile').textContent = item.file || '';
+  byId('modalCreated').textContent = item.created || '';
+  const tagBox = byId('modalTags'); tagBox.innerHTML='';
+  (item.tags||[]).forEach(t=>{ const span=document.createElement('span'); span.className='tag'; span.textContent=t; tagBox.appendChild(span);});
+  const sib = byId('modalSiblings'); sib.innerHTML='';
+  DATA.slice(0,10).forEach(s=>{ const a=document.createElement('a'); a.href='#'+(s.id||slug(s.file)); a.textContent=(s.title||s.file).slice(0,24); a.onclick=(e)=>{e.preventDefault(); openModal(s);} ; sib.appendChild(a); });
+  m.classList.remove('hidden'); m.setAttribute('aria-hidden','false');
+}
+function closeModal(){ const m=byId('modal'); m.classList.add('hidden'); m.setAttribute('aria-hidden','true'); }
+function handleHashOpen(){ const h=location.hash.replace('#',''); if(!h)return; const it=DATA.find(x=>(x.id||slug(x.file))===h); if(it){ openModal(it); } }
+function hydrateTagFilter(){ const sel=byId('tagFilter'); const tags=new Set(); DATA.forEach(x=>(x.tags||[]).forEach(t=>tags.add(t))); sel.innerHTML='<option value=\"\">All Tags</option>'+Array.from(tags).sort().map(t=>`<option value=\"${t}\">${t}</option>`).join(''); }
+function applyFilters(){ const q=byId('searchInput').value.trim().toLowerCase(); const tag=byId('tagFilter').value; filtered=DATA.filter(x=>{ const hay=[x.title,x.caption,(x.tags||[]).join(' '),x.file].join(' ').toLowerCase(); const qOk=!q||hay.includes(q); const tOk=!tag||(x.tags||[]).includes(tag); return qOk&&tOk;}); renderGrid(); }
+function filterByTag(t){ byId('tagFilter').value=t; applyFilters(); }
+
+window.addEventListener('DOMContentLoaded', () => {
+  byId('closeModal').onclick = closeModal;
+  byId('modalBackdrop').onclick = closeModal;
+  byId('searchInput').oninput = applyFilters;
+  byId('tagFilter').onchange = applyFilters;
+  loadAll();
+});
+"""
+
+gallery_json = [
+  {
+    "id": "sample-1",
+    "file": "sample1.jpg",
+    "src": "images/sample1.jpg",
+    "thumb": "images/sample1.jpg",
+    "title": "Sample Concept Render",
+    "caption": "Electromagnetism → Truth & Light visual motif.",
+    "tags": ["law-3","light","truth"],
+    "created": "2025-09-20"
+  }
+]
+
+collections_json = [
+  {
+    "slug": "master-equation",
+    "title": "Master Equation Set",
+    "summary": "High-quality multi-page set explaining χ with 10 variables.",
+    "href": "collections/master-equation/index.html",
+    "cover": "images/sample1.jpg",
+    "pages": 6,
+    "images": 24,
+    "tags": ["χ","unified","equation"]
+  }
+]
+
+with open(os.path.join(root, "index.html"), "w", encoding="utf-8") as f:
+    f.write(index_html)
+with open(os.path.join(root, "styles.css"), "w", encoding="utf-8") as f:
+    f.write(styles_css)
+with open(os.path.join(root, "app.js"), "w", encoding="utf-8") as f:
+    f.write(app_js)
+with open(os.path.join(root, "gallery.json"), "w", encoding="utf-8") as f:
+    json.dump(gallery_json, f, indent=2)
+with open(os.path.join(root, "collections.json"), "w", encoding="utf-8") as f:
+    json.dump(collections_json, f, indent=2)
+
+build_py = r'''#!/usr/bin/env python3
+"""
+build.py — scan ./images and ./collections to maintain gallery.json + collections.json
+
+Rules:
+- /images: all images become thumbnail items
+- /collections/<slug>/: if contains index.html (or any .html), it becomes a FEATURED collection
+  - title: from <title> tag or slug
+  - summary: from collections/<slug>/meta.json["summary"] or descriptions/<slug>.{md,txt}
+  - cover: prefer collections/<slug>/cover.* else first image in that folder else images/sample
+  - pages: count *.html in the collection folder
+  - images: count image files inside the collection folder
+  - tags: from meta.json["tags"] or []
+
+Optional sidecars:
+- /descriptions/<base>.md|.txt for any image or collection slug
+
+Usage: python build.py
+"""
+import os, json, time, pathlib, re, html
+
+ROOT = pathlib.Path(__file__).parent
+IMG = ROOT / "images"
+COL = ROOT / "collections"
+DESC = ROOT / "descriptions"
+OUT_G = ROOT / "gallery.json"
+OUT_C = ROOT / "collections.json"
+
+IMG_EXT = {".png",".jpg",".jpeg",".gif",".webp",".avif",".svg"}
+HTML_EXT = {".html",".htm"}
+
+def slugify(s): return re.sub(r"(^-+|-+$)", "", re.sub(r"[^a-z0-9]+","-", s.lower()))
+
+def read_sidecar(base):
+    for ext in (".md",".txt"):
+        p = (DESC / f"{base}{ext}")
+        if p.exists():
+            try:
+                return p.read_text(encoding="utf-8").strip()
+            except Exception:
+                pass
+    return ""
+
+def parse_title_from_html(path: pathlib.Path):
+    try:
+        txt = path.read_text(encoding="utf-8", errors="ignore")
+        m = re.search(r"<title>(.*?)</title>", txt, flags=re.IGNORECASE|re.DOTALL)
+        if m: return html.unescape(m.group(1).strip())
+    except Exception:
+        pass
+    return ""
+
+def choose_cover(folder: pathlib.Path):
+    for name in ("cover.jpg","cover.png","cover.webp","cover.jpeg","thumb.jpg","thumb.png"):
+        p = folder / name
+        if p.exists(): return f"collections/{folder.name}/{name}"
+    # else first image in folder
+    for p in sorted(folder.iterdir()):
+        if p.suffix.lower() in IMG_EXT:
+            return f"collections/{folder.name}/{p.name}"
+    return ""
+
+def count_images(folder: pathlib.Path):
+    n=0
+    for p in folder.rglob("*"):
+        if p.is_file() and p.suffix.lower() in IMG_EXT: n+=1
+    return n
+
+def build_gallery():
+    items = []
+    IMG.mkdir(exist_ok=True, parents=True)
+    for p in sorted(IMG.iterdir()):
+        if p.is_file() and p.suffix.lower() in IMG_EXT:
+            item = {
+                "id": slugify(p.stem),
+                "file": p.name,
+                "src": f"images/{p.name}",
+                "thumb": f"images/{p.name}",
+                "title": p.stem.replace('_',' ').title(),
+                "caption": read_sidecar(p.stem),
+                "tags": [],
+                "created": time.strftime("%Y-%m-%d", time.localtime(p.stat().st_mtime)),
+            }
+            items.append(item)
+    OUT_G.write_text(json.dumps(items, indent=2), encoding="utf-8")
+    print(f"Wrote {OUT_G} with {len(items)} items.")
+
+def build_collections():
+    entries = []
+    if not COL.exists(): 
+        OUT_C.write_text("[]", encoding="utf-8"); 
+        print("No collections/ folder found."); 
+        return
+    for folder in sorted([d for d in COL.iterdir() if d.is_dir()]):
+        # qualifies if it has any html file
+        htmls = [p for p in folder.iterdir() if p.suffix.lower() in HTML_EXT]
+        if not htmls: 
+            continue
+        # pick index.html if present
+        index = next((p for p in htmls if p.name.lower()=='index.html'), htmls[0])
+        title = parse_title_from_html(index) or folder.name.replace('-',' ').title()
+        meta_path = folder / "meta.json"
+        meta = {}
+        if meta_path.exists():
+            try: meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            except Exception: meta = {}
+        summary = meta.get("summary") or read_sidecar(folder.name)
+        cover = meta.get("cover") or choose_cover(folder)
+        tags = meta.get("tags") or []
+        pages = len([p for p in folder.iterdir() if p.suffix.lower() in HTML_EXT])
+        images = count_images(folder)
+        entries.append({
+            "slug": folder.name,
+            "title": title,
+            "summary": summary,
+            "href": f"collections/{folder.name}/{index.name}",
+            "cover": cover,
+            "pages": pages,
+            "images": images,
+            "tags": tags
+        })
+    OUT_C.write_text(json.dumps(entries, indent=2), encoding="utf-8")
+    print(f"Wrote {OUT_C} with {len(entries)} collections.")
+
+if __name__ == "__main__":
+    build_gallery()
+    build_collections()
+    print("Done.")
+'''
+with open(os.path.join(root, "build.py"), "w", encoding="utf-8") as f:
+    f.write(build_py)
+
+# Zip it up for delivery
+zip_path = "/mnt/data/theophysics_gallery_template_featured.zip"
+with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
+    for dirpath, dirnames, filenames in os.walk(root):
+        for fn in filenames:
+            p = os.path.join(dirpath, fn)
+            z.write(p, os.path.relpath(p, root))
+
+zip_path
