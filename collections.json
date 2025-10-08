@@ -1,5 +1,23 @@
 [
   {
+    "slug": "master-equation",
+    "title": "The Master Equation - Blueprint for Reality",
+    "summary": "The Master Equation - Blueprint for Reality. Complete mathematical framework showing how 13 papers integrate into one unified theory. Navigate the entire Physics of Faith framework from this central hub.",
+    "href": "collections/master-equation/index.html",
+    "cover": "collections/master-equation/cover.png",
+    "pages": 1,
+    "images": 0,
+    "tags": [
+      "Master Equation",
+      "Framework",
+      "Navigation Hub",
+      "Grace Function",
+      "R_J(z)",
+      "Cosmology",
+      "Integration"
+    ]
+  },
+  {
     "slug": "theophysics",
     "title": "THEOPHYSICS: Where Physics Meets Faith",
     "summary": "A comprehensive exploration of where physics meets faith - visualizing the mathematical parallels between quantum mechanics, thermodynamics, relativity and eternal spiritual truths.",
