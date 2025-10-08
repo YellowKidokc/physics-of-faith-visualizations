@@ -75,18 +75,22 @@ function renderGrid(){
   const grid = byId('grid');
   grid.innerHTML='';
 
-  // Only show non-featured images in main grid
-  const regularImages = filtered.filter(item => item.featured !== true);
-  
-  // Add section header for regular images
-  if (regularImages.length > 0 && DATA.some(item => item.featured === true)) {
+  const hasFeatured = filtered.some(item => item.featured === true);
+  let regularImages = filtered.filter(item => item.featured !== true);
+
+  // When every image is marked as featured fall back to showing them all
+  if (!regularImages.length) {
+    regularImages = filtered;
+  }
+
+  if (regularImages.length && hasFeatured && regularImages.length !== filtered.length) {
     const header = document.createElement('h2');
     header.textContent = '📁 Gallery Collection';
     header.style.marginBottom = '1.5rem';
     header.style.fontSize = '1.5rem';
     grid.appendChild(header);
   }
-  
+
   regularImages.forEach(item => {
     const card = createImageCard(item);
     grid.appendChild(card);
