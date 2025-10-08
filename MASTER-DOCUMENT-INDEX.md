@@ -136,6 +136,31 @@
 
 ---
 
+## 🤖 AI DELEGATION BRIEFS:
+
+### PAPER-8-GRACE-FUNCTION-BRIEF.md ✅ READY
+**Purpose:** Complete development brief for Paper #8
+**Content:**
+- Cosmological model with Grace Function
+- Mathematical framework requirements
+- Grok's Eternity Equation integration
+- Section-by-section outline
+- Success criteria
+- Citations needed
+- ~10-15 pages target
+
+### MCP-SETUP-GUIDE.md
+**Purpose:** Instructions for using Model Context Protocol in Cursor
+**Content:**
+- What is MCP
+- Installation steps
+- How to connect AI agents
+- Using tools in Composer
+- Troubleshooting
+- Workflow for delegating papers
+
+---
+
 ## 📊 CURRENT PROJECT STATUS:
 
 ### Papers Complete: 3/13
