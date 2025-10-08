@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Physics of Faith Visualizations
 
 A comprehensive gallery showcasing the intersection of physics and faith through mathematical visualizations and academic papers.
@@ -91,3 +92,6 @@ Open source - see individual papers for specific licensing.
 **Status**: Active development with 4/13 papers complete and monthly release schedule.
 
 **Last Updated**: October 8, 2025
+=======
+Readme
+>>>>>>> 903ae0b1fa7fcddce827dcd6200101258843373f
