@@ -1,16 +1,4192 @@
 [
   {
-    "id": "sample-1",
-    "file": "sample1.jpg",
-    "src": "images/sample1.jpg",
-    "thumb": "images/sample1.jpg",
-    "title": "Sample Concept Render",
-    "caption": "Electromagnetism \u2192 Truth & Light visual motif.",
-    "tags": [
-      "law-3",
-      "light",
-      "truth"
-    ],
-    "created": "2025-09-20"
+    "id": "0vuijnjxf6",
+    "file": "0VUIjnjXf6.png",
+    "src": "images/0VUIjnjXf6.png",
+    "thumb": "images/0VUIjnjXf6.png",
+    "title": "0Vuijnjxf6",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-18"
+  },
+  {
+    "id": "4-cores-one-center-1",
+    "file": "4 cores One center 1.png",
+    "src": "images/4 cores One center 1.png",
+    "thumb": "images/4 cores One center 1.png",
+    "title": "4 Cores One Center 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-01"
+  },
+  {
+    "id": "4-cores-one-center",
+    "file": "4 cores One center.png",
+    "src": "images/4 cores One center.png",
+    "thumb": "images/4 cores One center.png",
+    "title": "4 Cores One Center",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-24"
+  },
+  {
+    "id": "4-those-choices-me",
+    "file": "4 those choices me.png",
+    "src": "images/4 those choices me.png",
+    "thumb": "images/4 those choices me.png",
+    "title": "4 Those Choices Me",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-24"
+  },
+  {
+    "id": "and-new-creation",
+    "file": "and new creation.png",
+    "src": "images/and new creation.png",
+    "thumb": "images/and new creation.png",
+    "title": "And New Creation",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "annotation-result",
+    "file": "annotation-result.svg",
+    "src": "images/annotation-result.svg",
+    "thumb": "images/annotation-result.svg",
+    "title": "Annotation-Result",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "annotation-usage-flow",
+    "file": "annotation-usage-flow.svg",
+    "src": "images/annotation-usage-flow.svg",
+    "thumb": "images/annotation-usage-flow.svg",
+    "title": "Annotation-Usage-Flow",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "atlas-claude-spiritual-protocol",
+    "file": "Atlas Claude Spiritual protocol.png",
+    "src": "images/Atlas Claude Spiritual protocol.png",
+    "thumb": "images/Atlas Claude Spiritual protocol.png",
+    "title": "Atlas Claude Spiritual Protocol",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "atlas-bg3toqkryq",
+    "file": "Atlas_Bg3TOqKRYQ.png",
+    "src": "images/Atlas_Bg3TOqKRYQ.png",
+    "thumb": "images/Atlas_Bg3TOqKRYQ.png",
+    "title": "Atlas Bg3Toqkryq",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "atlas-eifaia4xkj",
+    "file": "Atlas_eifaIa4Xkj.png",
+    "src": "images/Atlas_eifaIa4Xkj.png",
+    "thumb": "images/Atlas_eifaIa4Xkj.png",
+    "title": "Atlas Eifaia4Xkj",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "atlas-ln0owe8qpl",
+    "file": "Atlas_lN0owe8QPl.png",
+    "src": "images/Atlas_lN0owe8QPl.png",
+    "thumb": "images/Atlas_lN0owe8QPl.png",
+    "title": "Atlas Ln0Owe8Qpl",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "atlas-myaps5b4wv",
+    "file": "Atlas_myaps5b4WV.png",
+    "src": "images/Atlas_myaps5b4WV.png",
+    "thumb": "images/Atlas_myaps5b4WV.png",
+    "title": "Atlas Myaps5B4Wv",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "atlas-sjww6awn1u",
+    "file": "Atlas_sJWw6awN1U.png",
+    "src": "images/Atlas_sJWw6awN1U.png",
+    "thumb": "images/Atlas_sJWw6awN1U.png",
+    "title": "Atlas Sjww6Awn1U",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "atlas-w5i4m7dg0b",
+    "file": "Atlas_w5I4M7DG0b.png",
+    "src": "images/Atlas_w5I4M7DG0b.png",
+    "thumb": "images/Atlas_w5I4M7DG0b.png",
+    "title": "Atlas W5I4M7Dg0B",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "beyond-programming",
+    "file": "Beyond programming.gif",
+    "src": "images/Beyond programming.gif",
+    "thumb": "images/Beyond programming.gif",
+    "title": "Beyond Programming",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-18"
+  },
+  {
+    "id": "binding-energy-visualization",
+    "file": "binding-energy-visualization.svg",
+    "src": "images/binding-energy-visualization.svg",
+    "thumb": "images/binding-energy-visualization.svg",
+    "title": "Binding-Energy-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "black-hole-information-paradox",
+    "file": "Black hole information paradox.png",
+    "src": "images/Black hole information paradox.png",
+    "thumb": "images/Black hole information paradox.png",
+    "title": "Black Hole Information Paradox",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "boy-canyon-illustration",
+    "file": "boy-canyon-illustration.svg",
+    "src": "images/boy-canyon-illustration.svg",
+    "thumb": "images/boy-canyon-illustration.svg",
+    "title": "Boy-Canyon-Illustration",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "brave-1epbf9n4un",
+    "file": "brave_1Epbf9N4un.png",
+    "src": "images/brave_1Epbf9N4un.png",
+    "thumb": "images/brave_1Epbf9N4un.png",
+    "title": "Brave 1Epbf9N4Un",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "brave-8sznwo2sn2",
+    "file": "brave_8sZnwO2sn2.png",
+    "src": "images/brave_8sZnwO2sn2.png",
+    "thumb": "images/brave_8sZnwO2sn2.png",
+    "title": "Brave 8Sznwo2Sn2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "brave-bsudy5lek0",
+    "file": "brave_bsUdy5lEK0.png",
+    "src": "images/brave_bsUdy5lEK0.png",
+    "thumb": "images/brave_bsUdy5lEK0.png",
+    "title": "Brave Bsudy5Lek0",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "brave-bxuoxx4fjf",
+    "file": "brave_BxUoxx4fJF.png",
+    "src": "images/brave_BxUoxx4fJF.png",
+    "thumb": "images/brave_BxUoxx4fJF.png",
+    "title": "Brave Bxuoxx4Fjf",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "brave-cpq0snfyod",
+    "file": "brave_CPQ0sNFyoD.png",
+    "src": "images/brave_CPQ0sNFyoD.png",
+    "thumb": "images/brave_CPQ0sNFyoD.png",
+    "title": "Brave Cpq0Snfyod",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "brave-cvxcdovuam",
+    "file": "brave_cVxcDOvUAM.png",
+    "src": "images/brave_cVxcDOvUAM.png",
+    "thumb": "images/brave_cVxcDOvUAM.png",
+    "title": "Brave Cvxcdovuam",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "brave-gchnv4el2a",
+    "file": "brave_GChNV4EL2A.png",
+    "src": "images/brave_GChNV4EL2A.png",
+    "thumb": "images/brave_GChNV4EL2A.png",
+    "title": "Brave Gchnv4El2A",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "brave-h88acw4xpf",
+    "file": "brave_h88ACW4XPF.png",
+    "src": "images/brave_h88ACW4XPF.png",
+    "thumb": "images/brave_h88ACW4XPF.png",
+    "title": "Brave H88Acw4Xpf",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "brave-ppddxcbxvs",
+    "file": "brave_pPDdXcBXVs.png",
+    "src": "images/brave_pPDdXcBXVs.png",
+    "thumb": "images/brave_pPDdXcBXVs.png",
+    "title": "Brave Ppddxcbxvs",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "brave-re8pi9ehx8",
+    "file": "brave_rE8pI9Ehx8.png",
+    "src": "images/brave_rE8pI9Ehx8.png",
+    "thumb": "images/brave_rE8pI9Ehx8.png",
+    "title": "Brave Re8Pi9Ehx8",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "brave-ucnnwaybwh",
+    "file": "brave_ucNnWaYbWH.png",
+    "src": "images/brave_ucNnWaYbWH.png",
+    "thumb": "images/brave_ucNnWaYbWH.png",
+    "title": "Brave Ucnnwaybwh",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "brave-vhxtumbs17",
+    "file": "brave_vHxtUmBs17.png",
+    "src": "images/brave_vHxtUmBs17.png",
+    "thumb": "images/brave_vHxtUmBs17.png",
+    "title": "Brave Vhxtumbs17",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "brave-vo6ymesdgl",
+    "file": "brave_Vo6yMESdGl.png",
+    "src": "images/brave_Vo6yMESdGl.png",
+    "thumb": "images/brave_Vo6yMESdGl.png",
+    "title": "Brave Vo6Ymesdgl",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "brave-xbvecbcdvx",
+    "file": "brave_XBVEcBcDVX.png",
+    "src": "images/brave_XBVEcBcDVX.png",
+    "thumb": "images/brave_XBVEcBcDVX.png",
+    "title": "Brave Xbvecbcdvx",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "brave-xq6toqrd7m",
+    "file": "brave_XQ6tOqRD7M.png",
+    "src": "images/brave_XQ6tOqRD7M.png",
+    "thumb": "images/brave_XQ6tOqRD7M.png",
+    "title": "Brave Xq6Toqrd7M",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "brave-yurssxngqt",
+    "file": "brave_yURsSXNGqt.png",
+    "src": "images/brave_yURsSXNGqt.png",
+    "thumb": "images/brave_yURsSXNGqt.png",
+    "title": "Brave Yurssxngqt",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "bridge-construction-connecting-quantum-and-relativistic-theories",
+    "file": "Bridge construction connecting quantum and relativistic theories.png",
+    "src": "images/Bridge construction connecting quantum and relativistic theories.png",
+    "thumb": "images/Bridge construction connecting quantum and relativistic theories.png",
+    "title": "Bridge Construction Connecting Quantum And Relativistic Theories",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-23"
+  },
+  {
+    "id": "bridging-quantum-mechanics-in-general-relativity",
+    "file": "Bridging quantum mechanics in general relativity.png",
+    "src": "images/Bridging quantum mechanics in general relativity.png",
+    "thumb": "images/Bridging quantum mechanics in general relativity.png",
+    "title": "Bridging Quantum Mechanics In General Relativity",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-24"
+  },
+  {
+    "id": "chaotic-dynamics-visualization",
+    "file": "chaotic-dynamics-visualization.svg",
+    "src": "images/chaotic-dynamics-visualization.svg",
+    "thumb": "images/chaotic-dynamics-visualization.svg",
+    "title": "Chaotic-Dynamics-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "chatgpt3-mofrkzbgre",
+    "file": "ChatGPT3_MofRKzBgRE.png",
+    "src": "images/ChatGPT3_MofRKzBgRE.png",
+    "thumb": "images/ChatGPT3_MofRKzBgRE.png",
+    "title": "Chatgpt3 Mofrkzbgre",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "chi-point",
+    "file": "Chi {Point.png",
+    "src": "images/Chi {Point.png",
+    "thumb": "images/Chi {Point.png",
+    "title": "Chi {Point",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "chia-2",
+    "file": "chia 2.png",
+    "src": "images/chia 2.png",
+    "thumb": "images/chia 2.png",
+    "title": "Chia 2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "chia",
+    "file": "Chia.png",
+    "src": "images/Chia.png",
+    "thumb": "images/Chia.png",
+    "title": "Chia",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "christ-as-teh-entorpy-aborbtion",
+    "file": "Christ as teh entorpy aborbtion.png",
+    "src": "images/Christ as teh entorpy aborbtion.png",
+    "thumb": "images/Christ as teh entorpy aborbtion.png",
+    "title": "Christ As Teh Entorpy Aborbtion",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "christ-is-the-first-observer-the-quantum-origin-of-reality-1",
+    "file": "Christ is the first observer the quantum origin of reality 1.png",
+    "src": "images/Christ is the first observer the quantum origin of reality 1.png",
+    "thumb": "images/Christ is the first observer the quantum origin of reality 1.png",
+    "title": "Christ Is The First Observer The Quantum Origin Of Reality 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "christ-the-first-observer-the-origin-of-reality",
+    "file": "christ the first observer the origin of reality.png",
+    "src": "images/christ the first observer the origin of reality.png",
+    "thumb": "images/christ the first observer the origin of reality.png",
+    "title": "Christ The First Observer The Origin Of Reality",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "christ-equation-visualization",
+    "file": "christ-equation-visualization.svg",
+    "src": "images/christ-equation-visualization.svg",
+    "thumb": "images/christ-equation-visualization.svg",
+    "title": "Christ-Equation-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "christ-observer-effect",
+    "file": "christ-observer-effect.svg",
+    "src": "images/christ-observer-effect.svg",
+    "thumb": "images/christ-observer-effect.svg",
+    "title": "Christ-Observer-Effect",
+    "caption": "Christ as the primordial observer whose divine observation collapses the universal wavefunction - the quantum origin of all reality through perfect divine measurement.",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "christ-trinity-tensor",
+    "file": "christ-trinity-tensor.svg",
+    "src": "images/christ-trinity-tensor.svg",
+    "thumb": "images/christ-trinity-tensor.svg",
+    "title": "Christ-Trinity-Tensor",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "christ-unification-principle",
+    "file": "christ-unification-principle.svg",
+    "src": "images/christ-unification-principle.svg",
+    "thumb": "images/christ-unification-principle.svg",
+    "title": "Christ-Unification-Principle",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "claude1-9fzllqd2px",
+    "file": "Claude1_9FzllQD2Px.png",
+    "src": "images/Claude1_9FzllQD2Px.png",
+    "thumb": "images/Claude1_9FzllQD2Px.png",
+    "title": "Claude1 9Fzllqd2Px",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-07"
+  },
+  {
+    "id": "claude1-aujb0awjca-2",
+    "file": "Claude1_AUJB0AwJCa 2.png",
+    "src": "images/Claude1_AUJB0AwJCa 2.png",
+    "thumb": "images/Claude1_AUJB0AwJCa 2.png",
+    "title": "Claude1 Aujb0Awjca 2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-02"
+  },
+  {
+    "id": "claude1-bxg27uzqzf",
+    "file": "Claude1_bXg27uZqzF.png",
+    "src": "images/Claude1_bXg27uZqzF.png",
+    "thumb": "images/Claude1_bXg27uZqzF.png",
+    "title": "Claude1 Bxg27Uzqzf",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "claude1-fk0t8doqox",
+    "file": "Claude1_fk0t8DOQoX.png",
+    "src": "images/Claude1_fk0t8DOQoX.png",
+    "thumb": "images/Claude1_fk0t8DOQoX.png",
+    "title": "Claude1 Fk0T8Doqox",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "claude1-j51v4rkqcx",
+    "file": "Claude1_j51v4rkQcX.png",
+    "src": "images/Claude1_j51v4rkQcX.png",
+    "thumb": "images/Claude1_j51v4rkQcX.png",
+    "title": "Claude1 J51V4Rkqcx",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "claude1-jsl1kdwzvf",
+    "file": "Claude1_JSl1KdWZvF.png",
+    "src": "images/Claude1_JSl1KdWZvF.png",
+    "thumb": "images/Claude1_JSl1KdWZvF.png",
+    "title": "Claude1 Jsl1Kdwzvf",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "claude1-mfqbswrvok",
+    "file": "Claude1_MFqBSwrvok.png",
+    "src": "images/Claude1_MFqBSwrvok.png",
+    "thumb": "images/Claude1_MFqBSwrvok.png",
+    "title": "Claude1 Mfqbswrvok",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-07"
+  },
+  {
+    "id": "claude1-mna4yhm8gl-1",
+    "file": "Claude1_MnA4YHm8Gl 1.png",
+    "src": "images/Claude1_MnA4YHm8Gl 1.png",
+    "thumb": "images/Claude1_MnA4YHm8Gl 1.png",
+    "title": "Claude1 Mna4Yhm8Gl 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-02"
+  },
+  {
+    "id": "claude1-ndmvpkl2bt",
+    "file": "Claude1_NDmvpkL2Bt.png",
+    "src": "images/Claude1_NDmvpkL2Bt.png",
+    "thumb": "images/Claude1_NDmvpkL2Bt.png",
+    "title": "Claude1 Ndmvpkl2Bt",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "claude1-ne6uvuw1dm",
+    "file": "Claude1_Ne6uvUW1dM.png",
+    "src": "images/Claude1_Ne6uvUW1dM.png",
+    "thumb": "images/Claude1_Ne6uvUW1dM.png",
+    "title": "Claude1 Ne6Uvuw1Dm",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "claude1-nlalwkl7ep",
+    "file": "Claude1_NLAlwkl7Ep.png",
+    "src": "images/Claude1_NLAlwkl7Ep.png",
+    "thumb": "images/Claude1_NLAlwkl7Ep.png",
+    "title": "Claude1 Nlalwkl7Ep",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "claude1-nzcxn7gpxd",
+    "file": "Claude1_NzCxn7GpXD.png",
+    "src": "images/Claude1_NzCxn7GpXD.png",
+    "thumb": "images/Claude1_NzCxn7GpXD.png",
+    "title": "Claude1 Nzcxn7Gpxd",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-01"
+  },
+  {
+    "id": "claude1-odz3vh2sud-1",
+    "file": "Claude1_oDz3Vh2SUd 1.png",
+    "src": "images/Claude1_oDz3Vh2SUd 1.png",
+    "thumb": "images/Claude1_oDz3Vh2SUd 1.png",
+    "title": "Claude1 Odz3Vh2Sud 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-02"
+  },
+  {
+    "id": "claude1-pmmxxekveg-1",
+    "file": "Claude1_PmMxxEkVeg 1.png",
+    "src": "images/Claude1_PmMxxEkVeg 1.png",
+    "thumb": "images/Claude1_PmMxxEkVeg 1.png",
+    "title": "Claude1 Pmmxxekveg 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-02"
+  },
+  {
+    "id": "claude1-qanf35pqyp",
+    "file": "Claude1_qaNf35PqyP.png",
+    "src": "images/Claude1_qaNf35PqyP.png",
+    "thumb": "images/Claude1_qaNf35PqyP.png",
+    "title": "Claude1 Qanf35Pqyp",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "claude1-tgyxcszzur",
+    "file": "Claude1_TGYXcSzzur.png",
+    "src": "images/Claude1_TGYXcSzzur.png",
+    "thumb": "images/Claude1_TGYXcSzzur.png",
+    "title": "Claude1 Tgyxcszzur",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-10"
+  },
+  {
+    "id": "claude1-xc0dseih4v",
+    "file": "Claude1_XC0dSEih4V.png",
+    "src": "images/Claude1_XC0dSEih4V.png",
+    "thumb": "images/Claude1_XC0dSEih4V.png",
+    "title": "Claude1 Xc0Dseih4V",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "claude1-y6onk8hv4n",
+    "file": "Claude1_y6oNk8hV4N.png",
+    "src": "images/Claude1_y6oNk8hV4N.png",
+    "thumb": "images/Claude1_y6oNk8hV4N.png",
+    "title": "Claude1 Y6Onk8Hv4N",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "claude1-yysvnpbzai",
+    "file": "Claude1_yySvNpbZai.png",
+    "src": "images/Claude1_yySvNpbZai.png",
+    "thumb": "images/Claude1_yySvNpbZai.png",
+    "title": "Claude1 Yysvnpbzai",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude1-zbynpxqbfs",
+    "file": "Claude1_ZbYNPXqBfs.png",
+    "src": "images/Claude1_ZbYNPXqBfs.png",
+    "thumb": "images/Claude1_ZbYNPXqBfs.png",
+    "title": "Claude1 Zbynpxqbfs",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "claude1-zikysndu9p",
+    "file": "Claude1_ZIkYsNdu9P.png",
+    "src": "images/Claude1_ZIkYsNdu9P.png",
+    "thumb": "images/Claude1_ZIkYsNdu9P.png",
+    "title": "Claude1 Zikysndu9P",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-02"
+  },
+  {
+    "id": "claude2-6fgnxwlk45",
+    "file": "Claude2_6fGnXwLk45.png",
+    "src": "images/Claude2_6fGnXwLk45.png",
+    "thumb": "images/Claude2_6fGnXwLk45.png",
+    "title": "Claude2 6Fgnxwlk45",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-6mljjzyjyp",
+    "file": "Claude2_6mljjzyjYP.png",
+    "src": "images/Claude2_6mljjzyjYP.png",
+    "thumb": "images/Claude2_6mljjzyjYP.png",
+    "title": "Claude2 6Mljjzyjyp",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude2-ajyfezakih",
+    "file": "Claude2_aJYfEzaKiH.png",
+    "src": "images/Claude2_aJYfEzaKiH.png",
+    "thumb": "images/Claude2_aJYfEzaKiH.png",
+    "title": "Claude2 Ajyfezakih",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-ciaicrcsjk",
+    "file": "Claude2_CiaICrCSJK.png",
+    "src": "images/Claude2_CiaICrCSJK.png",
+    "thumb": "images/Claude2_CiaICrCSJK.png",
+    "title": "Claude2 Ciaicrcsjk",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-jplorisgsb-1",
+    "file": "Claude2_jploRISgsB 1.png",
+    "src": "images/Claude2_jploRISgsB 1.png",
+    "thumb": "images/Claude2_jploRISgsB 1.png",
+    "title": "Claude2 Jplorisgsb 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-jplorisgsb",
+    "file": "Claude2_jploRISgsB.png",
+    "src": "images/Claude2_jploRISgsB.png",
+    "thumb": "images/Claude2_jploRISgsB.png",
+    "title": "Claude2 Jplorisgsb",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude2-mnkhlitr12-1",
+    "file": "Claude2_mnkHlItr12 1.png",
+    "src": "images/Claude2_mnkHlItr12 1.png",
+    "thumb": "images/Claude2_mnkHlItr12 1.png",
+    "title": "Claude2 Mnkhlitr12 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude2-n8h3sj3tyf",
+    "file": "Claude2_N8H3sj3TYf.png",
+    "src": "images/Claude2_N8H3sj3TYf.png",
+    "thumb": "images/Claude2_N8H3sj3TYf.png",
+    "title": "Claude2 N8H3Sj3Tyf",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude2-nnmspkksvx",
+    "file": "Claude2_NnMSPKkSVx.png",
+    "src": "images/Claude2_NnMSPKkSVx.png",
+    "thumb": "images/Claude2_NnMSPKkSVx.png",
+    "title": "Claude2 Nnmspkksvx",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-npwusflk1f-1",
+    "file": "Claude2_NPwuSFLk1F 1.png",
+    "src": "images/Claude2_NPwuSFLk1F 1.png",
+    "thumb": "images/Claude2_NPwuSFLk1F 1.png",
+    "title": "Claude2 Npwusflk1F 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-npwusflk1f",
+    "file": "Claude2_NPwuSFLk1F.png",
+    "src": "images/Claude2_NPwuSFLk1F.png",
+    "thumb": "images/Claude2_NPwuSFLk1F.png",
+    "title": "Claude2 Npwusflk1F",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-r0lniezs4p-1",
+    "file": "Claude2_r0lNIeZS4P 1.png",
+    "src": "images/Claude2_r0lNIeZS4P 1.png",
+    "thumb": "images/Claude2_r0lNIeZS4P 1.png",
+    "title": "Claude2 R0Lniezs4P 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-r0lniezs4p",
+    "file": "Claude2_r0lNIeZS4P.png",
+    "src": "images/Claude2_r0lNIeZS4P.png",
+    "thumb": "images/Claude2_r0lNIeZS4P.png",
+    "title": "Claude2 R0Lniezs4P",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude2-xx338bqshm-1",
+    "file": "Claude2_xx338bQsHM 1.png",
+    "src": "images/Claude2_xx338bQsHM 1.png",
+    "thumb": "images/Claude2_xx338bQsHM 1.png",
+    "title": "Claude2 Xx338Bqshm 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-xx338bqshm",
+    "file": "Claude2_xx338bQsHM.png",
+    "src": "images/Claude2_xx338bQsHM.png",
+    "thumb": "images/Claude2_xx338bQsHM.png",
+    "title": "Claude2 Xx338Bqshm",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude2-zyftyecgxz",
+    "file": "Claude2_zyFtyECGXz.png",
+    "src": "images/Claude2_zyFtyECGXz.png",
+    "thumb": "images/Claude2_zyFtyECGXz.png",
+    "title": "Claude2 Zyftyecgxz",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude3-04di7iaeps-1",
+    "file": "Claude3_04DI7iaePs 1.png",
+    "src": "images/Claude3_04DI7iaePs 1.png",
+    "thumb": "images/Claude3_04DI7iaePs 1.png",
+    "title": "Claude3 04Di7Iaeps 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "claude3-04di7iaeps-2",
+    "file": "Claude3_04DI7iaePs 2.png",
+    "src": "images/Claude3_04DI7iaePs 2.png",
+    "thumb": "images/Claude3_04DI7iaePs 2.png",
+    "title": "Claude3 04Di7Iaeps 2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude3-04di7iaeps-3",
+    "file": "Claude3_04DI7iaePs 3.png",
+    "src": "images/Claude3_04DI7iaePs 3.png",
+    "thumb": "images/Claude3_04DI7iaePs 3.png",
+    "title": "Claude3 04Di7Iaeps 3",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude3-fjnvlfhta4-1",
+    "file": "Claude3_FjNvlfHta4 1.png",
+    "src": "images/Claude3_FjNvlfHta4 1.png",
+    "thumb": "images/Claude3_FjNvlfHta4 1.png",
+    "title": "Claude3 Fjnvlfhta4 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "claude3-fjnvlfhta4",
+    "file": "Claude3_FjNvlfHta4.png",
+    "src": "images/Claude3_FjNvlfHta4.png",
+    "thumb": "images/Claude3_FjNvlfHta4.png",
+    "title": "Claude3 Fjnvlfhta4",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "claude3-pxzb1nlyyj-1",
+    "file": "Claude3_PxZb1NLYYj 1.png",
+    "src": "images/Claude3_PxZb1NLYYj 1.png",
+    "thumb": "images/Claude3_PxZb1NLYYj 1.png",
+    "title": "Claude3 Pxzb1Nlyyj 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude3-pxzb1nlyyj",
+    "file": "Claude3_PxZb1NLYYj.png",
+    "src": "images/Claude3_PxZb1NLYYj.png",
+    "thumb": "images/Claude3_PxZb1NLYYj.png",
+    "title": "Claude3 Pxzb1Nlyyj",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "claude3-rsr7zfnh3p-2",
+    "file": "Claude3_RsR7Zfnh3P 2.png",
+    "src": "images/Claude3_RsR7Zfnh3P 2.png",
+    "thumb": "images/Claude3_RsR7Zfnh3P 2.png",
+    "title": "Claude3 Rsr7Zfnh3P 2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "claude3-rsr7zfnh3p",
+    "file": "Claude3_RsR7Zfnh3P.png",
+    "src": "images/Claude3_RsR7Zfnh3P.png",
+    "thumb": "images/Claude3_RsR7Zfnh3P.png",
+    "title": "Claude3 Rsr7Zfnh3P",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "claude3-unigkzcbkr-1",
+    "file": "Claude3_UNigkzCBkr 1.png",
+    "src": "images/Claude3_UNigkzCBkr 1.png",
+    "thumb": "images/Claude3_UNigkzCBkr 1.png",
+    "title": "Claude3 Unigkzcbkr 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude3-vkvwwh6egf-1-1",
+    "file": "Claude3_VKvwwh6EGF 1 1.png",
+    "src": "images/Claude3_VKvwwh6EGF 1 1.png",
+    "thumb": "images/Claude3_VKvwwh6EGF 1 1.png",
+    "title": "Claude3 Vkvwwh6Egf 1 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude3-vkvwwh6egf-1",
+    "file": "Claude3_VKvwwh6EGF 1.png",
+    "src": "images/Claude3_VKvwwh6EGF 1.png",
+    "thumb": "images/Claude3_VKvwwh6EGF 1.png",
+    "title": "Claude3 Vkvwwh6Egf 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "claude3-vkvwwh6egf-2",
+    "file": "Claude3_VKvwwh6EGF 2.png",
+    "src": "images/Claude3_VKvwwh6EGF 2.png",
+    "thumb": "images/Claude3_VKvwwh6EGF 2.png",
+    "title": "Claude3 Vkvwwh6Egf 2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "claude3-vnfoxfkmm2",
+    "file": "Claude3_VNfoXFkmm2.png",
+    "src": "images/Claude3_VNfoXFkmm2.png",
+    "thumb": "images/Claude3_VNfoXFkmm2.png",
+    "title": "Claude3 Vnfoxfkmm2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "claude3-x8dnwkzftr",
+    "file": "Claude3_X8dnwKZFtR.png",
+    "src": "images/Claude3_X8dnwKZFtR.png",
+    "thumb": "images/Claude3_X8dnwKZFtR.png",
+    "title": "Claude3 X8Dnwkzftr",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "claude3-yfr5gpgkzm",
+    "file": "Claude3_yfR5gPgkzm.png",
+    "src": "images/Claude3_yfR5gPgkzm.png",
+    "thumb": "images/Claude3_yfR5gPgkzm.png",
+    "title": "Claude3 Yfr5Gpgkzm",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "claude3-yhakqbc8el-1",
+    "file": "Claude3_yHaKqBc8El 1.png",
+    "src": "images/Claude3_yHaKqBc8El 1.png",
+    "thumb": "images/Claude3_yHaKqBc8El 1.png",
+    "title": "Claude3 Yhakqbc8El 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "claude-8ppwznlxfx",
+    "file": "claude_8pPwZNlXFx.png",
+    "src": "images/claude_8pPwZNlXFx.png",
+    "thumb": "images/claude_8pPwZNlXFx.png",
+    "title": "Claude 8Ppwznlxfx",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "claude-agshdycyqa",
+    "file": "claude_AGShdyCYqA.png",
+    "src": "images/claude_AGShdyCYqA.png",
+    "thumb": "images/claude_AGShdyCYqA.png",
+    "title": "Claude Agshdycyqa",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "claude-dbzacp7prm",
+    "file": "claude_DbZACP7pRm.png",
+    "src": "images/claude_DbZACP7pRm.png",
+    "thumb": "images/claude_DbZACP7pRm.png",
+    "title": "Claude Dbzacp7Prm",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "claude-dqikfpbz2u",
+    "file": "Claude_DqikFpBZ2u.png",
+    "src": "images/Claude_DqikFpBZ2u.png",
+    "thumb": "images/Claude_DqikFpBZ2u.png",
+    "title": "Claude Dqikfpbz2U",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-22"
+  },
+  {
+    "id": "claude-eeavrpqz5t",
+    "file": "Claude_EeaVrPQz5t.png",
+    "src": "images/Claude_EeaVrPQz5t.png",
+    "thumb": "images/Claude_EeaVrPQz5t.png",
+    "title": "Claude Eeavrpqz5T",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "claude-fykb3jtivc",
+    "file": "Claude_fYkB3Jtivc.png",
+    "src": "images/Claude_fYkB3Jtivc.png",
+    "thumb": "images/Claude_fYkB3Jtivc.png",
+    "title": "Claude Fykb3Jtivc",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "claude-huthbnesqi",
+    "file": "Claude_HuthbnESQI.png",
+    "src": "images/Claude_HuthbnESQI.png",
+    "thumb": "images/Claude_HuthbnESQI.png",
+    "title": "Claude Huthbnesqi",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "claude-i4sn6wbdbw",
+    "file": "claude_I4sn6Wbdbw.png",
+    "src": "images/claude_I4sn6Wbdbw.png",
+    "thumb": "images/claude_I4sn6Wbdbw.png",
+    "title": "Claude I4Sn6Wbdbw",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-24"
+  },
+  {
+    "id": "claude-ig5i0ghum1",
+    "file": "claude_ig5I0GhuM1.png",
+    "src": "images/claude_ig5I0GhuM1.png",
+    "thumb": "images/claude_ig5I0GhuM1.png",
+    "title": "Claude Ig5I0Ghum1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-24"
+  },
+  {
+    "id": "claude-k5a41ifknw",
+    "file": "Claude_K5A41IfknW.png",
+    "src": "images/Claude_K5A41IfknW.png",
+    "thumb": "images/Claude_K5A41IfknW.png",
+    "title": "Claude K5A41Ifknw",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-22"
+  },
+  {
+    "id": "claude-llykjzg4ye",
+    "file": "claude_llYkjzG4YE.png",
+    "src": "images/claude_llYkjzG4YE.png",
+    "thumb": "images/claude_llYkjzG4YE.png",
+    "title": "Claude Llykjzg4Ye",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "claude-u76aqp75fi",
+    "file": "claude_U76AqP75Fi.png",
+    "src": "images/claude_U76AqP75Fi.png",
+    "thumb": "images/claude_U76AqP75Fi.png",
+    "title": "Claude U76Aqp75Fi",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "claude-vtmzxpa19q",
+    "file": "claude_VtmZxPa19Q.png",
+    "src": "images/claude_VtmZxPa19Q.png",
+    "thumb": "images/claude_VtmZxPa19Q.png",
+    "title": "Claude Vtmzxpa19Q",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-24"
+  },
+  {
+    "id": "claude-vvwrfauljb",
+    "file": "Claude_VvwRFaUljb.png",
+    "src": "images/Claude_VvwRFaUljb.png",
+    "thumb": "images/Claude_VvwRFaUljb.png",
+    "title": "Claude Vvwrfauljb",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "claude-wvcwrbydhu",
+    "file": "Claude_wvCwrbYDHU.png",
+    "src": "images/Claude_wvCwrbYDHU.png",
+    "thumb": "images/Claude_wvCwrbYDHU.png",
+    "title": "Claude Wvcwrbydhu",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "claude-xbmkmjxiol",
+    "file": "Claude_xBMkMJXiOL.gif",
+    "src": "images/Claude_xBMkMJXiOL.gif",
+    "thumb": "images/Claude_xBMkMJXiOL.gif",
+    "title": "Claude Xbmkmjxiol",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-18"
+  },
+  {
+    "id": "claude-yumt6tguvf",
+    "file": "Claude_yuMt6TGuVF.png",
+    "src": "images/Claude_yuMt6TGuVF.png",
+    "thumb": "images/Claude_yuMt6TGuVF.png",
+    "title": "Claude Yumt6Tguvf",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "communication-instantaneous-encrypted-one-100-percent-delivery-guaranteed",
+    "file": "Communication instantaneous encrypted one 100 percent delivery guaranteed.png",
+    "src": "images/Communication instantaneous encrypted one 100 percent delivery guaranteed.png",
+    "thumb": "images/Communication instantaneous encrypted one 100 percent delivery guaranteed.png",
+    "title": "Communication Instantaneous Encrypted One 100 Percent Delivery Guaranteed",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "compared-to-ability-relative-analysis",
+    "file": "compared to ability relative analysis.png",
+    "src": "images/compared to ability relative analysis.png",
+    "thumb": "images/compared to ability relative analysis.png",
+    "title": "Compared To Ability Relative Analysis",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "complete-unified-theory-short-version",
+    "file": "Complete unified theory short version.png",
+    "src": "images/Complete unified theory short version.png",
+    "thumb": "images/Complete unified theory short version.png",
+    "title": "Complete Unified Theory Short Version",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "concept-network-2",
+    "file": "concept_network_2.png",
+    "src": "images/concept_network_2.png",
+    "thumb": "images/concept_network_2.png",
+    "title": "Concept Network 2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "consciousness-as-field",
+    "file": "consciousness-as-field.svg",
+    "src": "images/consciousness-as-field.svg",
+    "thumb": "images/consciousness-as-field.svg",
+    "title": "Consciousness-As-Field",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "consciousness-gravity-comparison",
+    "file": "consciousness-gravity-comparison.svg",
+    "src": "images/consciousness-gravity-comparison.svg",
+    "thumb": "images/consciousness-gravity-comparison.svg",
+    "title": "Consciousness-Gravity-Comparison",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "consciousness-gravity-diagram",
+    "file": "consciousness-gravity-diagram.svg",
+    "src": "images/consciousness-gravity-diagram.svg",
+    "thumb": "images/consciousness-gravity-diagram.svg",
+    "title": "Consciousness-Gravity-Diagram",
+    "caption": "Divine consciousness as spiritual gravity - warping the fabric of spiritual spacetime and drawing all creation toward the Creator through the fundamental force of love.",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "consciousness-light-spectrum",
+    "file": "consciousness-light-spectrum.svg",
+    "src": "images/consciousness-light-spectrum.svg",
+    "thumb": "images/consciousness-light-spectrum.svg",
+    "title": "Consciousness-Light-Spectrum",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "cross-entropy-absorption",
+    "file": "cross-entropy-absorption.svg",
+    "src": "images/cross-entropy-absorption.svg",
+    "thumb": "images/cross-entropy-absorption.svg",
+    "title": "Cross-Entropy-Absorption",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "darker-physics-theology-parallels",
+    "file": "darker-physics-theology-parallels.svg",
+    "src": "images/darker-physics-theology-parallels.svg",
+    "thumb": "images/darker-physics-theology-parallels.svg",
+    "title": "Darker-Physics-Theology-Parallels",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "david-plaud-loss-protcol-protocol",
+    "file": "David plaud loss protcol protocol.png",
+    "src": "images/David plaud loss protcol protocol.png",
+    "thumb": "images/David plaud loss protcol protocol.png",
+    "title": "David Plaud Loss Protcol Protocol",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "dcoherence-time-constants-how-different-sins-destroy-spiritual-coherence-at-different-rates",
+    "file": "Dcoherence time constants How different sins destroy spiritual coherence at different rates.png",
+    "src": "images/Dcoherence time constants How different sins destroy spiritual coherence at different rates.png",
+    "thumb": "images/Dcoherence time constants How different sins destroy spiritual coherence at different rates.png",
+    "title": "Dcoherence Time Constants How Different Sins Destroy Spiritual Coherence At Different Rates",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "discoherent-time-constraints-how-different-sensors-troy-coherence-at-different-rates",
+    "file": "Discoherent time constraints how different sensors Troy coherence at different rates.png",
+    "src": "images/Discoherent time constraints how different sensors Troy coherence at different rates.png",
+    "thumb": "images/Discoherent time constraints how different sensors Troy coherence at different rates.png",
+    "title": "Discoherent Time Constraints How Different Sensors Troy Coherence At Different Rates",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "divine-attraction-original",
+    "file": "Divine attraction (Original).png",
+    "src": "images/Divine attraction (Original).png",
+    "thumb": "images/Divine attraction (Original).png",
+    "title": "Divine Attraction (Original)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "divine-attraction-1",
+    "file": "Divine attraction 1.png",
+    "src": "images/Divine attraction 1.png",
+    "thumb": "images/Divine attraction 1.png",
+    "title": "Divine Attraction 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-01"
+  },
+  {
+    "id": "divine-attraction",
+    "file": "Divine attraction.png",
+    "src": "images/Divine attraction.png",
+    "thumb": "images/Divine attraction.png",
+    "title": "Divine Attraction",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "divine-authority-universal-authority-1",
+    "file": "divine authority universal authority 1.png",
+    "src": "images/divine authority universal authority 1.png",
+    "thumb": "images/divine authority universal authority 1.png",
+    "title": "Divine Authority Universal Authority 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-01"
+  },
+  {
+    "id": "divine-authority-universal-authority",
+    "file": "divine authority universal authority.png",
+    "src": "images/divine authority universal authority.png",
+    "thumb": "images/divine authority universal authority.png",
+    "title": "Divine Authority Universal Authority",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "divine-conscious-spiritual-awakening",
+    "file": "Divine conscious Spiritual awakening.png",
+    "src": "images/Divine conscious Spiritual awakening.png",
+    "thumb": "images/Divine conscious Spiritual awakening.png",
+    "title": "Divine Conscious Spiritual Awakening",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "divine-consciousness-spiritual-awaking",
+    "file": "Divine consciousness spiritual awaking.png",
+    "src": "images/Divine consciousness spiritual awaking.png",
+    "thumb": "images/Divine consciousness spiritual awaking.png",
+    "title": "Divine Consciousness Spiritual Awaking",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "divine-direction-rest-motion-original",
+    "file": "Divine direction rest motion (Original).png",
+    "src": "images/Divine direction rest motion (Original).png",
+    "thumb": "images/Divine direction rest motion (Original).png",
+    "title": "Divine Direction Rest Motion (Original)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "divine-direction-rest-motion",
+    "file": "Divine direction rest motion.png",
+    "src": "images/Divine direction rest motion.png",
+    "thumb": "images/Divine direction rest motion.png",
+    "title": "Divine Direction Rest Motion",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "divine-ground-state-stabilty",
+    "file": "Divine Ground State Stabilty.png",
+    "src": "images/Divine Ground State Stabilty.png",
+    "thumb": "images/Divine Ground State Stabilty.png",
+    "title": "Divine Ground State Stabilty",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "divine-light-eternal-truth-1",
+    "file": "divine light eternal truth 1.png",
+    "src": "images/divine light eternal truth 1.png",
+    "thumb": "images/divine light eternal truth 1.png",
+    "title": "Divine Light Eternal Truth 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-01"
+  },
+  {
+    "id": "divine-light-eternal-truth",
+    "file": "divine light eternal truth.png",
+    "src": "images/divine light eternal truth.png",
+    "thumb": "images/divine light eternal truth.png",
+    "title": "Divine Light Eternal Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "divine-love-as-the-fundamental-force",
+    "file": "Divine Love as the Fundamental Force.png",
+    "src": "images/Divine Love as the Fundamental Force.png",
+    "thumb": "images/Divine Love as the Fundamental Force.png",
+    "title": "Divine Love As The Fundamental Force",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "divine-unity-the-force-that-holds-everything-together",
+    "file": "Divine unity the force that holds everything together.png",
+    "src": "images/Divine unity the force that holds everything together.png",
+    "thumb": "images/Divine unity the force that holds everything together.png",
+    "title": "Divine Unity The Force That Holds Everything Together",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "divine-unity-the-strong-bond-effect",
+    "file": "divine unity the strong bond effect.png",
+    "src": "images/divine unity the strong bond effect.png",
+    "thumb": "images/divine unity the strong bond effect.png",
+    "title": "Divine Unity The Strong Bond Effect",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "divine-mystery",
+    "file": "divine-mystery.svg",
+    "src": "images/divine-mystery.svg",
+    "thumb": "images/divine-mystery.svg",
+    "title": "Divine-Mystery",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "dopus-dfxuzrgbcb",
+    "file": "dopus_DFxuzRGBcB.png",
+    "src": "images/dopus_DFxuzRGBcB.png",
+    "thumb": "images/dopus_DFxuzRGBcB.png",
+    "title": "Dopus Dfxuzrgbcb",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-24"
+  },
+  {
+    "id": "electromagnetic-spectrum-truth",
+    "file": "electromagnetic-spectrum-truth.svg",
+    "src": "images/electromagnetic-spectrum-truth.svg",
+    "thumb": "images/electromagnetic-spectrum-truth.svg",
+    "title": "Electromagnetic-Spectrum-Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "electromagnetic-truth-dark",
+    "file": "electromagnetic-truth-dark.svg",
+    "src": "images/electromagnetic-truth-dark.svg",
+    "thumb": "images/electromagnetic-truth-dark.svg",
+    "title": "Electromagnetic-Truth-Dark",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "entangled-network-to-space-time-how-quantum-entangled-it-may-generate-space-time-geometry",
+    "file": "Entangled network to space time how quantum entangled it may generate space time geometry.png",
+    "src": "images/Entangled network to space time how quantum entangled it may generate space time geometry.png",
+    "thumb": "images/Entangled network to space time how quantum entangled it may generate space time geometry.png",
+    "title": "Entangled Network To Space Time How Quantum Entangled It May Generate Space Time Geometry",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "entanglement-diagram",
+    "file": "entanglement-diagram.svg",
+    "src": "images/entanglement-diagram.svg",
+    "thumb": "images/entanglement-diagram.svg",
+    "title": "Entanglement-Diagram",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "entropy-decay-image",
+    "file": "entropy-decay-image.svg",
+    "src": "images/entropy-decay-image.svg",
+    "thumb": "images/entropy-decay-image.svg",
+    "title": "Entropy-Decay-Image",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "entropy-grace-model",
+    "file": "entropy-grace-model.svg",
+    "src": "images/entropy-grace-model.svg",
+    "thumb": "images/entropy-grace-model.svg",
+    "title": "Entropy-Grace-Model",
+    "caption": "The thermodynamic battle between spiritual entropy and divine grace. Shows how grace acts as negentropy, actively reversing spiritual decay and restoring coherence to broken souls.",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "entropy-term",
+    "file": "entropy-term.svg",
+    "src": "images/entropy-term.svg",
+    "thumb": "images/entropy-term.svg",
+    "title": "Entropy-Term",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "eternal-transformation-conversation-of-life-1",
+    "file": "Eternal transformation conversation of life 1.png",
+    "src": "images/Eternal transformation conversation of life 1.png",
+    "thumb": "images/Eternal transformation conversation of life 1.png",
+    "title": "Eternal Transformation Conversation Of Life 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-01"
+  },
+  {
+    "id": "eternal-transformation-conversation-of-life",
+    "file": "Eternal transformation conversation of life.png",
+    "src": "images/Eternal transformation conversation of life.png",
+    "thumb": "images/Eternal transformation conversation of life.png",
+    "title": "Eternal Transformation Conversation Of Life",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "eternal-worship-is-a-perfect-quantum-residence-all-creation-vibrating-in-perfect-harmony-with-divine-glory",
+    "file": "Eternal worship is a perfect quantum residence all creation vibrating in perfect harmony with divine glory.png",
+    "src": "images/Eternal worship is a perfect quantum residence all creation vibrating in perfect harmony with divine glory.png",
+    "thumb": "images/Eternal worship is a perfect quantum residence all creation vibrating in perfect harmony with divine glory.png",
+    "title": "Eternal Worship Is A Perfect Quantum Residence All Creation Vibrating In Perfect Harmony With Divine Glory",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "exchange-connection-model",
+    "file": "exchange-connection-model.svg",
+    "src": "images/exchange-connection-model.svg",
+    "thumb": "images/exchange-connection-model.svg",
+    "title": "Exchange-Connection-Model",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "exploring-convergent-spiritual-and-physical-laws",
+    "file": "exploring convergent spiritual and physical laws.png",
+    "src": "images/exploring convergent spiritual and physical laws.png",
+    "thumb": "images/exploring convergent spiritual and physical laws.png",
+    "title": "Exploring Convergent Spiritual And Physical Laws",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-06"
+  },
+  {
+    "id": "faith-and-knowledge-integration-matrix",
+    "file": "faith and knowledge integration matrix.png",
+    "src": "images/faith and knowledge integration matrix.png",
+    "thumb": "images/faith and knowledge integration matrix.png",
+    "title": "Faith And Knowledge Integration Matrix",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "faith-response-function",
+    "file": "faith response function.png",
+    "src": "images/faith response function.png",
+    "thumb": "images/faith response function.png",
+    "title": "Faith Response Function",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "faith-network",
+    "file": "faith-network.svg",
+    "src": "images/faith-network.svg",
+    "thumb": "images/faith-network.svg",
+    "title": "Faith-Network",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "faith-response",
+    "file": "faith-response.svg",
+    "src": "images/faith-response.svg",
+    "thumb": "images/faith-response.svg",
+    "title": "Faith-Response",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "fall-entropy-increasing-and-spiritual-decay-the-thermodynamic-consequences-of-sin",
+    "file": "Fall entropy increasing and spiritual decay the thermodynamic consequences of sin.png",
+    "src": "images/Fall entropy increasing and spiritual decay the thermodynamic consequences of sin.png",
+    "thumb": "images/Fall entropy increasing and spiritual decay the thermodynamic consequences of sin.png",
+    "title": "Fall Entropy Increasing And Spiritual Decay The Thermodynamic Consequences Of Sin",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "fellowshipped-as-a-quantum-error-correction-believers-maintaining-each-other-s-spiritual-coherence",
+    "file": "fellowshipped as a quantum error correction believers maintaining each other's spiritual coherence.png",
+    "src": "images/fellowshipped as a quantum error correction believers maintaining each other's spiritual coherence.png",
+    "thumb": "images/fellowshipped as a quantum error correction believers maintaining each other's spiritual coherence.png",
+    "title": "Fellowshipped As A Quantum Error Correction Believers Maintaining Each Other'S Spiritual Coherence",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "forensic-probability-analysis",
+    "file": "forensic probability analysis.png",
+    "src": "images/forensic probability analysis.png",
+    "thumb": "images/forensic probability analysis.png",
+    "title": "Forensic Probability Analysis",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "free-will-and-entropy",
+    "file": "Free will and entropy.png",
+    "src": "images/Free will and entropy.png",
+    "thumb": "images/Free will and entropy.png",
+    "title": "Free Will And Entropy",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "glorification-perfect-quantum-entanglement-the-final-state-eternal-coherence-with-divine-nature",
+    "file": "Glorification perfect quantum entanglement the final state Eternal coherence with divine nature.png",
+    "src": "images/Glorification perfect quantum entanglement the final state Eternal coherence with divine nature.png",
+    "thumb": "images/Glorification perfect quantum entanglement the final state Eternal coherence with divine nature.png",
+    "title": "Glorification Perfect Quantum Entanglement The Final State Eternal Coherence With Divine Nature",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "god-in-the-flight-attendant-you-know-gives-her-an-appropriate-amount-of-comfort-meanwhile-our-boy-krishna-is-back-in-his-seatis-light",
+    "file": "God in the flight attendant you know gives her an appropriate amount of comfort meanwhile our boy Krishna is back in his seatis Light.png",
+    "src": "images/God in the flight attendant you know gives her an appropriate amount of comfort meanwhile our boy Krishna is back in his seatis Light.png",
+    "thumb": "images/God in the flight attendant you know gives her an appropriate amount of comfort meanwhile our boy Krishna is back in his seatis Light.png",
+    "title": "God In The Flight Attendant You Know Gives Her An Appropriate Amount Of Comfort Meanwhile Our Boy Krishna Is Back In His Seatis Light",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "godelian-incompleteness-visualization",
+    "file": "godelian-incompleteness-visualization.svg",
+    "src": "images/godelian-incompleteness-visualization.svg",
+    "thumb": "images/godelian-incompleteness-visualization.svg",
+    "title": "Godelian-Incompleteness-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "grace-versus-entropy-graduation-field",
+    "file": "Grace versus entropy graduation field.png",
+    "src": "images/Grace versus entropy graduation field.png",
+    "thumb": "images/Grace versus entropy graduation field.png",
+    "title": "Grace Versus Entropy Graduation Field",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-06"
+  },
+  {
+    "id": "grace-entropy-field",
+    "file": "grace-entropy-field.svg",
+    "src": "images/grace-entropy-field.svg",
+    "thumb": "images/grace-entropy-field.svg",
+    "title": "Grace-Entropy-Field",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "grace-function-visualization",
+    "file": "grace-function-visualization.svg",
+    "src": "images/grace-function-visualization.svg",
+    "thumb": "images/grace-function-visualization.svg",
+    "title": "Grace-Function-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "grace-function",
+    "file": "grace-function.svg",
+    "src": "images/grace-function.svg",
+    "thumb": "images/grace-function.svg",
+    "title": "Grace-Function",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "grace-negentropy",
+    "file": "grace-negentropy.svg",
+    "src": "images/grace-negentropy.svg",
+    "thumb": "images/grace-negentropy.svg",
+    "title": "Grace-Negentropy",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "gravitational-spiritual-dynamics",
+    "file": "gravitational-spiritual-dynamics.svg",
+    "src": "images/gravitational-spiritual-dynamics.svg",
+    "thumb": "images/gravitational-spiritual-dynamics.svg",
+    "title": "Gravitational-Spiritual-Dynamics",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "gravitational-spiritual-mapping",
+    "file": "gravitational-spiritual-mapping.svg",
+    "src": "images/gravitational-spiritual-mapping.svg",
+    "thumb": "images/gravitational-spiritual-mapping.svg",
+    "title": "Gravitational-Spiritual-Mapping",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "gravity-consciousness-svg",
+    "file": "gravity-consciousness-svg.svg",
+    "src": "images/gravity-consciousness-svg.svg",
+    "thumb": "images/gravity-consciousness-svg.svg",
+    "title": "Gravity-Consciousness-Svg",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "gravity-sin-parallel",
+    "file": "gravity-sin-parallel.svg",
+    "src": "images/gravity-sin-parallel.svg",
+    "thumb": "images/gravity-sin-parallel.svg",
+    "title": "Gravity-Sin-Parallel",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "gravity-sin-visual-1",
+    "file": "gravity-sin-visual-1.svg",
+    "src": "images/gravity-sin-visual-1.svg",
+    "thumb": "images/gravity-sin-visual-1.svg",
+    "title": "Gravity-Sin-Visual-1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "gravity-sin-visual-2",
+    "file": "gravity-sin-visual-2.svg",
+    "src": "images/gravity-sin-visual-2.svg",
+    "thumb": "images/gravity-sin-visual-2.svg",
+    "title": "Gravity-Sin-Visual-2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "historical-evidence-analysis",
+    "file": "Historical evidence analysis.png",
+    "src": "images/Historical evidence analysis.png",
+    "thumb": "images/Historical evidence analysis.png",
+    "title": "Historical Evidence Analysis",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "holy-spirit-chrome-entanglement-non-local-spiritual-connection",
+    "file": "Holy Spirit chrome entanglement non local spiritual connection.png",
+    "src": "images/Holy Spirit chrome entanglement non local spiritual connection.png",
+    "thumb": "images/Holy Spirit chrome entanglement non local spiritual connection.png",
+    "title": "Holy Spirit Chrome Entanglement Non Local Spiritual Connection",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "holy-spirit-filled-dark-field-1",
+    "file": "Holy Spirit filled dark field (1).png",
+    "src": "images/Holy Spirit filled dark field (1).png",
+    "thumb": "images/Holy Spirit filled dark field (1).png",
+    "title": "Holy Spirit Filled Dark Field (1)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "holy-spirit-filled-dark-field-original",
+    "file": "Holy Spirit filled dark field (Original).png",
+    "src": "images/Holy Spirit filled dark field (Original).png",
+    "thumb": "images/Holy Spirit filled dark field (Original).png",
+    "title": "Holy Spirit Filled Dark Field (Original)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "holy-spirit-filled-dark-field",
+    "file": "Holy Spirit filled dark field.png",
+    "src": "images/Holy Spirit filled dark field.png",
+    "thumb": "images/Holy Spirit filled dark field.png",
+    "title": "Holy Spirit Filled Dark Field",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "holy-sprit",
+    "file": "Holy Sprit.png",
+    "src": "images/Holy Sprit.png",
+    "thumb": "images/Holy Sprit.png",
+    "title": "Holy Sprit",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "hypothesis-validation-model",
+    "file": "hypothesis-validation-model.svg",
+    "src": "images/hypothesis-validation-model.svg",
+    "thumb": "images/hypothesis-validation-model.svg",
+    "title": "Hypothesis-Validation-Model",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "improved-physics-theology-parallels",
+    "file": "improved-physics-theology-parallels.svg",
+    "src": "images/improved-physics-theology-parallels.svg",
+    "thumb": "images/improved-physics-theology-parallels.svg",
+    "title": "Improved-Physics-Theology-Parallels",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "in-state-continuing-across-any-distance",
+    "file": "In state continuing Across any distance.png",
+    "src": "images/In state continuing Across any distance.png",
+    "thumb": "images/In state continuing Across any distance.png",
+    "title": "In State Continuing Across Any Distance",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "info-theory-visual",
+    "file": "info-theory-visual.svg",
+    "src": "images/info-theory-visual.svg",
+    "thumb": "images/info-theory-visual.svg",
+    "title": "Info-Theory-Visual",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "intelligence-and-divine-concepts-original",
+    "file": "intelligence and divine concepts (Original).png",
+    "src": "images/intelligence and divine concepts (Original).png",
+    "thumb": "images/intelligence and divine concepts (Original).png",
+    "title": "Intelligence And Divine Concepts (Original)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "intelligence-and-divine-concepts",
+    "file": "intelligence and divine concepts.png",
+    "src": "images/intelligence and divine concepts.png",
+    "thumb": "images/intelligence and divine concepts.png",
+    "title": "Intelligence And Divine Concepts",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "interconnected-spiritual-networks",
+    "file": "interconnected-spiritual-networks.svg",
+    "src": "images/interconnected-spiritual-networks.svg",
+    "thumb": "images/interconnected-spiritual-networks.svg",
+    "title": "Interconnected-Spiritual-Networks",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "interference-patterns-with-truth-waves-meet-1",
+    "file": "interference patterns with truth waves meet 1.png",
+    "src": "images/interference patterns with truth waves meet 1.png",
+    "thumb": "images/interference patterns with truth waves meet 1.png",
+    "title": "Interference Patterns With Truth Waves Meet 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "invisible-thread-illustration",
+    "file": "invisible-thread-illustration.svg",
+    "src": "images/invisible-thread-illustration.svg",
+    "thumb": "images/invisible-thread-illustration.svg",
+    "title": "Invisible-Thread-Illustration",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "jesus-christ-the-unifying-principle-2",
+    "file": "Jesus Christ the unifying principle 2.png",
+    "src": "images/Jesus Christ the unifying principle 2.png",
+    "thumb": "images/Jesus Christ the unifying principle 2.png",
+    "title": "Jesus Christ The Unifying Principle 2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "jesus-christ",
+    "file": "Jesus Christ.png",
+    "src": "images/Jesus Christ.png",
+    "thumb": "images/Jesus Christ.png",
+    "title": "Jesus Christ",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "judgment-as-a-quantum-state-measurement-perfect-divine-observation-collapses-every-soul-s-eternal-destiny",
+    "file": "Judgment as a quantum state measurement perfect divine observation collapses every soul's eternal destiny.png",
+    "src": "images/Judgment as a quantum state measurement perfect divine observation collapses every soul's eternal destiny.png",
+    "thumb": "images/Judgment as a quantum state measurement perfect divine observation collapses every soul's eternal destiny.png",
+    "title": "Judgment As A Quantum State Measurement Perfect Divine Observation Collapses Every Soul'S Eternal Destiny",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "karma-function",
+    "file": "karma-function.svg",
+    "src": "images/karma-function.svg",
+    "thumb": "images/karma-function.svg",
+    "title": "Karma-Function",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "law-2-gravity-and-sin",
+    "file": "Law 2 Gravity and sin.png",
+    "src": "images/Law 2 Gravity and sin.png",
+    "thumb": "images/Law 2 Gravity and sin.png",
+    "title": "Law 2 Gravity And Sin",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-24"
+  },
+  {
+    "id": "law-3-conservation-of-spiritual-energy",
+    "file": "law 3 conservation of spiritual energy.png",
+    "src": "images/law 3 conservation of spiritual energy.png",
+    "thumb": "images/law 3 conservation of spiritual energy.png",
+    "title": "Law 3 Conservation Of Spiritual Energy",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-24"
+  },
+  {
+    "id": "law-3-the-conservation-of",
+    "file": "law 3 the conservation of.png",
+    "src": "images/law 3 the conservation of.png",
+    "thumb": "images/law 3 the conservation of.png",
+    "title": "Law 3 The Conservation Of",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-24"
+  },
+  {
+    "id": "law-5",
+    "file": "Law 5.png",
+    "src": "images/Law 5.png",
+    "thumb": "images/Law 5.png",
+    "title": "Law 5",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-24"
+  },
+  {
+    "id": "law-concept-distribution",
+    "file": "law_concept_distribution.png",
+    "src": "images/law_concept_distribution.png",
+    "thumb": "images/law_concept_distribution.png",
+    "title": "Law Concept Distribution",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "light-darkness-image",
+    "file": "light-darkness-image.svg",
+    "src": "images/light-darkness-image.svg",
+    "thumb": "images/light-darkness-image.svg",
+    "title": "Light-Darkness-Image",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "light-darkness-truth",
+    "file": "light-darkness-truth.svg",
+    "src": "images/light-darkness-truth.svg",
+    "thumb": "images/light-darkness-truth.svg",
+    "title": "Light-Darkness-Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "light-spectrum-truth",
+    "file": "light-spectrum-truth.svg",
+    "src": "images/light-spectrum-truth.svg",
+    "thumb": "images/light-spectrum-truth.svg",
+    "title": "Light-Spectrum-Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "light-truth-constant",
+    "file": "light-truth-constant.svg",
+    "src": "images/light-truth-constant.svg",
+    "thumb": "images/light-truth-constant.svg",
+    "title": "Light-Truth-Constant",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-clean",
+    "file": "master-equation-clean.svg",
+    "src": "images/master-equation-clean.svg",
+    "thumb": "images/master-equation-clean.svg",
+    "title": "Master-Equation-Clean",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-elegant",
+    "file": "master-equation-elegant.svg",
+    "src": "images/master-equation-elegant.svg",
+    "thumb": "images/master-equation-elegant.svg",
+    "title": "Master-Equation-Elegant",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-exact-match",
+    "file": "master-equation-exact-match.svg",
+    "src": "images/master-equation-exact-match.svg",
+    "thumb": "images/master-equation-exact-match.svg",
+    "title": "Master-Equation-Exact-Match",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-final-match",
+    "file": "master-equation-final-match.svg",
+    "src": "images/master-equation-final-match.svg",
+    "thumb": "images/master-equation-final-match.svg",
+    "title": "Master-Equation-Final-Match",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-final",
+    "file": "master-equation-final.svg",
+    "src": "images/master-equation-final.svg",
+    "thumb": "images/master-equation-final.svg",
+    "title": "Master-Equation-Final",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-horizontal",
+    "file": "master-equation-horizontal.svg",
+    "src": "images/master-equation-horizontal.svg",
+    "thumb": "images/master-equation-horizontal.svg",
+    "title": "Master-Equation-Horizontal",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-latex-improved",
+    "file": "master-equation-latex-improved.svg",
+    "src": "images/master-equation-latex-improved.svg",
+    "thumb": "images/master-equation-latex-improved.svg",
+    "title": "Master-Equation-Latex-Improved",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-latex-style",
+    "file": "master-equation-latex-style.svg",
+    "src": "images/master-equation-latex-style.svg",
+    "thumb": "images/master-equation-latex-style.svg",
+    "title": "Master-Equation-Latex-Style",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-vertical",
+    "file": "master-equation-vertical.svg",
+    "src": "images/master-equation-vertical.svg",
+    "thumb": "images/master-equation-vertical.svg",
+    "title": "Master-Equation-Vertical",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-visual",
+    "file": "master-equation-visual.svg",
+    "src": "images/master-equation-visual.svg",
+    "thumb": "images/master-equation-visual.svg",
+    "title": "Master-Equation-Visual",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-visualization-1",
+    "file": "master-equation-visualization (1).svg",
+    "src": "images/master-equation-visualization (1).svg",
+    "thumb": "images/master-equation-visualization (1).svg",
+    "title": "Master-Equation-Visualization (1)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-visualization-2",
+    "file": "master-equation-visualization (2).svg",
+    "src": "images/master-equation-visualization (2).svg",
+    "thumb": "images/master-equation-visualization (2).svg",
+    "title": "Master-Equation-Visualization (2)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-visualization-revised",
+    "file": "master-equation-visualization-revised.svg",
+    "src": "images/master-equation-visualization-revised.svg",
+    "thumb": "images/master-equation-visualization-revised.svg",
+    "title": "Master-Equation-Visualization-Revised",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation-visualization",
+    "file": "master-equation-visualization.svg",
+    "src": "images/master-equation-visualization.svg",
+    "thumb": "images/master-equation-visualization.svg",
+    "title": "Master-Equation-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "master-equation",
+    "file": "master-equation.svg",
+    "src": "images/master-equation.svg",
+    "thumb": "images/master-equation.svg",
+    "title": "Master-Equation",
+    "caption": "The Master Equation visualization showing the complete unified framework that mathematically describes the salvation narrative through 10 integrated variables.",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "mathematical-dance-between-spirit-and-matter",
+    "file": "Mathematical Dance between spirit and matter.png",
+    "src": "images/Mathematical Dance between spirit and matter.png",
+    "thumb": "images/Mathematical Dance between spirit and matter.png",
+    "title": "Mathematical Dance Between Spirit And Matter",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "negentropy-grace",
+    "file": "negentropy-grace.svg",
+    "src": "images/negentropy-grace.svg",
+    "thumb": "images/negentropy-grace.svg",
+    "title": "Negentropy-Grace",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "nuclear-spiritual-unity-1",
+    "file": "nuclear-spiritual-unity (1).svg",
+    "src": "images/nuclear-spiritual-unity (1).svg",
+    "thumb": "images/nuclear-spiritual-unity (1).svg",
+    "title": "Nuclear-Spiritual-Unity (1)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "nuclear-spiritual-unity",
+    "file": "nuclear-spiritual-unity.svg",
+    "src": "images/nuclear-spiritual-unity.svg",
+    "thumb": "images/nuclear-spiritual-unity.svg",
+    "title": "Nuclear-Spiritual-Unity",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "nucleus-bonding-enhanced-contrast",
+    "file": "nucleus-bonding-enhanced-contrast.svg",
+    "src": "images/nucleus-bonding-enhanced-contrast.svg",
+    "thumb": "images/nucleus-bonding-enhanced-contrast.svg",
+    "title": "Nucleus-Bonding-Enhanced-Contrast",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "nucleus-bonding-refined",
+    "file": "nucleus-bonding-refined.svg",
+    "src": "images/nucleus-bonding-refined.svg",
+    "thumb": "images/nucleus-bonding-refined.svg",
+    "title": "Nucleus-Bonding-Refined",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "nutrition-is-perfect-as-quantum-order-0-entropy-infinite-coherence-eternal-harmony",
+    "file": "Nutrition is perfect as quantum order 0 entropy Infinite coherence eternal harmony.png",
+    "src": "images/Nutrition is perfect as quantum order 0 entropy Infinite coherence eternal harmony.png",
+    "thumb": "images/Nutrition is perfect as quantum order 0 entropy Infinite coherence eternal harmony.png",
+    "title": "Nutrition Is Perfect As Quantum Order 0 Entropy Infinite Coherence Eternal Harmony",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "observer-effects-in-comparison",
+    "file": "Observer effects in comparison.png",
+    "src": "images/Observer effects in comparison.png",
+    "thumb": "images/Observer effects in comparison.png",
+    "title": "Observer Effects In Comparison",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "observer-effect-prayer",
+    "file": "observer-effect-prayer.svg",
+    "src": "images/observer-effect-prayer.svg",
+    "thumb": "images/observer-effect-prayer.svg",
+    "title": "Observer-Effect-Prayer",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "obsidian-annotation-gui",
+    "file": "obsidian-annotation-gui.svg",
+    "src": "images/obsidian-annotation-gui.svg",
+    "thumb": "images/obsidian-annotation-gui.svg",
+    "title": "Obsidian-Annotation-Gui",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "obsidian-annotation-workflow",
+    "file": "obsidian-annotation-workflow.svg",
+    "src": "images/obsidian-annotation-workflow.svg",
+    "thumb": "images/obsidian-annotation-workflow.svg",
+    "title": "Obsidian-Annotation-Workflow",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "obsidian-g1f5pa0y4n",
+    "file": "Obsidian_G1f5Pa0Y4n.png",
+    "src": "images/Obsidian_G1f5Pa0Y4n.png",
+    "thumb": "images/Obsidian_G1f5Pa0Y4n.png",
+    "title": "Obsidian G1F5Pa0Y4N",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-01"
+  },
+  {
+    "id": "order-chaos",
+    "file": "order chaos.png",
+    "src": "images/order chaos.png",
+    "thumb": "images/order chaos.png",
+    "title": "Order Chaos",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physical-gravity-spiritual-truth-original",
+    "file": "Physical gravity spiritual truth (Original).png",
+    "src": "images/Physical gravity spiritual truth (Original).png",
+    "thumb": "images/Physical gravity spiritual truth (Original).png",
+    "title": "Physical Gravity Spiritual Truth (Original)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physical-gravity-spiritual-truth-mathematics-1",
+    "file": "Physical gravity spiritual truth mathematics (1).png",
+    "src": "images/Physical gravity spiritual truth mathematics (1).png",
+    "thumb": "images/Physical gravity spiritual truth mathematics (1).png",
+    "title": "Physical Gravity Spiritual Truth Mathematics (1)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "physical-gravity-spiritual-truth-mathematics-original",
+    "file": "Physical gravity spiritual truth mathematics (Original).png",
+    "src": "images/Physical gravity spiritual truth mathematics (Original).png",
+    "thumb": "images/Physical gravity spiritual truth mathematics (Original).png",
+    "title": "Physical Gravity Spiritual Truth Mathematics (Original)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physical-gravity-spiritual-truth-mathematics",
+    "file": "Physical gravity spiritual truth mathematics.png",
+    "src": "images/Physical gravity spiritual truth mathematics.png",
+    "thumb": "images/Physical gravity spiritual truth mathematics.png",
+    "title": "Physical Gravity Spiritual Truth Mathematics",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "physical-gravity-spiritual-truth",
+    "file": "Physical gravity spiritual truth.png",
+    "src": "images/Physical gravity spiritual truth.png",
+    "thumb": "images/Physical gravity spiritual truth.png",
+    "title": "Physical Gravity Spiritual Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "physical-law-2-divine-truth",
+    "file": "physical law 2 Divine truth.png",
+    "src": "images/physical law 2 Divine truth.png",
+    "thumb": "images/physical law 2 Divine truth.png",
+    "title": "Physical Law 2 Divine Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physical-law-all-the-way-to-spiritual-truth-original",
+    "file": "Physical law all the way to spiritual truth (Original).png",
+    "src": "images/Physical law all the way to spiritual truth (Original).png",
+    "thumb": "images/Physical law all the way to spiritual truth (Original).png",
+    "title": "Physical Law All The Way To Spiritual Truth (Original)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physical-law-all-the-way-to-spiritual-truth",
+    "file": "Physical law all the way to spiritual truth.png",
+    "src": "images/Physical law all the way to spiritual truth.png",
+    "thumb": "images/Physical law all the way to spiritual truth.png",
+    "title": "Physical Law All The Way To Spiritual Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-18"
+  },
+  {
+    "id": "physical-law-quantum-reality-spiritual-truth",
+    "file": "Physical law quantum reality spiritual truth.png",
+    "src": "images/Physical law quantum reality spiritual truth.png",
+    "thumb": "images/Physical law quantum reality spiritual truth.png",
+    "title": "Physical Law Quantum Reality Spiritual Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physical-laws-and-spiritual-truth",
+    "file": "Physical laws and spiritual truth.png",
+    "src": "images/Physical laws and spiritual truth.png",
+    "thumb": "images/Physical laws and spiritual truth.png",
+    "title": "Physical Laws And Spiritual Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physical-laws-divine-reality",
+    "file": "physical laws divine reality.png",
+    "src": "images/physical laws divine reality.png",
+    "thumb": "images/physical laws divine reality.png",
+    "title": "Physical Laws Divine Reality",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physical-laws-spiritual-laws",
+    "file": "Physical laws spiritual laws.png",
+    "src": "images/Physical laws spiritual laws.png",
+    "thumb": "images/Physical laws spiritual laws.png",
+    "title": "Physical Laws Spiritual Laws",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physical-laws-spiritual-truth",
+    "file": "Physical laws spiritual truth.png",
+    "src": "images/Physical laws spiritual truth.png",
+    "thumb": "images/Physical laws spiritual truth.png",
+    "title": "Physical Laws Spiritual Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "physics-section-from-column-to-cosmic-skills",
+    "file": "Physics section from column to cosmic skills.png",
+    "src": "images/Physics section from column to cosmic skills.png",
+    "thumb": "images/Physics section from column to cosmic skills.png",
+    "title": "Physics Section From Column To Cosmic Skills",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-24"
+  },
+  {
+    "id": "physics-spirituality-visual-journey",
+    "file": "physics-spirituality-visual-journey.svg",
+    "src": "images/physics-spirituality-visual-journey.svg",
+    "thumb": "images/physics-spirituality-visual-journey.svg",
+    "title": "Physics-Spirituality-Visual-Journey",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "physics-theology-parallels",
+    "file": "physics-theology-parallels.svg",
+    "src": "images/physics-theology-parallels.svg",
+    "thumb": "images/physics-theology-parallels.svg",
+    "title": "Physics-Theology-Parallels",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "prayer-as-quantum-communcation-instataneous-encrypted",
+    "file": "Prayer as Quantum Communcation Instataneous Encrypted .png",
+    "src": "images/Prayer as Quantum Communcation Instataneous Encrypted .png",
+    "thumb": "images/Prayer as Quantum Communcation Instataneous Encrypted .png",
+    "title": "Prayer As Quantum Communcation Instataneous Encrypted ",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "price-is-the-first-observer-the-quantum-originally-original-of-reality",
+    "file": "Price is the first observer the quantum originally original of reality.png",
+    "src": "images/Price is the first observer the quantum originally original of reality.png",
+    "thumb": "images/Price is the first observer the quantum originally original of reality.png",
+    "title": "Price Is The First Observer The Quantum Originally Original Of Reality",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "progressive-sanctification-quantum-coherence-growth-over-spiritual-lifetime-1",
+    "file": "Progressive sanctification Quantum coherence growth over spiritual lifetime (1).png",
+    "src": "images/Progressive sanctification Quantum coherence growth over spiritual lifetime (1).png",
+    "thumb": "images/Progressive sanctification Quantum coherence growth over spiritual lifetime (1).png",
+    "title": "Progressive Sanctification Quantum Coherence Growth Over Spiritual Lifetime (1)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "progressive-sanctification-quantum-coherence-growth-over-spiritual-lifetime",
+    "file": "Progressive sanctification quantum coherence growth over spiritual lifetime.png",
+    "src": "images/Progressive sanctification quantum coherence growth over spiritual lifetime.png",
+    "thumb": "images/Progressive sanctification quantum coherence growth over spiritual lifetime.png",
+    "title": "Progressive Sanctification Quantum Coherence Growth Over Spiritual Lifetime",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "prophecy-quantum-correlation",
+    "file": "Prophecy quantum correlation.png",
+    "src": "images/Prophecy quantum correlation.png",
+    "thumb": "images/Prophecy quantum correlation.png",
+    "title": "Prophecy Quantum Correlation",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "quantum-absurdity-progression-graph",
+    "file": "quantum absurdity progression graph.png",
+    "src": "images/quantum absurdity progression graph.png",
+    "thumb": "images/quantum absurdity progression graph.png",
+    "title": "Quantum Absurdity Progression Graph",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "quantum-choice-fields",
+    "file": "Quantum choice fields.png",
+    "src": "images/Quantum choice fields.png",
+    "thumb": "images/Quantum choice fields.png",
+    "title": "Quantum Choice Fields",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "quantum-choice-tree-diagram",
+    "file": "Quantum choice tree diagram.png",
+    "src": "images/Quantum choice tree diagram.png",
+    "thumb": "images/Quantum choice tree diagram.png",
+    "title": "Quantum Choice Tree Diagram",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "quantum-classical-bridge-graph",
+    "file": "quantum classical bridge graph.png",
+    "src": "images/quantum classical bridge graph.png",
+    "thumb": "images/quantum classical bridge graph.png",
+    "title": "Quantum Classical Bridge Graph",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "quantum-consciousness-interface",
+    "file": "quantum consciousness interface.png",
+    "src": "images/quantum consciousness interface.png",
+    "thumb": "images/quantum consciousness interface.png",
+    "title": "Quantum Consciousness Interface",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "quantum-correlation-graph",
+    "file": "Quantum correlation graph.png",
+    "src": "images/Quantum correlation graph.png",
+    "thumb": "images/Quantum correlation graph.png",
+    "title": "Quantum Correlation Graph",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "quantum-entanglement-as-a-spiritual-connection-1",
+    "file": "Quantum entanglement as a spiritual connection 1.png",
+    "src": "images/Quantum entanglement as a spiritual connection 1.png",
+    "thumb": "images/Quantum entanglement as a spiritual connection 1.png",
+    "title": "Quantum Entanglement As A Spiritual Connection 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "quantum-free-will-probability-map",
+    "file": "Quantum free will Probability map.png",
+    "src": "images/Quantum free will Probability map.png",
+    "thumb": "images/Quantum free will Probability map.png",
+    "title": "Quantum Free Will Probability Map",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-06"
+  },
+  {
+    "id": "quantum-information-transfer",
+    "file": "Quantum information transfer.png",
+    "src": "images/Quantum information transfer.png",
+    "thumb": "images/Quantum information transfer.png",
+    "title": "Quantum Information Transfer",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "quantum-spiritual-interface-mapping-1",
+    "file": "Quantum spiritual interface mapping 1.png",
+    "src": "images/Quantum spiritual interface mapping 1.png",
+    "thumb": "images/Quantum spiritual interface mapping 1.png",
+    "title": "Quantum Spiritual Interface Mapping 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-01"
+  },
+  {
+    "id": "quantum-spiritual-interface-mapping",
+    "file": "Quantum spiritual interface mapping.png",
+    "src": "images/Quantum spiritual interface mapping.png",
+    "thumb": "images/Quantum spiritual interface mapping.png",
+    "title": "Quantum Spiritual Interface Mapping",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "quantum-state-choices-made",
+    "file": "quantum state choices made.png",
+    "src": "images/quantum state choices made.png",
+    "thumb": "images/quantum state choices made.png",
+    "title": "Quantum State Choices Made",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "quantum-time-versus-realistic-time",
+    "file": "Quantum time versus realistic time.png",
+    "src": "images/Quantum time versus realistic time.png",
+    "thumb": "images/Quantum time versus realistic time.png",
+    "title": "Quantum Time Versus Realistic Time",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "quantum-trinity-architecture",
+    "file": "Quantum Trinity architecture.png",
+    "src": "images/Quantum Trinity architecture.png",
+    "thumb": "images/Quantum Trinity architecture.png",
+    "title": "Quantum Trinity Architecture",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "quantum-tunneling-in-resurrection-breaking-the-impossible-barrier",
+    "file": "Quantum tunneling In resurrection breaking the impossible barrier.png",
+    "src": "images/Quantum tunneling In resurrection breaking the impossible barrier.png",
+    "thumb": "images/Quantum tunneling In resurrection breaking the impossible barrier.png",
+    "title": "Quantum Tunneling In Resurrection Breaking The Impossible Barrier",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "quantum-bridge-equation",
+    "file": "quantum-bridge-equation.svg",
+    "src": "images/quantum-bridge-equation.svg",
+    "thumb": "images/quantum-bridge-equation.svg",
+    "title": "Quantum-Bridge-Equation",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-choice-field",
+    "file": "quantum-choice-field.svg",
+    "src": "images/quantum-choice-field.svg",
+    "thumb": "images/quantum-choice-field.svg",
+    "title": "Quantum-Choice-Field",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-choice-revised",
+    "file": "quantum-choice-revised.svg",
+    "src": "images/quantum-choice-revised.svg",
+    "thumb": "images/quantum-choice-revised.svg",
+    "title": "Quantum-Choice-Revised",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-choice-tree",
+    "file": "quantum-choice-tree.svg",
+    "src": "images/quantum-choice-tree.svg",
+    "thumb": "images/quantum-choice-tree.svg",
+    "title": "Quantum-Choice-Tree",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-choice",
+    "file": "quantum-choice.svg",
+    "src": "images/quantum-choice.svg",
+    "thumb": "images/quantum-choice.svg",
+    "title": "Quantum-Choice",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-consciousness-visual",
+    "file": "quantum-consciousness-visual.svg",
+    "src": "images/quantum-consciousness-visual.svg",
+    "thumb": "images/quantum-consciousness-visual.svg",
+    "title": "Quantum-Consciousness-Visual",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-dive-illustration",
+    "file": "quantum-dive-illustration.svg",
+    "src": "images/quantum-dive-illustration.svg",
+    "thumb": "images/quantum-dive-illustration.svg",
+    "title": "Quantum-Dive-Illustration",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-entanglement-community",
+    "file": "quantum-entanglement-community.svg",
+    "src": "images/quantum-entanglement-community.svg",
+    "thumb": "images/quantum-entanglement-community.svg",
+    "title": "Quantum-Entanglement-Community",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-free-will-wave",
+    "file": "quantum-free-will-wave.svg",
+    "src": "images/quantum-free-will-wave.svg",
+    "thumb": "images/quantum-free-will-wave.svg",
+    "title": "Quantum-Free-Will-Wave",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-resurrection",
+    "file": "quantum-resurrection.svg",
+    "src": "images/quantum-resurrection.svg",
+    "thumb": "images/quantum-resurrection.svg",
+    "title": "Quantum-Resurrection",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-soul-visualization",
+    "file": "quantum-soul-visualization.svg",
+    "src": "images/quantum-soul-visualization.svg",
+    "thumb": "images/quantum-soul-visualization.svg",
+    "title": "Quantum-Soul-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-spiritual-interface-mapping",
+    "file": "Quantum-Spiritual Interface Mapping.png",
+    "src": "images/Quantum-Spiritual Interface Mapping.png",
+    "thumb": "images/Quantum-Spiritual Interface Mapping.png",
+    "title": "Quantum-Spiritual Interface Mapping",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "quantum-spiritual-binding",
+    "file": "quantum-spiritual-binding.svg",
+    "src": "images/quantum-spiritual-binding.svg",
+    "thumb": "images/quantum-spiritual-binding.svg",
+    "title": "Quantum-Spiritual-Binding",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-spiritual-diagram",
+    "file": "quantum-spiritual-diagram.svg",
+    "src": "images/quantum-spiritual-diagram.svg",
+    "thumb": "images/quantum-spiritual-diagram.svg",
+    "title": "Quantum-Spiritual-Diagram",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-spiritual-series",
+    "file": "quantum-spiritual-series.svg",
+    "src": "images/quantum-spiritual-series.svg",
+    "thumb": "images/quantum-spiritual-series.svg",
+    "title": "Quantum-Spiritual-Series",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-spiritual-visualization",
+    "file": "quantum-spiritual-visualization.svg",
+    "src": "images/quantum-spiritual-visualization.svg",
+    "thumb": "images/quantum-spiritual-visualization.svg",
+    "title": "Quantum-Spiritual-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-trinity-spiral",
+    "file": "quantum-trinity-spiral.svg",
+    "src": "images/quantum-trinity-spiral.svg",
+    "thumb": "images/quantum-trinity-spiral.svg",
+    "title": "Quantum-Trinity-Spiral",
+    "caption": "# Quantum Trinity Spiral\n\nRevolutionary visualization combining Trinity doctrine with quantum field theory, demonstrating three-person unity through quantum entanglement.",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "quantum-uncertainty-visual",
+    "file": "quantum-uncertainty-visual.svg",
+    "src": "images/quantum-uncertainty-visual.svg",
+    "thumb": "images/quantum-uncertainty-visual.svg",
+    "title": "Quantum-Uncertainty-Visual",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "qutamn-choice",
+    "file": "Qutamn Choice.png",
+    "src": "images/Qutamn Choice.png",
+    "thumb": "images/Qutamn Choice.png",
+    "title": "Qutamn Choice",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "redemption-quantum-coherence-restoration-jesus-reverses-enthalpy-and-heals-quantum-entanglement",
+    "file": "Redemption quantum coherence restoration Jesus reverses enthalpy and heals quantum entanglement.png",
+    "src": "images/Redemption quantum coherence restoration Jesus reverses enthalpy and heals quantum entanglement.png",
+    "thumb": "images/Redemption quantum coherence restoration Jesus reverses enthalpy and heals quantum entanglement.png",
+    "title": "Redemption Quantum Coherence Restoration Jesus Reverses Enthalpy And Heals Quantum Entanglement",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "redemption-quantum-coherence-restoration-jesus-reverses-entropy-and-helasquantum-entanglement",
+    "file": "Redemption quantum coherence restoration Jesus reverses Entropy and HELASquantum entanglement.png",
+    "src": "images/Redemption quantum coherence restoration Jesus reverses Entropy and HELASquantum entanglement.png",
+    "thumb": "images/Redemption quantum coherence restoration Jesus reverses Entropy and HELASquantum entanglement.png",
+    "title": "Redemption Quantum Coherence Restoration Jesus Reverses Entropy And Helasquantum Entanglement",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "redemptive-momentum-vector",
+    "file": "redemptive-momentum-vector.svg",
+    "src": "images/redemptive-momentum-vector.svg",
+    "thumb": "images/redemptive-momentum-vector.svg",
+    "title": "Redemptive-Momentum-Vector",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "relationship-entanglement",
+    "file": "relationship-entanglement.svg",
+    "src": "images/relationship-entanglement.svg",
+    "thumb": "images/relationship-entanglement.svg",
+    "title": "Relationship-Entanglement",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "relativity",
+    "file": "Relativity.png",
+    "src": "images/Relativity.png",
+    "thumb": "images/Relativity.png",
+    "title": "Relativity",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-10"
+  },
+  {
+    "id": "renewal-entropy-reversal",
+    "file": "renewal-entropy-reversal.svg",
+    "src": "images/renewal-entropy-reversal.svg",
+    "thumb": "images/renewal-entropy-reversal.svg",
+    "title": "Renewal-Entropy-Reversal",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "renewal-paradox",
+    "file": "renewal-paradox.svg",
+    "src": "images/renewal-paradox.svg",
+    "thumb": "images/renewal-paradox.svg",
+    "title": "Renewal-Paradox",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "resurrection-factor-model",
+    "file": "resurrection-factor-model.svg",
+    "src": "images/resurrection-factor-model.svg",
+    "thumb": "images/resurrection-factor-model.svg",
+    "title": "Resurrection-Factor-Model",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "resurrection-factor",
+    "file": "resurrection-factor.svg",
+    "src": "images/resurrection-factor.svg",
+    "thumb": "images/resurrection-factor.svg",
+    "title": "Resurrection-Factor",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "resurrection-negentropy",
+    "file": "resurrection-negentropy.svg",
+    "src": "images/resurrection-negentropy.svg",
+    "thumb": "images/resurrection-negentropy.svg",
+    "title": "Resurrection-Negentropy",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "salvation-algorithm-decision-points",
+    "file": "Salvation Algorithm Decision Points.png",
+    "src": "images/Salvation Algorithm Decision Points.png",
+    "thumb": "images/Salvation Algorithm Decision Points.png",
+    "title": "Salvation Algorithm Decision Points",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "scale-domain-diagram",
+    "file": "Scale domain diagram.png",
+    "src": "images/Scale domain diagram.png",
+    "thumb": "images/Scale domain diagram.png",
+    "title": "Scale Domain Diagram",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "simplified-equation",
+    "file": "simplified-equation.svg",
+    "src": "images/simplified-equation.svg",
+    "thumb": "images/simplified-equation.svg",
+    "title": "Simplified-Equation",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "sin-and-entorpy",
+    "file": "Sin and Entorpy.png",
+    "src": "images/Sin and Entorpy.png",
+    "thumb": "images/Sin and Entorpy.png",
+    "title": "Sin And Entorpy",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "sin-entropy",
+    "file": "sin-entropy.svg",
+    "src": "images/sin-entropy.svg",
+    "thumb": "images/sin-entropy.svg",
+    "title": "Sin-Entropy",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "sin-spiritual-entropy",
+    "file": "sin-spiritual-entropy.svg",
+    "src": "images/sin-spiritual-entropy.svg",
+    "thumb": "images/sin-spiritual-entropy.svg",
+    "title": "Sin-Spiritual-Entropy",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "sin-thermodynamic-decay",
+    "file": "sin-thermodynamic-decay.svg",
+    "src": "images/sin-thermodynamic-decay.svg",
+    "thumb": "images/sin-thermodynamic-decay.svg",
+    "title": "Sin-Thermodynamic-Decay",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "six-layers-of-truth-original",
+    "file": "Six layers of truth (Original).png",
+    "src": "images/Six layers of truth (Original).png",
+    "thumb": "images/Six layers of truth (Original).png",
+    "title": "Six Layers Of Truth (Original)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "six-layers-of-truth",
+    "file": "Six layers of truth.png",
+    "src": "images/Six layers of truth.png",
+    "thumb": "images/Six layers of truth.png",
+    "title": "Six Layers Of Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "so-and-in-the-spirit-reaping-entrerase",
+    "file": "so and in the spirit reaping entrerase.png",
+    "src": "images/so and in the spirit reaping entrerase.png",
+    "thumb": "images/so and in the spirit reaping entrerase.png",
+    "title": "So And In The Spirit Reaping Entrerase",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "spiritual-coherence-vs-decoherence",
+    "file": "Spiritual Coherence vs Decoherence.png",
+    "src": "images/Spiritual Coherence vs Decoherence.png",
+    "thumb": "images/Spiritual Coherence vs Decoherence.png",
+    "title": "Spiritual Coherence Vs Decoherence",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "spiritual-decay",
+    "file": "Spiritual decay.png",
+    "src": "images/Spiritual decay.png",
+    "thumb": "images/Spiritual decay.png",
+    "title": "Spiritual Decay",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "spiritual-gravity-the-trajection-of-grace-1",
+    "file": "Spiritual gravity the trajection of Grace 1.png",
+    "src": "images/Spiritual gravity the trajection of Grace 1.png",
+    "thumb": "images/Spiritual gravity the trajection of Grace 1.png",
+    "title": "Spiritual Gravity The Trajection Of Grace 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-04"
+  },
+  {
+    "id": "spiritual-interoperability-and-decay-how-sin-accelerates-their-breakdown-of-spiritual-order",
+    "file": "Spiritual interoperability and decay how sin accelerates their breakdown of spiritual order.png",
+    "src": "images/Spiritual interoperability and decay how sin accelerates their breakdown of spiritual order.png",
+    "thumb": "images/Spiritual interoperability and decay how sin accelerates their breakdown of spiritual order.png",
+    "title": "Spiritual Interoperability And Decay How Sin Accelerates Their Breakdown Of Spiritual Order",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "spiritual-laws-and-intensity-graph",
+    "file": "spiritual laws and intensity graph.png",
+    "src": "images/spiritual laws and intensity graph.png",
+    "thumb": "images/spiritual laws and intensity graph.png",
+    "title": "Spiritual Laws And Intensity Graph",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "spiritual-laws-of-motion",
+    "file": "Spiritual laws of motion.png",
+    "src": "images/Spiritual laws of motion.png",
+    "thumb": "images/Spiritual laws of motion.png",
+    "title": "Spiritual Laws Of Motion",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-24"
+  },
+  {
+    "id": "spiritual-laws-of-physical-truth",
+    "file": "Spiritual laws of physical truth.png",
+    "src": "images/Spiritual laws of physical truth.png",
+    "thumb": "images/Spiritual laws of physical truth.png",
+    "title": "Spiritual Laws Of Physical Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "spiritual-physics-mathematical-models",
+    "file": "spiritual physics mathematical models.png",
+    "src": "images/spiritual physics mathematical models.png",
+    "thumb": "images/spiritual physics mathematical models.png",
+    "title": "Spiritual Physics Mathematical Models",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "spiritual-quantum-coherence-how-the-holy-spirit-maintains-unity-across-global-complexity",
+    "file": "Spiritual quantum coherence how the Holy Spirit maintains unity across global Complexity.png",
+    "src": "images/Spiritual quantum coherence how the Holy Spirit maintains unity across global Complexity.png",
+    "thumb": "images/Spiritual quantum coherence how the Holy Spirit maintains unity across global Complexity.png",
+    "title": "Spiritual Quantum Coherence How The Holy Spirit Maintains Unity Across Global Complexity",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "spiritual-quantum-coherence",
+    "file": "spiritual quantum coherence.png",
+    "src": "images/spiritual quantum coherence.png",
+    "thumb": "images/spiritual quantum coherence.png",
+    "title": "Spiritual Quantum Coherence",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "spiritual-refraction-how-truth-bends-through-culture-1",
+    "file": "spiritual refraction how truth bends through culture 1.png",
+    "src": "images/spiritual refraction how truth bends through culture 1.png",
+    "thumb": "images/spiritual refraction how truth bends through culture 1.png",
+    "title": "Spiritual Refraction How Truth Bends Through Culture 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "spiritual-state",
+    "file": "Spiritual state.png",
+    "src": "images/Spiritual state.png",
+    "thumb": "images/Spiritual state.png",
+    "title": "Spiritual State",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "spiritual-thermosynthesis-how-truth-transforms-like-light",
+    "file": "Spiritual thermosynthesis How truth transforms like light.png",
+    "src": "images/Spiritual thermosynthesis How truth transforms like light.png",
+    "thumb": "images/Spiritual thermosynthesis How truth transforms like light.png",
+    "title": "Spiritual Thermosynthesis How Truth Transforms Like Light",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "spiritual-decay",
+    "file": "spiritual-decay.svg",
+    "src": "images/spiritual-decay.svg",
+    "thumb": "images/spiritual-decay.svg",
+    "title": "Spiritual-Decay",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-entropy-gradient",
+    "file": "spiritual-entropy-gradient.svg",
+    "src": "images/spiritual-entropy-gradient.svg",
+    "thumb": "images/spiritual-entropy-gradient.svg",
+    "title": "Spiritual-Entropy-Gradient",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-entropy-model",
+    "file": "spiritual-entropy-model.svg",
+    "src": "images/spiritual-entropy-model.svg",
+    "thumb": "images/spiritual-entropy-model.svg",
+    "title": "Spiritual-Entropy-Model",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-escape-velocity",
+    "file": "spiritual-escape-velocity.svg",
+    "src": "images/spiritual-escape-velocity.svg",
+    "thumb": "images/spiritual-escape-velocity.svg",
+    "title": "Spiritual-Escape-Velocity",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-gravity-visualization",
+    "file": "spiritual-gravity-visualization.svg",
+    "src": "images/spiritual-gravity-visualization.svg",
+    "thumb": "images/spiritual-gravity-visualization.svg",
+    "title": "Spiritual-Gravity-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-photosynthesis",
+    "file": "spiritual-photosynthesis.svg",
+    "src": "images/spiritual-photosynthesis.svg",
+    "thumb": "images/spiritual-photosynthesis.svg",
+    "title": "Spiritual-Photosynthesis",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-physics-visuals",
+    "file": "spiritual-physics-visuals.svg",
+    "src": "images/spiritual-physics-visuals.svg",
+    "thumb": "images/spiritual-physics-visuals.svg",
+    "title": "Spiritual-Physics-Visuals",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-spectrum",
+    "file": "spiritual-spectrum.svg",
+    "src": "images/spiritual-spectrum.svg",
+    "thumb": "images/spiritual-spectrum.svg",
+    "title": "Spiritual-Spectrum",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-state-chi",
+    "file": "spiritual-state-chi.svg",
+    "src": "images/spiritual-state-chi.svg",
+    "thumb": "images/spiritual-state-chi.svg",
+    "title": "Spiritual-State-Chi",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-state-visualization",
+    "file": "spiritual-state-visualization.svg",
+    "src": "images/spiritual-state-visualization.svg",
+    "thumb": "images/spiritual-state-visualization.svg",
+    "title": "Spiritual-State-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-trajectory-quadrants-copy",
+    "file": "spiritual-trajectory-quadrants - Copy.svg",
+    "src": "images/spiritual-trajectory-quadrants - Copy.svg",
+    "thumb": "images/spiritual-trajectory-quadrants - Copy.svg",
+    "title": "Spiritual-Trajectory-Quadrants - Copy",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-trajectory-quadrants",
+    "file": "spiritual-trajectory-quadrants.svg",
+    "src": "images/spiritual-trajectory-quadrants.svg",
+    "thumb": "images/spiritual-trajectory-quadrants.svg",
+    "title": "Spiritual-Trajectory-Quadrants",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "spiritual-utility",
+    "file": "spiritual-utility.svg",
+    "src": "images/spiritual-utility.svg",
+    "thumb": "images/spiritual-utility.svg",
+    "title": "Spiritual-Utility",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "sputual-photosynthesis-truth-transforms",
+    "file": "Sputual photosynthesis truth transforms.png",
+    "src": "images/Sputual photosynthesis truth transforms.png",
+    "thumb": "images/Sputual photosynthesis truth transforms.png",
+    "title": "Sputual Photosynthesis Truth Transforms",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-05"
+  },
+  {
+    "id": "sql-nekodx6bcf",
+    "file": "SQL_nEKODx6BCf.png",
+    "src": "images/SQL_nEKODx6BCf.png",
+    "thumb": "images/SQL_nEKODx6BCf.png",
+    "title": "Sql Nekodx6Bcf",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "strange-attractor-visualization",
+    "file": "strange-attractor-visualization.svg",
+    "src": "images/strange-attractor-visualization.svg",
+    "thumb": "images/strange-attractor-visualization.svg",
+    "title": "Strange-Attractor-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "strong-force-unity-model",
+    "file": "strong-force-unity-model.svg",
+    "src": "images/strong-force-unity-model.svg",
+    "thumb": "images/strong-force-unity-model.svg",
+    "title": "Strong-Force-Unity-Model",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "strong-force-visual-1",
+    "file": "strong-force-visual-1.svg",
+    "src": "images/strong-force-visual-1.svg",
+    "thumb": "images/strong-force-visual-1.svg",
+    "title": "Strong-Force-Visual-1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "strong-force-visual-2-1",
+    "file": "strong-force-visual-2 (1).svg",
+    "src": "images/strong-force-visual-2 (1).svg",
+    "thumb": "images/strong-force-visual-2 (1).svg",
+    "title": "Strong-Force-Visual-2 (1)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "strong-force-visual-2",
+    "file": "strong-force-visual-2.svg",
+    "src": "images/strong-force-visual-2.svg",
+    "thumb": "images/strong-force-visual-2.svg",
+    "title": "Strong-Force-Visual-2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "strong-force-visual-metaphor",
+    "file": "strong-force-visual-metaphor.svg",
+    "src": "images/strong-force-visual-metaphor.svg",
+    "thumb": "images/strong-force-visual-metaphor.svg",
+    "title": "Strong-Force-Visual-Metaphor",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "strong-nuclear-force-svg",
+    "file": "strong-nuclear-force-svg.svg",
+    "src": "images/strong-nuclear-force-svg.svg",
+    "thumb": "images/strong-nuclear-force-svg.svg",
+    "title": "Strong-Nuclear-Force-Svg",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "ted-laws-mapped-out",
+    "file": "Ted laws mapped out.png",
+    "src": "images/Ted laws mapped out.png",
+    "thumb": "images/Ted laws mapped out.png",
+    "title": "Ted Laws Mapped Out",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-22"
+  },
+  {
+    "id": "temperature-crisis-in-mathematical-inference-between-domains",
+    "file": "Temperature crisis in mathematical inference between domains.png",
+    "src": "images/Temperature crisis in mathematical inference between domains.png",
+    "thumb": "images/Temperature crisis in mathematical inference between domains.png",
+    "title": "Temperature Crisis In Mathematical Inference Between Domains",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "the-black-hole-of-deception-truth-resistant-systems-1",
+    "file": "The black hole of deception truth resistant systems 1.png",
+    "src": "images/The black hole of deception truth resistant systems 1.png",
+    "thumb": "images/The black hole of deception truth resistant systems 1.png",
+    "title": "The Black Hole Of Deception Truth Resistant Systems 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "the-bond-they-cannot-be-broken-1",
+    "file": "The bond they cannot be broken 1.png",
+    "src": "images/The bond they cannot be broken 1.png",
+    "thumb": "images/The bond they cannot be broken 1.png",
+    "title": "The Bond They Cannot Be Broken 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-06"
+  },
+  {
+    "id": "the-bridge-equation-crisis-the-mathematical-interference-between-domains-1",
+    "file": "The bridge equation crisis the mathematical interference between domains 1.png",
+    "src": "images/The bridge equation crisis the mathematical interference between domains 1.png",
+    "thumb": "images/The bridge equation crisis the mathematical interference between domains 1.png",
+    "title": "The Bridge Equation Crisis The Mathematical Interference Between Domains 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "the-complete-unified-theory-1",
+    "file": "The complete unified theory (1).png",
+    "src": "images/The complete unified theory (1).png",
+    "thumb": "images/The complete unified theory (1).png",
+    "title": "The Complete Unified Theory (1)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-19"
+  },
+  {
+    "id": "the-complete-unified-theory-1",
+    "file": "The complete unified theory 1.png",
+    "src": "images/The complete unified theory 1.png",
+    "thumb": "images/The complete unified theory 1.png",
+    "title": "The Complete Unified Theory 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-19"
+  },
+  {
+    "id": "the-complete-unified-theory",
+    "file": "The complete unified theory.png",
+    "src": "images/The complete unified theory.png",
+    "thumb": "images/The complete unified theory.png",
+    "title": "The Complete Unified Theory",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "the-convergence-of-physical-and-spiritual-truth",
+    "file": "The convergence of physical and spiritual truth.png",
+    "src": "images/The convergence of physical and spiritual truth.png",
+    "thumb": "images/The convergence of physical and spiritual truth.png",
+    "title": "The Convergence Of Physical And Spiritual Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-21"
+  },
+  {
+    "id": "the-double-slit-experiment",
+    "file": "the double slit experiment.png",
+    "src": "images/the double slit experiment.png",
+    "thumb": "images/the double slit experiment.png",
+    "title": "The Double Slit Experiment",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "the-fall-sin-is-discoherants",
+    "file": "THe Fall Sin is discoherants.png",
+    "src": "images/THe Fall Sin is discoherants.png",
+    "thumb": "images/THe Fall Sin is discoherants.png",
+    "title": "The Fall Sin Is Discoherants",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "the-master-equation-1",
+    "file": "The Master Equation 1.png",
+    "src": "images/The Master Equation 1.png",
+    "thumb": "images/The Master Equation 1.png",
+    "title": "The Master Equation 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "the-mathematics-of-decay-from-physical-enthropy-to-spiritual-corruption-1",
+    "file": "The mathematics of decay From physical enthropy to spiritual corruption 1.png",
+    "src": "images/The mathematics of decay From physical enthropy to spiritual corruption 1.png",
+    "thumb": "images/The mathematics of decay From physical enthropy to spiritual corruption 1.png",
+    "title": "The Mathematics Of Decay From Physical Enthropy To Spiritual Corruption 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "the-negative-property-of-grace-reversing-universal-trends-toward-disorder",
+    "file": "the negative property of Grace reversing universal trends toward disorder.png",
+    "src": "images/the negative property of Grace reversing universal trends toward disorder.png",
+    "thumb": "images/the negative property of Grace reversing universal trends toward disorder.png",
+    "title": "The Negative Property Of Grace Reversing Universal Trends Toward Disorder",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "the-observer-affects-comparison",
+    "file": "The Observer affects comparison.png",
+    "src": "images/The Observer affects comparison.png",
+    "thumb": "images/The Observer affects comparison.png",
+    "title": "The Observer Affects Comparison",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-26"
+  },
+  {
+    "id": "the-paradox-of-certainty-original",
+    "file": "the paradox of certainty (Original).png",
+    "src": "images/the paradox of certainty (Original).png",
+    "thumb": "images/the paradox of certainty (Original).png",
+    "title": "The Paradox Of Certainty (Original)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "the-paradox-of-certainty",
+    "file": "the paradox of certainty.png",
+    "src": "images/the paradox of certainty.png",
+    "thumb": "images/the paradox of certainty.png",
+    "title": "The Paradox Of Certainty",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "the-physics-of-faith",
+    "file": "The physics of faith.png",
+    "src": "images/The physics of faith.png",
+    "thumb": "images/The physics of faith.png",
+    "title": "The Physics Of Faith",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "the-quantum-choice-tree",
+    "file": "The Quantum choice tree.png",
+    "src": "images/The Quantum choice tree.png",
+    "thumb": "images/The Quantum choice tree.png",
+    "title": "The Quantum Choice Tree",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-03"
+  },
+  {
+    "id": "the-quantum-grace-algorithm",
+    "file": "The Quantum Grace Algorithm.png",
+    "src": "images/The Quantum Grace Algorithm.png",
+    "thumb": "images/The Quantum Grace Algorithm.png",
+    "title": "The Quantum Grace Algorithm",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "the-quantum-trinity-sparrow",
+    "file": "The quantum Trinity Sparrow.png",
+    "src": "images/The quantum Trinity Sparrow.png",
+    "thumb": "images/The quantum Trinity Sparrow.png",
+    "title": "The Quantum Trinity Sparrow",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-23"
+  },
+  {
+    "id": "the-salvation-algorithm-pathways-to-truth",
+    "file": "The Salvation Algorithm Pathways to Truth.png",
+    "src": "images/The Salvation Algorithm Pathways to Truth.png",
+    "thumb": "images/The Salvation Algorithm Pathways to Truth.png",
+    "title": "The Salvation Algorithm Pathways To Truth",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "the-trinity-as-a-quantum-architecture",
+    "file": "The Trinity as a quantum architecture.png",
+    "src": "images/The Trinity as a quantum architecture.png",
+    "thumb": "images/The Trinity as a quantum architecture.png",
+    "title": "The Trinity As A Quantum Architecture",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-30"
+  },
+  {
+    "id": "the-unified-quantum-spiritual-equation-1",
+    "file": "The Unified Quantum Spiritual Equation (1).png",
+    "src": "images/The Unified Quantum Spiritual Equation (1).png",
+    "thumb": "images/The Unified Quantum Spiritual Equation (1).png",
+    "title": "The Unified Quantum Spiritual Equation (1)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-23"
+  },
+  {
+    "id": "the-unified-quantum-spiritual-equation-3",
+    "file": "the unified quantum spiritual equation 3.png",
+    "src": "images/the unified quantum spiritual equation 3.png",
+    "thumb": "images/the unified quantum spiritual equation 3.png",
+    "title": "The Unified Quantum Spiritual Equation 3",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-06"
+  },
+  {
+    "id": "the-unified-theory-2",
+    "file": "The unified theory 2.png",
+    "src": "images/The unified theory 2.png",
+    "thumb": "images/The unified theory 2.png",
+    "title": "The Unified Theory 2",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "the-unified-theory",
+    "file": "The Unified Theory.png",
+    "src": "images/The Unified Theory.png",
+    "thumb": "images/The Unified Theory.png",
+    "title": "The Unified Theory",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-08"
+  },
+  {
+    "id": "the-universe-is-running-down-from-heat-death-to-new-creation",
+    "file": "the universe is running down from heat death to new creation.png",
+    "src": "images/the universe is running down from heat death to new creation.png",
+    "thumb": "images/the universe is running down from heat death to new creation.png",
+    "title": "The Universe Is Running Down From Heat Death To New Creation",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "the-unquantifiable-component",
+    "file": "The unquantifiable component.png",
+    "src": "images/The unquantifiable component.png",
+    "thumb": "images/The unquantifiable component.png",
+    "title": "The Unquantifiable Component",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-06"
+  },
+  {
+    "id": "the-way-to-salvation-1",
+    "file": "The way to salvation 1.png",
+    "src": "images/The way to salvation 1.png",
+    "thumb": "images/The way to salvation 1.png",
+    "title": "The Way To Salvation 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-01"
+  },
+  {
+    "id": "the-way-to-salvation",
+    "file": "The way to salvation.png",
+    "src": "images/The way to salvation.png",
+    "thumb": "images/The way to salvation.png",
+    "title": "The Way To Salvation",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-24"
+  },
+  {
+    "id": "time-dilation-or-turn-roll-now",
+    "file": "time dilation or turn roll now.png",
+    "src": "images/time dilation or turn roll now.png",
+    "thumb": "images/time dilation or turn roll now.png",
+    "title": "Time Dilation Or Turn Roll Now",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "time-dilation-diagram",
+    "file": "time-dilation-diagram.svg",
+    "src": "images/time-dilation-diagram.svg",
+    "thumb": "images/time-dilation-diagram.svg",
+    "title": "Time-Dilation-Diagram",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "transformation-principle-state-changes",
+    "file": "Transformation Principle - State Changes.png",
+    "src": "images/Transformation Principle - State Changes.png",
+    "thumb": "images/Transformation Principle - State Changes.png",
+    "title": "Transformation Principle - State Changes",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-24"
+  },
+  {
+    "id": "transformation-acceleration",
+    "file": "transformation-acceleration.svg",
+    "src": "images/transformation-acceleration.svg",
+    "thumb": "images/transformation-acceleration.svg",
+    "title": "Transformation-Acceleration",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "trinitarian-entanglement",
+    "file": "trinitarian-entanglement.svg",
+    "src": "images/trinitarian-entanglement.svg",
+    "thumb": "images/trinitarian-entanglement.svg",
+    "title": "Trinitarian-Entanglement",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "trinity-glueton-exchange",
+    "file": "trinity Glueton exchange.png",
+    "src": "images/trinity Glueton exchange.png",
+    "thumb": "images/trinity Glueton exchange.png",
+    "title": "Trinity Glueton Exchange",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-06"
+  },
+  {
+    "id": "trinity-entanglement",
+    "file": "trinity-entanglement.svg",
+    "src": "images/trinity-entanglement.svg",
+    "thumb": "images/trinity-entanglement.svg",
+    "title": "Trinity-Entanglement",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "trinity-gluon-exchange",
+    "file": "trinity-gluon-exchange.svg",
+    "src": "images/trinity-gluon-exchange.svg",
+    "thumb": "images/trinity-gluon-exchange.svg",
+    "title": "Trinity-Gluon-Exchange",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "trinity-quantum-model",
+    "file": "trinity-quantum-model.svg",
+    "src": "images/trinity-quantum-model.svg",
+    "thumb": "images/trinity-quantum-model.svg",
+    "title": "Trinity-Quantum-Model",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "truth-as-illumination-revealing-what-already-exists-not-creating-it-1",
+    "file": "truth as illumination revealing what already exists not creating it 1.png",
+    "src": "images/truth as illumination revealing what already exists not creating it 1.png",
+    "thumb": "images/truth as illumination revealing what already exists not creating it 1.png",
+    "title": "Truth As Illumination Revealing What Already Exists Not Creating It 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "truth-revelation-dynamics",
+    "file": "truth-revelation-dynamics.svg",
+    "src": "images/truth-revelation-dynamics.svg",
+    "thumb": "images/truth-revelation-dynamics.svg",
+    "title": "Truth-Revelation-Dynamics",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "two-languages-describing-one-reality-general-relativity-and-quantum-mechanics",
+    "file": "Two languages describing one reality general relativity and quantum mechanics.png",
+    "src": "images/Two languages describing one reality general relativity and quantum mechanics.png",
+    "thumb": "images/Two languages describing one reality general relativity and quantum mechanics.png",
+    "title": "Two Languages Describing One Reality General Relativity And Quantum Mechanics",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-23"
+  },
+  {
+    "id": "two-puzzle-set-general-relativity-and-quantum-mechanics",
+    "file": "Two puzzle set general relativity and quantum mechanics.png",
+    "src": "images/Two puzzle set general relativity and quantum mechanics.png",
+    "thumb": "images/Two puzzle set general relativity and quantum mechanics.png",
+    "title": "Two Puzzle Set General Relativity And Quantum Mechanics",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-23"
+  },
+  {
+    "id": "two-theories-two-puzzles",
+    "file": "Two theories two puzzles.png",
+    "src": "images/Two theories two puzzles.png",
+    "thumb": "images/Two theories two puzzles.png",
+    "title": "Two Theories Two Puzzles",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-24"
+  },
+  {
+    "id": "typingmind-6seqkzpxx7",
+    "file": "TypingMind_6SEqkzpXx7.png",
+    "src": "images/TypingMind_6SEqkzpXx7.png",
+    "thumb": "images/TypingMind_6SEqkzpXx7.png",
+    "title": "Typingmind 6Seqkzpxx7",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "typingmind-annerlmtgy",
+    "file": "TypingMind_AnnErlmTGY.png",
+    "src": "images/TypingMind_AnnErlmTGY.png",
+    "thumb": "images/TypingMind_AnnErlmTGY.png",
+    "title": "Typingmind Annerlmtgy",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-20"
+  },
+  {
+    "id": "typingmind-i8qbjqlm8w",
+    "file": "TypingMind_i8qbjqlm8w.png",
+    "src": "images/TypingMind_i8qbjqlm8w.png",
+    "thumb": "images/TypingMind_i8qbjqlm8w.png",
+    "title": "Typingmind I8Qbjqlm8W",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "typingmind-jrciccsg7w",
+    "file": "TypingMind_JRcIcCSg7W.png",
+    "src": "images/TypingMind_JRcIcCSg7W.png",
+    "thumb": "images/TypingMind_JRcIcCSg7W.png",
+    "title": "Typingmind Jrciccsg7W",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "typingmind-mikgvxxlj5",
+    "file": "TypingMind_mikGVXXLJ5.png",
+    "src": "images/TypingMind_mikGVXXLJ5.png",
+    "thumb": "images/TypingMind_mikGVXXLJ5.png",
+    "title": "Typingmind Mikgvxxlj5",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "typingmind-rgnau6bx9r",
+    "file": "TypingMind_rgnaU6bx9R.png",
+    "src": "images/TypingMind_rgnaU6bx9R.png",
+    "thumb": "images/TypingMind_rgnaU6bx9R.png",
+    "title": "Typingmind Rgnau6Bx9R",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "typingmind-v21zujhk7h",
+    "file": "TypingMind_V21ZUJHk7h.png",
+    "src": "images/TypingMind_V21ZUJHk7h.png",
+    "thumb": "images/TypingMind_V21ZUJHk7h.png",
+    "title": "Typingmind V21Zujhk7H",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "typingmind-vwwhf5zl0w-1",
+    "file": "TypingMind_VWwHF5ZL0w 1.png",
+    "src": "images/TypingMind_VWwHF5ZL0w 1.png",
+    "thumb": "images/TypingMind_VWwHF5ZL0w 1.png",
+    "title": "Typingmind Vwwhf5Zl0W 1",
+    "caption": "",
+    "tags": [],
+    "created": "2025-03-12"
+  },
+  {
+    "id": "unified-distinct",
+    "file": "unified distinct.png",
+    "src": "images/unified distinct.png",
+    "thumb": "images/unified distinct.png",
+    "title": "Unified Distinct",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "unified-quantum-spiritual-equation",
+    "file": "unified-quantum-spiritual-equation.svg",
+    "src": "images/unified-quantum-spiritual-equation.svg",
+    "thumb": "images/unified-quantum-spiritual-equation.svg",
+    "title": "Unified-Quantum-Spiritual-Equation",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "unified-theories",
+    "file": "unified-theories.svg",
+    "src": "images/unified-theories.svg",
+    "thumb": "images/unified-theories.svg",
+    "title": "Unified-Theories",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "universal-laws-and-spiritual-laws",
+    "file": "universal laws and spiritual laws.png",
+    "src": "images/universal laws and spiritual laws.png",
+    "thumb": "images/universal laws and spiritual laws.png",
+    "title": "Universal Laws And Spiritual Laws",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-19"
+  },
+  {
+    "id": "universal-truth-converging-soul",
+    "file": "Universal truth converging soul.png",
+    "src": "images/Universal truth converging soul.png",
+    "thumb": "images/Universal truth converging soul.png",
+    "title": "Universal Truth Converging Soul",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-28"
+  },
+  {
+    "id": "universal-wave-function-collapse",
+    "file": "Universal wave function collapse.png",
+    "src": "images/Universal wave function collapse.png",
+    "thumb": "images/Universal wave function collapse.png",
+    "title": "Universal Wave Function Collapse",
+    "caption": "",
+    "tags": [],
+    "created": "2025-06-01"
+  },
+  {
+    "id": "universal-integration",
+    "file": "universal-integration.svg",
+    "src": "images/universal-integration.svg",
+    "thumb": "images/universal-integration.svg",
+    "title": "Universal-Integration",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "universal-pattern-illustration",
+    "file": "universal-pattern-illustration.svg",
+    "src": "images/universal-pattern-illustration.svg",
+    "thumb": "images/universal-pattern-illustration.svg",
+    "title": "Universal-Pattern-Illustration",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "unquantifiable-component-1",
+    "file": "unquantifiable-component (1).svg",
+    "src": "images/unquantifiable-component (1).svg",
+    "thumb": "images/unquantifiable-component (1).svg",
+    "title": "Unquantifiable-Component (1)",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "unquantifiable-component",
+    "file": "unquantifiable-component.svg",
+    "src": "images/unquantifiable-component.svg",
+    "thumb": "images/unquantifiable-component.svg",
+    "title": "Unquantifiable-Component",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "visual-final-equation",
+    "file": "visual-final-equation.svg",
+    "src": "images/visual-final-equation.svg",
+    "thumb": "images/visual-final-equation.svg",
+    "title": "Visual-Final-Equation",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "visualization-synthesis",
+    "file": "visualization-synthesis.svg",
+    "src": "images/visualization-synthesis.svg",
+    "thumb": "images/visualization-synthesis.svg",
+    "title": "Visualization-Synthesis",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "voiceaccess-kzbikqlgpn",
+    "file": "VoiceAccess_kZbIKqlGPN.png",
+    "src": "images/VoiceAccess_kZbIKqlGPN.png",
+    "thumb": "images/VoiceAccess_kZbIKqlGPN.png",
+    "title": "Voiceaccess Kzbikqlgpn",
+    "caption": "",
+    "tags": [],
+    "created": "2025-02-19"
+  },
+  {
+    "id": "wave-particle-duality",
+    "file": "Wave particle duality.png",
+    "src": "images/Wave particle duality.png",
+    "thumb": "images/Wave particle duality.png",
+    "title": "Wave Particle Duality",
+    "caption": "",
+    "tags": [],
+    "created": "2025-05-31"
+  },
+  {
+    "id": "wave-function-collapse",
+    "file": "wave-function-collapse.svg",
+    "src": "images/wave-function-collapse.svg",
+    "thumb": "images/wave-function-collapse.svg",
+    "title": "Wave-Function-Collapse",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "wave-particle-duality",
+    "file": "wave-particle-duality.svg",
+    "src": "images/wave-particle-duality.svg",
+    "thumb": "images/wave-particle-duality.svg",
+    "title": "Wave-Particle-Duality",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
+  },
+  {
+    "id": "weight-of-sin-visualization",
+    "file": "weight-of-sin-visualization.svg",
+    "src": "images/weight-of-sin-visualization.svg",
+    "thumb": "images/weight-of-sin-visualization.svg",
+    "title": "Weight-Of-Sin-Visualization",
+    "caption": "",
+    "tags": [],
+    "created": "2025-08-12"
   }
 ]

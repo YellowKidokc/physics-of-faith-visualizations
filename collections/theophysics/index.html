@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THEOPHYSICS: Where Physics Meets Faith</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg1: #0f0f23;
+      --bg2: #1a1a2e;
+      --bg3: #16213e;
+      --fg: #e0e6ed;
+      --muted: #aab2bf;
+      --accent1: #ffd166;
+      --accent2: #06d6a0;
+      --accent3: #118ab2;
+      --accent4: #ef476f;
+      --border: rgba(255,255,255,0.15);
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      background: linear-gradient(135deg, var(--bg1) 0%, var(--bg2) 50%, var(--bg3) 100%);
+      color: var(--fg);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem 0;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .nav-breadcrumb {
+      margin-bottom: 2rem;
+    }
+    .nav-breadcrumb a {
+      color: var(--accent2);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      display: inline-block;
+    }
+    .nav-breadcrumb a:hover {
+      background: rgba(255,255,255,0.08);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .card-image {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      display: block;
+      background: var(--bg1);
+    }
+    .card-content {
+      padding: 1.5rem;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: var(--accent1);
+    }
+    .card-description {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 0.75rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.7rem;
+      border-radius: 0.5rem;
+      color: var(--accent2);
+    }
+    .intro {
+      background: rgba(255,255,255,0.04);
+      border-left: 4px solid var(--accent2);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+    }
+    .intro p {
+      line-height: 1.8;
+      color: var(--muted);
+    }
+    .card {
+      cursor: pointer;
+    }
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.95);
+      z-index: 1000;
+      overflow-y: auto;
+    }
+    .modal.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      position: relative;
+      max-width: 95vw;
+      max-height: 95vh;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+    }
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.3s ease;
+    }
+    .modal-close:hover {
+      background: rgba(255,255,255,0.2);
+      transform: rotate(90deg);
+    }
+    .modal-body {
+      padding: 2rem;
+    }
+    .modal-image-container {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .modal-info h2 {
+      color: var(--accent1);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .modal-info p {
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .modal-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .action-btn {
+      flex: 1;
+      min-width: 180px;
+      padding: 0.9rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 0.6rem;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      color: #222;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255,209,102,0.4);
+    }
+    .action-btn.share-btn {
+      background: linear-gradient(135deg, var(--accent3), var(--accent2));
+    }
+    .action-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav-breadcrumb">
+      <a href="../../index.html">← Back to Gallery</a>
+    </div>
+
+    <header>
+      <h1>THEOPHYSICS</h1>
+      <p class="subtitle">Exploring the Mathematical Framework Where Faith and Physics Converge</p>
+    </header>
+
+    <div class="intro">
+      <p>
+        Welcome to the THEOPHYSICS collection. This is where we explore the profound parallels between 
+        physical laws and spiritual truths. Each visualization reveals how quantum mechanics, relativity, 
+        and thermodynamics mirror the eternal principles of faith, grace, and divine love.
+      </p>
+    </div>
+
+    <div class="gallery">
+      <div class="card" onclick="openModal('master-equation-visualization.svg', 'The Master Equation', 'A complete unified framework showing how 10 integrated variables mathematically describe the salvation narrative through quantum field theory and thermodynamics.')">
+        <img class="card-image" src="../../images/master-equation-visualization.svg" alt="Master Equation">
+        <div class="card-content">
+          <h3 class="card-title">The Master Equation</h3>
+          <p class="card-description">
+            A complete unified framework showing how 10 integrated variables mathematically 
+            describe the salvation narrative through quantum field theory and thermodynamics.
+          </p>
+          <div class="tags">
+            <span class="tag">Quantum Field Theory</span>
+            <span class="tag">Salvation</span>
+            <span class="tag">Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('gravity-sin-parallel.svg', 'Gravity & Sin Parallel', 'Exploring how universal gravitation parallels spiritual gravity - both create attractive forces requiring escape velocity to overcome. Divine grace provides that escape energy.')">
+        <img class="card-image" src="../../images/gravity-sin-parallel.svg" alt="Gravity vs Sin">
+        <div class="card-content">
+          <h3 class="card-title">Gravity & Sin Parallel</h3>
+          <p class="card-description">
+            Exploring how universal gravitation parallels spiritual gravity - both create attractive 
+            forces requiring escape velocity to overcome. Divine grace provides that escape energy.
+          </p>
+          <div class="tags">
+            <span class="tag">Law 2</span>
+            <span class="tag">Gravity</span>
+            <span class="tag">Grace</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('entropy-grace-model.svg', 'Entropy vs Grace', 'The thermodynamic battle between spiritual entropy and divine grace. Shows how grace acts as negentropy, actively reversing spiritual decay and restoring coherence to broken souls.')">
+        <img class="card-image" src="../../images/entropy-grace-model.svg" alt="Entropy & Grace">
+        <div class="card-content">
+          <h3 class="card-title">Entropy vs Grace</h3>
+          <p class="card-description">
+            The thermodynamic battle between spiritual decay (entropy increase) and divine order 
+            (negentropy through grace). Grace as the anti-entropy force restoring spiritual coherence.
+          </p>
+          <div class="tags">
+            <span class="tag">Thermodynamics</span>
+            <span class="tag">Grace</span>
+            <span class="tag">Order</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('christ-observer-effect.svg', 'Christ as First Observer', 'Christ as the primordial observer whose divine observation collapses the universal wavefunction - the quantum origin of all reality through perfect divine measurement.')">
+        <img class="card-image" src="../../images/christ-observer-effect.svg" alt="Christ Observer Effect">
+        <div class="card-content">
+          <h3 class="card-title">Christ as First Observer</h3>
+          <p class="card-description">
+            The quantum origin of reality: Christ as the primordial observer whose observation 
+            collapses the universal wavefunction, establishing all existence through divine measurement.
+          </p>
+          <div class="tags">
+            <span class="tag">Quantum Mechanics</span>
+            <span class="tag">Observer Effect</span>
+            <span class="tag">Creation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('consciousness-gravity-diagram.svg', 'Consciousness as Spiritual Gravity', 'Divine consciousness as spiritual gravity - warping the fabric of spiritual spacetime and drawing all creation toward the Creator through the fundamental force of love.')">
+        <img class="card-image" src="../../images/consciousness-gravity-diagram.svg" alt="Consciousness as Gravity">
+        <div class="card-content">
+          <h3 class="card-title">Consciousness as Spiritual Gravity</h3>
+          <p class="card-description">
+            How divine consciousness acts as spiritual gravity, warping the fabric of spiritual 
+            space-time and drawing all souls toward the Creator through love's fundamental force.
+          </p>
+          <div class="tags">
+            <span class="tag">Consciousness</span>
+            <span class="tag">Relativity</span>
+            <span class="tag">Love</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('quantum-trinity-spiral.md', 'The Quantum Trinity', 'The three-person Godhead expressed through quantum entanglement - Father, Son, and Holy Spirit as eternally coherent quantum states, distinct yet perfectly unified.')">
+        <img class="card-image" src="../../images/quantum-trinity-spiral.md" alt="Quantum Trinity">
+        <div class="card-content">
+          <h3 class="card-title">The Quantum Trinity</h3>
+          <p class="card-description">
+            The three-person Godhead expressed through quantum entanglement - Father, Son, and 
+            Holy Spirit as eternally coherent quantum states, distinct yet perfectly unified.
+          </p>
+          <div class="tags">
+            <span class="tag">Trinity</span>
+            <span class="tag">Entanglement</span>
+            <span class="tag">Unity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-screen Modal Viewer -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image-container">
+            <canvas id="imageCanvas" style="max-width: 100%; max-height: 70vh; display: block; margin: 0 auto;"></canvas>
+          </div>
+          <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div class="modal-actions">
+              <button class="action-btn download-btn" onclick="downloadWithWatermark()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                Download PNG
+              </button>
+              <button class="action-btn share-btn" onclick="shareImage()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                </svg>
+                Share Link
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentImage = null;
+    let currentTitle = '';
+    let currentDescription = '';
+
+    function openModal(imageName, title, description) {
+      currentImage = imageName;
+      currentTitle = title;
+      currentDescription = description;
+      
+      const modal = document.getElementById('imageModal');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalDescription = document.getElementById('modalDescription');
+      const canvas = document.getElementById('imageCanvas');
+      const ctx = canvas.getContext('2d');
+      
+      modalTitle.textContent = title;
+      modalDescription.textContent = description;
+      modal.classList.add('active');
+      
+      // Load image
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = function() {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0);
+      };
+      img.src = '../../images/' + imageName;
+      
+      // Prevent body scroll
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    function downloadWithWatermark() {
+      const canvas = document.getElementById('imageCanvas');
+      const ctx = canvas.getContext('2d');
+      
+      // Create a temporary canvas for watermarked image
+      const tempCanvas = document.createElement('canvas');
+      const tempCtx = tempCanvas.getContext('2d');
+      tempCanvas.width = canvas.width;
+      tempCanvas.height = canvas.height;
+      
+      // Draw original image
+      tempCtx.drawImage(canvas, 0, 0);
+      
+      // Add watermark
+      const watermarkText = 'THEOPHYSICS • PhysicsOfFaith.org';
+      const fontSize = Math.max(canvas.width * 0.02, 16);
+      tempCtx.font = `bold ${fontSize}px system-ui, -apple-system, 'Segoe UI'`;
+      
+      // Semi-transparent background for watermark
+      tempCtx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+      const textMetrics = tempCtx.measureText(watermarkText);
+      const textWidth = textMetrics.width;
+      const padding = 15;
+      const x = canvas.width - textWidth - padding * 2;
+      const y = canvas.height - fontSize - padding * 2;
+      tempCtx.fillRect(x - padding, y - padding, textWidth + padding * 2, fontSize + padding * 2);
+      
+      // Watermark text
+      tempCtx.fillStyle = '#ffd166';
+      tempCtx.fillText(watermarkText, x, y + fontSize - 5);
+      
+      // Download
+      tempCanvas.toBlob(function(blob) {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        const filename = currentTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-theophysics.png';
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }, 'image/png');
+    }
+
+    function shareImage() {
+      const currentUrl = window.location.href;
+      const shareUrl = currentUrl.split('?')[0] + '?image=' + encodeURIComponent(currentImage);
+      
+      // Try to use Web Share API if available
+      if (navigator.share) {
+        navigator.share({
+          title: currentTitle + ' - THEOPHYSICS',
+          text: currentDescription,
+          url: shareUrl
+        }).catch(() => {
+          // Fallback to copying link
+          copyToClipboard(shareUrl);
+        });
+      } else {
+        // Fallback: copy to clipboard
+        copyToClipboard(shareUrl);
+      }
+    }
+
+    function copyToClipboard(text) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          alert('✓ Link copied to clipboard!\n\n' + text);
+        }).catch(() => {
+          fallbackCopy(text);
+        });
+      } else {
+        fallbackCopy(text);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-9999px';
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        alert('✓ Link copied to clipboard!\n\n' + text);
+      } catch (err) {
+        alert('Share this link:\n\n' + text);
+      }
+      document.body.removeChild(textArea);
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // Check if URL has image parameter
+    window.addEventListener('load', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const imageParam = urlParams.get('image');
+      if (imageParam) {
+        // Find the card with this image and trigger it
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+          const img = card.querySelector('img');
+          if (img && img.src.includes(imageParam)) {
+            card.click();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+

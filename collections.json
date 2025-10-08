@@ -1,16 +1,18 @@
 [
   {
-    "slug": "master-equation",
-    "title": "Master Equation Set",
-    "summary": "High-quality multi-page set explaining \u03c7 with 10 variables.",
-    "href": "collections/master-equation/index.html",
-    "cover": "images/sample1.jpg",
-    "pages": 6,
-    "images": 24,
+    "slug": "theophysics",
+    "title": "THEOPHYSICS: Where Physics Meets Faith",
+    "summary": "A comprehensive exploration of where physics meets faith - visualizing the mathematical parallels between quantum mechanics, thermodynamics, relativity and eternal spiritual truths.",
+    "href": "collections/theophysics/index.html",
+    "cover": "collections/theophysics/cover.png",
+    "pages": 1,
+    "images": 0,
     "tags": [
-      "\u03c7",
-      "unified",
-      "equation"
+      "Quantum Mechanics",
+      "Faith",
+      "Theology",
+      "Physics",
+      "Mathematics"
     ]
   }
 ]
