@@ -1,5 +1,41 @@
 # 🚀 Cloudflare Pages Deployment Guide
 
+## Automated Pipeline (Recommended)
+
+The repository now ships with a Node-based static site generator and an automated Cloudflare Pages deployment workflow. Follow these steps once and every push to `main` will rebuild and publish the Syzygy Gallery automatically.
+
+### 1. Install Dependencies Locally
+
+```bash
+npm install
+npm run build
+```
+
+The build command generates the `dist/` directory with watermarked assets and the gallery homepage.
+
+### 2. Configure Cloudflare Secrets
+
+Add the following repository secrets in GitHub (`Settings → Secrets and variables → Actions → New repository secret`):
+
+| Secret Name | Description |
+|-------------|-------------|
+| `CLOUDFLARE_ACCOUNT_ID` | Your Cloudflare account identifier |
+| `CLOUDFLARE_API_TOKEN` | API token with Pages `Edit` permissions |
+| `CLOUDFLARE_PROJECT_NAME` | The Cloudflare Pages project to deploy to |
+
+### 3. Push to `main`
+
+The workflow defined in `.github/workflows/deploy.yml` will:
+
+1. Check out the repository
+2. Install Node dependencies
+3. Run `npm run build`
+4. Publish the contents of `dist/` to Cloudflare Pages via `cloudflare/pages-action@v1`
+
+> ℹ️ For manual builds or debugging you can run `npm run build` locally and inspect the generated `dist/index.html` before pushing.
+
+---
+
 ## Step-by-Step Instructions to Host Your Physics of Faith Site
 
 ### Method 1: Direct Upload (Easiest - 5 minutes)

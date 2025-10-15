@@ -1,0 +1,16 @@
+{
+  "name": "physics-of-faith-visualizations-site",
+  "version": "2.0.0",
+  "description": "Static site generator for the Physics of Faith visual archive",
+  "type": "module",
+  "scripts": {
+    "build": "cross-env SHARP_LIMIT_INPUT_PIXELS=0 node scripts/build.js"
+  },
+  "dependencies": {
+    "marked": "^9.1.5",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
