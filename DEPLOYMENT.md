@@ -43,7 +43,7 @@ npm run build
 npm run deploy -- <your-cloudflare-pages-project>
 ```
 
-The helper wraps `wrangler pages deploy` so you can set the `CLOUDFLARE_PROJECT_NAME` environment variable instead of passing the project name each time. Any additional flags (for example `--branch preview`) are forwarded to Wrangler.
+The helper wraps `wrangler pages deploy` so you can set the `CLOUDFLARE_PROJECT_NAME` environment variable instead of passing the project name each time. Any additional flags (for example `--branch preview`) are forwarded to Wrangler. For environments that still call `npx wrangler deploy`, the bundled `wrangler.toml` now specifies `dist/` as a static asset directory so that command successfully publishes the same build output.
 
 ---
 

@@ -1,2 +1,6 @@
 name = "syzygy-gallery"
+compatibility_date = "2024-10-17"
 pages_build_output_dir = "dist"
+
+[assets]
+directory = "./dist"
