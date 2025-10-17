@@ -1,5 +1,52 @@
 # 🚀 Cloudflare Pages Deployment Guide
 
+## Automated Pipeline (Recommended)
+
+The repository now ships with a Node-based static site generator and an automated Cloudflare Pages deployment workflow. Follow these steps once and every push to `main` will rebuild and publish the Syzygy Gallery automatically.
+
+### 1. Install Dependencies Locally
+
+```bash
+npm install
+npm run build
+```
+
+The build command generates the `dist/` directory with watermarked assets and the gallery homepage.
+
+### 2. Configure Cloudflare Secrets
+
+Add the following repository secrets in GitHub (`Settings → Secrets and variables → Actions → New repository secret`):
+
+| Secret Name | Description |
+|-------------|-------------|
+| `CLOUDFLARE_ACCOUNT_ID` | Your Cloudflare account identifier |
+| `CLOUDFLARE_API_TOKEN` | API token with Pages `Edit` permissions |
+| `CLOUDFLARE_PROJECT_NAME` | The Cloudflare Pages project to deploy to |
+
+### 3. Push to `main`
+
+The workflow defined in `.github/workflows/deploy.yml` will:
+
+1. Check out the repository
+2. Install Node dependencies
+3. Run `npm run build`
+4. Publish the contents of `dist/` to Cloudflare Pages via `cloudflare/pages-action@v1`
+
+> ℹ️ For manual builds or debugging you can run `npm run build` locally and inspect the generated `dist/index.html` before pushing.
+
+### 4. (Optional) Trigger a deployment from your terminal
+
+If you prefer to deploy directly from your machine without waiting for GitHub Actions, first build the site and then run the deployment helper:
+
+```bash
+npm run build
+npm run deploy -- <your-cloudflare-pages-project>
+```
+
+The helper wraps `wrangler pages deploy` so you can set the `CLOUDFLARE_PROJECT_NAME` environment variable instead of passing the project name each time. Any additional flags (for example `--branch preview`) are forwarded to Wrangler.
+
+---
+
 ## Step-by-Step Instructions to Host Your Physics of Faith Site
 
 ### Method 1: Direct Upload (Easiest - 5 minutes)
@@ -51,8 +98,8 @@
 #### Step 4: Configure Build Settings
 - **Project name**: `physics-of-faith`
 - **Production branch**: `main`
-- **Build command**: (leave empty)
-- **Build output directory**: (leave empty)
+- **Build command**: `npm run build`
+- **Build output directory**: `dist`
 - **Click "Save and Deploy"**
 
 ---
@@ -127,6 +174,11 @@ Your site is already optimized for:
 - Check your zip file contains `index.html`
 - Ensure file names match exactly
 - Wait 5 minutes for DNS propagation
+
+**Wrangler CLI reports "Missing entry-point"?**
+- Use `npm run deploy -- <project>` or `npx wrangler pages deploy dist --project-name <project>` instead of `npx wrangler deploy`
+- Confirm the `dist/` folder exists (run `npm run build`)
+- Ensure your Cloudflare API token has Pages "Edit" permissions
 
 **Animations not working?**
 - Clear browser cache (Ctrl+F5)

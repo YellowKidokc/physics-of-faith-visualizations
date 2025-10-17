@@ -42,3 +42,7 @@ build/
 
 # Keep image directories but ignore .gitkeep files
 **/.gitkeep
+
+# Node
+node_modules/
+package-lock.json
